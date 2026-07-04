@@ -1,0 +1,17 @@
+{
+  "name": "nomadcruise-talk",
+  "private": true,
+  "description": "Slidev deck for 'AI is not magic' — NomadCruise 17, Sept 2026",
+  "scripts": {
+    "dev": "slidev",
+    "export:pdf": "slidev export --with-clicks --output dist/ai-is-not-magic.pdf",
+    "export:pptx": "slidev export --format pptx --output dist/ai-is-not-magic.pptx",
+    "export:notes": "slidev export-notes --output dist/ai-is-not-magic-notes.pdf",
+    "export:all": "npm run export:pdf && npm run export:pptx && npm run export:notes"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.16.0",
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.61.1"
+  }
+}

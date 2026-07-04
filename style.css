@@ -1,0 +1,59 @@
+/*
+ * Dark theme + ONE accent colour (§10.4: black/anthracite, white text, single accent).
+ * Switch the accent in one place: --talk-accent below.
+ *   cyan:  #22d3ee
+ *   amber: #fbbf24
+ */
+:root {
+  --talk-accent: #22d3ee;
+}
+
+.slidev-layout {
+  background: #121212;
+  color: #f4f4f5;
+}
+
+.slidev-layout h1 {
+  color: var(--talk-accent);
+}
+
+.slidev-layout a {
+  color: var(--talk-accent);
+}
+
+.accent {
+  color: var(--talk-accent);
+}
+
+/* Placeholder blocks — visibly unfinished, removed during the real deck build */
+.placeholder {
+  border: 1px dashed rgba(244, 244, 245, 0.35);
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+/* Who-am-I quadrant (§12.1) */
+.quad-header {
+  color: var(--talk-accent);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.quad-row {
+  color: var(--talk-accent);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  align-self: center;
+}
+
+.quad-cell {
+  border: 1px solid rgba(244, 244, 245, 0.25);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-height: 6rem;
+}
