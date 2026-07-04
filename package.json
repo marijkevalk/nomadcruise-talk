@@ -7,7 +7,8 @@
     "export:pdf": "slidev export --with-clicks --output dist/ai-is-not-magic.pdf",
     "export:pptx": "slidev export --format pptx --output dist/ai-is-not-magic.pptx",
     "export:notes": "slidev export-notes --output dist/ai-is-not-magic-notes.pdf",
-    "export:all": "npm run export:pdf && npm run export:pptx && npm run export:notes"
+    "export:all": "npm run export:pdf && npm run export:pptx && npm run export:notes",
+    "release": "npm run export:all && cp dist/ai-is-not-magic.pdf dist/ai-is-not-magic.pptx dist/ai-is-not-magic-notes.pdf \"${ATLAS_ROOT:-/root/atlas}/ai_nomadcruise_talk_assets/\" && echo 'released to Atlas'"
   },
   "dependencies": {
     "@slidev/cli": "^52.16.0",
