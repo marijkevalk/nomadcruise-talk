@@ -207,18 +207,21 @@ layout: center
 <span v-click>"…because it was **too small**." — what was too small?</span>
 
 PLACEHOLDER — call-and-response; one word flips the answer.
-Not on the internet, no lookup inside the file (beat 1 callback) — yet it answers.
+Then: audience picks the objects → invent a sentence that has never existed —
+it still answers. No lookup inside the file (beat 1 callback).
 
 </div>
 
 <!--
 BLOCK: Peek inside — §11 beat 2½ (Marijke's idea, July 2026).
 Answers the silent objection after beat 2: "so it's just autocomplete."
+Don't claim "this sentence is not on the internet" (the bed/door format is
+famous, someone can call "memorized!") — invent a fresh one live instead.
 MYTH → MECHANISM #5: "it's just a parrot" → patterns that generalize, not lookup.
 Garnish: Winograd schema, 1972 — "this test is older than most of us" (callback
 to "AI is almost as old as the computer"). Optional jagged-intelligence pair:
 nails this, miscounts the r's in strawberry.
-~1.5–2 min; absorbed by the beat-4 flex cut if the block overflows.
+~1.5–2 min; peek-block checkpoint (§4): at minute 16 be at beat 3.
 -->
 
 ---
