@@ -12,18 +12,18 @@ transition: fade
 mdc: true
 ---
 
-<div class="kicker" style="margin-bottom:0.3rem;">NomadCruise 17</div>
-<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem; padding-left:1.62em;">Southampton (UK) → New York City (USA)</div>
-<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem; padding-left:1.62em; margin-top:0.25rem;">September 19 – 26, 2026</div>
+<div class="kicker no-star" style="margin-bottom:0.3rem;">NomadCruise 17</div>
+<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem;">Southampton (UK) → New York City (USA)</div>
+<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem; margin-top:0.25rem;">September 19 – 26, 2026</div>
 
 <div style="display:inline-block; margin-top:2.4rem;">
-<div class="display" style="font-size:3.7rem;">AI is not <span class="accent">magic.</span></div>
-<div class="dim" style="font-size:1.2rem; margin-top:1.4rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
+<div class="display" style="font-size:4.4rem;">AI is not <span class="accent">magic.</span></div>
+<div class="dim" style="font-size:1.42rem; margin-top:1.5rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:46%; object-fit:cover; object-position:50% 50%; opacity:0.9; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 55%); mask-image:linear-gradient(to right, transparent 0%, black 55%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:48%; object-fit:cover; object-position:60% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 60%); mask-image:linear-gradient(to right, transparent 0%, black 60%);" />
 
-<div class="byline">Marijke Valk</div>
+<div class="byline" style="font-size:1.05rem;">Marijke Valk</div>
 
 <!--
 [0:00 — title up while people walk in]

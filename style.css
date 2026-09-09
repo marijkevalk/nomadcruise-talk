@@ -56,6 +56,9 @@
 }
 
 /* kicker — small caps line above the title */
+.kicker.no-star::before {
+  content: '';
+}
 .kicker::before {
   content: '\2726  ';
   color: var(--talk-accent);
