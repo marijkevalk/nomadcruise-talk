@@ -863,15 +863,23 @@ thousand years of reading. Now every word in that title means something.
 layout: center
 ---
 
+<div class="grid grid-cols-[3fr_2fr] gap-10 items-center">
+<div>
 <div class="kicker">Part two <span class="dim">· and yet</span></div>
 
 <div class="display">…and the results are<br><span class="accent">spectacular</span></div>
 
-<div class="mt-8 text-xl leading-relaxed max-w-2xl">
+<div class="mt-8 text-xl leading-relaxed">
 train it only to predict the next word —<br>and abilities appear that <b>nobody put in</b>.
 </div>
 
-<div class="mt-5 dim text-lg">translation · reasoning · code — <span class="accent">emergence</span>. even the makers were surprised.</div>
+<div class="mt-5 dim text-lg">translation · reasoning · code — <span class="accent">emergence</span>.<br>even the makers were surprised.</div>
+</div>
+<div v-click>
+  <img :src="'/art/xkcd-2228.png'" class="photo w-full bg-white p-2" style="max-height:21rem; object-fit:contain;" />
+  <div class="credit mt-1 text-center">xkcd #2228, "Machine Learning Captcha" — CC BY-NC</div>
+</div>
+</div>
 
 
 <!--
@@ -887,6 +895,10 @@ Earlier I basically told you it's JUST statistics. This is where I take the
 word "just" back. [magician puts his hat back on] The recipe is statistics —
 what the statistics learned, is the interesting part. Maybe there's a little
 magic after all.
+
+[click — the captcha comic] Even the captchas have noticed. "Click all the
+photos of places you would run for shelter during a robot uprising." We laugh…
+because it moved faster than anyone expected.
 -->
 
 ---
