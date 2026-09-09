@@ -41,22 +41,28 @@ layout: center
 
 <div class="text-center">
 
-<div class="text-3xl" style="font-family:'Fraunces',serif;">prompt&nbsp;&nbsp;→&nbsp;&nbsp;<span class="accent">?</span>&nbsp;&nbsp;→&nbsp;&nbsp;reply</div>
+<div class="flex items-center justify-center gap-8" style="font-family:'Fraunces',serif; font-size:3.5rem; min-height:13rem;">
+  <span>prompt</span>
+  <span v-click class="accent" style="font-size:3.2rem;">→</span>
+  <span v-click="1" class="qwrap"><span v-click="2" class="blackbox"></span><span class="qmark">?</span></span>
+  <span v-click="1" class="accent" style="font-size:3.2rem;">→</span>
+  <span v-click="1">response</span>
+</div>
 
-<img :src="'/art/box-closed.svg'" class="h-44 mx-auto mt-10" />
-
-<div class="mt-8 dim">ChatGPT · Claude · Grok · Gemini</div>
+<div class="mt-10 dim text-lg">ChatGPT · Claude · Grok · Gemini</div>
 
 </div>
 
 <!--
 Quick show of hands: who used AI today? — Right. Almost everyone.
 
-And it's always the same little ritual, isn't it? You type a question… the dots
-start blinking… the AI gets to work… and out comes an answer. Often
-surprisingly good. Sometimes — surprisingly wrong. But either way, there's that
-moment: how did it DO that? Something goes in, something comes out — and
-everything in between is hidden. A black box.
+And it's always the same little ritual, isn't it? You type a prompt… [click]
+the dots start blinking… and out comes a response. (Fun fact: the technical
+name for that reply is a "completion" — the model completes your text.
+Remember that word, it comes back later.) Often surprisingly good. Sometimes —
+surprisingly wrong. But either way, there's that moment: how did it DO that?
+[click] Something goes in, something comes out — and everything in between is
+hidden. A black box.
 
 Honest show of hands: for whom does AI still feel like that — a black box?
 [hands go up] Yeah. Me too — for a long time. Until I started to ask questions.
