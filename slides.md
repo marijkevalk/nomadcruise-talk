@@ -23,7 +23,7 @@ mdc: true
 <div class="dim" style="font-size:1.42rem; margin-top:1.5rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:48%; object-fit:cover; object-position:60% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 60%); mask-image:linear-gradient(to right, transparent 0%, black 60%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:48%; object-fit:cover; object-position:44% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 60%); mask-image:linear-gradient(to right, transparent 0%, black 60%);" />
 
 <div class="byline" style="font-size:1.05rem;">Marijke Valk</div>
 
@@ -508,8 +508,9 @@ whole section.
 
 
 <!--
-Here's what that looks like inside a real model. This is an actual language
-model, given our sentence — and this is its real output: a short list of
+Here's what that looks like inside a real model. [If someone asks which one:
+it's GPT-2 — small, open and older, chosen because I can show you its
+insides.] This is an actual language model, given our sentence — and this is its real output: a short list of
 candidate next words, each with a probability.
 
 And here's the thing most people don't know: this list IS the answer.
@@ -559,7 +560,8 @@ with language. Just — not in two dimensions. In many, many more.
 
 An econometrician would call this a regression. Just… in absurdly many
 dimensions. That's not a joke, that's technically accurate — and it's the
-whole reason I can stand here and tell you it's statistics.
+whole reason I can stand here and tell you: it's "just" statistics.
+Remember that word — "just". I'll come back for it.
 -->
 
 ---
@@ -664,8 +666,8 @@ That's the "built on our written world" part. Three steps.
 
 <!--
 Step one: data. You need a mountain of text — the public web, books, articles,
-code. How much? One open model was trained on more than thirty TRILLION
-words-worth of text. If you read around the clock, no sleep, that's well over
+code. How much? One open model was trained on more than twenty TRILLION
+words' worth of text. If you read around the clock, no sleep, that's well over
 a hundred thousand YEARS of reading. That's the "written world" in my title —
 and by the way, that includes things you wrote. All of us are in there.
 
