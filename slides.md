@@ -174,6 +174,8 @@ questions. [smile]
   <div class="flex items-baseline gap-8"><span class="big-num">3</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI tools are cars around the same engine</span></div>
 </div>
 
+<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
+
 <!--
 So here's the plan — three sections, and each title is a claim I'm going to
 prove to you.
@@ -596,7 +598,7 @@ those connections are numbers: <b class="accent">weights</b><br>
 </div>
 
 <div class="bubble" style="right:9.5rem; bottom:3.2rem;">wait — so it never looks anything up?</div>
-<img :src="'/art/wiz-idle.png'" class="mage" />
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
 
 <!--
 How can it predict so well? Because it has learned the connections between
@@ -695,7 +697,7 @@ train — per model.
 </div>
 
 <div class="bubble" style="right:9.5rem; bottom:3.2rem;">who turns<br>billions of dials?!</div>
-<img :src="'/art/wiz-cast.png'" class="mage" />
+<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
 
 <!--
 Step two: training. And this surprises people: the numbers start RANDOM. Pure
@@ -1186,7 +1188,7 @@ layout: center
 "Treat the model as a noisy estimator,<br>not an oracle."
 </div>
 
-<img :src="'/art/wiz-idle.png'" class="mage" />
+<img :src="'/art/tovenaar-02-hoed-afnemen.svg'" class="mage" />
 
 
 <!--
