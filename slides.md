@@ -592,7 +592,8 @@ those connections are numbers: <b class="accent">weights</b><br>
 </svg>
 </div>
 
-<div class="bubble" style="right:3.8rem; bottom:1.6rem;">wait — so it never looks anything up?</div>
+<div class="bubble" style="right:9.5rem; bottom:3.2rem;">wait — so it never looks anything up?</div>
+<img :src="'/art/wiz-idle.png'" class="mage" />
 
 <!--
 How can it predict so well? Because it has learned the connections between
@@ -690,7 +691,8 @@ train — per model.
 <img :src="'/photos/dials.jpg'" class="photo h-44 w-full mt-2" />
 </div>
 
-<div class="bubble">who turns<br>billions of dials?!</div>
+<div class="bubble" style="right:9.5rem; bottom:3.2rem;">who turns<br>billions of dials?!</div>
+<img :src="'/art/wiz-cast.png'" class="mage" />
 
 <!--
 Step two: training. And this surprises people: the numbers start RANDOM. Pure
@@ -1180,6 +1182,8 @@ layout: center
 <div class="mt-10 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
 "Treat the model as a noisy estimator,<br>not an oracle."
 </div>
+
+<img :src="'/art/wiz-idle.png'" class="mage" />
 
 
 <!--
