@@ -12,20 +12,20 @@ transition: fade
 mdc: true
 ---
 
-<div style="position:absolute; top:2.6rem; left:3.8rem;">
-<div class="kicker no-star" style="margin-bottom:0.3rem;">NomadCruise 17</div>
-<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem;">Southampton (UK) → New York City (USA)</div>
-<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem; margin-top:0.25rem;">September 19 – 26, 2026</div>
+<div style="position:absolute; top:3.8rem; left:3.8rem;">
+<div class="kicker no-star" style="margin-bottom:0.35rem; font-size:1.08rem;">NomadCruise 17</div>
+<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.98rem;">Southampton (UK) → New York City (USA)</div>
+<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.98rem; margin-top:0.3rem;">September 19 – 26, 2026</div>
 </div>
 
-<div style="display:inline-block; position:absolute; left:3.8rem; top:calc(50% - 2.5rem);">
+<div style="display:inline-block; position:absolute; left:3.8rem; top:calc(45% - 2.5rem);">
 <div class="display" style="font-size:4.4rem;">AI is not <span class="accent">magic.</span></div>
 <div class="dim" style="font-size:1.42rem; margin-top:1.5rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:48%; object-fit:cover; object-position:44% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 60%); mask-image:linear-gradient(to right, transparent 0%, black 60%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; height:120%; width:56%; object-fit:cover; object-position:72% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 68%); mask-image:linear-gradient(to right, transparent 0%, black 68%);" />
 
-<div class="byline" style="font-size:1.05rem;">Marijke Valk</div>
+<div class="byline" style="font-size:1.25rem; bottom:3.6rem;">Marijke Valk</div>
 
 <!--
 [0:00 — title up while people walk in]
@@ -41,17 +41,26 @@ layout: center
 
 <div class="text-center">
 
-<div class="flex items-center justify-center gap-8" style="font-family:'Fraunces',serif; font-size:3.5rem; min-height:13rem;">
-  <span>prompt</span>
-  <span v-click class="accent" style="font-size:3.2rem;">→</span>
-  <span v-click="1" class="qwrap"><span v-click="2" class="blackbox"></span><span class="qmark">?</span></span>
-  <span v-click="1" class="accent" style="font-size:3.2rem;">→</span>
-  <span v-click="1">response</span>
+<div class="flex items-center justify-center gap-6" style="font-family:'Fraunces',serif; font-size:3.1rem; min-height:15rem; letter-spacing:0.02em;">
+  <span>PROMPT</span>
+  <svg v-click viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
+  <span v-click="1" class="qwrap">
+    <svg v-click="2" class="cube" viewBox="0 0 124 124">
+      <polygon points="14,46 46,14 118,14 86,46" fill="#101010" stroke="#e3b04b" stroke-width="1.4"/>
+      <polygon points="86,46 118,14 118,86 86,118" fill="#060606" stroke="#e3b04b" stroke-width="1.4"/>
+      <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#e3b04b" stroke-width="1.6"/>
+    </svg>
+    <span class="qmark">?</span>
+  </span>
+  <svg v-click="1" viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
+  <span v-click="1">RESPONSE</span>
 </div>
 
 <div class="mt-10 dim text-lg">ChatGPT · Claude · Grok · Gemini</div>
 
 </div>
+
+<img :src="'/art/tovenaar-01-basis.svg'" class="mage" />
 
 <!--
 Quick show of hands: who used AI today? — Right. Almost everyone.
