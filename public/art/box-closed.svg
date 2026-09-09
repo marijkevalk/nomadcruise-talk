@@ -8,5 +8,5 @@
 </defs><path d="M80,92 L160,112 L240,92 L240,158 L160,180 L80,158 Z" fill="#0b0e13" stroke="#26303e" stroke-width="1.6"/>
 <path d="M160,112 L160,180 M80,92 L80,158 M240,92 L240,158" stroke="#26303e" stroke-width="1.2"/>
 <path d="M80,92 L160,72 L240,92 L160,112 Z" fill="#0d1117" stroke="#26303e" stroke-width="1.6"/>
-<path d="M80,92 L160,72 L240,92" stroke="#22d3ee" stroke-width="1.6" opacity="0.75" filter="url(#glow)"/>
-<path d="M80,92 L160,112 L240,92" stroke="#22d3ee" stroke-width="1.2" opacity="0.45" filter="url(#glow)"/></svg>
+<path d="M80,92 L160,72 L240,92" stroke="#e3b04b" stroke-width="1.6" opacity="0.75" filter="url(#glow)"/>
+<path d="M80,92 L160,112 L240,92" stroke="#e3b04b" stroke-width="1.2" opacity="0.45" filter="url(#glow)"/></svg>

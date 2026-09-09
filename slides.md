@@ -117,7 +117,7 @@ During each section,<br>**write down at least one question:**
 <div class="rows mt-4">
 <div>something you <b>don't understand</b></div>
 <div>something that makes you <b>wonder</b></div>
-<div>something you want to <b>know more</b> about</div>
+<div>something you want to <b>know more</b> of</div>
 </div>
 
 <div class="mt-4 accent">it can be anything.</div>
@@ -635,7 +635,7 @@ That's the "built on our written world" part. Three steps.
 <div class="rows text-lg max-w-3xl">
   <div>the raw material: the public web · books · articles · code</div>
   <div class="accent"><b>"well over 100,000 years of nonstop reading, around the clock"</b></div>
-  <div v-click>what it read is what it learned <span class="dim">— bias rides in with the data<br>(and: whose text was this? — the ethical question in the courts right now)</span></div>
+  <div v-click>what it read is what it learned <span class="dim">— bias rides in with the data (whose text was it? — now in court)</span></div>
   <div v-click>the exact mix is a <b>trade secret</b> — one training run: <b>$78M – $490M</b></div>
 </div>
 
@@ -669,11 +669,10 @@ train — per model.
 
 <div class="grid grid-cols-[3fr_2fr] gap-10 items-start">
 <div class="rows text-lg">
-  <div>start with <b>random</b> numbers → billions of tiny corrections</div>
-  <div class="dim italic">"a machine with billions of dials — training is the machine turning its <b>own</b> dials, a tiny nudge per example"</div>
+  <div>start with <b>random</b> numbers → billions of nudges</div>
+  <div class="dim italic">"the machine turns its <b>own</b> billions of dials, a nudge per example"</div>
   <div v-click>nobody programs the numbers in → <b class="accent">machine learning</b></div>
-  <div v-click>it kept the <b>patterns, not the pages</b> · every run ends up slightly different</div>
-  <div v-click>only possible in parallel → GPUs, data centers</div>
+  <div v-click>it kept the <b>patterns, not the pages</b> · GPUs, data centers</div>
 </div>
 <img :src="'/photos/dials.jpg'" class="photo h-44 w-full mt-2" />
 </div>
@@ -860,9 +859,9 @@ magic after all.
 
 **the riverbed**
 
-<img :src="'/photos/riverbed.jpg'" class="photo h-36 w-full my-3" />
+<img :src="'/photos/riverbed.jpg'" class="photo h-32 w-full my-3" />
 
-training carves the riverbed — every answer is new water,<br>and water <i>always</i> finds a way down
+training carves the riverbed —<br>new water <i>always</i> finds a way down
 
 <div class="accent mt-3 text-xl" style="font-family:'Fraunces',serif;">plausible ≠ true</div>
 
@@ -872,10 +871,9 @@ training carves the riverbed — every answer is new water,<br>and water <i>alwa
 **…and it rolls dice**
 
 sometimes a less likely word wins<br>
-<span class="dim">(the knob is called temperature)</span>
+<span class="dim">(the knob: temperature)</span>
 
-training made the models differ from <i>each other</i> —<br>
-the dice make the <i>same</i> model answer differently each time
+training made the models differ from <i>each other</i> —<br>the dice make the <i>same</i> model vary
 
 </div>
 </div>
@@ -1020,9 +1018,9 @@ wheel is always in your hands.
 
 <div class="grid grid-cols-[3fr_2fr] gap-10 items-start">
 <div class="rows text-lg">
-  <div>Claude the chat app & Claude Code — <b>same model behind</b> <span class="dim">· same for ChatGPT and everything built on GPT</span></div>
+  <div>Claude chat & Claude Code — <b>same model behind</b> <span class="dim">(ChatGPT: same trick)</span></div>
   <div v-click>most "AI startups" = a new car around someone else's engine <span class="dim">(a wrapper)</span></div>
-  <div v-click>the labs — OpenAI · Anthropic · Google · Mistral — each build their <b>own engines</b>, in versions & sizes</div>
+  <div v-click>the labs each build their <b>own engines</b>, in versions & sizes</div>
 </div>
 <img :src="'/photos/engine.jpg'" class="photo h-44 w-full mt-2" />
 </div>

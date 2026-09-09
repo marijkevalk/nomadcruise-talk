@@ -10,19 +10,19 @@
 @import '@fontsource/inter/latin-600.css';
 
 :root {
-  --talk-accent: #22d3ee;
-  --ink: #eceff4;
-  --ink-dim: #8b95a3;
-  --hairline: rgba(236, 239, 244, 0.16);
+  --talk-accent: #e3b04b;
+  --ink: #f2ecdf;
+  --ink-dim: #9a917f;
+  --hairline: rgba(242, 236, 223, 0.16);
 }
 
 .slidev-layout {
   font-family: 'Inter', sans-serif;
   background:
-    radial-gradient(1px 1px at 14% 22%, rgba(236, 239, 244, 0.16) 50%, transparent 51%),
-    radial-gradient(1px 1px at 82% 16%, rgba(236, 239, 244, 0.12) 50%, transparent 51%),
-    radial-gradient(1px 1px at 62% 78%, rgba(34, 211, 238, 0.12) 50%, transparent 51%),
-    radial-gradient(ellipse at 50% -10%, #131926 0%, #0b0e14 55%, #090b10 100%);
+    radial-gradient(1px 1px at 14% 22%, rgba(245, 239, 228, 0.14) 50%, transparent 51%),
+    radial-gradient(1px 1px at 82% 16%, rgba(245, 239, 228, 0.10) 50%, transparent 51%),
+    radial-gradient(1px 1px at 62% 78%, rgba(227, 176, 75, 0.14) 50%, transparent 51%),
+    radial-gradient(ellipse at 50% -10%, #1a1610 0%, #100d09 55%, #0b0907 100%);
   color: var(--ink);
   padding: 3.4rem 3.8rem;
 }
@@ -30,7 +30,7 @@
 .slidev-layout h1 {
   font-family: 'Fraunces', serif;
   font-weight: 600;
-  font-size: 2.7rem;
+  font-size: 3.3rem;
   line-height: 1.12;
   letter-spacing: -0.01em;
   color: var(--ink);
@@ -48,7 +48,7 @@
 
 /* kicker — small caps line above the title */
 .kicker {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   font-weight: 600;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -110,7 +110,7 @@
   bottom: 6rem;
   border: 1px solid var(--talk-accent);
   border-radius: 0.6rem 0.6rem 0.1rem 0.6rem;
-  background: rgba(34, 211, 238, 0.05);
+  background: rgba(227, 176, 75, 0.06);
   padding: 0.5rem 0.9rem;
   font-size: 0.92rem;
   font-style: italic;
@@ -172,10 +172,10 @@
   text-transform: uppercase;
 }
 .ring.guard {
-  border: 1px dashed rgba(244, 211, 100, 0.5);
+  border: 1px dashed rgba(140, 190, 220, 0.5);
 }
 .ring.guard > .ring-label {
-  color: #f4d364;
+  color: #8cbedc;
 }
 .ring.harness {
   border: 1px solid var(--hairline);
@@ -186,7 +186,7 @@
 }
 .ring.engine {
   border: 1px solid var(--talk-accent);
-  background: rgba(34, 211, 238, 0.06);
+  background: rgba(227, 176, 75, 0.07);
   margin-top: 0.9rem;
   text-align: center;
   font-family: 'Fraunces', serif;
@@ -226,3 +226,15 @@
   color: var(--ink-dim);
   opacity: 0.7;
 }
+
+
+/* conference legibility — scale up common text sizes */
+.slidev-layout .text-lg { font-size: 1.35rem; line-height: 1.5; }
+.slidev-layout .text-xl { font-size: 1.55rem; line-height: 1.45; }
+.slidev-layout .text-2xl { font-size: 1.95rem; line-height: 1.4; }
+.slidev-layout .text-3xl { font-size: 2.5rem; }
+.slidev-layout .text-base { font-size: 1.2rem; }
+.slidev-layout .text-sm { font-size: 1.05rem; }
+.rows > * { padding: 0.8rem 0; }
+.round-timer { font-size: 6rem; }
+.credit { font-size: 0.72rem; }
