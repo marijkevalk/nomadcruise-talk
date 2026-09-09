@@ -12,11 +12,13 @@ transition: fade
 mdc: true
 ---
 
+<div style="position:absolute; top:2.6rem; left:3.8rem;">
 <div class="kicker no-star" style="margin-bottom:0.3rem;">NomadCruise 17</div>
 <div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem;">Southampton (UK) → New York City (USA)</div>
 <div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem; margin-top:0.25rem;">September 19 – 26, 2026</div>
+</div>
 
-<div style="display:inline-block; margin-top:2.4rem;">
+<div style="display:inline-block; position:absolute; left:3.8rem; top:calc(50% - 2.5rem);">
 <div class="display" style="font-size:4.4rem;">AI is not <span class="accent">magic.</span></div>
 <div class="dim" style="font-size:1.42rem; margin-top:1.5rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
