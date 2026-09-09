@@ -20,10 +20,10 @@ mdc: true
 
 <div style="display:inline-block; position:absolute; left:3.8rem; top:calc(45% - 2.5rem);">
 <div class="display" style="font-size:4.4rem;">AI is not <span class="accent">magic.</span></div>
-<div class="dim" style="font-size:1.42rem; margin-top:1.5rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
+<div class="dim" style="font-size:1.42rem; margin-top:0.8rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; height:120%; width:56%; object-fit:cover; object-position:72% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 68%); mask-image:linear-gradient(to right, transparent 0%, black 68%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; height:120%; width:50%; object-fit:cover; object-position:72% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 68%); mask-image:linear-gradient(to right, transparent 0%, black 68%);" />
 
 <div class="byline" style="font-size:1.25rem; bottom:3.6rem;">Marijke Valk</div>
 
@@ -543,25 +543,30 @@ Percentages. Sound familiar? That's… statistics.
 
 <hr class="rule" />
 
-<div class="grid grid-cols-2 gap-12 items-center">
+<div class="grid grid-cols-[3fr_2fr] gap-12 items-center">
 <div>
-<svg viewBox="0 0 360 230" class="w-72">
-  <g fill="#22d3ee">
-    <circle cx="40" cy="185" r="4"/><circle cx="90" cy="160" r="4"/><circle cx="140" cy="146" r="4"/>
-    <circle cx="190" cy="115" r="4"/><circle cx="240" cy="93" r="4"/><circle cx="290" cy="78" r="4"/>
+<svg viewBox="0 0 360 200" class="w-64">
+  <g fill="#e3b04b">
+    <circle cx="40" cy="165" r="4"/><circle cx="90" cy="142" r="4"/><circle cx="140" cy="128" r="4"/>
+    <circle cx="190" cy="100" r="4"/><circle cx="240" cy="81" r="4"/><circle cx="290" cy="68" r="4"/>
   </g>
-  <path d="M20,200 L330,52" stroke="#eceff4" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"/>
-  <circle cx="330" cy="52" r="6" fill="none" stroke="#22d3ee" stroke-width="2"/>
+  <path d="M20,178 L330,45" stroke="#f2ecdf" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"/>
+  <circle cx="330" cy="45" r="6" fill="none" stroke="#e3b04b" stroke-width="2"/>
 </svg>
-</div>
-<div class="text-lg leading-relaxed">
+
+<div class="text-lg leading-relaxed mt-3">
 
 find the pattern → predict the next point
 
-<span v-click class="block mt-5">now imagine this in <b>many, many more dimensions</b></span>
+<span v-click="1" class="block mt-3">now imagine this in <b>many, many more dimensions</b></span>
 
-<span v-click class="block mt-5 dim italic">"an econometrician would call this a regression —<br>just in absurdly many dimensions"</span>
+<span v-click="2" class="block mt-3 dim italic">"an econometrician would call this a regression — just in absurdly many dimensions"</span>
 
+</div>
+</div>
+<div v-click="3">
+  <img :src="'/photos/fence.jpg'" class="photo w-full" style="max-height:17.5rem; object-fit:contain; background:#f5f5f0; border-radius:0.4rem;" />
+  <div class="credit mt-1 text-center">it continues the pattern — whether that was the point or not</div>
 </div>
 </div>
 
@@ -577,6 +582,11 @@ An econometrician would call this a regression. Just… in absurdly many
 dimensions. That's not a joke, that's technically accurate — and it's the
 whole reason I can stand here and tell you: it's "just" statistics.
 Remember that word — "just". I'll come back for it.
+
+[click — the fence comic] And this little robot shows you the fine print of
+pattern-continuation. Dad paints a few planks, each one a bit less than the
+last… and the robot faithfully continues the PATTERN — not the intention.
+Keep him in mind: he'll explain a lot when we get to hallucination.
 -->
 
 ---
