@@ -23,7 +23,7 @@ mdc: true
 <div class="dim" style="font-size:1.42rem; margin-top:0.8rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; height:120%; width:58%; object-fit:cover; object-position:49% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%); mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; height:120%; width:64%; object-fit:cover; object-position:42% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%); mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%);" />
 
 <div class="byline" style="font-size:1.25rem; bottom:3.6rem;">Marijke Valk</div>
 
