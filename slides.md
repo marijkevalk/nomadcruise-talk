@@ -18,8 +18,9 @@ mdc: true
 
 <div class="mt-10 dim text-lg">a peek under the hood, in three claims</div>
 
+<img :src="'/art/flammarion-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:50%; object-fit:cover; object-position:20% 50%; opacity:0.8; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 55%); mask-image:linear-gradient(to right, transparent 0%, black 55%);" />
+
 <div class="byline">Marijke Valk</div>
-<img :src="'/art/magician-intro.svg'" class="mage" style="height:9rem" />
 
 <!--
 [0:00 — title up while people walk in]
@@ -225,7 +226,8 @@ layout: center
 
 <div class="display">AI is not new</div>
 
-<img :src="'/art/magician-curious.svg'" class="mage" />
+<img :src="'/art/tarot-magician.jpg'" class="tarot" />
+
 
 <!--
 Claim number one: AI is not new. In fact, it's about as old as the computer
@@ -249,7 +251,6 @@ perception <span class="accent mx-3">→</span> processing <span class="accent m
 natural intelligence is everywhere in nature — in <b class="accent">degrees</b>
 </div>
 
-<img :src="'/art/magician-curious.svg'" class="mage" />
 
 <!--
 First: what even IS intelligence? There are many definitions — whole schools of
@@ -324,7 +325,6 @@ in this room.
 <div class="mt-4 text-lg dim">money flows in → results disappoint → winter. repeat.<br>
 the ambition all along: <b class="accent">AGI</b> — AI that can do everything a human can</div>
 
-<img :src="'/art/magician-curious.svg'" class="mage" />
 
 <!--
 But the road was bumpy. AI moves in summers and winters. The pattern repeats:
@@ -360,7 +360,6 @@ And right now? We are in the hottest summer the field has ever had.
 <img :src="'/photos/datacenter.jpg'" class="photo h-44 w-full" />
 </div>
 
-<img :src="'/art/magician-curious.svg'" class="mage" />
 
 <!--
 So why did THIS summer explode, after seventy years? Three igniters came
@@ -417,7 +416,6 @@ questions.
 
 <div class="mt-8 dim">one question · any chat app · I'll walk around</div>
 
-<img :src="'/art/magician-curious.svg'" class="mage" />
 
 <!--
 Take out your phone. Look at the question you wrote down — or borrow one of
@@ -442,7 +440,8 @@ layout: center
 
 <div class="display">An LLM is statistics<br>built on our written world</div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
+<img :src="'/art/tarot-magician.jpg'" class="tarot" />
+
 
 <!--
 Claim number two — and this is the heart of the talk: an LLM is statistics
@@ -474,7 +473,6 @@ right now.
 
 <div v-click class="mt-6 accent text-lg">you just predicted the next word from the previous words</div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 Finish this sentence for me, all together: "Titanic got stuck on…" — [iceberg!]
@@ -501,7 +499,6 @@ whole section.
   <div class="text-lg dim leading-relaxed">everything the model outputs is this list —<br><br>the reply you see is just a <b class="accent">draw</b> from it</div>
 </div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 Here's what that looks like inside a real model. This is an actual language
@@ -545,7 +542,6 @@ find the pattern → predict the next point
 </div>
 </div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 You've all seen this picture in school: some data points, a line through them,
@@ -567,17 +563,36 @@ whole reason I can stand here and tell you it's statistics.
 
 <hr class="rule" />
 
-<div class="mt-6 text-2xl leading-relaxed max-w-3xl" style="font-family:'Fraunces',serif;">
+<div class="grid grid-cols-[3fr_2fr] gap-10 items-center">
+<div>
+<div class="mt-2 text-xl leading-relaxed" style="font-family:'Fraunces',serif;">
 "like an old couple finishing each other's sentences —<br><span class="dim">trained on years of being together"</span>
 </div>
 
-<div v-click class="mt-8 text-lg max-w-3xl">
+<div v-click class="mt-6 text-lg">
 those connections are numbers: <b class="accent">weights</b><br>
 <span class="dim">a web of weighted connections = a <b>neural network</b>. that's the whole mystery.</span>
 </div>
+</div>
+<svg viewBox="0 0 320 300" class="w-60 mx-auto constellation">
+  <g stroke="#e3b04b" stroke-width="1" opacity="0.4">
+    <line x1="60" y1="60" x2="160" y2="40"/><line x1="60" y1="60" x2="90" y2="150"/>
+    <line x1="160" y1="40" x2="240" y2="90"/><line x1="90" y1="150" x2="240" y2="90"/>
+    <line x1="90" y1="150" x2="150" y2="230"/><line x1="240" y1="90" x2="270" y2="200"/>
+    <line x1="150" y1="230" x2="270" y2="200"/><line x1="160" y1="40" x2="90" y2="150"/>
+  </g>
+  <g fill="#f2ecdf">
+    <circle cx="60" cy="60" r="3.5"/><circle cx="160" cy="40" r="5"/><circle cx="240" cy="90" r="4"/>
+    <circle cx="90" cy="150" r="4.5"/><circle cx="150" cy="230" r="3.5"/><circle cx="270" cy="200" r="3"/>
+  </g>
+  <g fill="#9a917f" font-size="15" font-family="Inter, sans-serif">
+    <text x="34" y="46">ship</text><text x="148" y="24">sea</text><text x="216" y="74">captain</text>
+    <text x="58" y="176">voyage</text><text x="120" y="256">harbor</text><text x="248" y="226">tide</text>
+  </g>
+</svg>
+</div>
 
-<div class="bubble">wait — so it never<br>looks anything up?</div>
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
+<div class="bubble" style="right:3.8rem; bottom:1.6rem;">wait — so it never looks anything up?</div>
 
 <!--
 How can it predict so well? Because it has learned the connections between
@@ -607,7 +622,6 @@ anything up?" Hold that thought. It's exactly the right question.
 
 <div v-click class="mt-2 accent text-center text-lg">so… where do these numbers come from?</div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 And here's my favorite demystifier. A model is literally a file of numbers.
@@ -639,7 +653,6 @@ That's the "built on our written world" part. Three steps.
   <div v-click>the exact mix is a <b>trade secret</b> — one training run: <b>$78M – $490M</b></div>
 </div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 Step one: data. You need a mountain of text — the public web, books, articles,
@@ -678,7 +691,6 @@ train — per model.
 </div>
 
 <div class="bubble">who turns<br>billions of dials?!</div>
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 Step two: training. And this surprises people: the numbers start RANDOM. Pure
@@ -709,7 +721,6 @@ That's the GPUs. That's the data centers. That's why ASML machines matter.
 
 <img :src="'/art/stages.png'" class="h-88 mx-auto mt-2 rounded" />
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 And you can literally watch this happen. I trained a tiny model myself — on my
@@ -733,7 +744,6 @@ nudge by nudge. This is training — made visible.
 
 <div class="mt-2 dim text-center">similar things end up close together in the numbers</div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 [FLEX SLIDE — only if on schedule at the checkpoint; otherwise skip, it makes
@@ -762,7 +772,6 @@ model was never told what a king is. It's in the numbers anyway.
 
 <div v-click class="mt-8 text-xl accent" style="font-family:'Fraunces',serif;">"AI is not neutral — it's built, tuned and controlled."</div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 Step three — the part people skip. After all that reading, the raw model is a
@@ -797,7 +806,6 @@ someone says "the AI said so."
   </div>
 </div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 And then — my favorite moment — the weights are SAVED. Training happens once,
@@ -829,7 +837,6 @@ train it only to predict the next word —<br>and abilities appear that <b>nobod
 
 <div class="mt-5 dim text-lg">translation · reasoning · code — <span class="accent">emergence</span>. even the makers were surprised.</div>
 
-<img :src="'/art/magician-hat-back-on.svg'" class="mage" />
 
 <!--
 Now — here's where I have to be honest with you, because something strange
@@ -878,7 +885,6 @@ training made the models differ from <i>each other</i> —<br>the dice make the 
 </div>
 </div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 But the same mechanism has a weird side: hallucination. Here's my favorite way
@@ -938,7 +944,6 @@ Section two done — and I'd be amazed if you have no questions now.
 
 <div class="mt-8 dim">one question · any chat app · I'll walk around</div>
 
-<img :src="'/art/magician-flashlight.svg'" class="mage" />
 
 <!--
 Round two. Same game, one upgrade: don't stop at the first answer. Ask one
@@ -964,7 +969,8 @@ layout: center
 
 <div class="display">AI tools are cars<br>around the same engine</div>
 
-<img :src="'/art/magician-builder.svg'" class="mage" />
+<img :src="'/art/tarot-magician.jpg'" class="tarot" />
+
 
 <!--
 Claim number three. You now know what a model is. But here's the thing — you
@@ -987,7 +993,6 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
   <div v-click="4" class="ctx-arrow"><span class="accent font-semibold">your context →</span><br><span class="dim text-sm">prompt · your data · instructions</span></div>
 </div>
 
-<img :src="'/art/magician-builder.svg'" class="mage" />
 
 <!--
 In the middle sits the model — the file of numbers. Think of it as the ENGINE.
@@ -1025,7 +1030,6 @@ wheel is always in your hands.
 <img :src="'/photos/engine.jpg'" class="photo h-44 w-full mt-2" />
 </div>
 
-<img :src="'/art/magician-builder.svg'" class="mage" />
 
 <!--
 Once you see the car-around-engine picture, the whole AI landscape snaps into
@@ -1062,7 +1066,6 @@ optimization" is just: route the easy work to the small engine.
   <div v-click class="accent">context is also your anti-hallucination lever: give it your facts instead of letting it guess</div>
 </div>
 
-<img :src="'/art/magician-builder.svg'" class="mage" />
 
 <!--
 So how do you make this thing YOURS? Three ways, from heavy to light.
@@ -1101,7 +1104,6 @@ give it your facts, it will guess. So give it your facts.
 
 <div class="mt-12 text-2xl accent" style="font-family:'Fraunces',serif;">Overwhelmed? It doesn't matter what you use exactly — just start.</div>
 
-<img :src="'/art/magician-builder.svg'" class="mage" />
 
 <!--
 And with that, the overwhelming tool zoo sorts itself into three shelves.
@@ -1152,7 +1154,6 @@ Last round of questions — and this one is the most practical.
 
 <div class="mt-8 dim">one question · any chat app · I'll walk around</div>
 
-<img :src="'/art/magician-builder.svg'" class="mage" />
 
 <!--
 Last round — make it practical. Tell the AI what you actually do — your
@@ -1180,7 +1181,6 @@ layout: center
 "Treat the model as a noisy estimator,<br>not an oracle."
 </div>
 
-<img :src="'/art/magician-bow.svg'" class="mage" />
 
 <!--
 Let's close the loop. AI is not magic. It's data, weights and math — statistics
@@ -1216,11 +1216,12 @@ and at the morning workouts on deck
 
 <img :src="'/photos/qm2.jpg'" class="photo h-40 mx-auto mt-8" />
 
-<div class="byline">Marijke Valk · NomadCruise 17</div>
+<img :src="'/art/flammarion-gold.png'" style="position:absolute; left:0; bottom:0; width:100%; height:7rem; object-fit:cover; object-position:50% 20%; opacity:0.5;" />
+
+<div class="byline" style="bottom:8rem;">Marijke Valk · NomadCruise 17</div>
 <div class="credit" style="position:absolute; bottom:2rem; right:2rem; max-width:22rem; text-align:right;">
 photos: Wikimedia Commons — F.G.O. Stuart (PD) · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · bobintraveling (CC BY 2.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
 </div>
-<img :src="'/art/magician-bow.svg'" class="mage" style="height:8.5rem" />
 
 <!--
 Thank you! I'm on this ship all week — find me for questions, deep AI talk, or
