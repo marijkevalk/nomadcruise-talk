@@ -12,10 +12,11 @@ transition: fade
 mdc: true
 ---
 
-<div class="kicker">NomadCruise 17 <span class="dim">· Southampton (UK) → New York City (USA)</span></div>
-<div class="dim" style="letter-spacing:0.18em; text-transform:uppercase; font-size:0.82rem; margin-top:-0.5rem;">September 19 – 26, 2026</div>
+<div class="kicker" style="margin-bottom:0.3rem;">NomadCruise 17</div>
+<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem; padding-left:1.62em;">Southampton (UK) → New York City (USA)</div>
+<div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.82rem; padding-left:1.62em; margin-top:0.25rem;">September 19 – 26, 2026</div>
 
-<div class="display" style="font-size:4.6rem; margin-top:1.8rem;">AI is not<br><span class="accent">magic.</span></div>
+<div class="display" style="font-size:3.7rem; margin-top:2.4rem;">AI is not <span class="accent">magic.</span></div>
 
 <div class="mt-8 dim text-lg">Demystifying the technology for curious minds</div>
 
