@@ -12,20 +12,20 @@ transition: fade
 mdc: true
 ---
 
-<div style="position:absolute; top:3.8rem; left:3.8rem;">
+<div style="position:absolute; top:3.8rem; left:3.8rem; z-index:2;">
 <div class="kicker no-star" style="margin-bottom:0.35rem; font-size:1.08rem;">NomadCruise 17</div>
 <div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.98rem;">Southampton (UK) → New York City (USA)</div>
 <div class="dim" style="letter-spacing:0.14em; text-transform:uppercase; font-size:0.98rem; margin-top:0.3rem;">September 19 – 26, 2026</div>
 </div>
 
-<div style="display:inline-block; position:absolute; left:3.8rem; top:calc(45% - 2.5rem);">
+<div style="display:inline-block; position:absolute; left:3.8rem; top:calc(45% - 2.5rem); z-index:2;">
 <div class="display" style="font-size:4.4rem;">AI is not <span class="accent">magic.</span></div>
 <div class="dim" style="font-size:1.42rem; margin-top:0.8rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; height:120%; width:64%; object-fit:cover; object-position:42% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%); mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; z-index:0; height:120%; width:64%; object-fit:cover; object-position:42% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%); mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%);" />
 
-<div class="byline" style="font-size:1.25rem; bottom:3.6rem;">Marijke Valk</div>
+<div class="byline" style="font-size:1.25rem; bottom:3.6rem; z-index:2;">Marijke Valk</div>
 
 <!--
 [0:00 — title up while people walk in]
