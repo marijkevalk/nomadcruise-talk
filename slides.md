@@ -10,19 +10,16 @@ drawings:
   persist: false
 transition: fade
 mdc: true
-class: text-center
 ---
 
-# AI is not magic
+<div class="kicker">NomadCruise 17 <span class="dim">· workshop · September 2026</span></div>
 
-<div class="mt-6 flex justify-center items-end gap-12">
-  <img :src="'/art/magician-intro.svg'" class="h-40" />
-  <img :src="'/art/box-closed.svg'" class="h-36 mb-2" />
-</div>
+<div class="display" style="font-size:4.6rem; margin-top:2.2rem;">AI is not<br><span class="accent">magic.</span></div>
 
-<div class="mt-8 opacity-70">
-Marijke Valk · NomadCruise 17 · September 2026
-</div>
+<div class="mt-10 dim text-lg">a peek under the hood, in three claims</div>
+
+<div class="byline">Marijke Valk</div>
+<img :src="'/art/magician-intro.svg'" class="mage" style="height:9rem" />
 
 <!--
 [0:00 — title up while people walk in]
@@ -36,13 +33,15 @@ you're ALLOWED to be on your phone.
 layout: center
 ---
 
-# prompt&nbsp;&nbsp;→&nbsp;&nbsp;<span class="accent">?</span>&nbsp;&nbsp;→&nbsp;&nbsp;reply
+<div class="text-center">
 
-<div class="mt-10 flex justify-center">
-  <img :src="'/art/box-closed.svg'" class="h-44" />
+<div class="text-3xl" style="font-family:'Fraunces',serif;">prompt&nbsp;&nbsp;→&nbsp;&nbsp;<span class="accent">?</span>&nbsp;&nbsp;→&nbsp;&nbsp;reply</div>
+
+<img :src="'/art/box-closed.svg'" class="h-44 mx-auto mt-10" />
+
+<div class="mt-8 dim">ChatGPT · Claude · Grok · Gemini</div>
+
 </div>
-
-<div class="mt-6 opacity-60 text-xl">ChatGPT · Claude · Grok · Gemini</div>
 
 <!--
 Quick show of hands: who used AI today? — Right. Almost everyone.
@@ -59,23 +58,26 @@ Questions to AI, actually — and I'll come back to that.
 -->
 
 ---
-layout: center
----
 
-# Today we make the box <span class="grey-word">grey</span>
+<div class="kicker">Today</div>
 
-<div class="mt-6 grid grid-cols-2 gap-10 items-center max-w-3xl mx-auto">
-<div class="text-left text-xl leading-relaxed">
+# We make the box <span class="grey-word">grey</span>
 
-- AI is not magic — it's <b>math and statistics</b>
-- no formulas today — just a <b>peek under the hood</b>
-- and honestly: it's <b>fun</b> to understand
+<hr class="rule" />
+
+<div class="grid grid-cols-2 gap-12 items-center">
+<div class="text-xl leading-relaxed rows">
+
+<div>AI is not magic — it's <b>math and statistics</b></div>
+<div>no formulas — a <b>peek under the hood</b></div>
+<div>and honestly: it's <b>fun</b> to understand</div>
 
 </div>
-<img :src="'/art/xkcd-1838.png'" class="h-56 rounded bg-white p-2 mx-auto" />
+<div>
+<img :src="'/art/xkcd-1838.png'" class="h-52 rounded bg-white p-2 mx-auto" />
+<div class="mt-2 text-xs dim text-center">xkcd #1838, "Machine Learning" — CC BY-NC</div>
 </div>
-
-<div class="mt-4 text-sm opacity-40">xkcd #1838 — "Machine Learning" (CC BY-NC)</div>
+</div>
 
 <!--
 So the goal of this session: make that black magic box a little bit grey.
@@ -101,26 +103,34 @@ And… it's just fun to understand. That's really why I'm giving this talk.
 
 ---
 
+<div class="kicker">How this works</div>
+
 # This is a workshop
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-<div class="text-left text-xl leading-relaxed">
+<hr class="rule" />
 
-During each section, <b>write down at least one question</b>:
+<div class="grid grid-cols-2 gap-14 text-lg leading-relaxed">
+<div>
 
-- something you <b>don't understand</b>
-- something that makes you <b>wonder</b>
-- something you want to <b>know more</b> about
+During each section,<br>**write down at least one question:**
 
-<span class="accent">→ it can be anything.</span>
+<div class="rows mt-4">
+<div>something you <b>don't understand</b></div>
+<div>something that makes you <b>wonder</b></div>
+<div>something you want to <b>know more</b> about</div>
+</div>
+
+<div class="mt-4 accent">it can be anything.</div>
 
 </div>
-<div class="text-left text-xl leading-relaxed">
+<div>
 
-After each section: <b>5 minutes</b> to ask your question — <b>to AI</b>.
+After each section,<br>**5 minutes to ask it — to AI.**
 
-- any chat app you already have<br><span class="opacity-60 text-base">ChatGPT · Claude · Gemini — free tier is fine</span>
-- your own question beats my examples
+<div class="rows mt-4">
+<div>any chat app you already have<br><span class="dim text-base">ChatGPT · Claude · Gemini — free tier is fine</span></div>
+<div>your own question beats my examples</div>
+</div>
 
 </div>
 </div>
@@ -147,15 +157,17 @@ questions. [smile]
 -->
 
 ---
-layout: center
----
+
+<div class="kicker">The plan</div>
 
 # Three claims
 
-<div class="mt-10 space-y-6 text-left max-w-3xl mx-auto">
-  <div class="claim"><img :src="'/art/box-crack.svg'" class="h-16" /><span><b>1 ·</b> AI is not new</span></div>
-  <div class="claim"><img :src="'/art/box-half.svg'" class="h-16" /><span><b>2 ·</b> An LLM is statistics built on our written world</span></div>
-  <div class="claim"><img :src="'/art/box-open.svg'" class="h-16" /><span><b>3 ·</b> AI tools are cars around the same engine</span></div>
+<hr class="rule" />
+
+<div class="mt-6 space-y-8">
+  <div class="flex items-baseline gap-8"><span class="big-num">1</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI is not new</span></div>
+  <div class="flex items-baseline gap-8"><span class="big-num">2</span><span class="text-2xl" style="font-family:'Fraunces',serif;">An LLM is statistics built on our written world</span></div>
+  <div class="flex items-baseline gap-8"><span class="big-num">3</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI tools are cars around the same engine</span></div>
 </div>
 
 <!--
@@ -165,44 +177,24 @@ prove to you.
 One: AI is not new. Two: an LLM is statistics built on our written world —
 sounds cryptic now, it won't in half an hour. Three: AI tools are cars around
 the same engine.
-
-And with every claim, the box opens a little further.
 -->
 
 ---
 
-# Who am I
+<div class="kicker">Who am I</div>
 
-<div class="grid grid-cols-2 gap-x-10 gap-y-6 mt-8 text-left text-lg quadrant">
-<div>
+# Physics, econometrics,<br>and a one-way ticket
 
-**MSc Applied Physics · MSc Econometrics**
-<span class="opacity-60">understand the world, describe it with math</span>
+<hr class="rule" />
 
-</div>
-<div>
-
-**R&D engineer, Dutch high-tech**
-<span class="opacity-60">ASML · Philips</span>
-
-</div>
-<div>
-
-**Nomad → freelance developer**
-<span class="opacity-60">startups & research institutes</span>
-
-</div>
-<div>
-
-**Now: building with AI**
-<span class="opacity-60">a personal human + software agency · AI master's</span>
-
-</div>
+<div class="rows text-lg max-w-3xl">
+<div><b>MSc Applied Physics · MSc Econometrics</b> <span class="dim">— understand the world, describe it with math</span></div>
+<div><b>R&D engineer, Dutch high-tech</b> <span class="dim">— ASML, Philips</span></div>
+<div><b>Nomad → freelance developer</b> <span class="dim">— startups & research institutes</span></div>
+<div><b>Now: building with AI</b> <span class="dim">— a personal human + software agency · AI master's</span></div>
 </div>
 
-<div class="mt-8 text-lg opacity-70">balance: outdoors · sports · community</div>
-
-<img :src="'/art/magician-intro.svg'" class="mage" />
+<div class="mt-6 dim">balance: outdoors · sports · community</div>
 
 <!--
 A short introduction about me. Before becoming a nomad I studied physics, and
@@ -227,12 +219,11 @@ resonates: find me on board, I also run the morning workouts. [beat]
 
 ---
 layout: center
-class: section-slide
 ---
 
-<img :src="'/art/box-crack.svg'" class="h-32 mx-auto mb-6" />
+<div class="kicker">Part one</div>
 
-# 1 · AI is not new
+<div class="display">AI is not new</div>
 
 <img :src="'/art/magician-curious.svg'" class="mage" />
 
@@ -244,14 +235,18 @@ fly-over.
 
 ---
 
+<div class="kicker">Part one <span class="dim">· AI is not new</span></div>
+
 # What is intelligence?
 
-<div class="mt-10 text-2xl text-center">
-<span class="pill">perception</span> → <span class="pill">processing</span> → <span class="pill">action</span>
+<hr class="rule" />
+
+<div class="text-2xl mt-8" style="font-family:'Fraunces',serif;">
+perception <span class="accent mx-3">→</span> processing <span class="accent mx-3">→</span> action
 </div>
 
-<div class="mt-10 text-xl opacity-80 text-center">
-natural intelligence is everywhere in nature — in <b>degrees</b>
+<div class="mt-8 text-lg dim max-w-2xl">
+natural intelligence is everywhere in nature — in <b class="accent">degrees</b>
 </div>
 
 <img :src="'/art/magician-curious.svg'" class="mage" />
@@ -272,18 +267,27 @@ build some of that.
 
 ---
 
+<div class="kicker">Part one <span class="dim">· AI is not new</span></div>
+
 # As old as the computer
 
-<div class="mt-8 timeline text-left max-w-2xl mx-auto text-xl space-y-5">
-  <div><b>1600s</b> — Leibniz dreams: <i>"calculemus"</i> — let us calculate</div>
-  <div><b>1950</b> — Turing: can machines think? <span class="opacity-60">(the Turing test)</span></div>
-  <div><b>1956</b> — the term "artificial intelligence" is coined</div>
-  <div><b>1997</b> — a chess computer beats the world champion</div>
+<hr class="rule" />
+
+<div class="grid grid-cols-[3fr_1fr] gap-10 items-start">
+<div class="rows text-xl">
+  <div><span class="accent" style="font-family:'Fraunces',serif;">1600s</span> &ensp; Leibniz dreams: <i>"calculemus"</i> — let us calculate</div>
+  <div><span class="accent" style="font-family:'Fraunces',serif;">1950</span> &ensp; Turing: can machines think? <span class="dim">(the Turing test)</span></div>
+  <div><span class="accent" style="font-family:'Fraunces',serif;">1956</span> &ensp; the term "artificial intelligence" is coined</div>
+  <div><span class="accent" style="font-family:'Fraunces',serif;">1997</span> &ensp; Deep Blue beats the world chess champion</div>
+</div>
+<div class="flex flex-col gap-3">
+  <img :src="'/photos/leibniz.jpg'" class="photo w-full" style="height:5.6rem; object-position:50% 12%;" />
+  <img :src="'/photos/turing.jpg'" class="photo w-full" style="height:5.6rem; object-position:50% 20%;" />
+  <img :src="'/photos/deepblue.jpg'" class="photo w-full" style="height:5.6rem;" />
+</div>
 </div>
 
-<div class="mt-8 text-xl opacity-80">"This dream is older than most of us."</div>
-
-<img :src="'/art/magician-curious.svg'" class="mage" />
+<div class="mt-5 dim italic">"This dream is older than most of us."</div>
 
 <!--
 Humans have wanted to build thinking machines for centuries. Leibniz —
@@ -299,22 +303,26 @@ in this room.
 
 ---
 
-# AI summers and winters
+<div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-<div class="mt-6 winters mx-auto max-w-3xl">
-<svg viewBox="0 0 700 240" class="w-full">
-  <path d="M20,200 Q90,80 150,110 Q190,130 230,190 Q300,60 370,100 Q420,125 460,185 Q560,20 680,35"
-        fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
-  <text x="80" y="60" fill="#f5f7fa" font-size="20">summer</text>
-  <text x="185" y="225" fill="#8b95a3" font-size="20">winter</text>
-  <text x="320" y="45" fill="#f5f7fa" font-size="20">summer</text>
-  <text x="420" y="225" fill="#8b95a3" font-size="20">winter</text>
-  <text x="570" y="90" fill="#22d3ee" font-size="22" font-weight="bold">now</text>
+# Summers and winters
+
+<hr class="rule" />
+
+<div class="max-w-3xl">
+<svg viewBox="0 0 700 210" class="w-full">
+  <path d="M20,180 Q90,70 150,100 Q190,118 230,170 Q300,55 370,90 Q420,112 460,165 Q560,18 680,32"
+        fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <text x="78" y="52" fill="#eceff4" font-size="17">summer</text>
+  <text x="185" y="200" fill="#8b95a3" font-size="17">winter</text>
+  <text x="318" y="40" fill="#eceff4" font-size="17">summer</text>
+  <text x="420" y="200" fill="#8b95a3" font-size="17">winter</text>
+  <text x="590" y="80" fill="#22d3ee" font-size="19" font-weight="bold">now</text>
 </svg>
 </div>
 
-<div class="mt-4 text-xl opacity-80 text-center">money flows in → results disappoint → winter. repeat.<br>
-the ambition all along: <b>AGI</b> — AI that can do everything a human can</div>
+<div class="mt-4 text-lg dim">money flows in → results disappoint → winter. repeat.<br>
+the ambition all along: <b class="accent">AGI</b> — AI that can do everything a human can</div>
 
 <img :src="'/art/magician-curious.svg'" class="mage" />
 
@@ -332,17 +340,25 @@ And right now? We are in the hottest summer the field has ever had.
 
 ---
 
-# Why the boom <i>now</i>?
+<div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-<div class="mt-8 grid grid-cols-3 gap-6 max-w-4xl mx-auto text-xl">
-  <div class="ignite"><b>one architecture</b><br><span class="opacity-60">the transformer paper (2017)</span></div>
-  <div class="ignite"><b>hardware</b><br><span class="opacity-60">GPUs — built for games</span></div>
-  <div class="ignite"><b>data</b><br><span class="opacity-60">the internet finally produced enough text</span></div>
+# Why the boom <span class="accent">now</span>?
+
+<hr class="rule" />
+
+<div class="strip text-lg">
+  <div><div class="accent font-semibold">one architecture</div><div class="dim mt-1">the transformer paper, 2017</div></div>
+  <div><div class="accent font-semibold">hardware</div><div class="dim mt-1">GPUs — built for games</div></div>
+  <div><div class="accent font-semibold">data</div><div class="dim mt-1">the internet finally produced enough text</div></div>
 </div>
 
-<div class="mt-8 text-xl text-center opacity-90">ChatGPT: ~100M users in ~2 months — fastest-growing consumer app ever</div>
-
-<div class="mt-6 text-lg text-center accent">LLMs are only a small part of AI — but that's our focus today</div>
+<div class="grid grid-cols-[3fr_2fr] gap-10 mt-8 items-center">
+<div>
+<div class="text-xl">ChatGPT: <b>~100M users in ~2 months</b><br><span class="dim">fastest-growing consumer app ever</span></div>
+<div class="mt-6 accent">LLMs are only a small part of AI —<br>but that's our focus today.</div>
+</div>
+<img :src="'/photos/datacenter.jpg'" class="photo h-44 w-full" />
+</div>
 
 <img :src="'/art/magician-curious.svg'" class="mage" />
 
@@ -367,31 +383,39 @@ questions.
 -->
 
 ---
-layout: center
-class: qround
----
 
-# 🖐 Round 1 — ask AI your question
+<div class="kicker">Intermezzo <span class="dim">· round one</span></div>
 
-<div class="mt-6 grid grid-cols-2 gap-10 max-w-4xl mx-auto text-left text-xl">
-<div>
+# Ask AI your question
+
+<hr class="rule" />
+
+<div class="grid grid-cols-[1fr_1fr_auto] gap-12 items-start">
+<div class="text-lg">
 
 **Stuck? Start with:**
-- "Why did … ?"
-- "What ended … ?"
-- "Explain … like I'm 12"
+
+<div class="rows">
+<div>"Why did … ?"</div>
+<div>"What ended … ?"</div>
+<div>"Explain … like I'm 12"</div>
+</div>
 
 </div>
-<div>
+<div class="text-lg">
 
 **For example:**
-- What ended the last AI winter?
-- Is a thermostat intelligent?
+
+<div class="rows">
+<div>What ended the last AI winter?</div>
+<div>Is a thermostat intelligent?</div>
+</div>
 
 </div>
+<div class="round-timer">5:00</div>
 </div>
 
-<div class="mt-8 text-2xl text-center"><span class="accent font-bold">5 minutes</span> · one question · any chat app</div>
+<div class="mt-8 dim">one question · any chat app · I'll walk around</div>
 
 <img :src="'/art/magician-curious.svg'" class="mage" />
 
@@ -412,12 +436,11 @@ with more questions.
 
 ---
 layout: center
-class: section-slide
 ---
 
-<img :src="'/art/box-half.svg'" class="h-32 mx-auto mb-6" />
+<div class="kicker">Part two</div>
 
-# 2 · An LLM is statistics<br>built on our written world
+<div class="display">An LLM is statistics<br>built on our written world</div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -430,18 +453,26 @@ right now.
 -->
 
 ---
-layout: center
----
+
+<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
 
 # You are the model
 
-<div class="mt-10 space-y-6 text-3xl text-center">
+<hr class="rule" />
+
+<div class="grid grid-cols-[2fr_3fr] gap-10 items-center">
+<div>
+  <img :src="'/photos/titanic.jpg'" class="photo w-full" />
+  <div class="credit mt-1">RMS Titanic leaving Southampton, 1912 — F.G.O. Stuart</div>
+</div>
+<div class="space-y-6 text-2xl" style="font-family:'Fraunces',serif;">
   <p>"Titanic got stuck on …"</p>
-  <p v-click>"From Southampton, the ship sails across the Atlantic to New …"</p>
+  <p v-click>"From Southampton, the ship sails<br>across the Atlantic to New …"</p>
   <p v-click>"A transatlantic crossing takes … days"</p>
 </div>
+</div>
 
-<div v-click class="mt-10 text-xl accent text-center">you just predicted the next word from the previous words</div>
+<div v-click class="mt-6 accent text-lg">you just predicted the next word from the previous words</div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -461,11 +492,14 @@ whole section.
 
 ---
 
+<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
+
 # The list of percentages IS the answer
 
-<img :src="'/art/top5.png'" class="h-72 mx-auto mt-4 rounded" />
-
-<div class="mt-4 text-xl text-center opacity-80">everything the model outputs is this list —<br>the reply you see is just a draw from it</div>
+<div class="grid grid-cols-[2fr_1fr] gap-8 items-center mt-2">
+  <img :src="'/art/top5.png'" class="rounded" />
+  <div class="text-lg dim leading-relaxed">everything the model outputs is this list —<br><br>the reply you see is just a <b class="accent">draw</b> from it</div>
+</div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -483,26 +517,30 @@ Percentages. Sound familiar? That's… statistics.
 
 ---
 
+<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
+
 # LLMs are pattern generators
 
-<div class="grid grid-cols-2 gap-10 mt-8 items-center">
-<div class="mx-auto">
-<svg viewBox="0 0 360 240" class="w-80">
+<hr class="rule" />
+
+<div class="grid grid-cols-2 gap-12 items-center">
+<div>
+<svg viewBox="0 0 360 230" class="w-72">
   <g fill="#22d3ee">
-    <circle cx="40" cy="190" r="5"/><circle cx="90" cy="165" r="5"/><circle cx="140" cy="150" r="5"/>
-    <circle cx="190" cy="118" r="5"/><circle cx="240" cy="95" r="5"/><circle cx="290" cy="80" r="5"/>
+    <circle cx="40" cy="185" r="4"/><circle cx="90" cy="160" r="4"/><circle cx="140" cy="146" r="4"/>
+    <circle cx="190" cy="115" r="4"/><circle cx="240" cy="93" r="4"/><circle cx="290" cy="78" r="4"/>
   </g>
-  <path d="M20,205 L330,55" stroke="#f5f7fa" stroke-width="2.5" stroke-dasharray="7 6" opacity="0.8"/>
-  <circle cx="330" cy="55" r="7" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
+  <path d="M20,200 L330,52" stroke="#eceff4" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"/>
+  <circle cx="330" cy="52" r="6" fill="none" stroke="#22d3ee" stroke-width="2"/>
 </svg>
 </div>
-<div class="text-left text-xl leading-relaxed">
+<div class="text-lg leading-relaxed">
 
-find the pattern →<br>predict the next point
+find the pattern → predict the next point
 
-<span v-click class="block mt-6">now imagine this in <b>many, many more dimensions</b></span>
+<span v-click class="block mt-5">now imagine this in <b>many, many more dimensions</b></span>
 
-<span v-click class="block mt-6 opacity-80 italic">"an econometrician would call this a regression —<br>just in absurdly many dimensions"</span>
+<span v-click class="block mt-5 dim italic">"an econometrician would call this a regression —<br>just in absurdly many dimensions"</span>
 
 </div>
 </div>
@@ -523,15 +561,19 @@ whole reason I can stand here and tell you it's statistics.
 
 ---
 
+<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
+
 # It learned the connections between words
 
-<div class="mt-10 text-2xl text-center leading-relaxed">
-"like an old couple<br>finishing each other's sentences —<br><span class="opacity-70">trained on years of being together"</span>
+<hr class="rule" />
+
+<div class="mt-6 text-2xl leading-relaxed max-w-3xl" style="font-family:'Fraunces',serif;">
+"like an old couple finishing each other's sentences —<br><span class="dim">trained on years of being together"</span>
 </div>
 
-<div v-click class="mt-8 text-xl text-center">
+<div v-click class="mt-8 text-lg max-w-3xl">
 those connections are numbers: <b class="accent">weights</b><br>
-<span class="opacity-70 text-lg">a web of weighted connections = a <b>neural network</b>. that's the whole mystery.</span>
+<span class="dim">a web of weighted connections = a <b>neural network</b>. that's the whole mystery.</span>
 </div>
 
 <div class="bubble">wait — so it never<br>looks anything up?</div>
@@ -552,16 +594,18 @@ anything up?" Hold that thought. It's exactly the right question.
 
 ---
 
+<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
+
 # A model is literally a file of numbers
 
-<div class="grid grid-cols-2 gap-6 mt-6 items-center">
+<div class="grid grid-cols-2 gap-6 mt-2 items-center">
   <img :src="'/ai_model_file_numbers.png'" class="rounded" />
   <img :src="'/ai_model_file_heatmap.png'" class="rounded" />
 </div>
 
-<div class="mt-4 text-lg text-center opacity-80">real weights from a real model (GPT-2) — this is <i>literally</i> what's inside</div>
+<div class="mt-3 dim text-center">real weights from a real model (GPT-2) — this is <i>literally</i> what's inside</div>
 
-<div v-click class="mt-3 text-xl text-center accent">so… where do these numbers come from?</div>
+<div v-click class="mt-2 accent text-center text-lg">so… where do these numbers come from?</div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -582,13 +626,17 @@ That's the "built on our written world" part. Three steps.
 
 ---
 
-# Step 1 · Data is gold
+<div class="kicker">Part two <span class="dim">· step 1 of 3</span></div>
 
-<div class="mt-6 text-left max-w-3xl mx-auto text-xl space-y-4">
-  <p>the raw material: the public web · books · articles · code</p>
-  <p class="accent"><b>"well over 100,000 years of nonstop reading, around the clock"</b></p>
-  <p v-click>quality matters: what it read is what it learned <span class="opacity-60">— bias comes in with the data<br>(and yes: whose text was this? — the ethical question)</span></p>
-  <p v-click>the exact mix is a <b>trade secret</b> — training runs cost <b>$78M – $490M</b></p>
+# Data is gold
+
+<hr class="rule" />
+
+<div class="rows text-lg max-w-3xl">
+  <div>the raw material: the public web · books · articles · code</div>
+  <div class="accent"><b>"well over 100,000 years of nonstop reading, around the clock"</b></div>
+  <div v-click>what it read is what it learned <span class="dim">— bias rides in with the data<br>(and: whose text was this? — the ethical question in the courts right now)</span></div>
+  <div v-click>the exact mix is a <b>trade secret</b> — one training run: <b>$78M – $490M</b></div>
 </div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
@@ -613,14 +661,21 @@ train — per model.
 
 ---
 
-# Step 2 · Training = trial and error
+<div class="kicker">Part two <span class="dim">· step 2 of 3</span></div>
 
-<div class="mt-6 text-left max-w-3xl mx-auto text-xl space-y-4">
-  <p>start with <b>random</b> numbers → billions of tiny corrections</p>
-  <p class="opacity-80 italic">"a machine with billions of dials — training is the machine turning its <b>own</b> dials, a tiny nudge per example"</p>
-  <p v-click>nobody programs the numbers in → <b class="accent">machine learning</b></p>
-  <p v-click>it kept the <b>patterns, not the pages</b> · every run ends up slightly different</p>
-  <p v-click>only possible in parallel → GPUs, data centers</p>
+# Training = trial and error
+
+<hr class="rule" />
+
+<div class="grid grid-cols-[3fr_2fr] gap-10 items-start">
+<div class="rows text-lg">
+  <div>start with <b>random</b> numbers → billions of tiny corrections</div>
+  <div class="dim italic">"a machine with billions of dials — training is the machine turning its <b>own</b> dials, a tiny nudge per example"</div>
+  <div v-click>nobody programs the numbers in → <b class="accent">machine learning</b></div>
+  <div v-click>it kept the <b>patterns, not the pages</b> · every run ends up slightly different</div>
+  <div v-click>only possible in parallel → GPUs, data centers</div>
+</div>
+<img :src="'/photos/dials.jpg'" class="photo h-44 w-full mt-2" />
 </div>
 
 <div class="bubble">who turns<br>billions of dials?!</div>
@@ -649,9 +704,11 @@ That's the GPUs. That's the data centers. That's why ASML machines matter.
 
 ---
 
-# watch it grow up
+<div class="kicker">Part two <span class="dim">· training, made visible</span></div>
 
-<img :src="'/art/stages.png'" class="h-80 mx-auto mt-4 rounded" />
+# Watch it grow up
+
+<img :src="'/art/stages.png'" class="h-88 mx-auto mt-2 rounded" />
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -669,11 +726,13 @@ nudge by nudge. This is training — made visible.
 
 ---
 
+<div class="kicker">Part two <span class="dim">· flex</span></div>
+
 # Meaning becomes geometry
 
-<img :src="'/art/embedding-map.png'" class="h-80 mx-auto mt-4 rounded" />
+<img :src="'/art/embedding-map.png'" class="h-80 mx-auto mt-2 rounded" />
 
-<div class="mt-3 text-lg text-center opacity-80">similar things end up close together in the numbers</div>
+<div class="mt-2 dim text-center">similar things end up close together in the numbers</div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -690,14 +749,19 @@ model was never told what a king is. It's in the numbers anyway.
 
 ---
 
-# Step 3 · Post-training
+<div class="kicker">Part two <span class="dim">· step 3 of 3</span></div>
 
-<div class="mt-8 text-left max-w-3xl mx-auto text-xl space-y-5">
-  <p>the raw model is a <b>text-completer</b> — not yet an assistant</p>
-  <p v-click>tuned with <b>human feedback</b>: helpful answers, good behaviour <span class="opacity-60">(the term: RLHF)</span></p>
-  <p v-click>+ safeguards & guardrails</p>
-  <p v-click class="accent"><b>"AI is not neutral — it's built, tuned and controlled."</b></p>
+# Post-training
+
+<hr class="rule" />
+
+<div class="rows text-lg max-w-3xl">
+  <div>the raw model is a <b>text-completer</b> — not yet an assistant</div>
+  <div v-click>tuned with <b>human feedback</b>: helpful answers, good behaviour <span class="dim">(the term: RLHF)</span></div>
+  <div v-click>+ safeguards & guardrails</div>
 </div>
+
+<div v-click class="mt-8 text-xl accent" style="font-family:'Fraunces',serif;">"AI is not neutral — it's built, tuned and controlled."</div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -717,22 +781,19 @@ someone says "the AI said so."
 -->
 
 ---
-layout: center
----
 
-# Weights are <span class="accent">saved!</span>
+<div class="kicker">Part two <span class="dim">· the click</span></div>
 
-<div class="grid grid-cols-2 gap-8 mt-8 items-center max-w-4xl mx-auto">
+# Weights are <span class="accent">saved</span>
+
+<div class="grid grid-cols-2 gap-10 mt-4 items-center">
   <img :src="'/ai_model_file_heatmap.png'" class="rounded" />
-  <div class="text-left text-xl leading-relaxed">
+  <div class="rows text-lg">
 
-training happens <b>once</b>, in a data center
-
-what remains is <b>ONE file</b>
-
-no database · no internet inside
-
-<span class="opacity-70">open source = download the file<br>to your own server</span>
+<div>training happens <b>once</b>, in a data center</div>
+<div>what remains is <b>ONE file</b></div>
+<div>no database · no internet inside</div>
+<div class="dim">open source = download the file to your own server</div>
 
   </div>
 </div>
@@ -759,14 +820,15 @@ thousand years of reading. Now every word in that title means something.
 layout: center
 ---
 
-# …and the results are <span class="accent">spectacular</span>
+<div class="kicker">Part two <span class="dim">· and yet</span></div>
 
-<div class="mt-8 text-2xl text-center leading-relaxed max-w-3xl mx-auto">
-train it only to predict the next word —<br>
-and abilities appear that <b>nobody put in</b>
+<div class="display">…and the results are<br><span class="accent">spectacular</span></div>
+
+<div class="mt-8 text-xl leading-relaxed max-w-2xl">
+train it only to predict the next word —<br>and abilities appear that <b>nobody put in</b>.
 </div>
 
-<div class="mt-6 text-xl text-center opacity-80">translation · reasoning · code<br><span class="accent">emergence</span> — even the makers were surprised</div>
+<div class="mt-5 dim text-lg">translation · reasoning · code — <span class="accent">emergence</span>. even the makers were surprised.</div>
 
 <img :src="'/art/magician-hat-back-on.svg'" class="mage" />
 
@@ -787,29 +849,33 @@ magic after all.
 
 ---
 
-# …and <span class="accent">weird</span>: hallucination
+<div class="kicker">Part two <span class="dim">· and weird</span></div>
 
-<div class="grid grid-cols-2 gap-8 mt-6 text-left text-xl">
+# Hallucination
+
+<hr class="rule" />
+
+<div class="grid grid-cols-2 gap-14 text-lg">
 <div class="leading-relaxed">
 
-<b>the riverbed</b> 🏞
+**the riverbed**
 
-training carves the riverbed —<br>
-every answer is new water,<br>
-and water <i>always</i> finds a way down
+<img :src="'/photos/riverbed.jpg'" class="photo h-36 w-full my-3" />
 
-<span class="accent block mt-4">plausible ≠ true</span>
+training carves the riverbed — every answer is new water,<br>and water <i>always</i> finds a way down
+
+<div class="accent mt-3 text-xl" style="font-family:'Fraunces',serif;">plausible ≠ true</div>
 
 </div>
 <div v-click class="leading-relaxed">
 
-<b>…and it rolls dice</b> 🎲
+**…and it rolls dice**
 
 sometimes a less likely word wins<br>
-<span class="opacity-60">(the knob is called temperature)</span>
+<span class="dim">(the knob is called temperature)</span>
 
-training made the models differ<br>from <i>each other</i> —<br>
-the dice make the <i>same</i> model<br>answer differently each time
+training made the models differ from <i>each other</i> —<br>
+the dice make the <i>same</i> model answer differently each time
 
 </div>
 </div>
@@ -840,31 +906,39 @@ Section two done — and I'd be amazed if you have no questions now.
 -->
 
 ---
-layout: center
-class: qround
----
 
-# 🖐 Round 2 — ask AI your question
+<div class="kicker">Intermezzo <span class="dim">· round two</span></div>
 
-<div class="mt-6 grid grid-cols-2 gap-10 max-w-4xl mx-auto text-left text-xl">
-<div>
+# Go one level deeper
 
-**Go one level deeper:**
-- ask your question
-- then ask one <b>follow-up</b> on the answer
+<hr class="rule" />
+
+<div class="grid grid-cols-[1fr_1fr_auto] gap-12 items-start">
+<div class="text-lg">
+
+**The upgrade:**
+
+<div class="rows">
+<div>ask your question</div>
+<div>then ask one <b>follow-up</b> on the answer</div>
+</div>
 
 </div>
-<div>
+<div class="text-lg">
 
 **For example:**
-- Why can't it just look things up?
-- What did *your* model train on?
-- If it just predicts words, how can it write code?
+
+<div class="rows">
+<div>Why can't it just look things up?</div>
+<div>What did <i>your</i> model train on?</div>
+<div>If it just predicts words,<br>how can it write code?</div>
+</div>
 
 </div>
+<div class="round-timer">5:00</div>
 </div>
 
-<div class="mt-8 text-2xl text-center"><span class="accent font-bold">5 minutes</span> · one question · any chat app</div>
+<div class="mt-8 dim">one question · any chat app · I'll walk around</div>
 
 <img :src="'/art/magician-flashlight.svg'" class="mage" />
 
@@ -886,12 +960,11 @@ That's the deepest question in this whole field, and you asked it yourself.
 
 ---
 layout: center
-class: section-slide
 ---
 
-<img :src="'/art/box-open.svg'" class="h-32 mx-auto mb-6" />
+<div class="kicker">Part three</div>
 
-# 3 · AI tools are cars<br>around the same engine
+<div class="display">AI tools are cars<br>around the same engine</div>
 
 <img :src="'/art/magician-builder.svg'" class="mage" />
 
@@ -903,15 +976,17 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 
 ---
 
+<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
+
 # The anatomy of every AI tool
 
-<div class="diagram mt-8 mx-auto">
-  <div v-click="3" class="ring guard"><span class="ring-label">GUARDRAILS <span class="opacity-50">— the company's rules</span></span>
-    <div v-click="2" class="ring harness"><span class="ring-label">HARNESS <span class="opacity-50">— the car: chat window · memory · tools</span></span>
-      <div class="ring engine">LLM<br><span class="text-sm opacity-70">the engine</span></div>
+<div class="diagram mt-6 mx-auto">
+  <div v-click="3" class="ring guard"><span class="ring-label">Guardrails <span class="dim normal-case tracking-normal">— the company's rules</span></span>
+    <div v-click="2" class="ring harness"><span class="ring-label">Harness <span class="dim normal-case tracking-normal">— the car: chat window · memory · tools</span></span>
+      <div class="ring engine">LLM<br><span class="text-sm dim" style="font-family:'Inter',sans-serif;">the engine</span></div>
     </div>
   </div>
-  <div v-click="4" class="ctx-arrow"><span class="accent font-bold">YOUR CONTEXT →</span><br><span class="text-sm opacity-70">prompt · your data · instructions</span></div>
+  <div v-click="4" class="ctx-arrow"><span class="accent font-semibold">your context →</span><br><span class="dim text-sm">prompt · your data · instructions</span></div>
 </div>
 
 <img :src="'/art/magician-builder.svg'" class="mage" />
@@ -937,12 +1012,19 @@ wheel is always in your hands.
 
 ---
 
-# Same engine, different cars
+<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
 
-<div class="mt-6 text-left max-w-3xl mx-auto text-xl space-y-4">
-  <p>Claude the chat app & Claude Code — <b>same model behind</b><br><span class="opacity-60">same for ChatGPT and everything built on GPT</span></p>
-  <p v-click>most "AI startups" = a new car around someone else's engine <span class="opacity-60">(a wrapper)</span></p>
-  <p v-click>the labs — OpenAI · Anthropic · Google · Mistral — each build their <b>own engines</b>, in versions & sizes</p>
+# Same model behind
+
+<hr class="rule" />
+
+<div class="grid grid-cols-[3fr_2fr] gap-10 items-start">
+<div class="rows text-lg">
+  <div>Claude the chat app & Claude Code — <b>same model behind</b> <span class="dim">· same for ChatGPT and everything built on GPT</span></div>
+  <div v-click>most "AI startups" = a new car around someone else's engine <span class="dim">(a wrapper)</span></div>
+  <div v-click>the labs — OpenAI · Anthropic · Google · Mistral — each build their <b>own engines</b>, in versions & sizes</div>
+</div>
+<img :src="'/photos/engine.jpg'" class="photo h-44 w-full mt-2" />
 </div>
 
 <img :src="'/art/magician-builder.svg'" class="mage" />
@@ -968,14 +1050,18 @@ optimization" is just: route the easy work to the small engine.
 
 ---
 
+<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
+
 # Three ways to make it yours
 
-<div class="mt-6 text-left max-w-3xl mx-auto text-xl space-y-5">
-  <p><b>1 · fine-tuning</b> — extra training data, changes the weights <span class="opacity-60">(rare, for specific use cases)</span></p>
-  <p v-click><b>2 · harness</b> — build tools & memory around the engine</p>
-  <p v-click><b>3 · context</b> — what <b>you</b> feed it, every call — <span class="accent">the only layer you always control</span></p>
-  <p v-click class="opacity-80 italic">"a tool that searches your documents and pastes what it finds into the prompt — that's all 'RAG' is"</p>
-  <p v-click class="accent">context is also your anti-hallucination lever:<br>give it your facts instead of letting it guess</p>
+<hr class="rule" />
+
+<div class="rows text-lg max-w-3xl">
+  <div><span class="big-num" style="font-size:1.6rem;">1</span>&ensp;<b>fine-tuning</b> — extra training data, changes the weights <span class="dim">(rare)</span></div>
+  <div v-click><span class="big-num" style="font-size:1.6rem;">2</span>&ensp;<b>harness</b> — build tools & memory around the engine</div>
+  <div v-click><span class="big-num" style="font-size:1.6rem;">3</span>&ensp;<b>context</b> — what <b>you</b> feed it, every call — <span class="accent">the only layer you always control</span></div>
+  <div v-click class="dim italic">"a tool that searches your documents and pastes what it finds into the prompt — that's all 'RAG' is"</div>
+  <div v-click class="accent">context is also your anti-hallucination lever: give it your facts instead of letting it guess</div>
 </div>
 
 <img :src="'/art/magician-builder.svg'" class="mage" />
@@ -1003,15 +1089,19 @@ give it your facts, it will guess. So give it your facts.
 
 ---
 
+<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
+
 # The tool zoo, sorted
 
-<div class="mt-6 grid grid-cols-3 gap-6 max-w-4xl mx-auto text-lg text-left">
-  <div class="zoo"><b>cars you drive</b><br><span class="opacity-70">ChatGPT · Claude · Gemini<br>Perplexity · Notion AI</span></div>
-  <div class="zoo"><b>car factories</b><br><span class="opacity-70">Zapier · n8n<br>Cursor · LangChain</span></div>
-  <div class="zoo"><b>engine builders</b><br><span class="opacity-70">OpenAI · Anthropic<br>Google · Mistral</span></div>
+<hr class="rule" />
+
+<div class="strip text-lg">
+  <div><div class="font-semibold">cars you drive</div><div class="dim mt-2">ChatGPT · Claude · Gemini<br>Perplexity · Notion AI</div></div>
+  <div><div class="font-semibold">car factories</div><div class="dim mt-2">Zapier · n8n<br>Cursor · LangChain</div></div>
+  <div><div class="font-semibold">engine builders</div><div class="dim mt-2">OpenAI · Anthropic<br>Google · Mistral</div></div>
 </div>
 
-<div class="mt-10 text-2xl text-center accent font-bold">Overwhelmed? It doesn't matter what you use exactly — just start.</div>
+<div class="mt-12 text-2xl accent" style="font-family:'Fraunces',serif;">Overwhelmed? It doesn't matter what you use exactly — just start.</div>
 
 <img :src="'/art/magician-builder.svg'" class="mage" />
 
@@ -1031,30 +1121,38 @@ Last round of questions — and this one is the most practical.
 -->
 
 ---
-layout: center
-class: qround
----
 
-# 🖐 Round 3 — ask AI your question
+<div class="kicker">Intermezzo <span class="dim">· round three</span></div>
 
-<div class="mt-6 grid grid-cols-2 gap-10 max-w-4xl mx-auto text-left text-xl">
-<div>
+# Make it practical
 
-**Make it practical:**
-- describe what <b>you</b> do
-- ask what would help
+<hr class="rule" />
+
+<div class="grid grid-cols-[1fr_1fr_auto] gap-12 items-start">
+<div class="text-lg">
+
+**This time:**
+
+<div class="rows">
+<div>describe what <b>you</b> do</div>
+<div>ask what would help</div>
+</div>
 
 </div>
-<div>
+<div class="text-lg">
 
 **For example:**
-- Which tool fits my work?
-- What's the difference between ChatGPT the app and GPT the model?
+
+<div class="rows">
+<div>Which tool fits my work?</div>
+<div>What's the difference between ChatGPT the app and GPT the model?</div>
+</div>
 
 </div>
+<div class="round-timer">5:00</div>
 </div>
 
-<div class="mt-8 text-2xl text-center"><span class="accent font-bold">5 minutes</span> · one question · any chat app</div>
+<div class="mt-8 dim">one question · any chat app · I'll walk around</div>
 
 <img :src="'/art/magician-builder.svg'" class="mage" />
 
@@ -1072,18 +1170,15 @@ applying section three.
 
 ---
 layout: center
-class: section-slide
 ---
 
-<img :src="'/art/box-grey.svg'" class="h-36 mx-auto mb-4" />
+<div class="kicker">Closing</div>
 
-# AI is not magic
+<div class="display">AI is not magic.</div>
 
-<div class="mt-6 text-2xl leading-relaxed">
-data · weights · math — the box is grey now
-</div>
+<div class="mt-6 text-xl dim">data · weights · math — the box is grey now</div>
 
-<div class="mt-8 text-2xl accent font-bold">
+<div class="mt-10 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
 "Treat the model as a noisy estimator,<br>not an oracle."
 </div>
 
@@ -1112,18 +1207,22 @@ So: keep asking.
 layout: center
 ---
 
-# Thank you
+<div class="kicker">Thank you</div>
 
-<div class="mt-8 text-xl leading-relaxed opacity-90">
+<div class="display" style="font-size:2.6rem;">Keep asking.</div>
+
+<div class="mt-8 text-lg dim leading-relaxed">
 find me on board — questions, AI talk, or just a chat<br>
-<span class="opacity-70">…and at the morning workouts on deck 🏋️</span>
+and at the morning workouts on deck
 </div>
 
-<div class="mt-10">
-  <img :src="'/art/magician-bow.svg'" class="h-40 mx-auto" />
-</div>
+<img :src="'/photos/qm2.jpg'" class="photo h-40 mx-auto mt-8" />
 
-<div class="mt-6 opacity-60">Marijke Valk · NomadCruise 17</div>
+<div class="byline">Marijke Valk · NomadCruise 17</div>
+<div class="credit" style="position:absolute; bottom:2rem; right:2rem; max-width:22rem; text-align:right;">
+photos: Wikimedia Commons — F.G.O. Stuart (PD) · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · bobintraveling (CC BY 2.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
+</div>
+<img :src="'/art/magician-bow.svg'" class="mage" style="height:8.5rem" />
 
 <!--
 Thank you! I'm on this ship all week — find me for questions, deep AI talk, or

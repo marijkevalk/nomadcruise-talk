@@ -11,6 +11,8 @@
     "release": "bash release.sh"
   },
   "dependencies": {
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
     "@slidev/cli": "^52.16.0",
     "@slidev/theme-default": "^0.25.0",
     "playwright-chromium": "^1.61.1"

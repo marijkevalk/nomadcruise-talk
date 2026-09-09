@@ -1,26 +1,44 @@
 /*
- * Dark magical theme + ONE accent colour (§10.4: black/anthracite, white text, single accent).
- * Switch the accent in one place: --talk-accent below.
- *   cyan:  #22d3ee
- *   amber: #fbbf24
+ * "AI is not magic" — editorial dark theme.
+ * One accent (--talk-accent), serif display headings (Fraunces), Inter for body.
+ * Design language: kickers in letter-spaced caps, hairlines, big numerals,
+ * generous whitespace, restrained glow. No emoji, no cards unless they earn it.
  */
+@import '@fontsource/fraunces/latin-400.css';
+@import '@fontsource/fraunces/latin-600.css';
+@import '@fontsource/inter/latin-400.css';
+@import '@fontsource/inter/latin-600.css';
+
 :root {
   --talk-accent: #22d3ee;
+  --ink: #eceff4;
+  --ink-dim: #8b95a3;
+  --hairline: rgba(236, 239, 244, 0.16);
 }
 
 .slidev-layout {
+  font-family: 'Inter', sans-serif;
   background:
-    radial-gradient(1px 1px at 12% 18%, rgba(244, 244, 245, 0.28) 50%, transparent 51%),
-    radial-gradient(1px 1px at 78% 12%, rgba(244, 244, 245, 0.22) 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 88% 62%, rgba(34, 211, 238, 0.25) 50%, transparent 51%),
-    radial-gradient(1px 1px at 30% 82%, rgba(244, 244, 245, 0.18) 50%, transparent 51%),
-    radial-gradient(1px 1px at 58% 38%, rgba(244, 244, 245, 0.14) 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 8% 60%, rgba(34, 211, 238, 0.18) 50%, transparent 51%),
-    radial-gradient(ellipse at 50% 0%, #141a26 0%, #0b0e14 60%, #080a0f 100%);
-  color: #f4f4f5;
+    radial-gradient(1px 1px at 14% 22%, rgba(236, 239, 244, 0.16) 50%, transparent 51%),
+    radial-gradient(1px 1px at 82% 16%, rgba(236, 239, 244, 0.12) 50%, transparent 51%),
+    radial-gradient(1px 1px at 62% 78%, rgba(34, 211, 238, 0.12) 50%, transparent 51%),
+    radial-gradient(ellipse at 50% -10%, #131926 0%, #0b0e14 55%, #090b10 100%);
+  color: var(--ink);
+  padding: 3.4rem 3.8rem;
 }
 
 .slidev-layout h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 2.7rem;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.2rem;
+}
+
+.slidev-layout h1 .accent,
+.accent {
   color: var(--talk-accent);
 }
 
@@ -28,149 +46,183 @@
   color: var(--talk-accent);
 }
 
-.accent {
+/* kicker — small caps line above the title */
+.kicker {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
   color: var(--talk-accent);
+  margin-bottom: 1.1rem;
+}
+.kicker .dim {
+  color: var(--ink-dim);
+}
+
+/* hairline rule */
+.rule {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 1.2rem 0 1.6rem;
+}
+
+.dim {
+  color: var(--ink-dim);
 }
 
 .grey-word {
   color: #9ca3af;
 }
 
-/* recurring magician figurine, bottom-right corner */
+/* huge display statements (section titles, closing line) */
+.display {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 3.4rem;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+
+/* oversized numerals */
+.big-num {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 1;
+  color: var(--talk-accent);
+  min-width: 4.2rem;
+}
+
+/* recurring magician, bottom-right */
 .mage {
   position: absolute;
-  right: 1.4rem;
-  bottom: 1.2rem;
-  height: 6.5rem;
-  opacity: 0.92;
+  right: 2rem;
+  bottom: 1.6rem;
+  height: 6.8rem;
+  opacity: 0.9;
   pointer-events: none;
 }
 
-/* magician speech bubble (π-creature style) */
+/* magician speech bubble */
 .bubble {
   position: absolute;
-  right: 7.6rem;
-  bottom: 5.6rem;
-  background: #1b2330;
-  border: 1.5px solid var(--talk-accent);
-  border-radius: 0.8rem;
+  right: 8.4rem;
+  bottom: 6rem;
+  border: 1px solid var(--talk-accent);
+  border-radius: 0.6rem 0.6rem 0.1rem 0.6rem;
+  background: rgba(34, 211, 238, 0.05);
   padding: 0.5rem 0.9rem;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-style: italic;
-  color: #f4f4f5;
-  text-align: center;
-  line-height: 1.35;
-}
-.bubble::after {
-  content: "";
-  position: absolute;
-  right: -0.75rem;
-  bottom: 0.7rem;
-  border: 0.5rem solid transparent;
-  border-left-color: var(--talk-accent);
+  color: var(--ink);
+  text-align: right;
+  line-height: 1.4;
 }
 
-/* section-header slides: a touch more glow */
-.section-slide h1 {
-  text-shadow: 0 0 24px rgba(34, 211, 238, 0.35);
+/* editorial list: hairline-separated rows */
+.rows > * {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.rows > *:last-child {
+  border-bottom: 0;
 }
 
-/* agenda claims */
-.claim {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  font-size: 1.5rem;
+/* three-column strip with hairlines between */
+.strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.strip > * {
+  padding: 0.4rem 1.6rem;
+  border-left: 1px solid var(--hairline);
+}
+.strip > *:first-child {
+  border-left: 0;
+  padding-left: 0;
 }
 
-/* who-am-I quadrant */
-.quadrant > div {
-  border: 1px solid rgba(244, 244, 245, 0.22);
-  border-radius: 0.6rem;
-  padding: 0.9rem 1.1rem;
-}
-.quadrant span {
-  display: block;
-  margin-top: 0.2rem;
-  font-size: 0.95rem;
+/* question rounds */
+.round-timer {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 5.2rem;
+  line-height: 1;
+  color: var(--talk-accent);
 }
 
-/* section-1 helpers */
-.pill {
-  border: 1.5px solid var(--talk-accent);
-  border-radius: 999px;
-  padding: 0.35rem 1.2rem;
-  color: #f4f4f5;
-}
-.ignite {
-  border: 1px solid rgba(244, 244, 245, 0.22);
-  border-radius: 0.6rem;
-  padding: 1rem 1.2rem;
-  text-align: center;
-}
-
-/* question-round slides */
-.qround h1 {
-  text-shadow: 0 0 24px rgba(34, 211, 238, 0.3);
-}
-
-/* section-3 anatomy diagram: concentric rings */
+/* anatomy diagram */
 .diagram {
   position: relative;
-  width: 40rem;
+  width: 38rem;
   max-width: 100%;
 }
 .ring {
-  border-radius: 1rem;
-  padding: 2.2rem 2rem 1.6rem;
+  border-radius: 0.5rem;
+  padding: 2.1rem 1.8rem 1.5rem;
   position: relative;
 }
 .ring-label {
   position: absolute;
-  top: 0.6rem;
-  left: 1.2rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--talk-accent);
+  top: 0.65rem;
+  left: 1.1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
 }
 .ring.guard {
-  border: 1.5px dashed rgba(244, 211, 100, 0.55);
+  border: 1px dashed rgba(244, 211, 100, 0.5);
 }
 .ring.guard > .ring-label {
   color: #f4d364;
 }
 .ring.harness {
-  border: 1.5px solid rgba(244, 244, 245, 0.4);
-  margin-top: 1rem;
+  border: 1px solid var(--hairline);
+  margin-top: 0.9rem;
 }
 .ring.harness > .ring-label {
-  color: #f4f4f5;
+  color: var(--ink);
 }
 .ring.engine {
-  border: 2px solid var(--talk-accent);
-  background: rgba(34, 211, 238, 0.07);
-  margin-top: 1rem;
+  border: 1px solid var(--talk-accent);
+  background: rgba(34, 211, 238, 0.06);
+  margin-top: 0.9rem;
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
   color: var(--talk-accent);
-  padding: 1.2rem;
-  box-shadow: 0 0 24px rgba(34, 211, 238, 0.25);
+  padding: 1.1rem;
 }
 .ctx-arrow {
   position: absolute;
-  left: -1rem;
+  left: -1.2rem;
   top: 50%;
   transform: translate(-100%, -50%);
   text-align: right;
-  font-size: 1.05rem;
-  width: 11rem;
+  font-size: 0.95rem;
+  width: 10.5rem;
 }
 
-/* tool zoo shelves */
-.zoo {
-  border: 1px solid rgba(244, 244, 245, 0.22);
-  border-radius: 0.6rem;
-  padding: 1rem 1.2rem;
+/* footer strip on title/outro */
+.byline {
+  position: absolute;
+  bottom: 2rem;
+  left: 3.8rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+/* unified photo treatment */
+.photo {
+  border-radius: 0.4rem;
+  filter: saturate(0.8) contrast(1.04);
+  object-fit: cover;
+}
+.credit {
+  font-size: 0.62rem;
+  color: var(--ink-dim);
+  opacity: 0.7;
 }
