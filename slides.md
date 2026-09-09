@@ -12,13 +12,14 @@ transition: fade
 mdc: true
 ---
 
-<div class="kicker">NomadCruise 17 <span class="dim">· workshop · September 2026</span></div>
+<div class="kicker">NomadCruise 17 <span class="dim">· Southampton (UK) → New York City (USA)</span></div>
+<div class="dim" style="letter-spacing:0.18em; text-transform:uppercase; font-size:0.82rem; margin-top:-0.5rem;">September 19 – 26, 2026</div>
 
-<div class="display" style="font-size:4.6rem; margin-top:2.2rem;">AI is not<br><span class="accent">magic.</span></div>
+<div class="display" style="font-size:4.6rem; margin-top:1.8rem;">AI is not<br><span class="accent">magic.</span></div>
 
-<div class="mt-10 dim text-lg">a peek under the hood, in three claims</div>
+<div class="mt-8 dim text-lg">Demystifying the technology for curious minds</div>
 
-<img :src="'/art/flammarion-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:50%; object-fit:cover; object-position:20% 50%; opacity:0.8; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 55%); mask-image:linear-gradient(to right, transparent 0%, black 55%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:0; height:100%; width:46%; object-fit:cover; object-position:50% 50%; opacity:0.9; -webkit-mask-image:linear-gradient(to right, transparent 0%, black 55%); mask-image:linear-gradient(to right, transparent 0%, black 55%);" />
 
 <div class="byline">Marijke Valk</div>
 
