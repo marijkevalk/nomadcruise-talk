@@ -372,9 +372,10 @@ levels. "Artificial" intelligence is just us trying to build some of that.
   <div class="tl-row"><span class="tl-label">the proof</span><span class="tl-year">1997</span><span class="tl-txt">Deep Blue beats the world chess champion</span></div>
 </div>
 <div class="flex flex-col gap-3">
-  <img :src="'/photos/leibniz.jpg'" class="photo w-full" style="height:5.6rem; object-position:50% 12%;" />
-  <img :src="'/photos/turing.jpg'" class="photo w-full" style="height:5.6rem; object-position:50% 20%;" />
-  <img :src="'/photos/deepblue.jpg'" class="photo w-full" style="height:5.6rem;" />
+  <img :src="'/photos/leibniz.jpg'" class="photo w-full" style="height:5.4rem; object-position:50% 12%;" />
+  <img :src="'/photos/turing.jpg'" class="photo w-full" style="height:5.4rem; object-position:50% 20%;" />
+  <img :src="'/photos/deepblue.jpg'" class="photo w-full" style="height:5.4rem;" />
+  <div class="mini-credit">portraits: Wikimedia Commons (public domain / CC BY 2.0)</div>
 </div>
 </div>
 
@@ -450,17 +451,17 @@ And right now? We're in the hottest summer the field has ever had.
 <div class="everyday" v-click="1">you've used AI for years without calling it that: <span class="dim">spam filters · Google Translate · Netflix & Spotify picks · Face ID</span></div>
 
 <div class="strip text-lg mt-6" v-click="2">
-  <div><div class="accent font-semibold">one architecture</div><div class="dim mt-1">the transformer paper, 2017</div></div>
+  <div><div class="accent font-semibold">one architecture</div><div class="dim mt-1">the transformer paper, 2017</div><div class="ref">Vaswani et al., "Attention Is All You Need"</div></div>
   <div><div class="accent font-semibold">hardware</div><div class="dim mt-1">GPUs · built for games</div></div>
   <div><div class="accent font-semibold">data</div><div class="dim mt-1">the internet finally produced enough text</div></div>
 </div>
 
 <div class="grid grid-cols-[3fr_2fr] gap-10 mt-7 items-center" v-click="3">
 <div>
-<div class="text-xl">ChatGPT: <b>~100M users in ~2 months</b><br><span class="dim">fastest-growing consumer app ever</span></div>
+<div class="text-xl">ChatGPT: <b>~100M users in ~2 months</b><br><span class="dim">fastest-growing consumer app ever</span><br><span class="ref">UBS / Similarweb, 2023</span></div>
 <div class="mt-5 accent">LLMs are only a small part of AI <br>but that's our focus today.</div>
 </div>
-<img :src="'/photos/datacenter.jpg'" class="photo h-40 w-full" />
+<div><img :src="'/photos/datacenter.jpg'" class="photo h-40 w-full" /><div class="mini-credit">CERN server hall · F. Hirzinger, CC BY-SA 3.0</div></div>
 </div>
 
 
@@ -763,9 +764,9 @@ That's the "built on our written world" part. Three steps.
 
 <div class="rows text-lg max-w-3xl">
   <div>the raw material: the public web · books · articles · code</div>
-  <div class="accent"><b>"well over 100,000 years of nonstop reading, around the clock"</b></div>
+  <div class="accent"><b>"well over 100,000 years of nonstop reading, around the clock"</b> <span class="ref">Llama 4: &gt;30T tokens, Meta 2025</span></div>
   <div v-click>what it read is what it learned <span class="dim">· bias rides in with the data (whose text was it? · now in court)</span></div>
-  <div v-click>the exact mix is a <b>trade secret</b> · one training run: <b>$78M – $490M</b></div>
+  <div v-click>the exact mix is a <b>trade secret</b> · one training run: <b>$78M – $490M</b> <span class="ref">Stanford AI Index 2025 · Epoch AI</span></div>
 </div>
 
 
@@ -802,7 +803,7 @@ train — per model.
   <div v-click>nobody programs the numbers in → <b class="accent">machine learning</b></div>
   <div v-click>it kept the <b>patterns, not the pages</b> · GPUs, data centers</div>
 </div>
-<img :src="'/photos/dials.jpg'" class="photo h-44 w-full mt-2" />
+<div class="mt-2"><img :src="'/photos/dials.jpg'" class="photo h-44 w-full" /><div class="mini-credit">1940s mixing console · bobintraveling, CC BY 2.0</div></div>
 </div>
 
 <div class="bubble" style="right:9.5rem; bottom:3.2rem;">who turns<br>billions of dials?!</div>
@@ -994,7 +995,7 @@ because it moved faster than anyone expected.
 
 **the riverbed**
 
-<img :src="'/photos/riverbed.jpg'" class="photo h-32 w-full my-3" />
+<img :src="'/photos/riverbed.jpg'" class="photo h-32 w-full my-3" /><div class="mini-credit" style="margin-top:-0.4rem;">Paraná delta · Presidencia Argentina, CC BY 2.0</div>
 
 training carves the riverbed <br>new water <i>always</i> finds a way down
 
@@ -1155,7 +1156,7 @@ wheel is always in your hands.
   <div v-click>most "AI startups" = a new car around someone else's engine <span class="dim">(a wrapper)</span></div>
   <div v-click>the labs each build their <b>own engines</b>, in versions & sizes</div>
 </div>
-<img :src="'/photos/engine.jpg'" class="photo h-44 w-full mt-2" />
+<div class="mt-2"><img :src="'/photos/engine.jpg'" class="photo h-44 w-full" /><div class="mini-credit">MG B V8 engine · CC BY 2.0</div></div>
 </div>
 
 
