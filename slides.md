@@ -220,14 +220,26 @@ resonates: find me on board, I also run the morning workouts. [beat]
 
 <div class="kicker">The plan</div>
 
-# Three claims
+# Our route today
 
 <hr class="rule" />
 
-<div class="mt-6 space-y-8">
-  <div class="flex items-baseline gap-8"><span class="big-num">1</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI is not new</span></div>
-  <div class="flex items-baseline gap-8"><span class="big-num">2</span><span class="text-2xl" style="font-family:'Fraunces',serif;">An LLM is statistics built on our written world</span></div>
-  <div class="flex items-baseline gap-8"><span class="big-num">3</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI tools are cars wrapped around the same engines</span></div>
+<div class="route">
+  <div class="stop">
+    <span class="stop-num">1</span>
+    <img :src="'/art/box-r0.svg'" class="stop-box" />
+    <span class="stop-title">AI is not new</span>
+  </div>
+  <div class="stop">
+    <span class="stop-num">2</span>
+    <img :src="'/art/box-r1.svg'" class="stop-box" />
+    <span class="stop-title">An LLM is statistics built on our written world</span>
+  </div>
+  <div class="stop">
+    <span class="stop-num">3</span>
+    <img :src="'/art/box-r2.svg'" class="stop-box" />
+    <span class="stop-title">AI tools are cars wrapped around the same engines</span>
+  </div>
 </div>
 
 <img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />

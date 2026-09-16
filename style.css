@@ -491,3 +491,13 @@
 .wf-note { font-size: 1.1rem; color: #8fcbab; font-style: italic; margin-top: 0.1rem; }
 .wf-step { font-size: 1.12rem; line-height: 1.4; margin-top: 0.28rem; }
 .wf-step b { color: #8fcbab; }
+
+/* agenda — "Our route today": three stops, box opens per stop */
+.route { display: flex; flex-direction: column; gap: 1.8rem; margin-top: 1.4rem; }
+.stop { display: flex; align-items: center; gap: 1.6rem; }
+.stop-num {
+  font-family: 'Fraunces', serif; font-weight: 400; font-size: 2.6rem;
+  color: var(--talk-accent); width: 2.4rem; text-align: center; flex: none; line-height: 1;
+}
+.stop-box { width: 3.4rem; height: 3.4rem; flex: none; }
+.stop-title { font-family: 'Fraunces', serif; font-size: 2rem; }
