@@ -110,7 +110,12 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 <div class="stage3">
 
 <div v-click.hide="1" class="comic-hero">
-  <img :src="'/photos/comic-ai.png'" />
+  <div class="ai-overview">
+    <div class="aio-q"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#5b6472" stroke-width="2"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke-linecap="round"/></svg>how do I keep the cheese from sliding off my pizza?</div>
+    <div class="aio-head"><span class="aio-star">✦</span> AI Overview</div>
+    <div class="aio-body">Cheese can slide off pizza for a number of reasons… To give the sauce more tackiness, you can also add <mark>about ⅛ cup of non-toxic glue</mark> to the sauce.</div>
+    <div class="aio-src">Google AI Overviews · May 2024 — a real answer, scraped from an 11-year-old joke on Reddit</div>
+  </div>
 </div>
 
 <div v-click="1" class="box-bullets">
@@ -125,10 +130,12 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 </div>
 
 <!--
-[comic on screen] Look familiar? The AI confidently writes code… in a language
-that's part Python, part COBOL, part someone's grocery list — and suggests
-storing passwords on a sticky note. It's brilliant and clueless at the same
-time. So why bother understanding what's inside? Three reasons.
+[glue card on screen] A real one from last year: someone asked Google how to
+keep the cheese from sliding off a pizza. Its AI answered — with total
+confidence — "add about an eighth of a cup of non-toxic glue to the sauce."
+It had scraped an eleven-year-old joke off Reddit and served it as fact.
+Brilliant, and completely clueless. THAT is why it's worth understanding what's
+inside. Three reasons.
 
 [click — comic gone, the box opens] Once we open the box a little, three things
 change:

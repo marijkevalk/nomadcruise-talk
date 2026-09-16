@@ -339,6 +339,25 @@
   display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
 }
 .comic-hero img { max-height: 18rem; border-radius: 0.5rem; }
+.ai-overview {
+  background: #fbfbf9; color: #1f2733; text-align: left;
+  border-radius: 0.9rem; padding: 1.7rem 2rem; max-width: 43rem;
+  box-shadow: 0 14px 44px rgba(0,0,0,0.5);
+}
+.aio-q {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-size: 1.2rem; color: #5b6472;
+  border-bottom: 1px solid #e6e3dc; padding-bottom: 1rem; margin-bottom: 1.1rem;
+}
+.aio-q svg { flex: none; }
+.aio-head {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-weight: 700; color: #2b6cb0; font-size: 1.15rem; margin-bottom: 0.8rem;
+}
+.aio-star { color: #d69e2e; }
+.aio-body { font-size: 1.4rem; line-height: 1.5; }
+.aio-body mark { background: #ffe08a; color: #7a4b00; padding: 0 0.25rem; border-radius: 0.2rem; font-weight: 600; }
+.aio-src { margin-top: 1.3rem; font-size: 0.9rem; color: #99a0aa; }
 .box-bullets {
   position: absolute; inset: 0;
   display: grid; grid-template-columns: 20rem 1fr; gap: 2.5rem; align-items: center;
