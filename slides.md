@@ -121,7 +121,7 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
       <li v-click="4"><b>Enjoy — it's fun!</b><span>everyone has a little nerd inside</span></li>
     </ul>
     <div v-click="5" class="workshop-box">
-      <b>This is a workshop</b> — play along on your own device. Have an AI chat app open <span class="dim">(ChatGPT · Claude · Gemini — free is fine)</span>: that's the “model” we'll be prompting together.
+      <b>Workshop:</b> have an AI tool you can prompt ready <span class="dim">— ChatGPT, Claude or Gemini (free is fine)</span>
     </div>
   </div>
 </div>
@@ -148,6 +148,97 @@ makes people take you seriously.
 
 [click] Three — and honestly, it's just FUN. Everyone's got a little nerd
 inside. Today we let it out.
+-->
+
+---
+
+<div class="kicker">Who am I</div>
+
+<div class="whoami-grid">
+  <div class="col-labels"><div>Academic</div><div>Industry</div></div>
+  <div class="row-labels"><div class="rl">Pre-nomadic</div><div class="rl">Nomadic</div></div>
+  <div class="whoami">
+    <div class="q tl">
+      <div class="q-item">
+        <div class="q-txt"><b>MSc Applied Physics</b><span>TU Eindhoven · Harvard T.H. Chan</span></div>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5"><circle cx="12" cy="12" r="2.2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+      </div>
+      <div class="q-item">
+        <div class="q-txt"><b>MSc Econometrics</b><span>Tilburg University</span></div>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,16 9,10 13,14 21,5"/><polyline points="15,5 21,5 21,11"/></svg>
+      </div>
+    </div>
+    <div class="q tr">
+      <div class="q-item">
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10.5" y="10.5" width="3" height="3"/><g stroke-linecap="round"><line x1="9.5" y1="7" x2="9.5" y2="4"/><line x1="14.5" y1="7" x2="14.5" y2="4"/><line x1="9.5" y1="17" x2="9.5" y2="20"/><line x1="14.5" y1="17" x2="14.5" y2="20"/><line x1="7" y1="9.5" x2="4" y2="9.5"/><line x1="7" y1="14.5" x2="4" y2="14.5"/><line x1="17" y1="9.5" x2="20" y2="9.5"/><line x1="17" y1="14.5" x2="20" y2="14.5"/></g></svg>
+        <div class="q-txt"><b>Mathware / R&D Engineer</b><span>ASML · Philips</span></div>
+      </div>
+    </div>
+    <div class="q bl">
+      <div class="q-item">
+        <div class="q-txt"><b>MSc Artificial Intelligence</b><span>Open Universiteit Nederland</span></div>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.4"><line x1="6" y1="7" x2="14" y2="12"/><line x1="6" y1="17" x2="14" y2="12"/><line x1="14" y1="12" x2="20" y2="7"/><line x1="14" y1="12" x2="20" y2="17"/><circle cx="6" cy="7" r="1.7" fill="#e3b04b"/><circle cx="6" cy="17" r="1.7" fill="#e3b04b"/><circle cx="14" cy="12" r="1.9" fill="#e3b04b"/><circle cx="20" cy="7" r="1.7" fill="#e3b04b"/><circle cx="20" cy="17" r="1.7" fill="#e3b04b"/></svg>
+      </div>
+    </div>
+    <div class="q br">
+      <div class="q-item">
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,7 3,12 8,17"/><polyline points="16,7 21,12 16,17"/></svg>
+        <div class="q-txt"><b>Software R&D Engineer</b><span>freelance at startups</span></div>
+      </div>
+      <div class="q-item">
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3 21 8 12 13 3 8z"/><path d="M3 8v8l9 5 9-5V8"/><line x1="12" y1="13" x2="12" y2="21"/></svg>
+        <div class="q-txt"><b>Building AI harnesses</b><span>personal projects</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="balance-block">Outdoors · Sports · Community</div>
+
+<!--
+A short introduction about me. Before becoming a nomad I studied physics, and
+later econometrics — because I like to understand the world and describe it
+with math. That's the lens for today.
+
+My early career was in the Dutch high-tech industry. Back then we joked that
+ASML was the most unknown important company in the Netherlands. Now people
+know it from the stock charts — for who doesn't: they make the machines that
+make chips. The stuff all those AI data centers run on. So in a way I've seen
+this wave coming from the factory side.
+
+But like most of you, I didn't want to live in one place — so I went remote,
+freelancing for startups and research institutes. And now AI has become so
+capable that I'm building a personal human-and-software agency with it, and
+I've started a master's in AI to get back closer to my roots.
+
+One more thing — AI pulls us MORE behind the computer, while most of us want
+less of that. So for me the balance is outdoors, sports, community. If that
+resonates: find me on board, I also run the morning workouts. [beat]
+-->
+
+---
+
+<div class="kicker">The plan</div>
+
+# Three claims
+
+<hr class="rule" />
+
+<div class="mt-6 space-y-8">
+  <div class="flex items-baseline gap-8"><span class="big-num">1</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI is not new</span></div>
+  <div class="flex items-baseline gap-8"><span class="big-num">2</span><span class="text-2xl" style="font-family:'Fraunces',serif;">An LLM is statistics built on our written world</span></div>
+  <div class="flex items-baseline gap-8"><span class="big-num">3</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI tools are cars around the same engine</span></div>
+</div>
+
+<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
+
+<!--
+So here's the plan — three sections, and each title is a claim I'm going to
+prove to you.
+
+One: AI is not new. Two: an LLM is statistics built on our written world —
+sounds cryptic now, it won't in half an hour. Three: AI tools are cars around
+the same engine.
 -->
 
 ---
@@ -203,75 +294,6 @@ noticing where your understanding stops — and just asking.
 
 And by the way: I'm also still learning. That's why I let AI answer your
 questions. [smile]
--->
-
----
-
-<div class="kicker">The plan</div>
-
-# Three claims
-
-<hr class="rule" />
-
-<div class="mt-6 space-y-8">
-  <div class="flex items-baseline gap-8"><span class="big-num">1</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI is not new</span></div>
-  <div class="flex items-baseline gap-8"><span class="big-num">2</span><span class="text-2xl" style="font-family:'Fraunces',serif;">An LLM is statistics built on our written world</span></div>
-  <div class="flex items-baseline gap-8"><span class="big-num">3</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI tools are cars around the same engine</span></div>
-</div>
-
-<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
-
-<!--
-So here's the plan — three sections, and each title is a claim I'm going to
-prove to you.
-
-One: AI is not new. Two: an LLM is statistics built on our written world —
-sounds cryptic now, it won't in half an hour. Three: AI tools are cars around
-the same engine.
--->
-
----
-
-<div class="kicker">Who am I</div>
-
-<div class="whoami">
-  <div class="q tl">
-    <div class="q-item"><b>MSc Applied Physics</b><span>TU Eindhoven · Harvard T.H. Chan</span></div>
-    <div class="q-item"><b>MSc Econometrics</b><span>Tilburg University</span></div>
-  </div>
-  <div class="q tr">
-    <div class="q-item"><b>Mathware · R&D Engineer</b><span>ASML · Philips</span></div>
-  </div>
-  <div class="q bl">
-    <div class="q-item"><b>MSc Artificial Intelligence</b><span>Open Universiteit Nederland</span></div>
-  </div>
-  <div class="q br">
-    <div class="q-item"><b>Software R&D Engineer</b><span>freelance at startups</span></div>
-    <div class="q-item"><b>Building AI harnesses</b><span>personal projects</span></div>
-  </div>
-</div>
-
-<div class="whoami-bar">Outdoors · Sports · Community</div>
-
-<!--
-A short introduction about me. Before becoming a nomad I studied physics, and
-later econometrics — because I like to understand the world and describe it
-with math. That's the lens for today.
-
-My early career was in the Dutch high-tech industry. Back then we joked that
-ASML was the most unknown important company in the Netherlands. Now people
-know it from the stock charts — for who doesn't: they make the machines that
-make chips. The stuff all those AI data centers run on. So in a way I've seen
-this wave coming from the factory side.
-
-But like most of you, I didn't want to live in one place — so I went remote,
-freelancing for startups and research institutes. And now AI has become so
-capable that I'm building a personal human-and-software agency with it, and
-I've started a master's in AI to get back closer to my roots.
-
-One more thing — AI pulls us MORE behind the computer, while most of us want
-less of that. So for me the balance is outdoors, sports, community. If that
-resonates: find me on board, I also run the morning workouts. [beat]
 -->
 
 ---

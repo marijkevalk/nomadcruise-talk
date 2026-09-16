@@ -363,7 +363,7 @@
   display: grid; grid-template-columns: 16rem 1fr; gap: 2.4rem; align-items: start;
   padding-top: 0;
 }
-.openbox { width: 100%; filter: drop-shadow(0 8px 26px rgba(0,0,0,0.5)); }
+.openbox { width: 100%; align-self: center; filter: drop-shadow(0 8px 26px rgba(0,0,0,0.5)); }
 .right-col { display: flex; flex-direction: column; }
 .bullets { list-style: none; padding: 0; margin: 0; }
 .bullets > li {
@@ -380,13 +380,13 @@
 }
 .bullets span { display: block; margin-top: 0.2rem; color: var(--ink-dim); font-size: 1.02rem; }
 .workshop-box {
-  margin-top: 0.5rem;
+  margin-top: 0.9rem; align-self: start; max-width: 30rem;
   background: rgba(114, 99, 184, 0.16);
   border: 1px solid #7263b8;
   border-left: 4px solid #7263b8;
-  border-radius: 0.6rem;
-  padding: 0.85rem 1.2rem;
-  font-size: 1.04rem; line-height: 1.45;
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.92rem; line-height: 1.4;
 }
 .workshop-box b { color: #b9a9ee; }
 .workshop-box .dim { color: var(--ink-dim); }
@@ -394,47 +394,54 @@
 /* slide 3 — original glue screenshot */
 .glue-shot { max-height: 20rem; border-radius: 0.5rem; box-shadow: 0 10px 34px rgba(0,0,0,0.5); }
 
-/* who-am-I — big cross / quadrant */
-.whoami {
-  position: relative;
+/* who-am-I — cross / quadrant with legends */
+.whoami-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 25rem;
-  margin-top: 1rem;
+  grid-template-columns: 2.4rem 1fr;
+  grid-template-rows: 1.5rem 21rem;
+  column-gap: 0.5rem; row-gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+.col-labels { grid-column: 2; grid-row: 1; display: grid; grid-template-columns: 1fr 1fr; }
+.col-labels > div {
+  text-align: center; color: var(--talk-accent);
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; opacity: 0.9;
+}
+.row-labels { grid-column: 1; grid-row: 2; display: grid; grid-template-rows: 1fr 1fr; }
+.row-labels .rl {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  align-self: center; justify-self: center;
+  color: var(--talk-accent); font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.9;
+}
+.whoami {
+  grid-column: 2; grid-row: 2; position: relative;
+  display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
 }
 .whoami::before {
   content: ""; position: absolute; left: 50%; top: 0; bottom: 0;
   width: 2px; transform: translateX(-1px);
-  background: linear-gradient(#e3b04b00, #e3b04b 12%, #e3b04b 88%, #e3b04b00);
+  background: linear-gradient(#e3b04b00, #e3b04b 10%, #e3b04b 90%, #e3b04b00);
   box-shadow: 0 0 12px rgba(227,176,75,0.35);
 }
 .whoami::after {
   content: ""; position: absolute; top: 50%; left: 0; right: 0;
   height: 2px; transform: translateY(-1px);
-  background: linear-gradient(90deg, #e3b04b00, #e3b04b 12%, #e3b04b 88%, #e3b04b00);
+  background: linear-gradient(90deg, #e3b04b00, #e3b04b 10%, #e3b04b 90%, #e3b04b00);
   box-shadow: 0 0 12px rgba(227,176,75,0.35);
 }
-.q {
-  display: flex; flex-direction: column; justify-content: center;
-  gap: 1.1rem; padding: 1.6rem 2.2rem;
-}
-.q.tl { align-items: flex-end; text-align: right; }
-.q.tr { align-items: flex-start; text-align: left; }
-.q.bl { align-items: flex-end; text-align: right; }
-.q.br { align-items: flex-start; text-align: left; }
-.q-item b {
-  font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.6rem;
-  color: var(--ink); display: block; line-height: 1.1;
-}
-.q-item span {
-  display: block; margin-top: 0.3rem; color: var(--talk-accent);
-  font-size: 1.05rem; letter-spacing: 0.01em;
-}
-.whoami-bar {
-  position: absolute; left: 0; right: 0; bottom: 0;
+.q { display: flex; flex-direction: column; justify-content: flex-start; gap: 1.3rem; padding: 1.5rem 2rem; }
+.q.tl, .q.bl { align-items: flex-end; }
+.q.tr, .q.br { align-items: flex-start; }
+.q-item { display: flex; align-items: center; gap: 0.85rem; }
+.q.tl .q-txt, .q.bl .q-txt { text-align: right; }
+.q.tr .q-txt, .q.br .q-txt { text-align: left; }
+.q-txt b { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.45rem; color: var(--ink); display: block; line-height: 1.1; }
+.q-txt span { display: block; margin-top: 0.25rem; color: var(--talk-accent); font-size: 0.98rem; }
+.q-icon { width: 2.7rem; height: 2.7rem; flex: none; }
+.balance-block {
+  width: max-content; margin: 1.1rem auto 0;
   background: #7263b8; color: #0b0e14;
-  text-align: center; font-weight: 700;
-  letter-spacing: 0.28em; text-transform: uppercase; font-size: 1.15rem;
-  padding: 0.9rem 0;
+  border-radius: 0.5rem; padding: 0.5rem 1.6rem;
+  font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; font-size: 1rem;
 }
