@@ -42,40 +42,58 @@ layout: center
 <div class="text-center">
 
 <div class="flex items-center justify-center gap-6" style="font-family:'Fraunces',serif; font-size:3.1rem; min-height:15rem; letter-spacing:0.02em;">
-  <span>PROMPT</span>
-  <svg v-click viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
-  <span v-click="1" class="qwrap">
-    <svg v-click="2" class="cube" viewBox="0 0 124 124">
-      <polygon points="14,46 46,14 118,14 86,46" fill="#101010" stroke="#e3b04b" stroke-width="1.4"/>
-      <polygon points="86,46 118,14 118,86 86,118" fill="#060606" stroke="#e3b04b" stroke-width="1.4"/>
-      <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#e3b04b" stroke-width="1.6"/>
-    </svg>
-    <span class="qmark">?</span>
+  <span v-click="1">PROMPT</span>
+  <span class="midzone">
+    <svg v-click="[2,4]" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
+    <span v-click="4" class="splitzone">
+      <svg viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
+      <span class="qwrap">
+        <svg v-click="5" class="cube" viewBox="0 0 124 124">
+          <polygon points="14,46 46,14 118,14 86,46" fill="#101010" stroke="#e3b04b" stroke-width="1.4"/>
+          <polygon points="86,46 118,14 118,86 86,118" fill="#060606" stroke="#e3b04b" stroke-width="1.4"/>
+          <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#e3b04b" stroke-width="1.6"/>
+        </svg>
+        <span class="qmark">?</span>
+      </span>
+      <svg viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
+    </span>
   </span>
-  <svg v-click="1" viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
-  <span v-click="1">RESPONSE</span>
+  <span v-click="2">RESPONSE</span>
 </div>
 
-<div class="mt-10 dim text-lg">ChatGPT · Claude · Grok · Gemini</div>
+<div v-click="3" class="mt-6 zoo-cloud">
+  <div class="text-xl">ChatGPT · Claude · Gemini · Copilot · Perplexity · Grok</div>
+  <div class="text-lg mt-2" style="opacity:0.85;">DeepSeek · Mistral · Llama · Cursor · Notion&nbsp;AI · character.ai · Zapier · n8n · LangChain</div>
+  <div class="mt-3 dim italic text-lg">apps · models · wrappers · agents · whole harnesses around models…</div>
+</div>
 
 </div>
 
 <img :src="'/art/tovenaar-01-basis.svg'" class="mage" />
 
 <!--
-Quick show of hands: who used AI today? — Right. Almost everyone.
+[empty stage — just the magician]
 
-And it's always the same little ritual, isn't it? You type a prompt… [click]
-the dots start blinking… and out comes a response. (Fun fact: the technical
-name for that reply is a "completion" — the model completes your text.
-Remember that word, it comes back later.) Often surprisingly good. Sometimes —
-surprisingly wrong. But either way, there's that moment: how did it DO that?
-[click] Something goes in, something comes out — and everything in between is
-hidden. A black box.
+Quick show of hands: who used AI today? — Right. Almost everyone. And it's
+always the same little ritual. [click] You type a PROMPT… [click] and out
+comes a RESPONSE. (Fun fact: the technical name for that reply is a
+"completion" — the model completes your text. Remember that word.)
 
-Honest show of hands: for whom does AI still feel like that — a black box?
-[hands go up] Yeah. Me too — for a long time. Until I started to ask questions.
-Questions to AI, actually — and I'll come back to that.
+[click — the name cloud] And you meet this thing in a hundred costumes:
+ChatGPT, Claude, Gemini, Copilot, Perplexity… models, wrappers around models,
+whole harnesses built around models. New names every week. It FEELS
+overwhelming — I know.
+
+But here's the secret that makes it all manageable: underneath every single
+one of these, the exact same thing happens. A prompt goes in, a response
+comes out… and in between — [click: the arrow breaks open] — something
+happens. Often surprisingly good. Sometimes surprisingly wrong. How does it
+DO that?
+
+[click — the box closes around the question mark] Everything in between is
+hidden. A black box. Honest show of hands: for whom does AI still feel like
+that — a black box? [hands] Yeah. Me too — for a long time. Until I started
+to ask questions. Questions to AI, actually — and I'll come back to that.
 -->
 
 ---

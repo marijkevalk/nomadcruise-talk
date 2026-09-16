@@ -294,3 +294,34 @@
   z-index: 1;
   filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.85));
 }
+
+/* slide 2 — middle zone with swappable long arrow / split state */
+.midzone {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  height: 12rem;
+}
+.longarrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.splitzone {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.zoo-cloud {
+  line-height: 1.6;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
