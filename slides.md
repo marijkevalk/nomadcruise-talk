@@ -41,24 +41,24 @@ layout: center
 
 <div class="text-center">
 
-<div class="flex items-center justify-center gap-6" style="font-family:'Fraunces',serif; font-size:3.1rem; min-height:15rem; letter-spacing:0.02em;">
-  <span v-click="1">PROMPT</span>
+<div class="prow" style="font-family:'Fraunces',serif; font-size:3.1rem; min-height:15rem; letter-spacing:0.02em;">
+  <span v-click="1" style="justify-self:end;">PROMPT</span>
   <span class="midzone">
     <svg v-click="[2,4]" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
     <span v-click="4" class="splitzone">
       <svg viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
       <span class="qwrap">
         <svg v-click="5" class="cube" viewBox="0 0 124 124">
-          <polygon points="14,46 46,14 118,14 86,46" fill="#101010" stroke="#e3b04b" stroke-width="1.4"/>
-          <polygon points="86,46 118,14 118,86 86,118" fill="#060606" stroke="#e3b04b" stroke-width="1.4"/>
-          <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#e3b04b" stroke-width="1.6"/>
+          <polygon points="14,46 34,26 106,26 86,46" fill="#141414" stroke="#f5f5f5" stroke-width="1.6"/>
+          <polygon points="86,46 106,26 106,98 86,118" fill="#0a0a0a" stroke="#f5f5f5" stroke-width="1.6"/>
+          <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#f5f5f5" stroke-width="2"/>
         </svg>
         <span class="qmark">?</span>
       </span>
       <svg viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
     </span>
   </span>
-  <span v-click="2">RESPONSE</span>
+  <span v-click="2" style="justify-self:start;">RESPONSE</span>
 </div>
 
 <div v-click="3" class="zoo-cloud" style="margin-top:-3rem;">

@@ -295,7 +295,13 @@
   filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.85));
 }
 
-/* slide 2 — middle zone with swappable long arrow / split state */
+/* slide 2 — three-column row: equal side columns so the arrow sits dead-center */
+.prow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  column-gap: 1.6rem;
+}
 .midzone {
   position: relative;
   display: inline-flex;
