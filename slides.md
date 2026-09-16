@@ -121,7 +121,7 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
       <li v-click="4"><b>Enjoy: it's fun!</b><span>everyone has a little nerd inside</span></li>
     </ul>
     <div v-click="5" class="workshop-box">
-      <b>Workshop</b> — make sure you have access to an AI assistant you can prompt.
+      <b>Workshop</b> — have an AI assistant you can prompt.
     </div>
   </div>
 </div>
@@ -157,37 +157,37 @@ inside. Today we let it out.
 <div class="whoami-grid">
   <div class="col-labels"><div v-click="1">Academia</div><div v-click="2">Industry</div></div>
   <div class="row-labels"><div class="rl" v-click="1">Pre-nomadic</div><div class="rl" v-click="3">Nomadic</div></div>
-  <div class="whoami">
+  <div class="whoami" v-click="1">
     <div class="q tl" v-click="1">
       <div class="q-item">
         <div class="q-txt"><b>MSc Applied Physics</b><span>TU Eindhoven · Harvard T.H. Chan</span></div>
-        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5"><circle cx="12" cy="12" r="2.2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#f0e6d2" stroke-width="1.5"><circle cx="12" cy="12" r="2.2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
       </div>
       <div class="q-item">
         <div class="q-txt"><b>MSc Econometrics</b><span>Tilburg University</span></div>
-        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,16 9,10 13,14 21,5"/><polyline points="15,5 21,5 21,11"/></svg>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#f0e6d2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,16 9,10 13,14 21,5"/><polyline points="15,5 21,5 21,11"/></svg>
       </div>
     </div>
     <div class="q tr" v-click="2">
       <div class="q-item">
-        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10.5" y="10.5" width="3" height="3"/><g stroke-linecap="round"><line x1="9.5" y1="7" x2="9.5" y2="4"/><line x1="14.5" y1="7" x2="14.5" y2="4"/><line x1="9.5" y1="17" x2="9.5" y2="20"/><line x1="14.5" y1="17" x2="14.5" y2="20"/><line x1="7" y1="9.5" x2="4" y2="9.5"/><line x1="7" y1="14.5" x2="4" y2="14.5"/><line x1="17" y1="9.5" x2="20" y2="9.5"/><line x1="17" y1="14.5" x2="20" y2="14.5"/></g></svg>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#f0e6d2" stroke-width="1.5" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10.5" y="10.5" width="3" height="3"/><g stroke-linecap="round"><line x1="9.5" y1="7" x2="9.5" y2="4"/><line x1="14.5" y1="7" x2="14.5" y2="4"/><line x1="9.5" y1="17" x2="9.5" y2="20"/><line x1="14.5" y1="17" x2="14.5" y2="20"/><line x1="7" y1="9.5" x2="4" y2="9.5"/><line x1="7" y1="14.5" x2="4" y2="14.5"/><line x1="17" y1="9.5" x2="20" y2="9.5"/><line x1="17" y1="14.5" x2="20" y2="14.5"/></g></svg>
         <div class="q-txt"><b>Mathware / R&D Engineer</b><span>ASML · Philips</span></div>
       </div>
     </div>
     <div class="q bl" v-click="4">
       <div class="q-item">
         <div class="q-txt"><b>MSc Artificial Intelligence</b><span>Open Universiteit Nederland</span></div>
-        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.4"><line x1="6" y1="7" x2="14" y2="12"/><line x1="6" y1="17" x2="14" y2="12"/><line x1="14" y1="12" x2="20" y2="7"/><line x1="14" y1="12" x2="20" y2="17"/><circle cx="6" cy="7" r="1.7" fill="#e3b04b"/><circle cx="6" cy="17" r="1.7" fill="#e3b04b"/><circle cx="14" cy="12" r="1.9" fill="#e3b04b"/><circle cx="20" cy="7" r="1.7" fill="#e3b04b"/><circle cx="20" cy="17" r="1.7" fill="#e3b04b"/></svg>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#f0e6d2" stroke-width="1.4"><line x1="6" y1="7" x2="14" y2="12"/><line x1="6" y1="17" x2="14" y2="12"/><line x1="14" y1="12" x2="20" y2="7"/><line x1="14" y1="12" x2="20" y2="17"/><circle cx="6" cy="7" r="1.7" fill="#f0e6d2"/><circle cx="6" cy="17" r="1.7" fill="#f0e6d2"/><circle cx="14" cy="12" r="1.9" fill="#f0e6d2"/><circle cx="20" cy="7" r="1.7" fill="#f0e6d2"/><circle cx="20" cy="17" r="1.7" fill="#f0e6d2"/></svg>
       </div>
     </div>
     <div class="q br" v-click="3">
       <div class="q-item">
-        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,7 3,12 8,17"/><polyline points="16,7 21,12 16,17"/></svg>
-        <div class="q-txt"><b>Software R&D Engineer</b><span>freelance at startups</span></div>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#f0e6d2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,7 3,12 8,17"/><polyline points="16,7 21,12 16,17"/></svg>
+        <div class="q-txt"><b>Software R&D Engineer</b><span>Freelance at Startups</span></div>
       </div>
       <div class="q-item">
-        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3 21 8 12 13 3 8z"/><path d="M3 8v8l9 5 9-5V8"/><line x1="12" y1="13" x2="12" y2="21"/></svg>
-        <div class="q-txt"><b>Building AI harnesses</b><span>personal projects</span></div>
+        <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#f0e6d2" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3 21 8 12 13 3 8z"/><path d="M3 8v8l9 5 9-5V8"/><line x1="12" y1="13" x2="12" y2="21"/></svg>
+        <div class="q-txt"><b>Building AI harnesses</b><span>Personal Projects</span></div>
       </div>
     </div>
   </div>
