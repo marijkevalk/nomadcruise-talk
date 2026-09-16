@@ -118,10 +118,10 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
     <ul class="bullets">
       <li v-click="2"><b>Use it smarter</b><span>push its limits, catch its lies</span></li>
       <li v-click="3"><b>Know what you're talking about</b><span>cut through the hype, spot the confident nonsense</span></li>
-      <li v-click="4"><b>Enjoy — it's fun!</b><span>everyone has a little nerd inside</span></li>
+      <li v-click="4"><b>Enjoy: it's fun!</b><span>everyone has a little nerd inside</span></li>
     </ul>
     <div v-click="5" class="workshop-box">
-      <b>Workshop:</b> have an AI tool you can prompt ready <span class="dim">— ChatGPT, Claude or Gemini (free is fine)</span>
+      <b>Workshop</b> — make sure you have access to an AI assistant you can prompt.
     </div>
   </div>
 </div>
@@ -155,10 +155,10 @@ inside. Today we let it out.
 <div class="kicker">Who am I</div>
 
 <div class="whoami-grid">
-  <div class="col-labels"><div>Academic</div><div>Industry</div></div>
-  <div class="row-labels"><div class="rl">Pre-nomadic</div><div class="rl">Nomadic</div></div>
+  <div class="col-labels"><div v-click="1">Academia</div><div v-click="2">Industry</div></div>
+  <div class="row-labels"><div class="rl" v-click="1">Pre-nomadic</div><div class="rl" v-click="3">Nomadic</div></div>
   <div class="whoami">
-    <div class="q tl">
+    <div class="q tl" v-click="1">
       <div class="q-item">
         <div class="q-txt"><b>MSc Applied Physics</b><span>TU Eindhoven · Harvard T.H. Chan</span></div>
         <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5"><circle cx="12" cy="12" r="2.2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
@@ -168,19 +168,19 @@ inside. Today we let it out.
         <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,16 9,10 13,14 21,5"/><polyline points="15,5 21,5 21,11"/></svg>
       </div>
     </div>
-    <div class="q tr">
+    <div class="q tr" v-click="2">
       <div class="q-item">
         <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.5" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10.5" y="10.5" width="3" height="3"/><g stroke-linecap="round"><line x1="9.5" y1="7" x2="9.5" y2="4"/><line x1="14.5" y1="7" x2="14.5" y2="4"/><line x1="9.5" y1="17" x2="9.5" y2="20"/><line x1="14.5" y1="17" x2="14.5" y2="20"/><line x1="7" y1="9.5" x2="4" y2="9.5"/><line x1="7" y1="14.5" x2="4" y2="14.5"/><line x1="17" y1="9.5" x2="20" y2="9.5"/><line x1="17" y1="14.5" x2="20" y2="14.5"/></g></svg>
         <div class="q-txt"><b>Mathware / R&D Engineer</b><span>ASML · Philips</span></div>
       </div>
     </div>
-    <div class="q bl">
+    <div class="q bl" v-click="4">
       <div class="q-item">
         <div class="q-txt"><b>MSc Artificial Intelligence</b><span>Open Universiteit Nederland</span></div>
         <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.4"><line x1="6" y1="7" x2="14" y2="12"/><line x1="6" y1="17" x2="14" y2="12"/><line x1="14" y1="12" x2="20" y2="7"/><line x1="14" y1="12" x2="20" y2="17"/><circle cx="6" cy="7" r="1.7" fill="#e3b04b"/><circle cx="6" cy="17" r="1.7" fill="#e3b04b"/><circle cx="14" cy="12" r="1.9" fill="#e3b04b"/><circle cx="20" cy="7" r="1.7" fill="#e3b04b"/><circle cx="20" cy="17" r="1.7" fill="#e3b04b"/></svg>
       </div>
     </div>
-    <div class="q br">
+    <div class="q br" v-click="3">
       <div class="q-item">
         <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#e3b04b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8,7 3,12 8,17"/><polyline points="16,7 21,12 16,17"/></svg>
         <div class="q-txt"><b>Software R&D Engineer</b><span>freelance at startups</span></div>
@@ -193,7 +193,7 @@ inside. Today we let it out.
   </div>
 </div>
 
-<div class="balance-block">Outdoors · Sports · Community</div>
+<div class="balance-block" v-click="5">Outdoors · Sports · Community</div>
 
 <!--
 A short introduction about me. Before becoming a nomad I studied physics, and

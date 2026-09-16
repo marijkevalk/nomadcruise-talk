@@ -4,9 +4,9 @@
 <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#e3b04b" stop-opacity="0.9"/><stop offset="100%" stop-color="#e3b04b" stop-opacity="0"/></radialGradient>
 </defs>
-<ellipse cx="120" cy="61" rx="46" ry="14" fill="url(#glow2)" filter="url(#ig2)"/>
-<g stroke="#e3b04b" stroke-width="2" stroke-linecap="round" opacity="0.55">
-<line x1="132" y1="55" x2="128" y2="16"/><line x1="144" y1="55" x2="150" y2="20"/><line x1="120" y1="58" x2="112" y2="20"/>
+<ellipse cx="119" cy="61" rx="46" ry="14" fill="url(#glow2)" filter="url(#ig2)"/>
+<g stroke="#e3b04b" stroke-width="2" stroke-linecap="round" opacity="0.6">
+<line x1="110" y1="57" x2="103" y2="16"/><line x1="119" y1="55" x2="119" y2="10"/><line x1="129" y1="57" x2="136" y2="16"/>
 </g>
 <g stroke="#f5f5f5" stroke-linejoin="round" stroke-linecap="round">
 <polygon points="80,70 98,52 158,52 140,70" fill="rgba(8,11,20,0.5)" stroke-width="2"/>
