@@ -63,9 +63,9 @@ layout: center
 
 <div v-click="3" class="zoo-cloud" style="margin-top:-3rem;">
   <div class="text-xl" style="color:#e7bd6a; white-space:nowrap;">ChatGPT · Claude · Gemini · Copilot</div>
-  <div class="text-xl mt-1" style="color:#d8b271; white-space:nowrap;">Perplexity · Grok · Midjourney · Lovable</div>
-  <div class="text-lg mt-1" style="color:#c2a26e; white-space:nowrap;">Cursor · Replit · NotebookLM · ElevenLabs</div>
-  <div class="text-lg mt-1" style="color:#a8956d; white-space:nowrap;">Suno · DeepL · Notion AI · character.ai · …</div>
+  <div class="text-xl mt-1" style="color:#d8b271; white-space:nowrap;">Perplexity · Grok · DeepSeek · Midjourney</div>
+  <div class="text-lg mt-1" style="color:#c2a26e; white-space:nowrap;">Canva AI · Grammarly · Notion AI · DeepL</div>
+  <div class="text-lg mt-1" style="color:#a8956d; white-space:nowrap;">Jasper · Gamma · Otter.ai · Lovable · Cursor · …</div>
 </div>
 
 </div>
