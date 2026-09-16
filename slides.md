@@ -61,10 +61,11 @@ layout: center
   <span v-click="2">RESPONSE</span>
 </div>
 
-<div v-click="3" class="mt-6 zoo-cloud">
-  <div class="text-xl">ChatGPT · Claude · Gemini · Copilot · Perplexity · Grok</div>
-  <div class="text-lg mt-2" style="opacity:0.85;">DeepSeek · Mistral · Llama · Cursor · Notion&nbsp;AI · character.ai · Zapier · n8n · LangChain</div>
-  <div class="mt-3 dim italic text-lg">apps · models · wrappers · agents · whole harnesses around models…</div>
+<div v-click="3" class="zoo-cloud" style="margin-top:-3rem;">
+  <div class="text-xl" style="color:#e7bd6a; white-space:nowrap;">ChatGPT · Claude · Gemini · Copilot</div>
+  <div class="text-xl mt-1" style="color:#d8b271; white-space:nowrap;">Perplexity · Grok · Midjourney · Lovable</div>
+  <div class="text-lg mt-1" style="color:#c2a26e; white-space:nowrap;">Cursor · Replit · NotebookLM · ElevenLabs</div>
+  <div class="text-lg mt-1" style="color:#a8956d; white-space:nowrap;">Suno · DeepL · Notion AI · character.ai · …</div>
 </div>
 
 </div>
