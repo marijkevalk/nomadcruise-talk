@@ -247,32 +247,30 @@ the same engine.
 
 # This is a workshop
 
+<Countdown :minutes="5" :run="false" />
+
 <hr class="rule" />
 
-<div class="grid grid-cols-2 gap-14 text-lg leading-relaxed">
-<div>
+<div class="workshop-flow">
 
-During each section,<br>**write down at least one question:**
-
-<div class="rows mt-4">
-<div>something you <b>don't understand</b></div>
-<div>something that makes you <b>wonder</b></div>
-<div>something you want to <b>know more</b> of</div>
+<div class="wf-block">
+  <div class="wf-head">During each section</div>
+  <div class="wf-lead">Write down at least one question:</div>
+  <ul class="wf-list">
+    <li>something you don't understand</li>
+    <li>something that makes you wonder</li>
+    <li>something you want to know more of</li>
+  </ul>
+  <div class="wf-note">it can be anything.</div>
 </div>
 
-<div class="mt-4 accent">it can be anything.</div>
-
-</div>
-<div>
-
-After each section,<br>**5 minutes to ask it · to AI.**
-
-<div class="rows mt-4">
-<div>any chat app you already have<br><span class="dim text-base">ChatGPT · Claude · Gemini · free tier is fine</span></div>
-<div>your own question beats my examples</div>
+<div class="wf-block">
+  <div class="wf-head">After each section</div>
+  <div class="wf-step"><b>Get into groups</b> of two or three with your neighbours.</div>
+  <div class="wf-step"><b>Personally:</b> choose one of your questions and ask it to AI.</div>
+  <div class="wf-step"><b>Depending on time:</b> explain what you learned, or what's still unclear, to a neighbour.</div>
 </div>
 
-</div>
 </div>
 
 <!--

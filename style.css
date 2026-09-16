@@ -1,3 +1,12 @@
+/* ============================================================
+ * PALETTE — LOCKED (Sept 2026). One colour = one meaning.
+ *   Navy #0a0e1a        background
+ *   Cream #f0e6d2/#f5f5f5  body text / white icons
+ *   Gold  #e3b04b       BASE accent — titles, kickers, structure, emphasis
+ *   Green #5fae88/#8fcbab  WORKSHOP / interactive — boxes, timers, magician accent
+ *   Purple #7263b8/#b9a9ee  STANDALONE standout — Outdoors block, slide-2 '?'
+ *   Grey  #9a917f       subtle labels + the who-am-I cross
+ * ============================================================ */
 /*
  * "AI is not magic" — editorial dark theme.
  * One accent (--talk-accent), serif display headings (Fraunces), Inter for body.
@@ -454,3 +463,31 @@
   border-radius: 0.5rem; padding: 0.5rem 1.6rem;
   font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; font-size: 1rem;
 }
+
+/* workshop slide — vertical flow, green */
+.clock-badge {
+  position: absolute; top: 3.2rem; right: 3.8rem;
+  display: flex; align-items: center; gap: 0.5rem;
+  color: #8fcbab;
+  border: 1.5px solid rgba(95,174,136,0.6);
+  background: rgba(95,174,136,0.12);
+  border-radius: 0.6rem; padding: 0.4rem 0.9rem;
+  font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600;
+}
+.clock-badge svg { width: 1.4rem; height: 1.4rem; }
+.workshop-flow { display: flex; flex-direction: column; gap: 1rem; margin-top: 0; max-width: 54rem; }
+.wf-head {
+  font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.55rem;
+  color: #8fcbab; margin-bottom: 0.2rem;
+}
+.wf-lead { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.2rem; }
+.wf-list { list-style: none; padding: 0; margin: 0 0 0.5rem; }
+.wf-list li {
+  list-style: none; position: relative; padding-left: 1.4rem; font-size: 1.08rem;
+  color: var(--ink-dim); line-height: 1.42;
+}
+.wf-list li::marker { content: ""; }
+.wf-list li::before { content: "·"; position: absolute; left: 0.45rem; color: #8fcbab; font-weight: 700; }
+.wf-note { font-size: 1.1rem; color: #8fcbab; font-style: italic; margin-top: 0.1rem; }
+.wf-step { font-size: 1.12rem; line-height: 1.4; margin-top: 0.28rem; }
+.wf-step b { color: #8fcbab; }
