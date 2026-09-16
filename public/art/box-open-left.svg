@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 170">
+<defs>
+<filter id="ig2" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+<radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e3b04b" stop-opacity="0.9"/><stop offset="100%" stop-color="#e3b04b" stop-opacity="0"/></radialGradient>
+</defs>
+<!-- interior glow through the opening -->
+<ellipse cx="120" cy="61" rx="46" ry="14" fill="url(#glow2)" filter="url(#ig2)"/>
+<!-- light escaping (up-right, away from the lid) -->
+<g stroke="#e3b04b" stroke-width="2" stroke-linecap="round" opacity="0.55">
+<line x1="132" y1="55" x2="128" y2="16"/><line x1="144" y1="55" x2="150" y2="20"/><line x1="120" y1="58" x2="112" y2="20"/>
+</g>
+<!-- top opening / cavity (hinge edge on the LEFT: 80,70 - 98,52) -->
+<polygon points="80,70 98,52 158,52 140,70" fill="rgba(8,11,20,0.5)" stroke="#f5f5f5" stroke-width="2"/>
+<!-- right wall -->
+<polygon points="140,70 158,52 158,102 140,120" fill="rgba(196,202,214,0.09)" stroke="#f5f5f5" stroke-width="2"/>
+<!-- front wall -->
+<polygon points="80,70 140,70 140,120 80,120" fill="rgba(196,202,214,0.13)" stroke="#f5f5f5" stroke-width="2.3"/>
+<!-- lid, hinged on the left edge, opened up and to the LEFT -->
+<polygon points="80,70 98,52 56,12 38,30" fill="rgba(196,202,214,0.15)" stroke="#f5f5f5" stroke-width="2"/>
+</svg>

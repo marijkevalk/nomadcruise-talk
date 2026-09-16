@@ -99,9 +99,7 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 
 ---
 
-<div class="kicker no-star">
-  <svg viewBox="0 0 26 24" style="display:inline-block;width:1.15em;height:1.15em;vertical-align:-0.18em;margin-right:0.45em;"><g fill="none" stroke="#e3b04b" stroke-width="1.4" stroke-linejoin="round"><polygon points="3,11 8,8 18,8 13,11"/><polygon points="3,11 13,11 13,21 3,21"/><polygon points="13,11 18,8 18,18 13,21"/></g><g stroke="#e3b04b" stroke-width="1.2" opacity="0.7" stroke-linecap="round"><line x1="8" y1="8" x2="6" y2="3"/><line x1="18" y1="8" x2="22" y2="4"/></g></svg>Today
-</div>
+<div class="kicker">Today</div>
 
 # Demystifying the black box
 
@@ -115,11 +113,16 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 </div>
 
 <div v-click="1" class="box-bullets">
-  <img :src="'/art/box-open-grey.svg'" class="openbox" />
-  <div class="bullets">
-    <div v-click="2"><b>Use it smarter</b><span>push its limits, catch its lies</span></div>
-    <div v-click="3"><b>Know what you're talking about</b><span>cut through the hype, spot the confident nonsense</span></div>
-    <div v-click="4"><b>Enjoy — it's fun!</b><span>everyone has a little nerd inside</span></div>
+  <img :src="'/art/box-open-left.svg'" class="openbox" />
+  <div class="right-col">
+    <ul class="bullets">
+      <li v-click="2"><b>Use it smarter</b><span>push its limits, catch its lies</span></li>
+      <li v-click="3"><b>Know what you're talking about</b><span>cut through the hype, spot the confident nonsense</span></li>
+      <li v-click="4"><b>Enjoy — it's fun!</b><span>everyone has a little nerd inside</span></li>
+    </ul>
+    <div v-click="5" class="workshop-box">
+      <b>This is a workshop</b> — play along on your own device. Have an AI chat app open <span class="dim">(ChatGPT · Claude · Gemini — free is fine)</span>: that's the “model” we'll be prompting together.
+    </div>
   </div>
 </div>
 
@@ -231,18 +234,24 @@ the same engine.
 
 <div class="kicker">Who am I</div>
 
-# Physics, econometrics,<br>and a one-way ticket
-
-<hr class="rule" />
-
-<div class="rows text-lg max-w-3xl">
-<div><b>MSc Applied Physics · MSc Econometrics</b> <span class="dim">— understand the world, describe it with math</span></div>
-<div><b>R&D engineer, Dutch high-tech</b> <span class="dim">— ASML, Philips</span></div>
-<div><b>Nomad → freelance developer</b> <span class="dim">— startups & research institutes</span></div>
-<div><b>Now: building with AI</b> <span class="dim">— a personal human + software agency · AI master's</span></div>
+<div class="whoami">
+  <div class="q tl">
+    <div class="q-item"><b>MSc Applied Physics</b><span>TU Eindhoven · Harvard T.H. Chan</span></div>
+    <div class="q-item"><b>MSc Econometrics</b><span>Tilburg University</span></div>
+  </div>
+  <div class="q tr">
+    <div class="q-item"><b>Mathware · R&D Engineer</b><span>ASML · Philips</span></div>
+  </div>
+  <div class="q bl">
+    <div class="q-item"><b>MSc Artificial Intelligence</b><span>Open Universiteit Nederland</span></div>
+  </div>
+  <div class="q br">
+    <div class="q-item"><b>Software R&D Engineer</b><span>freelance at startups</span></div>
+    <div class="q-item"><b>Building AI harnesses</b><span>personal projects</span></div>
+  </div>
 </div>
 
-<div class="mt-6 dim">balance: outdoors · sports · community</div>
+<div class="whoami-bar">Outdoors · Sports · Community</div>
 
 <!--
 A short introduction about me. Before becoming a nomad I studied physics, and
