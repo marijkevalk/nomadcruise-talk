@@ -489,38 +489,34 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 
 ---
 
-<div class="kicker">Intermezzo <span class="dim">· round one</span></div>
+<div class="kicker green-kicker">Your turn <span class="dim">· part one</span></div>
 
-# Ask AI your question
+# <span class="green-title">Ask AI a question</span>
+
+<Countdown :minutes="5" :run="true" class="clock-lg" />
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[1fr_1fr_auto] gap-12 items-start">
-<div class="text-lg">
+<div class="qround-body">
 
-**Stuck? Start with:**
+<div class="recap-inset">
+  <div class="ri-title">During each part</div>
+  <div class="ri-line">write a question · <span class="dim">don't get, wonder, want more</span></div>
+  <div class="ri-title mt-2">After each part</div>
+  <div class="ri-line">groups · ask AI · discuss</div>
+</div>
 
-<div class="rows">
-<div>"Why did … ?"</div>
-<div>"What ended … ?"</div>
-<div>"Explain … like I'm 12"</div>
+<div class="qmain">
+  <div class="stuck">Stuck? Start with <b>"Why…"</b> · <b>"What ended…"</b> · <b>"Explain … like I'm 12"</b></div>
+  <div class="qlist">
+    <div class="ql">What actually ended the last AI winter?</div>
+    <div class="ql">Is a thermostat really a little bit intelligent?</div>
+    <div class="ql">What was so groundbreaking about the transformer paper?</div>
+    <div class="ql ql-deep">Why did GPUs beat CPUs for training neural networks?</div>
+  </div>
 </div>
 
 </div>
-<div class="text-lg">
-
-**For example:**
-
-<div class="rows">
-<div>What ended the last AI winter?</div>
-<div>Is a thermostat intelligent?</div>
-</div>
-
-</div>
-<div class="round-timer">5:00</div>
-</div>
-
-<div class="mt-8 dim">one question · any chat app · I'll walk around</div>
 
 
 <!--
