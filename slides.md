@@ -109,19 +109,19 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 
 <div v-click.hide="1" class="comic-hero">
   <img :src="'/photos/glue-original.jpg'" class="glue-shot" />
-  <div class="credit mt-3">Google AI Overview, May 2024 — the answer (left) & its source: an 11-year-old Reddit joke (right) · via @petergyang</div>
+  <div class="credit mt-3">Google AI Overview, May 2024 · the answer (left) & its source: an 11-year-old Reddit joke (right) · via @petergyang</div>
 </div>
 
 <div v-click="1" class="box-bullets">
   <img :src="'/art/box-open-left.svg'" class="openbox" />
   <div class="right-col">
     <ul class="bullets">
-      <li v-click="2"><b>Use it smarter</b><span>push its limits, catch its lies</span></li>
-      <li v-click="3"><b>Know what you're talking about</b><span>cut through the hype, spot the confident nonsense</span></li>
-      <li v-click="4"><b>Enjoy: it's fun!</b><span>everyone has a little nerd inside</span></li>
+      <li v-click="2"><b>Use it smarter</b><span>Push its limits, catch its lies</span></li>
+      <li v-click="3"><b>Know what you're talking about</b><span>Cut through the hype, spot the confident nonsense</span></li>
+      <li v-click="4"><b>Enjoy: it's fun!</b><span>Everyone has a little nerd inside</span></li>
     </ul>
     <div v-click="5" class="workshop-box">
-      <b>Workshop</b> — have an AI assistant you can prompt.
+      <b>Workshop:</b> have an AI assistant you can prompt.
     </div>
   </div>
 </div>
@@ -265,10 +265,10 @@ During each section,<br>**write down at least one question:**
 </div>
 <div>
 
-After each section,<br>**5 minutes to ask it — to AI.**
+After each section,<br>**5 minutes to ask it · to AI.**
 
 <div class="rows mt-4">
-<div>any chat app you already have<br><span class="dim text-base">ChatGPT · Claude · Gemini — free tier is fine</span></div>
+<div>any chat app you already have<br><span class="dim text-base">ChatGPT · Claude · Gemini · free tier is fine</span></div>
 <div>your own question beats my examples</div>
 </div>
 
@@ -326,7 +326,7 @@ perception <span class="accent mx-3">→</span> processing <span class="accent m
 </div>
 
 <div class="mt-8 text-lg dim max-w-2xl">
-natural intelligence is everywhere in nature — in <b class="accent">degrees</b>
+natural intelligence is everywhere in nature · in <b class="accent">degrees</b>
 </div>
 
 
@@ -354,7 +354,7 @@ build some of that.
 
 <div class="grid grid-cols-[3fr_1fr] gap-10 items-start">
 <div class="rows text-xl">
-  <div><span class="accent" style="font-family:'Fraunces',serif;">1600s</span> &ensp; Leibniz dreams: <i>"calculemus"</i> — let us calculate</div>
+  <div><span class="accent" style="font-family:'Fraunces',serif;">1600s</span> &ensp; Leibniz dreams: <i>"calculemus"</i> · let us calculate</div>
   <div><span class="accent" style="font-family:'Fraunces',serif;">1950</span> &ensp; Turing: can machines think? <span class="dim">(the Turing test)</span></div>
   <div><span class="accent" style="font-family:'Fraunces',serif;">1956</span> &ensp; the term "artificial intelligence" is coined</div>
   <div><span class="accent" style="font-family:'Fraunces',serif;">1997</span> &ensp; Deep Blue beats the world chess champion</div>
@@ -401,7 +401,7 @@ in this room.
 </div>
 
 <div class="mt-4 text-lg dim">money flows in → results disappoint → winter. repeat.<br>
-the ambition all along: <b class="accent">AGI</b> — AI that can do everything a human can</div>
+the ambition all along: <b class="accent">AGI</b> · AI that can do everything a human can</div>
 
 
 <!--
@@ -426,14 +426,14 @@ And right now? We are in the hottest summer the field has ever had.
 
 <div class="strip text-lg">
   <div><div class="accent font-semibold">one architecture</div><div class="dim mt-1">the transformer paper, 2017</div></div>
-  <div><div class="accent font-semibold">hardware</div><div class="dim mt-1">GPUs — built for games</div></div>
+  <div><div class="accent font-semibold">hardware</div><div class="dim mt-1">GPUs · built for games</div></div>
   <div><div class="accent font-semibold">data</div><div class="dim mt-1">the internet finally produced enough text</div></div>
 </div>
 
 <div class="grid grid-cols-[3fr_2fr] gap-10 mt-8 items-center">
 <div>
 <div class="text-xl">ChatGPT: <b>~100M users in ~2 months</b><br><span class="dim">fastest-growing consumer app ever</span></div>
-<div class="mt-6 accent">LLMs are only a small part of AI —<br>but that's our focus today.</div>
+<div class="mt-6 accent">LLMs are only a small part of AI <br>but that's our focus today.</div>
 </div>
 <img :src="'/photos/datacenter.jpg'" class="photo h-44 w-full" />
 </div>
@@ -540,7 +540,7 @@ right now.
 <div class="grid grid-cols-[2fr_3fr] gap-10 items-center">
 <div>
   <img :src="'/photos/titanic.jpg'" class="photo w-full" />
-  <div class="credit mt-1">RMS Titanic leaving Southampton, 1912 — F.G.O. Stuart</div>
+  <div class="credit mt-1">RMS Titanic leaving Southampton, 1912 · F.G.O. Stuart</div>
 </div>
 <div class="space-y-6 text-2xl" style="font-family:'Fraunces',serif;">
   <p>"Titanic got stuck on …"</p>
@@ -574,7 +574,7 @@ whole section.
 
 <div class="grid grid-cols-[2fr_1fr] gap-8 items-center mt-2">
   <img :src="'/art/top5.png'" class="rounded" />
-  <div class="text-lg dim leading-relaxed">everything the model outputs is this list —<br><br>the reply you see is just a <b class="accent">draw</b> from it</div>
+  <div class="text-lg dim leading-relaxed">everything the model outputs is this list <br><br>the reply you see is just a <b class="accent">draw</b> from it</div>
 </div>
 
 
@@ -616,13 +616,13 @@ find the pattern → predict the next point
 
 <span v-click="1" class="block mt-3">now imagine this in <b>many, many more dimensions</b></span>
 
-<span v-click="2" class="block mt-3 dim italic">"an econometrician would call this a regression — just in absurdly many dimensions"</span>
+<span v-click="2" class="block mt-3 dim italic">"an econometrician would call this a regression · just in absurdly many dimensions"</span>
 
 </div>
 </div>
 <div v-click="3">
   <img :src="'/photos/fence.jpg'" class="photo w-full" style="max-height:17.5rem; object-fit:contain; background:#f5f5f0; border-radius:0.4rem;" />
-  <div class="credit mt-1 text-center">it continues the pattern — whether that was the point or not</div>
+  <div class="credit mt-1 text-center">it continues the pattern · whether that was the point or not</div>
 </div>
 </div>
 
@@ -656,7 +656,7 @@ Keep him in mind: he'll explain a lot when we get to hallucination.
 <div class="grid grid-cols-[3fr_2fr] gap-10 items-center">
 <div>
 <div class="mt-2 text-xl leading-relaxed" style="font-family:'Fraunces',serif;">
-"like an old couple finishing each other's sentences —<br><span class="dim">trained on years of being together"</span>
+"like an old couple finishing each other's sentences <br><span class="dim">trained on years of being together"</span>
 </div>
 
 <div v-click class="mt-6 text-lg">
@@ -682,7 +682,7 @@ those connections are numbers: <b class="accent">weights</b><br>
 </svg>
 </div>
 
-<div class="bubble" style="right:9.5rem; bottom:3.2rem;">wait — so it never looks anything up?</div>
+<div class="bubble" style="right:9.5rem; bottom:3.2rem;">wait · so it never looks anything up?</div>
 <img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
 
 <!--
@@ -709,7 +709,7 @@ anything up?" Hold that thought. It's exactly the right question.
   <img :src="'/ai_model_file_heatmap.png'" class="rounded" />
 </div>
 
-<div class="mt-3 dim text-center">real weights from a real model (GPT-2) — this is <i>literally</i> what's inside</div>
+<div class="mt-3 dim text-center">real weights from a real model (GPT-2) · this is <i>literally</i> what's inside</div>
 
 <div v-click class="mt-2 accent text-center text-lg">so… where do these numbers come from?</div>
 
@@ -740,8 +740,8 @@ That's the "built on our written world" part. Three steps.
 <div class="rows text-lg max-w-3xl">
   <div>the raw material: the public web · books · articles · code</div>
   <div class="accent"><b>"well over 100,000 years of nonstop reading, around the clock"</b></div>
-  <div v-click>what it read is what it learned <span class="dim">— bias rides in with the data (whose text was it? — now in court)</span></div>
-  <div v-click>the exact mix is a <b>trade secret</b> — one training run: <b>$78M – $490M</b></div>
+  <div v-click>what it read is what it learned <span class="dim">· bias rides in with the data (whose text was it? · now in court)</span></div>
+  <div v-click>the exact mix is a <b>trade secret</b> · one training run: <b>$78M – $490M</b></div>
 </div>
 
 
@@ -857,12 +857,12 @@ model was never told what a king is. It's in the numbers anyway.
 <hr class="rule" />
 
 <div class="rows text-lg max-w-3xl">
-  <div>the raw model is a <b>text-completer</b> — not yet an assistant</div>
+  <div>the raw model is a <b>text-completer</b> · not yet an assistant</div>
   <div v-click>tuned with <b>human feedback</b>: helpful answers, good behaviour <span class="dim">(the term: RLHF)</span></div>
   <div v-click>+ safeguards & guardrails</div>
 </div>
 
-<div v-click class="mt-8 text-xl accent" style="font-family:'Fraunces',serif;">"AI is not neutral — it's built, tuned and controlled."</div>
+<div v-click class="mt-8 text-xl accent" style="font-family:'Fraunces',serif;">"AI is not neutral · it's built, tuned and controlled."</div>
 
 
 <!--
@@ -926,14 +926,14 @@ layout: center
 <div class="display">…and the results are<br><span class="accent">spectacular</span></div>
 
 <div class="mt-8 text-xl leading-relaxed">
-train it only to predict the next word —<br>and abilities appear that <b>nobody put in</b>.
+train it only to predict the next word <br>and abilities appear that <b>nobody put in</b>.
 </div>
 
-<div class="mt-5 dim text-lg">translation · reasoning · code — <span class="accent">emergence</span>.<br>even the makers were surprised.</div>
+<div class="mt-5 dim text-lg">translation · reasoning · code · <span class="accent">emergence</span>.<br>even the makers were surprised.</div>
 </div>
 <div v-click>
   <img :src="'/art/xkcd-2228.png'" class="photo w-full bg-white p-2" style="max-height:21rem; object-fit:contain;" />
-  <div class="credit mt-1 text-center">xkcd #2228, "Machine Learning Captcha" — CC BY-NC</div>
+  <div class="credit mt-1 text-center">xkcd #2228, "Machine Learning Captcha" · CC BY-NC</div>
 </div>
 </div>
 
@@ -972,7 +972,7 @@ because it moved faster than anyone expected.
 
 <img :src="'/photos/riverbed.jpg'" class="photo h-32 w-full my-3" />
 
-training carves the riverbed —<br>new water <i>always</i> finds a way down
+training carves the riverbed <br>new water <i>always</i> finds a way down
 
 <div class="accent mt-3 text-xl" style="font-family:'Fraunces',serif;">plausible ≠ true</div>
 
@@ -984,7 +984,7 @@ training carves the riverbed —<br>new water <i>always</i> finds a way down
 sometimes a less likely word wins<br>
 <span class="dim">(the knob: temperature)</span>
 
-training made the models differ from <i>each other</i> —<br>the dice make the <i>same</i> model vary
+training made the models differ from <i>each other</i> <br>the dice make the <i>same</i> model vary
 
 </div>
 </div>
@@ -1089,8 +1089,8 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 # The anatomy of every AI tool
 
 <div class="diagram mt-6 mx-auto">
-  <div v-click="3" class="ring guard"><span class="ring-label">Guardrails <span class="dim normal-case tracking-normal">— the company's rules</span></span>
-    <div v-click="2" class="ring harness"><span class="ring-label">Harness <span class="dim normal-case tracking-normal">— the car: chat window · memory · tools</span></span>
+  <div v-click="3" class="ring guard"><span class="ring-label">Guardrails <span class="dim normal-case tracking-normal">· the company's rules</span></span>
+    <div v-click="2" class="ring harness"><span class="ring-label">Harness <span class="dim normal-case tracking-normal">· the car: chat window · memory · tools</span></span>
       <div class="ring engine">LLM<br><span class="text-sm dim" style="font-family:'Inter',sans-serif;">the engine</span></div>
     </div>
   </div>
@@ -1127,7 +1127,7 @@ wheel is always in your hands.
 
 <div class="grid grid-cols-[3fr_2fr] gap-10 items-start">
 <div class="rows text-lg">
-  <div>Claude chat & Claude Code — <b>same model behind</b> <span class="dim">(ChatGPT: same trick)</span></div>
+  <div>Claude chat & Claude Code · <b>same model behind</b> <span class="dim">(ChatGPT: same trick)</span></div>
   <div v-click>most "AI startups" = a new car around someone else's engine <span class="dim">(a wrapper)</span></div>
   <div v-click>the labs each build their <b>own engines</b>, in versions & sizes</div>
 </div>
@@ -1163,10 +1163,10 @@ optimization" is just: route the easy work to the small engine.
 <hr class="rule" />
 
 <div class="rows text-lg max-w-3xl">
-  <div><span class="big-num" style="font-size:1.6rem;">1</span>&ensp;<b>fine-tuning</b> — extra training data, changes the weights <span class="dim">(rare)</span></div>
-  <div v-click><span class="big-num" style="font-size:1.6rem;">2</span>&ensp;<b>harness</b> — build tools & memory around the engine</div>
-  <div v-click><span class="big-num" style="font-size:1.6rem;">3</span>&ensp;<b>context</b> — what <b>you</b> feed it, every call — <span class="accent">the only layer you always control</span></div>
-  <div v-click class="dim italic">"a tool that searches your documents and pastes what it finds into the prompt — that's all 'RAG' is"</div>
+  <div><span class="big-num" style="font-size:1.6rem;">1</span>&ensp;<b>fine-tuning</b> · extra training data, changes the weights <span class="dim">(rare)</span></div>
+  <div v-click><span class="big-num" style="font-size:1.6rem;">2</span>&ensp;<b>harness</b> · build tools & memory around the engine</div>
+  <div v-click><span class="big-num" style="font-size:1.6rem;">3</span>&ensp;<b>context</b> · what <b>you</b> feed it, every call · <span class="accent">the only layer you always control</span></div>
+  <div v-click class="dim italic">"a tool that searches your documents and pastes what it finds into the prompt · that's all 'RAG' is"</div>
   <div v-click class="accent">context is also your anti-hallucination lever: give it your facts instead of letting it guess</div>
 </div>
 
@@ -1206,7 +1206,7 @@ give it your facts, it will guess. So give it your facts.
   <div><div class="font-semibold">engine builders</div><div class="dim mt-2">OpenAI · Anthropic<br>Google · Mistral</div></div>
 </div>
 
-<div class="mt-12 text-2xl accent" style="font-family:'Fraunces',serif;">Overwhelmed? It doesn't matter what you use exactly — just start.</div>
+<div class="mt-12 text-2xl accent" style="font-family:'Fraunces',serif;">Overwhelmed? It doesn't matter what you use exactly · just start.</div>
 
 
 <!--
@@ -1279,7 +1279,7 @@ layout: center
 
 <div class="display">AI is not magic.</div>
 
-<div class="mt-6 text-xl dim">data · weights · math — the box is grey now</div>
+<div class="mt-6 text-xl dim">data · weights · math · the box is grey now</div>
 
 <div class="mt-10 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
 "Treat the model as a noisy estimator,<br>not an oracle."
@@ -1316,7 +1316,7 @@ layout: center
 <div class="display" style="font-size:2.6rem;">Keep asking.</div>
 
 <div class="mt-8 text-lg dim leading-relaxed">
-find me on board — questions, AI talk, or just a chat<br>
+find me on board · questions, AI talk, or just a chat<br>
 and at the morning workouts on deck
 </div>
 
@@ -1326,7 +1326,7 @@ and at the morning workouts on deck
 
 <div class="byline" style="bottom:8rem;">Marijke Valk · NomadCruise 17</div>
 <div class="credit" style="position:absolute; bottom:2rem; right:2rem; max-width:22rem; text-align:right;">
-photos: Wikimedia Commons — F.G.O. Stuart (PD) · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · bobintraveling (CC BY 2.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
+photos: Wikimedia Commons · F.G.O. Stuart (PD) · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · bobintraveling (CC BY 2.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
 </div>
 
 <!--

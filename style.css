@@ -39,8 +39,8 @@
 .slidev-layout h1 {
   font-family: 'Fraunces', serif;
   font-weight: 600;
-  font-size: 3.9rem;
-  line-height: 1.1;
+  font-size: 3.3rem;
+  line-height: 1.12;
   letter-spacing: -0.01em;
   color: var(--ink);
   margin-bottom: 1.2rem;
@@ -64,9 +64,9 @@
   color: var(--talk-accent);
 }
 .kicker {
-  font-size: 0.92rem;
+  font-size: 1.18rem;
   font-weight: 600;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--talk-accent);
   margin-bottom: 1.1rem;
@@ -380,13 +380,13 @@
 }
 .bullets span { display: block; margin-top: 0.08rem; color: var(--ink-dim); font-size: 1.05rem; }
 .workshop-box {
-  margin-top: 0.4rem; align-self: start; max-width: 34rem;
+  margin-top: 0.5rem; margin-left: 1.9rem; align-self: start; max-width: 42rem;
   background: rgba(114, 99, 184, 0.16);
   border: 1px solid #7263b8;
   border-left: 4px solid #7263b8;
   border-radius: 0.5rem;
-  padding: 0.55rem 1rem;
-  font-size: 1rem; line-height: 1.35; white-space: nowrap;
+  padding: 0.6rem 1.1rem;
+  font-size: 1.2rem; line-height: 1.35; white-space: nowrap;
 }
 .workshop-box b { color: #b9a9ee; }
 .workshop-box .dim { color: var(--ink-dim); }
@@ -421,14 +421,14 @@
 .whoami::before {
   content: ""; position: absolute; left: 50%; top: 0; bottom: 0;
   width: 2px; transform: translateX(-1px);
-  background: linear-gradient(#e3b04b00, #e3b04b 10%, #e3b04b 90%, #e3b04b00);
-  box-shadow: 0 0 12px rgba(227,176,75,0.35);
+  background: linear-gradient(#9a917f00, #9a917f 10%, #9a917f 90%, #9a917f00);
+  box-shadow: 0 0 10px rgba(154,145,127,0.3);
 }
 .whoami::after {
   content: ""; position: absolute; top: 50%; left: 0; right: 0;
   height: 2px; transform: translateY(-1px);
-  background: linear-gradient(90deg, #e3b04b00, #e3b04b 10%, #e3b04b 90%, #e3b04b00);
-  box-shadow: 0 0 12px rgba(227,176,75,0.35);
+  background: linear-gradient(90deg, #9a917f00, #9a917f 10%, #9a917f 90%, #9a917f00);
+  box-shadow: 0 0 10px rgba(154,145,127,0.3);
 }
 .q { display: flex; flex-direction: column; justify-content: flex-start; gap: 1.3rem; padding: 1.5rem 2rem; }
 .q.tl, .q.bl { align-items: flex-end; }
