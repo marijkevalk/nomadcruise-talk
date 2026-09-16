@@ -225,21 +225,9 @@ resonates: find me on board, I also run the morning workouts. [beat]
 <hr class="rule" />
 
 <div class="route">
-  <div class="stop">
-    <span class="stop-num">1</span>
-    <img :src="'/art/box-r0.svg'" class="stop-box" />
-    <span class="stop-title">AI is not new</span>
-  </div>
-  <div class="stop">
-    <span class="stop-num">2</span>
-    <img :src="'/art/box-r1.svg'" class="stop-box" />
-    <span class="stop-title">An LLM is statistics built on our written world</span>
-  </div>
-  <div class="stop">
-    <span class="stop-num">3</span>
-    <img :src="'/art/box-r2.svg'" class="stop-box" />
-    <span class="stop-title">AI tools are cars wrapped around the same engines</span>
-  </div>
+  <div class="stop" v-click="1"><span class="stop-num">1.</span><span class="stop-title">AI is not new</span></div>
+  <div class="stop" v-click="2"><span class="stop-num">2.</span><span class="stop-title">An LLM is statistics built on our written world</span></div>
+  <div class="stop" v-click="3"><span class="stop-num">3.</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
 </div>
 
 <img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
@@ -257,15 +245,15 @@ the same engine.
 
 <div class="kicker">How this works</div>
 
-# This is a workshop
+# <span class="green-title">This is a workshop</span>
 
-<Countdown :minutes="5" :run="false" />
+<Countdown :minutes="5" :run="false" class="clock-lg" />
 
 <hr class="rule" />
 
-<div class="workshop-flow">
+<div class="workshop-flow workshop-flow-h">
 
-<div class="wf-block">
+<div class="wf-block" v-click="1">
   <div class="wf-head">During each section</div>
   <div class="wf-lead">Write down at least one question:</div>
   <ul class="wf-list">
@@ -276,7 +264,7 @@ the same engine.
   <div class="wf-note">it can be anything.</div>
 </div>
 
-<div class="wf-block">
+<div class="wf-block" v-click="2">
   <div class="wf-head">After each section</div>
   <div class="wf-step"><b>Get into groups</b> of two or three with your neighbours.</div>
   <div class="wf-step"><b>Personally:</b> choose one of your questions and ask it to AI.</div>
