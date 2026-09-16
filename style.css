@@ -370,3 +370,6 @@
   display: block; line-height: 1.15;
 }
 .bullets span { display: block; margin-top: 0.35rem; color: var(--ink-dim); font-size: 1.25rem; }
+
+/* slide 3 — original glue screenshot */
+.glue-shot { max-height: 20rem; border-radius: 0.5rem; box-shadow: 0 10px 34px rgba(0,0,0,0.5); }

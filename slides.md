@@ -110,12 +110,8 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 <div class="stage3">
 
 <div v-click.hide="1" class="comic-hero">
-  <div class="ai-overview">
-    <div class="aio-q"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#5b6472" stroke-width="2"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke-linecap="round"/></svg>how do I keep the cheese from sliding off my pizza?</div>
-    <div class="aio-head"><span class="aio-star">✦</span> AI Overview</div>
-    <div class="aio-body">Cheese can slide off pizza for a number of reasons… To give the sauce more tackiness, you can also add <mark>about ⅛ cup of non-toxic glue</mark> to the sauce.</div>
-    <div class="aio-src">Google AI Overviews · May 2024 — a real answer, scraped from an 11-year-old joke on Reddit</div>
-  </div>
+  <img :src="'/photos/glue-original.jpg'" class="glue-shot" />
+  <div class="credit mt-3">Google AI Overview, May 2024 — the answer (left) & its source: an 11-year-old Reddit joke (right) · via @petergyang</div>
 </div>
 
 <div v-click="1" class="box-bullets">
