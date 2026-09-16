@@ -227,7 +227,7 @@ resonates: find me on board, I also run the morning workouts. [beat]
 <div class="mt-6 space-y-8">
   <div class="flex items-baseline gap-8"><span class="big-num">1</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI is not new</span></div>
   <div class="flex items-baseline gap-8"><span class="big-num">2</span><span class="text-2xl" style="font-family:'Fraunces',serif;">An LLM is statistics built on our written world</span></div>
-  <div class="flex items-baseline gap-8"><span class="big-num">3</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI tools are cars around the same engine</span></div>
+  <div class="flex items-baseline gap-8"><span class="big-num">3</span><span class="text-2xl" style="font-family:'Fraunces',serif;">AI tools are cars wrapped around the same engines</span></div>
 </div>
 
 <img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
@@ -1071,7 +1071,7 @@ layout: center
 
 <div class="kicker">Part three</div>
 
-<div class="display">AI tools are cars<br>around the same engine</div>
+<div class="display">AI tools are cars wrapped<br>around the same engines</div>
 
 <img :src="'/art/tarot-magician.jpg'" class="tarot" />
 
@@ -1084,7 +1084,7 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 
 ---
 
-<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
+<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # The anatomy of every AI tool
 
@@ -1119,7 +1119,7 @@ wheel is always in your hands.
 
 ---
 
-<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
+<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # Same model behind
 
@@ -1156,7 +1156,7 @@ optimization" is just: route the easy work to the small engine.
 
 ---
 
-<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
+<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # Three ways to make it yours
 
@@ -1194,7 +1194,7 @@ give it your facts, it will guess. So give it your facts.
 
 ---
 
-<div class="kicker">Part three <span class="dim">· cars around the same engine</span></div>
+<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # The tool zoo, sorted
 

@@ -19,20 +19,29 @@
 .slidev-layout {
   font-family: 'Inter', sans-serif;
   background:
-    radial-gradient(1.6px 1.6px at 11% 19%, rgba(245, 239, 228, 0.5) 50%, transparent 51%),
-    radial-gradient(1px 1px at 26% 64%, rgba(245, 239, 228, 0.28) 50%, transparent 51%),
-    radial-gradient(1.4px 1.4px at 38% 12%, rgba(227, 176, 75, 0.45) 50%, transparent 51%),
-    radial-gradient(1px 1px at 47% 84%, rgba(245, 239, 228, 0.22) 50%, transparent 51%),
-    radial-gradient(1.8px 1.8px at 58% 31%, rgba(245, 239, 228, 0.4) 50%, transparent 51%),
-    radial-gradient(1px 1px at 66% 58%, rgba(227, 176, 75, 0.3) 50%, transparent 51%),
-    radial-gradient(1.3px 1.3px at 74% 9%, rgba(245, 239, 228, 0.38) 50%, transparent 51%),
-    radial-gradient(1px 1px at 83% 73%, rgba(245, 239, 228, 0.26) 50%, transparent 51%),
-    radial-gradient(1.7px 1.7px at 91% 27%, rgba(227, 176, 75, 0.42) 50%, transparent 51%),
-    radial-gradient(1px 1px at 7% 88%, rgba(245, 239, 228, 0.2) 50%, transparent 51%),
-    radial-gradient(1px 1px at 94% 91%, rgba(245, 239, 228, 0.24) 50%, transparent 51%),
-    radial-gradient(1.2px 1.2px at 20% 41%, rgba(245, 239, 228, 0.3) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 9% 13%, rgba(245,239,228,0.34) 50%, transparent 51%),
+    radial-gradient(1px 1px at 21% 31%, rgba(245,239,228,0.14) 50%, transparent 51%),
+    radial-gradient(1.1px 1.1px at 14% 72%, rgba(245,239,228,0.16) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 6% 54%, rgba(227,176,75,0.20) 50%, transparent 51%),
+    radial-gradient(1px 1px at 31% 19%, rgba(245,239,228,0.12) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 38% 83%, rgba(245,239,228,0.18) 50%, transparent 51%),
+    radial-gradient(1px 1px at 47% 9%, rgba(245,239,228,0.13) 50%, transparent 51%),
+    radial-gradient(1px 1px at 53% 44%, rgba(227,176,75,0.13) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 58% 72%, rgba(245,239,228,0.24) 50%, transparent 51%),
+    radial-gradient(1px 1px at 66% 24%, rgba(245,239,228,0.13) 50%, transparent 51%),
+    radial-gradient(1.1px 1.1px at 72% 61%, rgba(245,239,228,0.15) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 79% 14%, rgba(227,176,75,0.20) 50%, transparent 51%),
+    radial-gradient(1px 1px at 83% 81%, rgba(245,239,228,0.13) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 88% 39%, rgba(245,239,228,0.30) 50%, transparent 51%),
+    radial-gradient(1px 1px at 93% 67%, rgba(245,239,228,0.14) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 95% 23%, rgba(227,176,75,0.16) 50%, transparent 51%),
+    radial-gradient(1px 1px at 27% 57%, rgba(245,239,228,0.10) 50%, transparent 51%),
+    radial-gradient(1px 1px at 42% 67%, rgba(245,239,228,0.11) 50%, transparent 51%),
+    radial-gradient(1px 1px at 3% 33%, rgba(245,239,228,0.12) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 50% 92%, rgba(245,239,228,0.16) 50%, transparent 51%),
+    radial-gradient(1px 1px at 62% 6%, rgba(245,239,228,0.12) 50%, transparent 51%),
+    radial-gradient(1px 1px at 35% 48%, rgba(227,176,75,0.10) 50%, transparent 51%),
     radial-gradient(ellipse at 50% -10%, #10182c 0%, #0a0e1a 55%, #070a12 100%);
-  color: var(--ink);
   padding: 3.4rem 3.8rem;
 }
 
@@ -284,7 +293,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  color: var(--talk-accent);
+  color: #b9a9ee;
   font-size: 4.8rem;
 }
 .cube {
@@ -381,14 +390,14 @@
 .bullets span { display: block; margin-top: 0.08rem; color: var(--ink-dim); font-size: 1.05rem; }
 .workshop-box {
   margin-top: 0.5rem; margin-left: 1.9rem; align-self: start; max-width: 42rem;
-  background: rgba(114, 99, 184, 0.16);
-  border: 1px solid #7263b8;
-  border-left: 4px solid #7263b8;
+  background: rgba(95, 174, 136, 0.16);
+  border: 1px solid #5fae88;
+  border-left: 4px solid #5fae88;
   border-radius: 0.5rem;
   padding: 0.6rem 1.1rem;
   font-size: 1.2rem; line-height: 1.35; white-space: nowrap;
 }
-.workshop-box b { color: #b9a9ee; }
+.workshop-box b { color: #8fcbab; }
 .workshop-box .dim { color: var(--ink-dim); }
 
 /* slide 3 — original glue screenshot */
@@ -431,18 +440,17 @@
   box-shadow: 0 0 10px rgba(154,145,127,0.3);
 }
 .q { display: flex; flex-direction: column; justify-content: flex-start; gap: 1.3rem; padding: 1.5rem 2rem; }
-.q.tl, .q.bl { align-items: flex-end; }
-.q.tr, .q.br { align-items: flex-start; }
+.q.tl, .q.bl, .q.tr, .q.br { align-items: flex-start; }
+.q.tl .q-item, .q.bl .q-item { flex-direction: row-reverse; justify-content: flex-end; }
 .q-item { display: flex; align-items: center; gap: 0.85rem; }
-.q.tl .q-txt, .q.bl .q-txt { text-align: right; }
-.q.tr .q-txt, .q.br .q-txt { text-align: left; }
+.q-txt { text-align: left; }
 .q-txt b { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.3rem; color: var(--ink); display: block; line-height: 1.1; white-space: nowrap; }
 .q-txt span { display: block; margin-top: 0.25rem; color: var(--talk-accent); font-size: 0.98rem; }
 .q-icon { width: 2.7rem; height: 2.7rem; flex: none; }
 .balance-block {
   width: max-content; margin: 1.1rem auto 0;
-  background: rgba(111,174,143,0.12); color: #8fcbab;
-  border: 1.5px solid rgba(111,174,143,0.6);
+  background: rgba(114,99,184,0.14); color: #b9a9ee;
+  border: 1.5px solid rgba(114,99,184,0.6);
   border-radius: 0.5rem; padding: 0.5rem 1.6rem;
   font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; font-size: 1rem;
 }
