@@ -514,3 +514,39 @@
 .stop-title { font-family: 'Fraunces', serif; font-size: 2rem; }
 
 .green-title { color: #8fcbab; }
+
+
+/* section 1 — intelligence mini-quiz */
+.quiz-row { display: flex; gap: 2.5rem; margin-top: 2.2rem; }
+.quiz-item { text-align: center; }
+.qi-icon { font-size: 2.8rem; line-height: 1; }
+.qi-label { font-family: 'Fraunces', serif; font-size: 1.35rem; margin-top: 0.4rem; }
+.qi-tag { font-size: 0.95rem; color: var(--ink-dim); margin-top: 0.15rem; }
+/* timeline narrative labels */
+.timeline { display: flex; flex-direction: column; gap: 1.1rem; }
+.tl-row { display: grid; grid-template-columns: 7rem 4rem 1fr; align-items: baseline; column-gap: 1rem; white-space: nowrap; }
+.tl-label { color: var(--ink-dim); font-size: 0.95rem; font-style: italic; text-align: right; }
+.tl-year { font-family: 'Fraunces', serif; font-size: 1.35rem; color: var(--talk-accent); }
+.tl-txt { font-size: 1.35rem; }
+.winters text { font-size: 17px; }
+/* everyday-AI beat */
+.everyday { margin-top: 1.6rem; font-size: 1.25rem; }
+
+/* slide numbers */
+.slide-no {
+  position: fixed; bottom: 1.2rem; right: 1.6rem; z-index: 100;
+  font-size: 0.82rem; color: var(--ink-dim); opacity: 0.55;
+  letter-spacing: 0.12em; font-variant-numeric: tabular-nums;
+}
+
+
+/* workshop slide v2 */
+.green-kicker { color: #8fcbab; }
+.green-kicker::before { color: #8fcbab; }
+.wf-head { font-size: 2.1rem !important; margin-bottom: 0.15rem !important; }
+.wf-sub {
+  color: #8fcbab; font-style: italic; font-size: 1.15rem; margin-bottom: 0.7rem;
+}
+.wf-em { color: #8fcbab; }
+.wf-list li { font-size: 1.15rem !important; }
+.mage-left { left: 2rem; right: auto; bottom: 1.4rem; height: 7rem; }

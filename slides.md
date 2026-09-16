@@ -121,7 +121,7 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
       <li v-click="4"><b>Enjoy: it's fun!</b><span>Everyone has a little nerd inside</span></li>
     </ul>
     <div v-click="5" class="workshop-box">
-      <b>Workshop:</b> have an AI assistant you can prompt.
+      <b>Workshop:</b> have an AI assistant ready to prompt.
     </div>
   </div>
 </div>
@@ -243,9 +243,9 @@ the same engine.
 
 ---
 
-<div class="kicker">How this works</div>
+<div class="kicker green-kicker">How this works</div>
 
-# <span class="green-title">This is a workshop</span>
+# This is a workshop
 
 <Countdown :minutes="5" :run="false" class="clock-lg" />
 
@@ -254,24 +254,31 @@ the same engine.
 <div class="workshop-flow workshop-flow-h">
 
 <div class="wf-block" v-click="1">
-  <div class="wf-head">During each section</div>
+  <div class="wf-head">During each part</div>
+  <div class="wf-sub">while you are listening</div>
   <div class="wf-lead">Write down at least one question:</div>
   <ul class="wf-list">
     <li>something you don't understand</li>
     <li>something that makes you wonder</li>
     <li>something you want to know more of</li>
+    <li>it can be anything</li>
   </ul>
-  <div class="wf-note">it can be anything.</div>
 </div>
 
 <div class="wf-block" v-click="2">
-  <div class="wf-head">After each section</div>
-  <div class="wf-step"><b>Get into groups</b> of two or three with your neighbours.</div>
-  <div class="wf-step"><b>Personally:</b> choose one of your questions and ask it to AI.</div>
-  <div class="wf-step"><b>Depending on time:</b> explain what you learned, or what's still unclear, to a neighbour.</div>
+  <div class="wf-head">After each part</div>
+  <div class="wf-sub">get into groups of two or three with your neighbours</div>
+  <div class="wf-lead"><b class="wf-em">Individually:</b> choose one of your questions and ask it to AI.</div>
+  <div class="wf-lead mt-2">Discuss with your neighbours:</div>
+  <ul class="wf-list">
+    <li>something striking you learned</li>
+    <li>a new question raised, or something still unclear</li>
+  </ul>
 </div>
 
 </div>
+
+<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage mage-left" />
 
 <!--
 But this is a workshop — so we will get active as well. Don't worry: we'll only
@@ -302,7 +309,7 @@ layout: center
 
 <div class="display">AI is not new</div>
 
-<img :src="'/art/tarot-magician.jpg'" class="tarot" />
+<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage" />
 
 
 <!--
@@ -319,27 +326,34 @@ fly-over.
 
 <hr class="rule" />
 
-<div class="text-2xl mt-8" style="font-family:'Fraunces',serif;">
+<div class="text-2xl" style="font-family:'Fraunces',serif;">
 perception <span class="accent mx-3">→</span> processing <span class="accent mx-3">→</span> action
 </div>
 
-<div class="mt-8 text-lg dim max-w-2xl">
-natural intelligence is everywhere in nature · in <b class="accent">degrees</b>
+<div class="quiz-row" v-click="1">
+  <div class="quiz-item"><div class="qi-icon">🐝</div><div class="qi-label">bee</div><div class="qi-tag">natural</div></div>
+  <div class="quiz-item"><div class="qi-icon">🧮</div><div class="qi-label">calculator</div><div class="qi-tag dim">not really</div></div>
+  <div class="quiz-item"><div class="qi-icon">♟️</div><div class="qi-label">chess computer</div><div class="qi-tag">artificial · narrow</div></div>
+  <div class="quiz-item"><div class="qi-icon">🌡️</div><div class="qi-label">thermostat</div><div class="qi-tag accent">a little?!</div></div>
 </div>
+
+<div class="mt-6 text-xl" v-click="2">intelligence isn't yes / no · it's a <b class="accent">dial</b>, in degrees</div>
 
 
 <!--
-First: what even IS intelligence? There are many definitions — whole schools of
-thought. A workable one: perception, processing, action. You take something in,
-you do something with it, you act. And notice — you need the action to
-OBSERVE intelligence. A brain in a jar doesn't show you anything.
+First: what even IS intelligence? There's no agreed definition — even the
+experts disagree. Here's a workable one: perception, processing, action. You
+take something in, you do something with it, you act. You need that action to
+OBSERVE intelligence — a brain in a jar shows you nothing.
 
-And it's not just us. Nature is full of intelligence, in degrees — an octopus
-opening a jar, a bee finding the shortest route. Intelligence is not a yes/no
-thing, it's a dial.
+[click — the quiz] Quick one, hands up: natural, artificial, or not intelligent?
+A bee — natural, tiny but real. A calculator — lightning fast, but it perceives
+nothing, so… not really. A chess computer — artificial, but narrow. And a
+thermostat? It perceives the temperature, processes it, and acts. So… a tiny
+bit intelligent?!
 
-Keep that in mind, because "artificial" intelligence is just: humans trying to
-build some of that.
+[click] That's the point: intelligence isn't yes-or-no, it's a dial — degrees,
+levels. "Artificial" intelligence is just us trying to build some of that.
 -->
 
 ---
@@ -351,11 +365,11 @@ build some of that.
 <hr class="rule" />
 
 <div class="grid grid-cols-[3fr_1fr] gap-10 items-start">
-<div class="rows text-xl">
-  <div><span class="accent" style="font-family:'Fraunces',serif;">1600s</span> &ensp; Leibniz dreams: <i>"calculemus"</i> · let us calculate</div>
-  <div><span class="accent" style="font-family:'Fraunces',serif;">1950</span> &ensp; Turing: can machines think? <span class="dim">(the Turing test)</span></div>
-  <div><span class="accent" style="font-family:'Fraunces',serif;">1956</span> &ensp; the term "artificial intelligence" is coined</div>
-  <div><span class="accent" style="font-family:'Fraunces',serif;">1997</span> &ensp; Deep Blue beats the world chess champion</div>
+<div class="timeline">
+  <div class="tl-row"><span class="tl-label">the dream</span><span class="tl-year">1600s</span><span class="tl-txt">Leibniz: <i>"calculemus"</i> · let us calculate</span></div>
+  <div class="tl-row"><span class="tl-label">the question</span><span class="tl-year">1950</span><span class="tl-txt">Turing: can machines think? <span class="dim">(the Turing test)</span></span></div>
+  <div class="tl-row"><span class="tl-label">the name</span><span class="tl-year">1956</span><span class="tl-txt">the term "artificial intelligence" is coined</span></div>
+  <div class="tl-row"><span class="tl-label">the proof</span><span class="tl-year">1997</span><span class="tl-txt">Deep Blue beats the world chess champion</span></div>
 </div>
 <div class="flex flex-col gap-3">
   <img :src="'/photos/leibniz.jpg'" class="photo w-full" style="height:5.6rem; object-position:50% 12%;" />
@@ -367,15 +381,21 @@ build some of that.
 <div class="mt-5 dim italic">"This dream is older than most of us."</div>
 
 <!--
-Humans have wanted to build thinking machines for centuries. Leibniz —
-sixteen hundreds! — dreamed that arguments could be settled by computation:
-"calculemus", let us calculate. When the computer arrived, the question came
-with it immediately: Turing, 1950 — can machines think? How would we even
-tell? That's the Turing test. By '56 the field had a name. By '97 a computer
-beat Kasparov at chess.
+Humans have wanted to build thinking machines for centuries. Leibniz, sixteen
+hundreds — the dream: arguments settled by computation, "calculemus", let us
+calculate. Then the computer arrives and the question comes with it: Turing,
+1950, can machines think? That's the Turing test.
 
-So no — this did not start with ChatGPT. This dream is older than most of us
-in this room.
+1956 — the field gets its name at a summer workshop in Dartmouth. Fun detail:
+the founders genuinely thought a handful of researchers could crack it in ONE
+summer. (Spoiler: that optimism sets up the first winter.)
+
+1997 — the proof of concept: Deep Blue beats the world chess champion. But
+notice: it beat Kasparov at exactly ONE thing. It couldn't play tic-tac-toe,
+couldn't hold a conversation. That gap — brilliant at one task, useless at the
+next — is exactly what AGI wants to close.
+
+So no, this did not start with ChatGPT. This dream is older than most of us.
 -->
 
 ---
@@ -386,15 +406,17 @@ in this room.
 
 <hr class="rule" />
 
-<div class="max-w-3xl">
-<svg viewBox="0 0 700 210" class="w-full">
+<div class="max-w-4xl">
+<svg viewBox="0 0 700 240" class="w-full winters">
   <path d="M20,180 Q90,70 150,100 Q190,118 230,170 Q300,55 370,90 Q420,112 460,165 Q560,18 680,32"
-        fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
-  <text x="78" y="52" fill="#eceff4" font-size="17">summer</text>
-  <text x="185" y="200" fill="#8b95a3" font-size="17">winter</text>
-  <text x="318" y="40" fill="#eceff4" font-size="17">summer</text>
-  <text x="420" y="200" fill="#8b95a3" font-size="17">winter</text>
-  <text x="590" y="80" fill="#22d3ee" font-size="19" font-weight="bold">now</text>
+        fill="none" stroke="#e3b04b" stroke-width="3" stroke-linecap="round"/>
+  <text x="78" y="52" fill="#f0e6d2" font-size="17">summer</text>
+  <text x="300" y="40" fill="#f0e6d2" font-size="17">summer</text>
+  <text x="588" y="78" fill="#e3b04b" font-size="19" font-weight="bold">now</text>
+  <text x="196" y="196" fill="#9a917f" font-size="15" text-anchor="middle">~1974</text>
+  <text x="196" y="216" fill="#9a917f" font-size="13" text-anchor="middle">algorithms hit a wall</text>
+  <text x="440" y="196" fill="#9a917f" font-size="15" text-anchor="middle">~1990</text>
+  <text x="440" y="216" fill="#9a917f" font-size="13" text-anchor="middle">too little data & compute</text>
 </svg>
 </div>
 
@@ -403,15 +425,18 @@ the ambition all along: <b class="accent">AGI</b> · AI that can do everything a
 
 
 <!--
-But the road was bumpy. AI moves in summers and winters. The pattern repeats:
-big promises, money flows in… the results disappoint… funding dries up —
-winter. Twice, for years.
+But the road was bumpy. AI moves in summers and winters: big promises, money
+floods in… results disappoint… funding dries up — winter. Twice.
 
-The ambition behind it never changed though: AGI — artificial GENERAL
-intelligence, a system that can do everything a human can. That's still the
+First winter, mid-70s: the algorithms simply hit a wall — the ideas were there,
+the methods weren't good enough. Second winter, around 1990: not enough data,
+not enough compute. Remember those two — they matter in a minute.
+
+The ambition never changed though: AGI, artificial GENERAL intelligence — a
+system that can do everything a human can, not just one narrow trick. Still the
 stated goal of the big labs today.
 
-And right now? We are in the hottest summer the field has ever had.
+And right now? We're in the hottest summer the field has ever had.
 -->
 
 ---
@@ -422,39 +447,44 @@ And right now? We are in the hottest summer the field has ever had.
 
 <hr class="rule" />
 
-<div class="strip text-lg">
+<div class="everyday" v-click="1">you've used AI for years without calling it that: <span class="dim">spam filters · Google Translate · Netflix & Spotify picks · Face ID</span></div>
+
+<div class="strip text-lg mt-6" v-click="2">
   <div><div class="accent font-semibold">one architecture</div><div class="dim mt-1">the transformer paper, 2017</div></div>
   <div><div class="accent font-semibold">hardware</div><div class="dim mt-1">GPUs · built for games</div></div>
   <div><div class="accent font-semibold">data</div><div class="dim mt-1">the internet finally produced enough text</div></div>
 </div>
 
-<div class="grid grid-cols-[3fr_2fr] gap-10 mt-8 items-center">
+<div class="grid grid-cols-[3fr_2fr] gap-10 mt-7 items-center" v-click="3">
 <div>
 <div class="text-xl">ChatGPT: <b>~100M users in ~2 months</b><br><span class="dim">fastest-growing consumer app ever</span></div>
-<div class="mt-6 accent">LLMs are only a small part of AI <br>but that's our focus today.</div>
+<div class="mt-5 accent">LLMs are only a small part of AI <br>but that's our focus today.</div>
 </div>
-<img :src="'/photos/datacenter.jpg'" class="photo h-44 w-full" />
+<img :src="'/photos/datacenter.jpg'" class="photo h-40 w-full" />
 </div>
 
 
 <!--
-So why did THIS summer explode, after seventy years? Three igniters came
-together.
+[click — everyday AI] Before the "why now": you've actually used AI for years
+without calling it that. Your spam filter. Google Translate. The picks Netflix
+and Spotify make for you. Face ID unlocking your phone. That's all AI. So when
+I say LLMs are only a small SLICE of AI — this is what I mean.
 
-One: a new recipe — the transformer, one research paper from 2017. Two:
-hardware — GPUs, graphics cards built for gaming, turned out to be perfect for
-this kind of math. And three: data — for the first time in history, the
-internet had produced enough text to learn language from. Remember that one —
-it comes back in a big way in section two.
+[click — three igniters] So why did THIS summer explode, after seventy years?
+Three things arrived together. One: a new recipe — the transformer, one paper
+from 2017. Two: hardware — GPUs, built for gaming, perfect for this math.
+Three: data — the internet finally produced enough text to learn language from.
 
-Put together: ChatGPT reached about a hundred million users in two months.
-The fastest-growing consumer app in history.
+And here's the beautiful part: remember the two winters? Every winter was a
+missing ingredient — better algorithms, more compute, more data. All three have
+now arrived at once. That's why now.
 
-One honest note: LLMs — the text models — are only a small part of AI. But
-they're the part everyone here uses, so that's our focus today.
+[click — adoption] Put together: ChatGPT hit a hundred million users in two
+months, the fastest-growing consumer app in history. But keep it in proportion:
+LLMs are only a small part of AI — they're just the part everyone here uses, so
+that's our focus today.
 
-And that's claim one done: AI is not new. The boom is new. — Time for YOUR
-questions.
+Claim one done: AI is not new — the boom is. Time for YOUR questions.
 -->
 
 ---
@@ -516,7 +546,7 @@ layout: center
 
 <div class="display">An LLM is statistics<br>built on our written world</div>
 
-<img :src="'/art/tarot-magician.jpg'" class="tarot" />
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
 
 
 <!--
@@ -1071,7 +1101,7 @@ layout: center
 
 <div class="display">AI tools are cars wrapped<br>around the same engines</div>
 
-<img :src="'/art/tarot-magician.jpg'" class="tarot" />
+<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
 
 
 <!--
