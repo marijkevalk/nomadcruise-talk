@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 210">
+<defs>
+<filter id="ig" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e3b04b" stop-opacity="0.85"/><stop offset="100%" stop-color="#e3b04b" stop-opacity="0"/></radialGradient>
+</defs>
+<!-- light escaping upward -->
+<g stroke="#e3b04b" stroke-width="2.2" stroke-linecap="round" opacity="0.55">
+<line x1="118" y1="60" x2="96" y2="14"/><line x1="126" y1="58" x2="126" y2="8"/><line x1="134" y1="60" x2="158" y2="16"/>
+</g>
+<!-- open lid (grey, translucent) -->
+<polygon points="83,68 66,22 152,22 168,68" fill="rgba(196,202,214,0.13)" stroke="#f5f5f5" stroke-width="2"/>
+<!-- interior glow through the opening -->
+<ellipse cx="110" cy="86" rx="52" ry="17" fill="url(#glow)" filter="url(#ig)"/>
+<!-- top opening rim (cavity) -->
+<polygon points="35,95 83,68 168,68 120,95" fill="rgba(8,11,20,0.5)" stroke="#f5f5f5" stroke-width="2"/>
+<!-- right wall -->
+<polygon points="120,95 168,68 168,128 120,155" fill="rgba(196,202,214,0.09)" stroke="#f5f5f5" stroke-width="2"/>
+<!-- front wall -->
+<polygon points="35,95 120,95 120,155 35,155" fill="rgba(196,202,214,0.12)" stroke="#f5f5f5" stroke-width="2.4"/>
+</svg>

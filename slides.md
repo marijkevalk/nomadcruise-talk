@@ -99,46 +99,49 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 
 ---
 
-<div class="kicker">Today</div>
+<div class="kicker no-star">
+  <svg viewBox="0 0 26 24" style="display:inline-block;width:1.15em;height:1.15em;vertical-align:-0.18em;margin-right:0.45em;"><g fill="none" stroke="#e3b04b" stroke-width="1.4" stroke-linejoin="round"><polygon points="3,11 8,8 18,8 13,11"/><polygon points="3,11 13,11 13,21 3,21"/><polygon points="13,11 18,8 18,18 13,21"/></g><g stroke="#e3b04b" stroke-width="1.2" opacity="0.7" stroke-linecap="round"><line x1="8" y1="8" x2="6" y2="3"/><line x1="18" y1="8" x2="22" y2="4"/></g></svg>Today
+</div>
 
-# We make the box <span class="grey-word">grey</span>
+# Demystifying the black box
 
 <hr class="rule" />
 
-<div class="grid grid-cols-2 gap-12 items-center">
-<div class="text-xl leading-relaxed rows">
+<div class="stage3">
 
-<div>AI is not magic — it's <b>math and statistics</b></div>
-<div>no formulas — a <b>peek under the hood</b></div>
-<div>and honestly: it's <b>fun</b> to understand</div>
+<div v-click.hide="1" class="comic-hero">
+  <img :src="'/photos/comic-ai.png'" />
+</div>
 
+<div v-click="1" class="box-bullets">
+  <img :src="'/art/box-open-grey.svg'" class="openbox" />
+  <div class="bullets">
+    <div v-click="2"><b>Use it smarter</b><span>push its limits, catch its lies</span></div>
+    <div v-click="3"><b>Know what you're talking about</b><span>cut through the hype, spot the confident nonsense</span></div>
+    <div v-click="4"><b>Enjoy — it's fun!</b><span>everyone has a little nerd inside</span></div>
+  </div>
 </div>
-<div>
-<img :src="'/art/xkcd-1838.png'" class="h-52 rounded bg-white p-2 mx-auto" />
-<div class="mt-2 text-xs dim text-center">xkcd #1838, "Machine Learning" — CC BY-NC</div>
-</div>
+
 </div>
 
 <!--
-So the goal of this session: make that black magic box a little bit grey.
-A little bit transparent.
+[comic on screen] Look familiar? The AI confidently writes code… in a language
+that's part Python, part COBOL, part someone's grocery list — and suggests
+storing passwords on a sticky note. It's brilliant and clueless at the same
+time. So why bother understanding what's inside? Three reasons.
 
-Because AI is not magic. Underneath, it's calculus and linear algebra. Don't
-worry — I'm not going deep into that. No formulas today. I'm just giving you a
-peek under the hood.
+[click — comic gone, the box opens] Once we open the box a little, three things
+change:
 
-[xkcd] This comic is honestly the whole field in one panel: "You pour the data
-into this big pile of linear algebra and collect the answers. — What if the
-answers are wrong? — Just stir the pile until they start looking right."
-It's a joke… and it's also not entirely a joke. You'll see.
+[click] One — you USE it smarter. You push its limits and you catch its lies,
+instead of trusting it blindly.
 
-You might think: why this talk? NomadCruise is full of practical sessions —
-build this, automate that. This one is the foundation underneath all of them.
-When you understand what you're working with, you get a feel for what's
-possible AND what's not — and you stop taking the answers for granted. That's
-what makes people take you seriously when you talk about AI.
+[click] Two — you KNOW what you're talking about. You cut through the hype and
+spot the confident nonsense — and in a field full of that, real understanding
+makes people take you seriously.
 
-And… it's just fun to understand. That's really why I'm giving this talk.
+[click] Three — and honestly, it's just FUN. Everyone's got a little nerd
+inside. Today we let it out.
 -->
 
 ---
