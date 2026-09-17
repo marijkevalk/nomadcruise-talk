@@ -129,6 +129,9 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 
 </div>
 
+
+<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage" />
+
 <!--
 [glue card on screen] A real one from last year: someone asked Google how to
 keep the cheese from sliding off a pizza. Its AI answered — with total
@@ -348,6 +351,9 @@ fly-over.
 <div class="intel-caption" v-click="6">artificial intelligence also comes in degrees · <b class="accent">narrow</b> → <b class="accent">general</b> → at the far end: <b class="accent">AGI</b>, everything a human can do</div>
 
 
+
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+
 <!--
 First: what even IS intelligence? There's no agreed definition — even the
 experts disagree. But look at nature: [clicks] a bee finding the shortest route,
@@ -384,6 +390,9 @@ machine that can do everything a human can.
 </div>
 
 <div class="mt-3 dim italic">"This dream is older than most of us · and you've been using it for years."</div>
+
+
+<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
 
 <!--
 Humans have wanted to build thinking machines for centuries. Leibniz, sixteen
@@ -430,6 +439,9 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <div class="mt-3 text-lg dim">money in → hype → disappointment → winter → <b class="accent">a breakthrough revives it</b> → money in again</div>
 
 
+
+<img :src="'/art/tovenaar-01-basis.svg'" class="mage" />
+
 <!--
 But the road was bumpy. AI moves in summers and winters: big promises, money
 floods in… results disappoint… funding dries up — winter. Twice.
@@ -475,6 +487,9 @@ And right now? We're in the hottest summer the field has ever had.
 </div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage mage-left" />
 
 <!--
 [click — everyday AI] Before the "why now": you've actually used AI for years
@@ -591,6 +606,9 @@ right now.
 <div v-click class="mt-6 accent text-lg">you just predicted the next word from the previous words</div>
 
 
+
+<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage" />
+
 <!--
 Finish this sentence for me, all together: "Titanic got stuck on…" — [iceberg!]
 
@@ -616,6 +634,9 @@ whole section.
   <div class="text-lg dim leading-relaxed">everything the model outputs is this list <br><br>the reply you see is just a <b class="accent">draw</b> from it</div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
 
 <!--
 Here's what that looks like inside a real model. [If someone asks which one:
@@ -665,6 +686,9 @@ find the pattern → predict the next point
 </div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
 
 <!--
 You've all seen this picture in school: some data points, a line through them,
@@ -753,6 +777,9 @@ anything up?" Hold that thought. It's exactly the right question.
 <div v-click class="mt-2 accent text-center text-lg">so… where do these numbers come from?</div>
 
 
+
+<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage mage-left" />
+
 <!--
 And here's my favorite demystifier. A model is literally a file of numbers.
 This is not an artist impression — these are real weights I pulled out of a
@@ -783,6 +810,9 @@ That's the "built on our written world" part. Three steps.
   <div v-click>the exact mix is a <b>trade secret</b> · one training run: <b>$78M – $490M</b> <span class="ref">Stanford AI Index 2025 · Epoch AI</span></div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-01-basis.svg'" class="mage" />
 
 <!--
 Step one: data. You need a mountain of text — the public web, books, articles,
@@ -853,6 +883,9 @@ That's the GPUs. That's the data centers. That's why ASML machines matter.
 <img :src="'/art/stages.png'" class="h-88 mx-auto mt-2 rounded" />
 
 
+
+<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage" />
+
 <!--
 And you can literally watch this happen. I trained a tiny model myself — on my
 own little server, no magic — and saved what it produced along the way.
@@ -875,6 +908,9 @@ nudge by nudge. This is training — made visible.
 
 <div class="mt-2 dim text-center">similar things end up close together in the numbers</div>
 
+
+
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
 
 <!--
 [FLEX SLIDE — only if on schedule at the checkpoint; otherwise skip, it makes
@@ -903,6 +939,9 @@ model was never told what a king is. It's in the numbers anyway.
 
 <div v-click class="mt-8 text-xl accent" style="font-family:'Fraunces',serif;">"AI is not neutral · it's built, tuned and controlled."</div>
 
+
+
+<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
 
 <!--
 Step three — the part people skip. After all that reading, the raw model is a
@@ -937,6 +976,9 @@ someone says "the AI said so."
   </div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
 
 <!--
 And then — my favorite moment — the weights are SAVED. Training happens once,
@@ -976,6 +1018,9 @@ train it only to predict the next word <br>and abilities appear that <b>nobody p
 </div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
 
 <!--
 Now — here's where I have to be honest with you, because something strange
@@ -1028,6 +1073,9 @@ training made the models differ from <i>each other</i> <br>the dice make the <i>
 </div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
 
 <!--
 But the same mechanism has a weird side: hallucination. Here's my favorite way
@@ -1136,6 +1184,9 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 </div>
 
 
+
+<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage mage-left" />
+
 <!--
 In the middle sits the model — the file of numbers. Think of it as the ENGINE.
 Raw, powerful, useless on its own. Have you ever driven an engine to the
@@ -1173,6 +1224,9 @@ wheel is always in your hands.
 </div>
 
 
+
+<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
+
 <!--
 Once you see the car-around-engine picture, the whole AI landscape snaps into
 focus.
@@ -1208,6 +1262,9 @@ optimization" is just: route the easy work to the small engine.
   <div v-click class="accent">context is also your anti-hallucination lever: give it your facts instead of letting it guess</div>
 </div>
 
+
+
+<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage mage-left" />
 
 <!--
 So how do you make this thing YOURS? Three ways, from heavy to light.
@@ -1246,6 +1303,9 @@ give it your facts, it will guess. So give it your facts.
 
 <div class="mt-12 text-2xl accent" style="font-family:'Fraunces',serif;">Overwhelmed? It doesn't matter what you use exactly · just start.</div>
 
+
+
+<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage" />
 
 <!--
 And with that, the overwhelming tool zoo sorts itself into three shelves.
@@ -1366,6 +1426,9 @@ and at the morning workouts on deck
 <div class="credit" style="position:absolute; bottom:2rem; right:2rem; max-width:22rem; text-align:right;">
 photos: Wikimedia Commons · F.G.O. Stuart (PD) · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · bobintraveling (CC BY 2.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
 </div>
+
+
+<img :src="'/art/tovenaar-02-hoed-afnemen.svg'" class="mage" />
 
 <!--
 Thank you! I'm on this ship all week — find me for questions, deep AI talk, or
