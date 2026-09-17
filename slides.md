@@ -47,7 +47,7 @@ layout: center
   <span class="midzone">
     <svg v-click="[2,4]" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
     <span v-click="4" class="splitzone">
-      <svg viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
+      <svg viewBox="0 0 100 40" class="w-18"><line x1="6" y1="20" x2="68" y2="20" stroke="#e3b04b" stroke-width="4.6" stroke-linecap="round"/><polygon points="66,7 96,20 66,33" fill="#e3b04b"/></svg>
       <span class="qwrap">
         <svg v-click="5" class="cube" viewBox="0 0 124 124">
           <polygon points="14,46 34,26 106,26 86,46" fill="#141414" stroke="#f5f5f5" stroke-width="1.6"/>
@@ -56,7 +56,7 @@ layout: center
         </svg>
         <span class="qmark">?</span>
       </span>
-      <svg viewBox="0 0 100 40" class="w-18"><line x1="4" y1="20" x2="72" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="70,4 98,20 70,36" fill="#e3b04b"/></svg>
+      <svg viewBox="0 0 100 40" class="w-18"><line x1="6" y1="20" x2="68" y2="20" stroke="#e3b04b" stroke-width="4.6" stroke-linecap="round"/><polygon points="66,7 96,20 66,33" fill="#e3b04b"/></svg>
     </span>
   </span>
   <span v-click="2" style="justify-self:start;">RESPONSE</span>
