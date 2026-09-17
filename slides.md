@@ -28,8 +28,6 @@ favicon: /favicon.svg
 
 <div class="byline" style="font-size:1.25rem; bottom:3.6rem; z-index:2;">Marijke Valk</div>
 
-<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" />
-
 <!--
 [0:00 — title up while people walk in]
 
@@ -47,18 +45,14 @@ layout: center
 <div class="prow" style="font-family:'Fraunces',serif; font-size:3.1rem; min-height:15rem; letter-spacing:0.02em;">
   <span v-click="1" style="justify-self:end;">PROMPT</span>
   <span class="midzone">
-    <svg v-click="[2,4]" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
-    <span v-click="4" class="splitzone">
-      <svg viewBox="0 0 100 40" class="w-18"><line x1="6" y1="20" x2="68" y2="20" stroke="#e3b04b" stroke-width="4.6" stroke-linecap="round"/><polygon points="66,7 96,20 66,33" fill="#e3b04b"/></svg>
-      <span class="qwrap">
-        <svg v-click="5" class="cube" viewBox="0 0 124 124">
-          <polygon points="14,46 34,26 106,26 86,46" fill="#141414" stroke="#f5f5f5" stroke-width="1.6"/>
-          <polygon points="86,46 106,26 106,98 86,118" fill="#0a0a0a" stroke="#f5f5f5" stroke-width="1.6"/>
-          <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#f5f5f5" stroke-width="2"/>
-        </svg>
-        <span class="qmark">?</span>
-      </span>
-      <svg viewBox="0 0 100 40" class="w-18"><line x1="6" y1="20" x2="68" y2="20" stroke="#e3b04b" stroke-width="4.6" stroke-linecap="round"/><polygon points="66,7 96,20 66,33" fill="#e3b04b"/></svg>
+    <svg v-click="2" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
+    <span v-click="4" class="qwrap">
+      <svg v-click="5" class="cube" viewBox="0 0 124 124">
+        <polygon points="14,46 34,26 106,26 86,46" fill="#141414" stroke="#f5f5f5" stroke-width="1.6"/>
+        <polygon points="86,46 106,26 106,98 86,118" fill="#0a0a0a" stroke="#f5f5f5" stroke-width="1.6"/>
+        <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#f5f5f5" stroke-width="2"/>
+      </svg>
+      <span class="qmark">?</span>
     </span>
   </span>
   <span v-click="2" style="justify-self:start;">RESPONSE</span>
@@ -73,7 +67,7 @@ layout: center
 
 </div>
 
-<img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" />
+<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" />
 
 <!--
 [empty stage — just the magician]
@@ -132,7 +126,7 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 </div>
 
 
-<img :src="'/art/tovenaar-17-zaklamp-in-doos.svg'" class="mage" />
+<img :src="'/art/tovenaar-17-zaklamp-in-doos.svg'" class="mage mage-left" />
 
 <!--
 [glue card on screen] A real one from last year: someone asked Google how to
@@ -233,12 +227,12 @@ resonates: find me on board, I also run the morning workouts. [beat]
 <hr class="rule" />
 
 <div class="route">
-  <div class="stop" v-click="1"><span class="stop-num">1.</span><span class="stop-title">AI is not new</span></div>
-  <div class="stop" v-click="2"><span class="stop-num">2.</span><span class="stop-title">An LLM is statistics built on our written world</span></div>
-  <div class="stop" v-click="3"><span class="stop-num">3.</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
+  <div class="stop" v-click="1"><span class="stop-num">1</span><span class="stop-title">AI is not new</span></div>
+  <div class="stop" v-click="2"><span class="stop-num">2</span><span class="stop-title">An LLM is statistics built on our written world</span></div>
+  <div class="stop" v-click="3"><span class="stop-num">3</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
 </div>
 
-<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" />
+<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage mage-left" />
 
 <!--
 So here's the plan — three sections, and each title is a claim I'm going to
@@ -287,7 +281,7 @@ the same engine.
 
 </div>
 
-<img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-04-liggend.svg'" class="mage mage-left" />
 
 <!--
 But this is a workshop — so we will get active as well. Don't worry: we'll only
@@ -335,28 +329,32 @@ fly-over.
 
 <hr class="rule-tight" />
 
-<div class="intel-row">
-  <figure class="intel-cell" v-click="1"><img :src="'/photos/nat-bee.jpg'" /><figcaption>bee</figcaption></figure>
-  <figure class="intel-cell" v-click="2"><img :src="'/photos/nat-octopus.jpg'" /><figcaption>octopus</figcaption></figure>
-  <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-dolphin.jpg'" /><figcaption>dolphin</figcaption></figure>
-  <figure class="intel-cell" v-click="4"><img :src="'/photos/nat-crow.jpg'" /><figcaption>crow</figcaption></figure>
+<div class="intel-block">
+  <div class="intel-row">
+    <figure class="intel-cell" v-click="1"><img :src="'/photos/nat-slimemold.jpg'" /><figcaption>slime mold</figcaption></figure>
+    <figure class="intel-cell" v-click="2"><img :src="'/photos/nat-flytrap.jpg'" /><figcaption>plant</figcaption></figure>
+    <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-mycelium.jpg'" /><figcaption>fungi</figcaption></figure>
+    <figure class="intel-cell" v-click="4"><img :src="'/photos/nat-bacteria.jpg'" /><figcaption>bacteria</figcaption></figure>
+    <div class="intel-side" v-click="4">Natural intelligence,<br>in different <b class="accent">degrees</b></div>
+  </div>
 </div>
-<div class="intel-caption" v-click="4">natural intelligence is everywhere · in <b class="accent">degrees</b></div>
 
-<div class="def-line" v-click="5">PERCEPTION <span class="accent">→</span> PROCESSING <span class="accent">→</span> ACTION</div>
-<div class="def-ref" v-click="5">the "sense–think–act" agent loop · Russell & Norvig, <i>AI: A Modern Approach</i></div>
-
-<div class="intel-row" v-click="6">
-  <figure class="intel-cell"><img :src="'/photos/ai-calculator.jpg'" /><figcaption>calculator</figcaption></figure>
-  <figure class="intel-cell"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
-  <figure class="intel-cell"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
-  <figure class="intel-cell"><img :src="'/photos/ai-robot.jpg'" /><figcaption>humanoid robot</figcaption></figure>
+<div class="def-wrap" v-click="5">
+  <div class="def-box">PERCEPTION <span class="accent">→</span> PROCESSING <span class="accent">→</span> ACTION</div>
+  <div class="def-ref">Russell &amp; Norvig, <i>AI: A Modern Approach</i></div>
 </div>
-<div class="intel-caption" v-click="6">artificial intelligence also comes in degrees · <b class="accent">narrow</b> → <b class="accent">general</b> → at the far end: <b class="accent">AGI</b>, everything a human can do</div>
+
+<div class="intel-block" v-click="6">
+  <div class="intel-row intel-row-ai">
+    <figure class="intel-cell"><img :src="'/photos/ai-calculator.jpg'" /><figcaption>calculator</figcaption></figure>
+    <figure class="intel-cell"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
+    <figure class="intel-cell"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
+    <figure class="intel-cell"><img :src="'/photos/ai-robot.jpg'" /><figcaption>humanoid robot</figcaption></figure>
+    <div class="agi-box" v-click="7"><span class="agi-abbr">AGI</span><span class="agi-full">Artificial<br>General<br>Intelligence</span></div>
+  </div>
+</div>
 
 
-
-<img :src="'/art/tovenaar-11-vergrootglas.svg'" class="mage" />
 
 <!--
 First: what even IS intelligence? There's no agreed definition — even the
@@ -469,31 +467,16 @@ And right now? We're in the hottest summer the field has ever had.
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[3fr_2fr] gap-12 items-center">
-<div>
-
 <div class="igniters">
-  <div class="ig" v-click="1"><span class="ig-n">1</span><div><b>One architecture</b><span>the transformer paper, 2017</span><span class="ref">Vaswani et al., "Attention Is All You Need"</span></div></div>
-  <div class="ig" v-click="2"><span class="ig-n">2</span><div><b>Hardware</b><span>GPUs · built for games</span></div></div>
-  <div class="ig" v-click="3"><span class="ig-n">3</span><div><b>Data</b><span>the internet finally produced enough text</span></div></div>
+  <div class="ig" v-click="1"><span class="ig-n">1</span><div class="ig-txt"><b>New algorithms</b> <span>the transformer architecture, 2017</span><div class="ref">Vaswani et al., "Attention Is All You Need"</div></div></div>
+  <div class="ig" v-click="2"><span class="ig-n">2</span><div class="ig-txt"><b>Hardware</b> <span>GPUs · built for games</span></div></div>
+  <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>Data</b> <span>the internet finally had enough text</span></div></div>
 </div>
 
-<div class="mt-5 accent text-lg" v-click="4">LLMs are only a small part of AI · but that's our focus today.</div>
+<div class="mt-6 accent text-xl" v-click="4">Note: AI is much more than LLMs · but that's our focus today.</div>
 
-</div>
-<div v-click="3">
-  <div class="example-inset">
-    <div class="ex-tag">example</div>
-    <div class="ex-big">~100M users<br>in ~2 months</div>
-    <div class="ex-sub">ChatGPT · fastest-growing consumer app ever</div>
-    <div class="ref mt-1">UBS / Similarweb, 2023</div>
-  </div>
-</div>
-</div>
-
-
-
-<img :src="'/art/tovenaar-16-juichend.svg'" class="mage mage-left" />
+<div v-click="3" class="bubble bubble-dn ex-bubble"><b>~100M users in ~2 months</b><br><span class="dim">ChatGPT · fastest-growing consumer app ever</span><br><span class="ref">UBS / Similarweb 2023</span></div>
+<img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
 
 <!--
 [click — everyday AI] Before the "why now": you've actually used AI for years
@@ -542,14 +525,15 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
   <div class="qlist">
     <div class="ql">What actually ended the last AI winter?</div>
     <div class="ql">Is a thermostat really a little bit intelligent?</div>
-    <div class="ql">What was so groundbreaking about the transformer paper?</div>
-    <div class="ql">Why did GPUs beat CPUs for training neural networks?</div>
+    <div class="ql">What was groundbreaking about the transformer paper?</div>
+    <div class="ql">Why did GPUs beat CPUs for training?</div>
+    <div class="ql">Who was Alan Turing?</div>
   </div>
 </div>
 
 </div>
 
-<div class="bubble bubble-dn" style="left:7rem; bottom:8rem; right:auto; text-align:left; max-width:16rem;"><b>Stuck?</b> Start with "Why…" · "What ended…" · "Explain … like I'm 12"</div>
+<div class="bubble bubble-dn bubble-white" style="left:6.5rem; bottom:8rem; right:auto; text-align:left; max-width:15rem;"><b>Stuck? Start with:</b><br>"Why…"<br>"What ended…"<br>"Explain … like I'm 12"</div>
 <img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
 
 
