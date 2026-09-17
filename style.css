@@ -680,3 +680,29 @@
 .bubble-white::before { color: #f2ecdf; }
 .bubble-white::after { border-top-color: #f2ecdf; }
 .bubble-white b { color: #f2ecdf; }
+
+/* slide 9 v2 — timeline rows with image per topic */
+.tl2 { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.3rem; }
+.tl2-row {
+  position: relative;
+  display: grid; grid-template-columns: 1fr 7rem; align-items: center; gap: 1.4rem;
+  border-bottom: 1px solid var(--hairline); padding-bottom: 0.4rem;
+}
+.tl2-row:last-child { border-bottom: 0; }
+.tl2-txt { min-width: 0; }
+.tl2-label {
+  font-size: 0.78rem; color: var(--ink-dim); letter-spacing: 0.06em; text-transform: uppercase;
+}
+.tl2-label.green { color: #8fcbab; }
+.tl2-year { color: var(--talk-accent); font-weight: 600; }
+.tl2-year.green { color: #8fcbab; }
+.tl2-main { font-family: 'Fraunces', serif; font-size: 1.3rem; line-height: 1.1; white-space: nowrap; }
+.tl2-ref {
+  position: absolute; right: 8rem; bottom: 0.45rem;
+  font-size: 0.7rem; color: var(--ink-dim); font-style: italic; opacity: 0.7;
+}
+.tl2-img {
+  width: 7rem; height: 3.2rem; object-fit: cover; border-radius: 0.4rem;
+  filter: saturate(0.85) contrast(1.03); justify-self: end;
+}
+.tl2-you .tl2-main { font-size: 1.3rem; }

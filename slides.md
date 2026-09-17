@@ -383,18 +383,48 @@ machine that can do everything a human can.
 
 <hr class="rule" />
 
-<div class="timeline timeline-big">
-  <div class="tl-row"><span class="tl-label">the dream</span><span class="tl-year">1600s</span><span class="tl-txt">Leibniz: <i>"calculemus"</i> · let us calculate <span class="tl-ref">Leibniz, De Arte Combinatoria</span></span></div>
-  <div class="tl-row"><span class="tl-label">the question</span><span class="tl-year">1950</span><span class="tl-txt">Turing: can machines think? <span class="dim">(the Turing test)</span> <span class="tl-ref">Turing, "Computing Machinery & Intelligence"</span></span></div>
-  <div class="tl-row"><span class="tl-label">the name</span><span class="tl-year">1956</span><span class="tl-txt">coined at the Dartmouth <i>"summer project"</i> <span class="dim">· one summer?!</span> <span class="tl-ref">Dartmouth Workshop, 1956</span></span></div>
-  <div class="tl-row"><span class="tl-label">the proof</span><span class="tl-year">1997</span><span class="tl-txt">Deep Blue beats the world chess champion <span class="tl-ref">IBM Deep Blue vs Kasparov</span></span></div>
-  <div class="tl-you-flex"><span class="tl-label">already here</span><span class="eb-year">90s → now</span><span><b>the AI you already use</b> · <span class="dim">spam filters · Translate · Netflix picks</span></span></div>
+<div class="tl2">
+  <div class="tl2-row">
+    <div class="tl2-txt">
+      <div class="tl2-label">the dream <span class="tl2-year">· 1600s</span></div>
+      <div class="tl2-main">Leibniz dreams: <i>"calculemus"</i> · let us calculate</div>
+      <div class="tl2-ref">Leibniz, <i>De Arte Combinatoria</i></div>
+    </div>
+    <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
+  </div>
+  <div class="tl2-row">
+    <div class="tl2-txt">
+      <div class="tl2-label">the question <span class="tl2-year">· 1950</span></div>
+      <div class="tl2-main">Turing: can machines think? <span class="dim">(the Turing test)</span></div>
+      <div class="tl2-ref">Turing, <i>Computing Machinery &amp; Intelligence</i></div>
+    </div>
+    <img class="tl2-img" :src="'/photos/turing.jpg'" style="object-position:50% 20%;" />
+  </div>
+  <div class="tl2-row">
+    <div class="tl2-txt">
+      <div class="tl2-label">the name <span class="tl2-year">· 1956</span></div>
+      <div class="tl2-main">coined at the Dartmouth <i>"summer project"</i> <span class="dim">· one summer?!</span></div>
+      <div class="tl2-ref">Dartmouth Workshop, 1956</div>
+    </div>
+    <img class="tl2-img" :src="'/photos/dartmouth.jpg'" />
+  </div>
+  <div class="tl2-row">
+    <div class="tl2-txt">
+      <div class="tl2-label">the proof <span class="tl2-year">· 1997</span></div>
+      <div class="tl2-main">Deep Blue beats the world chess champion</div>
+      <div class="tl2-ref">IBM Deep Blue vs Kasparov</div>
+    </div>
+    <img class="tl2-img" :src="'/photos/deepblue.jpg'" />
+  </div>
+  <div class="tl2-row tl2-you">
+    <div class="tl2-txt">
+      <div class="tl2-label green">already here <span class="tl2-year green">· 90s → now</span></div>
+      <div class="tl2-main">the AI you already use <span class="dim">· spam filters · Translate · Netflix</span></div>
+    </div>
+    <img class="tl2-img" :src="'/photos/everyday-ai.jpg'" />
+  </div>
 </div>
 
-<div class="mt-3 dim italic">"This dream is older than most of us · and you've been using it for years."</div>
-
-
-<img :src="'/art/tovenaar-05-zittend.svg'" class="mage" />
 
 <!--
 Humans have wanted to build thinking machines for centuries. Leibniz, sixteen
@@ -423,24 +453,30 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <hr class="rule" />
 
 <div style="text-align:center;">
-<svg viewBox="0 0 700 250" class="winters" style="height:14.5rem; width:auto;" preserveAspectRatio="xMidYMid meet">
-  <defs><marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-    <path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker></defs>
-  <path d="M20.0,209.0 L38.3,203.0 L65.7,184.2 L93.1,158.4 L120.6,133.2 L148.0,116.1 L170.9,111.6 L193.7,116.4 L221.1,131.0 L248.6,148.4 L276.0,160.3 L294.3,161.7 L317.1,154.5 L344.6,133.7 L372.0,105.3 L399.4,77.7 L426.9,59.5 L449.7,55.3 L472.6,61.4 L500.0,78.5 L527.4,98.6 L550.3,110.7 L568.6,114.0 L591.4,108.4 L618.9,87.7 L646.3,57.4 L662,44"
-        fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrHead)"/>
-  <text x="150" y="92" fill="#f0e6d2" font-size="17" text-anchor="middle">summer</text>
-  <text x="400" y="50" fill="#f0e6d2" font-size="17" text-anchor="middle">summer</text>
-  <text x="628" y="66" fill="#e3b04b" font-size="19" font-weight="bold" text-anchor="middle">now</text>
-  <text x="180" y="185" fill="#9a917f" font-size="15" text-anchor="middle">~1974</text>
-  <text x="180" y="205" fill="#9a917f" font-size="13" text-anchor="middle">algorithms hit a wall</text>
-  <text x="440" y="187" fill="#9a917f" font-size="15" text-anchor="middle">~1990</text>
-  <text x="440" y="207" fill="#9a917f" font-size="13" text-anchor="middle">too little data & compute</text>
+<svg viewBox="0 0 720 250" class="winters" style="height:15rem; width:auto;" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
+    <g id="sun"><circle r="9" fill="none" stroke="#e3b04b" stroke-width="2.4"/><g stroke="#e3b04b" stroke-width="2.4" stroke-linecap="round"><line y1="-13" y2="-16.5"/><line y1="13" y2="16.5"/><line x1="-13" x2="-16.5"/><line x1="13" x2="16.5"/><line x1="-9.2" y1="-9.2" x2="-11.7" y2="-11.7"/><line x1="9.2" y1="9.2" x2="11.7" y2="11.7"/><line x1="9.2" y1="-9.2" x2="11.7" y2="-11.7"/><line x1="-9.2" y1="9.2" x2="-11.7" y2="11.7"/></g></g>
+    <g id="snow"><path d="M-13,2 a7,7 0 0,1 3,-13.6 a9,9 0 0,1 17.5,1.6 a7,7 0 0,1 0.5,12 z" fill="none" stroke="#8cbedc" stroke-width="2.2"/><g stroke="#8cbedc" stroke-width="2" stroke-linecap="round"><line x1="-7" y1="8" x2="-9" y2="13"/><line x1="0" y1="8" x2="-2" y2="14"/><line x1="7" y1="8" x2="5" y2="13"/></g></g>
+  </defs>
+  <path d="M20,150 L70,150 Q110,150 130,120 Q150,90 175,90 Q200,90 220,120 Q245,155 285,155 Q320,155 345,120 Q372,85 400,85 Q428,85 452,120 Q485,158 520,150 Q560,140 585,120 Q640,70 700,40"
+        fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrHead)"/>
+  <use href="#sun" x="175" y="66"/>
+  <use href="#sun" x="400" y="61"/>
+  <use href="#snow" x="70" y="128"/>
+  <use href="#snow" x="285" y="182"/>
+  <use href="#snow" x="452" y="182"/>
+  <text x="672" y="52" fill="#e3b04b" font-size="20" font-weight="bold" text-anchor="middle">now</text>
+  <g v-click="2">
+    <text x="285" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1970s</text>
+    <text x="285" y="230" fill="#9a917f" font-size="11" text-anchor="middle">algorithms stalled</text>
+    <text x="452" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1990s</text>
+    <text x="452" y="230" fill="#9a917f" font-size="11" text-anchor="middle">too little data</text>
+  </g>
 </svg>
 </div>
 
-<div class="mt-3 text-lg dim">money in → hype → disappointment → winter → <b class="accent">a breakthrough revives it</b> → money in again</div>
-
-
+<div v-click="[1,2]" class="mt-3 text-xl dim" style="text-align:center;">money in → hype → disappointment → <b class="accent">winter</b> → a breakthrough → money in again</div>
 
 <img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
