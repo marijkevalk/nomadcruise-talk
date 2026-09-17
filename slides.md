@@ -326,36 +326,44 @@ fly-over.
 
 # What is intelligence?
 
-<hr class="rule" />
+<hr class="rule-tight" />
 
-<div class="text-2xl" style="font-family:'Fraunces',serif;">
-perception <span class="accent mx-3">→</span> processing <span class="accent mx-3">→</span> action
+<div class="intel-row">
+  <figure class="intel-cell" v-click="1"><img :src="'/photos/nat-bee.jpg'" /><figcaption>bee</figcaption></figure>
+  <figure class="intel-cell" v-click="2"><img :src="'/photos/nat-octopus.jpg'" /><figcaption>octopus</figcaption></figure>
+  <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-dolphin.jpg'" /><figcaption>dolphin</figcaption></figure>
+  <figure class="intel-cell" v-click="4"><img :src="'/photos/nat-crow.jpg'" /><figcaption>crow</figcaption></figure>
 </div>
+<div class="intel-caption" v-click="4">natural intelligence is everywhere · in <b class="accent">degrees</b></div>
 
-<div class="quiz-row" v-click="1">
-  <div class="quiz-item"><div class="qi-icon">🐝</div><div class="qi-label">bee</div><div class="qi-tag">natural</div></div>
-  <div class="quiz-item"><div class="qi-icon">🧮</div><div class="qi-label">calculator</div><div class="qi-tag dim">not really</div></div>
-  <div class="quiz-item"><div class="qi-icon">♟️</div><div class="qi-label">chess computer</div><div class="qi-tag">artificial · narrow</div></div>
-  <div class="quiz-item"><div class="qi-icon">🌡️</div><div class="qi-label">thermostat</div><div class="qi-tag accent">a little?!</div></div>
+<div class="def-line" v-click="5">PERCEPTION <span class="accent">→</span> PROCESSING <span class="accent">→</span> ACTION</div>
+<div class="def-ref" v-click="5">the "sense–think–act" agent loop · Russell & Norvig, <i>AI: A Modern Approach</i></div>
+
+<div class="intel-row" v-click="6">
+  <figure class="intel-cell"><img :src="'/photos/ai-calculator.jpg'" /><figcaption>calculator</figcaption></figure>
+  <figure class="intel-cell"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
+  <figure class="intel-cell"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
+  <figure class="intel-cell"><img :src="'/photos/ai-robot.jpg'" /><figcaption>humanoid robot</figcaption></figure>
 </div>
-
-<div class="mt-6 text-xl" v-click="2">intelligence isn't yes / no · it's a <b class="accent">dial</b>, in degrees</div>
+<div class="intel-caption" v-click="6">artificial intelligence comes in degrees too · from <b class="accent">narrow</b> to <b class="accent">general</b></div>
 
 
 <!--
 First: what even IS intelligence? There's no agreed definition — even the
-experts disagree. Here's a workable one: perception, processing, action. You
-take something in, you do something with it, you act. You need that action to
-OBSERVE intelligence — a brain in a jar shows you nothing.
+experts disagree. But look at nature: [clicks] a bee finding the shortest route,
+an octopus opening a jar, a dolphin recognising itself in a mirror, a crow
+bending a wire into a hook. All intelligent — in very different degrees.
 
-[click — the quiz] Quick one, hands up: natural, artificial, or not intelligent?
-A bee — natural, tiny but real. A calculator — lightning fast, but it perceives
-nothing, so… not really. A chess computer — artificial, but narrow. And a
-thermostat? It perceives the temperature, processes it, and acts. So… a tiny
-bit intelligent?!
+[click — the definition] A workable definition, borrowed from the AI textbook:
+perception, processing, action. You take something in, you do something with
+it, you act. And you need that action to OBSERVE intelligence — a brain in a
+jar shows you nothing.
 
-[click] That's the point: intelligence isn't yes-or-no, it's a dial — degrees,
-levels. "Artificial" intelligence is just us trying to build some of that.
+[click — artificial row] Now the artificial versions, and notice they're also
+in degrees: a calculator — fast but blind. A chess computer — brilliant at ONE
+thing. A self-driving car — perceives, decides, acts in the real world. A
+humanoid robot — reaching for something more general. From narrow to general:
+that's the whole ladder AI is climbing.
 -->
 
 ---
@@ -405,25 +413,27 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 
 <div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-# Summers and winters
+# AI summers and winters
 
 <hr class="rule" />
 
-<div class="max-w-4xl">
-<svg viewBox="0 0 700 240" class="w-full winters">
-  <path d="M20,180 Q90,70 150,100 Q190,118 230,170 Q300,55 370,90 Q420,112 460,165 Q560,18 680,32"
-        fill="none" stroke="#e3b04b" stroke-width="3" stroke-linecap="round"/>
-  <text x="78" y="52" fill="#f0e6d2" font-size="17">summer</text>
-  <text x="300" y="40" fill="#f0e6d2" font-size="17">summer</text>
-  <text x="588" y="78" fill="#e3b04b" font-size="19" font-weight="bold">now</text>
-  <text x="196" y="196" fill="#9a917f" font-size="15" text-anchor="middle">~1974</text>
-  <text x="196" y="216" fill="#9a917f" font-size="13" text-anchor="middle">algorithms hit a wall</text>
-  <text x="440" y="196" fill="#9a917f" font-size="15" text-anchor="middle">~1990</text>
-  <text x="440" y="216" fill="#9a917f" font-size="13" text-anchor="middle">too little data & compute</text>
+<div style="text-align:center;">
+<svg viewBox="0 0 700 250" class="winters" style="height:14.5rem; width:auto;" preserveAspectRatio="xMidYMid meet">
+  <defs><marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker></defs>
+  <path d="M20.0,209.0 L38.3,203.0 L65.7,184.2 L93.1,158.4 L120.6,133.2 L148.0,116.1 L170.9,111.6 L193.7,116.4 L221.1,131.0 L248.6,148.4 L276.0,160.3 L294.3,161.7 L317.1,154.5 L344.6,133.7 L372.0,105.3 L399.4,77.7 L426.9,59.5 L449.7,55.3 L472.6,61.4 L500.0,78.5 L527.4,98.6 L550.3,110.7 L568.6,114.0 L591.4,108.4 L618.9,87.7 L646.3,57.4 L662,44"
+        fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrHead)"/>
+  <text x="150" y="92" fill="#f0e6d2" font-size="17" text-anchor="middle">summer</text>
+  <text x="400" y="50" fill="#f0e6d2" font-size="17" text-anchor="middle">summer</text>
+  <text x="628" y="66" fill="#e3b04b" font-size="19" font-weight="bold" text-anchor="middle">now</text>
+  <text x="180" y="185" fill="#9a917f" font-size="15" text-anchor="middle">~1974</text>
+  <text x="180" y="205" fill="#9a917f" font-size="13" text-anchor="middle">algorithms hit a wall</text>
+  <text x="440" y="187" fill="#9a917f" font-size="15" text-anchor="middle">~1990</text>
+  <text x="440" y="207" fill="#9a917f" font-size="13" text-anchor="middle">too little data & compute</text>
 </svg>
 </div>
 
-<div class="mt-4 text-lg dim">money flows in → results disappoint → winter. repeat.<br>
+<div class="mt-3 text-base dim">money in → hype → disappointment → winter → <b class="accent">a breakthrough revives it</b> → money in again<br>
 the ambition all along: <b class="accent">AGI</b> · AI that can do everything a human can</div>
 
 
