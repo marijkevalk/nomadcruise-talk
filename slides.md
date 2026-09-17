@@ -383,7 +383,7 @@ machine that can do everything a human can.
   <div class="tl-you-flex"><span class="tl-label">already here</span><span class="eb-year">90s → now</span><span><b>the AI you already use</b> · <span class="dim">spam filters · Translate · Netflix picks</span></span></div>
 </div>
 
-<div class="mt-3 dim italic">"This dream is older than most of us — and you've been using it for years."</div>
+<div class="mt-3 dim italic">"This dream is older than most of us · and you've been using it for years."</div>
 
 <!--
 Humans have wanted to build thinking machines for centuries. Leibniz, sixteen
