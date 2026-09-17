@@ -456,24 +456,30 @@ And right now? We're in the hottest summer the field has ever had.
 
 <div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-# Why the boom <span class="accent">now</span>?
+# Why the boom now?
 
 <hr class="rule" />
 
-<div class="everyday" v-click="1">you've used AI for years without calling it that: <span class="dim">spam filters · Google Translate · Netflix & Spotify picks · Face ID</span></div>
-
-<div class="strip text-lg mt-6" v-click="2">
-  <div><div class="accent font-semibold">one architecture</div><div class="dim mt-1">the transformer paper, 2017</div><div class="ref">Vaswani et al., "Attention Is All You Need"</div></div>
-  <div><div class="accent font-semibold">hardware</div><div class="dim mt-1">GPUs · built for games</div></div>
-  <div><div class="accent font-semibold">data</div><div class="dim mt-1">the internet finally produced enough text</div></div>
-</div>
-
-<div class="grid grid-cols-[3fr_2fr] gap-10 mt-7 items-center" v-click="3">
+<div class="grid grid-cols-[3fr_2fr] gap-12 items-center">
 <div>
-<div class="text-xl">ChatGPT: <b>~100M users in ~2 months</b><br><span class="dim">fastest-growing consumer app ever</span><br><span class="ref">UBS / Similarweb, 2023</span></div>
-<div class="mt-5 accent">LLMs are only a small part of AI <br>but that's our focus today.</div>
+
+<div class="igniters">
+  <div class="ig" v-click="1"><span class="ig-n">1</span><div><b>One architecture</b><span>the transformer paper, 2017</span><span class="ref">Vaswani et al., "Attention Is All You Need"</span></div></div>
+  <div class="ig" v-click="2"><span class="ig-n">2</span><div><b>Hardware</b><span>GPUs · built for games</span></div></div>
+  <div class="ig" v-click="3"><span class="ig-n">3</span><div><b>Data</b><span>the internet finally produced enough text</span></div></div>
 </div>
-<div><img :src="'/photos/datacenter.jpg'" class="photo h-40 w-full" /><div class="mini-credit">CERN server hall · F. Hirzinger, CC BY-SA 3.0</div></div>
+
+<div class="mt-5 accent text-lg" v-click="4">LLMs are only a small part of AI · but that's our focus today.</div>
+
+</div>
+<div v-click="3">
+  <div class="example-inset">
+    <div class="ex-tag">example</div>
+    <div class="ex-big">~100M users<br>in ~2 months</div>
+    <div class="ex-sub">ChatGPT · fastest-growing consumer app ever</div>
+    <div class="ref mt-1">UBS / Similarweb, 2023</div>
+  </div>
+</div>
 </div>
 
 
@@ -513,23 +519,26 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 <div class="qround-body">
 
 <div class="recap-inset">
-  <div class="ri-title">During each part</div>
-  <div class="ri-line">write a question · <span class="dim">don't get, wonder, want more</span></div>
-  <div class="ri-title mt-2">After each part</div>
-  <div class="ri-line">groups · ask AI · discuss</div>
+  <div class="ri-title">After each part</div>
+  <div class="ri-line">groups of two or three</div>
+  <div class="ri-line"><b class="ri-em">Individually:</b> ask AI a question</div>
+  <div class="ri-line"><b class="ri-em">Share</b> what stood out</div>
 </div>
 
 <div class="qmain">
-  <div class="stuck">Stuck? Start with <b>"Why…"</b> · <b>"What ended…"</b> · <b>"Explain … like I'm 12"</b></div>
+  <div class="ex-title">Examples</div>
   <div class="qlist">
     <div class="ql">What actually ended the last AI winter?</div>
     <div class="ql">Is a thermostat really a little bit intelligent?</div>
     <div class="ql">What was so groundbreaking about the transformer paper?</div>
-    <div class="ql ql-deep">Why did GPUs beat CPUs for training neural networks?</div>
+    <div class="ql">Why did GPUs beat CPUs for training neural networks?</div>
   </div>
 </div>
 
 </div>
+
+<div class="bubble bubble-dn" style="left:7rem; bottom:8rem; right:auto; text-align:left; max-width:16rem;"><b>Stuck?</b> Start with "Why…" · "What ended…" · "Explain … like I'm 12"</div>
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage mage-left" />
 
 
 <!--
