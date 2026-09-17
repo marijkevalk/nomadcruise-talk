@@ -28,6 +28,8 @@ favicon: /favicon.svg
 
 <div class="byline" style="font-size:1.25rem; bottom:3.6rem; z-index:2;">Marijke Valk</div>
 
+<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" />
+
 <!--
 [0:00 — title up while people walk in]
 
@@ -71,7 +73,7 @@ layout: center
 
 </div>
 
-<img :src="'/art/tovenaar-01-basis.svg'" class="mage" />
+<img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" />
 
 <!--
 [empty stage — just the magician]
@@ -130,7 +132,7 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
 </div>
 
 
-<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage" />
+<img :src="'/art/tovenaar-17-zaklamp-in-doos.svg'" class="mage" />
 
 <!--
 [glue card on screen] A real one from last year: someone asked Google how to
@@ -199,6 +201,8 @@ inside. Today we let it out.
 
 <div class="balance-block" v-click="5">Outdoors · Sports · Community</div>
 
+<img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
+
 <!--
 A short introduction about me. Before becoming a nomad I studied physics, and
 later econometrics — because I like to understand the world and describe it
@@ -234,7 +238,7 @@ resonates: find me on board, I also run the morning workouts. [beat]
   <div class="stop" v-click="3"><span class="stop-num">3.</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
 </div>
 
-<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
+<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" />
 
 <!--
 So here's the plan — three sections, and each title is a claim I'm going to
@@ -283,7 +287,7 @@ the same engine.
 
 </div>
 
-<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
 
 <!--
 But this is a workshop — so we will get active as well. Don't worry: we'll only
@@ -314,7 +318,7 @@ layout: center
 
 <div class="display">AI is not new</div>
 
-<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage" />
+<img :src="'/art/tovenaar-03-fietsend.svg'" class="mage" />
 
 
 <!--
@@ -352,7 +356,7 @@ fly-over.
 
 
 
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+<img :src="'/art/tovenaar-11-vergrootglas.svg'" class="mage" />
 
 <!--
 First: what even IS intelligence? There's no agreed definition — even the
@@ -392,7 +396,7 @@ machine that can do everything a human can.
 <div class="mt-3 dim italic">"This dream is older than most of us · and you've been using it for years."</div>
 
 
-<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
+<img :src="'/art/tovenaar-05-zittend.svg'" class="mage" />
 
 <!--
 Humans have wanted to build thinking machines for centuries. Leibniz, sixteen
@@ -440,7 +444,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 
 
 
-<img :src="'/art/tovenaar-01-basis.svg'" class="mage" />
+<img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
 <!--
 But the road was bumpy. AI moves in summers and winters: big promises, money
@@ -489,7 +493,7 @@ And right now? We're in the hottest summer the field has ever had.
 
 
 
-<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-16-juichend.svg'" class="mage mage-left" />
 
 <!--
 [click — everyday AI] Before the "why now": you've actually used AI for years
@@ -546,7 +550,7 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 </div>
 
 <div class="bubble bubble-dn" style="left:7rem; bottom:8rem; right:auto; text-align:left; max-width:16rem;"><b>Stuck?</b> Start with "Why…" · "What ended…" · "Explain … like I'm 12"</div>
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
 
 
 <!--
@@ -572,7 +576,7 @@ layout: center
 
 <div class="display">An LLM is statistics<br>built on our written world</div>
 
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+<img :src="'/art/tovenaar-11-vergrootglas.svg'" class="mage" />
 
 
 <!--
@@ -607,7 +611,7 @@ right now.
 
 
 
-<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage" />
+<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" />
 
 <!--
 Finish this sentence for me, all together: "Titanic got stuck on…" — [iceberg!]
@@ -636,7 +640,7 @@ whole section.
 
 
 
-<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
+<img :src="'/art/tovenaar-05-zittend.svg'" class="mage" />
 
 <!--
 Here's what that looks like inside a real model. [If someone asks which one:
@@ -688,7 +692,7 @@ find the pattern → predict the next point
 
 
 
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+<img :src="'/art/tovenaar-12-zwevend.svg'" class="mage" />
 
 <!--
 You've all seen this picture in school: some data points, a line through them,
@@ -746,7 +750,7 @@ those connections are numbers: <b class="accent">weights</b><br>
 </div>
 
 <div class="bubble" style="right:9.5rem; bottom:3.2rem;">wait · so it never looks anything up?</div>
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+<img :src="'/art/tovenaar-10-konijn-uit-hoed.svg'" class="mage" />
 
 <!--
 How can it predict so well? Because it has learned the connections between
@@ -778,7 +782,6 @@ anything up?" Hold that thought. It's exactly the right question.
 
 
 
-<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage mage-left" />
 
 <!--
 And here's my favorite demystifier. A model is literally a file of numbers.
@@ -812,7 +815,7 @@ That's the "built on our written world" part. Three steps.
 
 
 
-<img :src="'/art/tovenaar-01-basis.svg'" class="mage" />
+<img :src="'/art/tovenaar-19-goudklomp.svg'" class="mage" />
 
 <!--
 Step one: data. You need a mountain of text — the public web, books, articles,
@@ -851,7 +854,7 @@ train — per model.
 </div>
 
 <div class="bubble" style="right:9.5rem; bottom:3.2rem;">who turns<br>billions of dials?!</div>
-<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
+<img :src="'/art/tovenaar-18-bouwend-hamer.svg'" class="mage" />
 
 <!--
 Step two: training. And this surprises people: the numbers start RANDOM. Pure
@@ -884,7 +887,7 @@ That's the GPUs. That's the data centers. That's why ASML machines matter.
 
 
 
-<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage" />
+<img :src="'/art/tovenaar-10-konijn-uit-hoed.svg'" class="mage" />
 
 <!--
 And you can literally watch this happen. I trained a tiny model myself — on my
@@ -910,7 +913,7 @@ nudge by nudge. This is training — made visible.
 
 
 
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+<img :src="'/art/tovenaar-12-zwevend.svg'" class="mage" />
 
 <!--
 [FLEX SLIDE — only if on schedule at the checkpoint; otherwise skip, it makes
@@ -941,7 +944,7 @@ model was never told what a king is. It's in the numbers anyway.
 
 
 
-<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
+<img :src="'/art/tovenaar-18-bouwend-hamer.svg'" class="mage" />
 
 <!--
 Step three — the part people skip. After all that reading, the raw model is a
@@ -978,7 +981,7 @@ someone says "the AI said so."
 
 
 
-<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
+<img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" />
 
 <!--
 And then — my favorite moment — the weights are SAVED. Training happens once,
@@ -1020,7 +1023,7 @@ train it only to predict the next word <br>and abilities appear that <b>nobody p
 
 
 
-<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
+<img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
 
 <!--
 Now — here's where I have to be honest with you, because something strange
@@ -1075,7 +1078,7 @@ training made the models differ from <i>each other</i> <br>the dice make the <i>
 
 
 
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+<img :src="'/art/tovenaar-13-facepalm.svg'" class="mage" />
 
 <!--
 But the same mechanism has a weird side: hallucination. Here's my favorite way
@@ -1132,7 +1135,7 @@ Section two done — and I'd be amazed if you have no questions now.
 </div>
 
 <div class="bubble bubble-dn" style="left:7rem; bottom:8rem; right:auto; text-align:left; max-width:16rem;"><b>Go deeper:</b> ask a follow-up on the answer</div>
-<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-11-vergrootglas.svg'" class="mage mage-left" />
 
 
 <!--
@@ -1159,7 +1162,7 @@ layout: center
 
 <div class="display">AI tools are cars wrapped<br>around the same engines</div>
 
-<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage" />
+<img :src="'/art/tovenaar-18-bouwend-hamer.svg'" class="mage" />
 
 
 <!--
@@ -1185,7 +1188,7 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 
 
 
-<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-11-vergrootglas.svg'" class="mage mage-left" />
 
 <!--
 In the middle sits the model — the file of numbers. Think of it as the ENGINE.
@@ -1225,7 +1228,7 @@ wheel is always in your hands.
 
 
 
-<img :src="'/art/tovenaar-07-armen-over-elkaar.svg'" class="mage" />
+<img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
 <!--
 Once you see the car-around-engine picture, the whole AI landscape snaps into
@@ -1264,7 +1267,7 @@ optimization" is just: route the easy work to the small engine.
 
 
 
-<img :src="'/art/tovenaar-04-wijzend.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" />
 
 <!--
 So how do you make this thing YOURS? Three ways, from heavy to light.
@@ -1305,7 +1308,7 @@ give it your facts, it will guess. So give it your facts.
 
 
 
-<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage" />
+<img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" />
 
 <!--
 And with that, the overwhelming tool zoo sorts itself into three shelves.
@@ -1354,7 +1357,7 @@ Last round of questions — and this one is the most practical.
 </div>
 
 <div class="bubble bubble-dn" style="left:6.5rem; bottom:8rem; right:auto; text-align:left; max-width:17rem;"><b>This time:</b> describe what <i>you</i> do, ask what would help</div>
-<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
 
 
 <!--
@@ -1383,7 +1386,7 @@ layout: center
 "Treat the model as a noisy estimator,<br>not an oracle."
 </div>
 
-<img :src="'/art/tovenaar-02-hoed-afnemen.svg'" class="mage" />
+<img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" />
 
 
 <!--
@@ -1428,7 +1431,7 @@ photos: Wikimedia Commons · F.G.O. Stuart (PD) · A.R. Chaffin (PD) · C.B. Fra
 </div>
 
 
-<img :src="'/art/tovenaar-02-hoed-afnemen.svg'" class="mage" />
+<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" />
 
 <!--
 Thank you! I'm on this ship all week — find me for questions, deep AI talk, or
