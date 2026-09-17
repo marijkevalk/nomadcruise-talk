@@ -1054,38 +1054,37 @@ Section two done — and I'd be amazed if you have no questions now.
 
 ---
 
-<div class="kicker">Intermezzo <span class="dim">· round two</span></div>
+<div class="kicker green-kicker">Your turn <span class="dim">· part two</span></div>
 
-# Go one level deeper
+# <span class="green-title">Go one level deeper</span>
+
+<Countdown :minutes="5" :run="true" class="clock-lg" />
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[1fr_1fr_auto] gap-12 items-start">
-<div class="text-lg">
+<div class="qround-body">
 
-**The upgrade:**
+<div class="recap-inset">
+  <div class="ri-title">After each part</div>
+  <div class="ri-line">groups of two or three</div>
+  <div class="ri-line"><b class="ri-em">Individually:</b> ask AI a question</div>
+  <div class="ri-line"><b class="ri-em">Share</b> what stood out</div>
+</div>
 
-<div class="rows">
-<div>ask your question</div>
-<div>then ask one <b>follow-up</b> on the answer</div>
+<div class="qmain">
+  <div class="ex-title">Examples</div>
+  <div class="qlist">
+    <div class="ql">Why can't it just look things up?</div>
+    <div class="ql">What did <i>your</i> model actually train on?</div>
+    <div class="ql">If it just predicts words, how can it write code?</div>
+    <div class="ql">What is "temperature" in a language model?</div>
+  </div>
 </div>
 
 </div>
-<div class="text-lg">
 
-**For example:**
-
-<div class="rows">
-<div>Why can't it just look things up?</div>
-<div>What did <i>your</i> model train on?</div>
-<div>If it just predicts words,<br>how can it write code?</div>
-</div>
-
-</div>
-<div class="round-timer">5:00</div>
-</div>
-
-<div class="mt-8 dim">one question · any chat app · I'll walk around</div>
+<div class="bubble bubble-dn" style="left:7rem; bottom:8rem; right:auto; text-align:left; max-width:16rem;"><b>Go deeper:</b> ask a follow-up on the answer</div>
+<img :src="'/art/tovenaar-05-verbaasd.svg'" class="mage mage-left" />
 
 
 <!--
@@ -1265,37 +1264,37 @@ Last round of questions — and this one is the most practical.
 
 ---
 
-<div class="kicker">Intermezzo <span class="dim">· round three</span></div>
+<div class="kicker green-kicker">Your turn <span class="dim">· part three</span></div>
 
-# Make it practical
+# <span class="green-title">Make it practical</span>
+
+<Countdown :minutes="5" :run="true" class="clock-lg" />
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[1fr_1fr_auto] gap-12 items-start">
-<div class="text-lg">
+<div class="qround-body">
 
-**This time:**
+<div class="recap-inset">
+  <div class="ri-title">After each part</div>
+  <div class="ri-line">groups of two or three</div>
+  <div class="ri-line"><b class="ri-em">Individually:</b> ask AI a question</div>
+  <div class="ri-line"><b class="ri-em">Share</b> what stood out</div>
+</div>
 
-<div class="rows">
-<div>describe what <b>you</b> do</div>
-<div>ask what would help</div>
+<div class="qmain">
+  <div class="ex-title">Examples</div>
+  <div class="qlist">
+    <div class="ql">Which AI tool fits what I actually do?</div>
+    <div class="ql">Difference between ChatGPT the app and GPT the model?</div>
+    <div class="ql">How do I give an AI my own documents to work from?</div>
+    <div class="ql">When should I build my own tool instead of using one?</div>
+  </div>
 </div>
 
 </div>
-<div class="text-lg">
 
-**For example:**
-
-<div class="rows">
-<div>Which tool fits my work?</div>
-<div>What's the difference between ChatGPT the app and GPT the model?</div>
-</div>
-
-</div>
-<div class="round-timer">5:00</div>
-</div>
-
-<div class="mt-8 dim">one question · any chat app · I'll walk around</div>
+<div class="bubble bubble-dn" style="left:6.5rem; bottom:8rem; right:auto; text-align:left; max-width:17rem;"><b>This time:</b> describe what <i>you</i> do, ask what would help</div>
+<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage mage-left" />
 
 
 <!--
