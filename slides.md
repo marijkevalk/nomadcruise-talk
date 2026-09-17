@@ -10,6 +10,7 @@ drawings:
   persist: false
 transition: fade
 mdc: true
+favicon: /favicon.svg
 ---
 
 <div style="position:absolute; top:3.8rem; left:3.8rem; z-index:2;">
@@ -258,21 +259,22 @@ the same engine.
   <div class="wf-sub">while you are listening</div>
   <div class="wf-lead">Write down at least one question:</div>
   <ul class="wf-list">
-    <li>something you don't understand</li>
-    <li>something that makes you wonder</li>
-    <li>something you want to know more of</li>
-    <li>it can be anything</li>
+    <li>Something you don't understand</li>
+    <li>Something that makes you wonder</li>
+    <li>Something you want to know more of</li>
+    <li>Anything that comes to mind…</li>
   </ul>
 </div>
 
 <div class="wf-block" v-click="2">
   <div class="wf-head">After each part</div>
   <div class="wf-sub">get into groups of two or three with your neighbours</div>
-  <div class="wf-lead"><b class="wf-em">Individually:</b> choose one of your questions and ask it to AI.</div>
-  <div class="wf-lead mt-2">Discuss with your neighbours:</div>
+  <div class="wf-lead"><b>Individually:</b> choose one of your questions and ask it to your AI assistant.</div>
+  <div class="wf-lead mt-2">Share with your neighbours:</div>
   <ul class="wf-list">
-    <li>something striking you learned</li>
-    <li>a new question raised, or something still unclear</li>
+    <li>Something striking you learned</li>
+    <li>A new question that was raised</li>
+    <li>Something that's still unclear</li>
   </ul>
 </div>
 
