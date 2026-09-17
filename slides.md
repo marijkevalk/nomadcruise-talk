@@ -345,7 +345,7 @@ fly-over.
   <figure class="intel-cell"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
   <figure class="intel-cell"><img :src="'/photos/ai-robot.jpg'" /><figcaption>humanoid robot</figcaption></figure>
 </div>
-<div class="intel-caption" v-click="6">artificial intelligence comes in degrees too · from <b class="accent">narrow</b> to <b class="accent">general</b></div>
+<div class="intel-caption" v-click="6">artificial intelligence also comes in degrees · <b class="accent">narrow</b> → <b class="accent">general</b> → at the far end: <b class="accent">AGI</b>, everything a human can do</div>
 
 
 <!--
@@ -362,8 +362,9 @@ jar shows you nothing.
 [click — artificial row] Now the artificial versions, and notice they're also
 in degrees: a calculator — fast but blind. A chess computer — brilliant at ONE
 thing. A self-driving car — perceives, decides, acts in the real world. A
-humanoid robot — reaching for something more general. From narrow to general:
-that's the whole ladder AI is climbing.
+humanoid robot — reaching for something more general. From narrow to general —
+and at the far end of that dial sits the field's ultimate ambition: AGI, a
+machine that can do everything a human can.
 -->
 
 ---
@@ -374,37 +375,30 @@ that's the whole ladder AI is climbing.
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[3fr_1fr] gap-10 items-start">
-<div class="timeline">
-  <div class="tl-row"><span class="tl-label">the dream</span><span class="tl-year">1600s</span><span class="tl-txt">Leibniz: <i>"calculemus"</i> · let us calculate</span></div>
-  <div class="tl-row"><span class="tl-label">the question</span><span class="tl-year">1950</span><span class="tl-txt">Turing: can machines think? <span class="dim">(the Turing test)</span></span></div>
-  <div class="tl-row"><span class="tl-label">the name</span><span class="tl-year">1956</span><span class="tl-txt">the term "artificial intelligence" is coined</span></div>
-  <div class="tl-row"><span class="tl-label">the proof</span><span class="tl-year">1997</span><span class="tl-txt">Deep Blue beats the world chess champion</span></div>
-</div>
-<div class="flex flex-col gap-3">
-  <img :src="'/photos/leibniz.jpg'" class="photo w-full" style="height:5.4rem; object-position:50% 12%;" />
-  <img :src="'/photos/turing.jpg'" class="photo w-full" style="height:5.4rem; object-position:50% 20%;" />
-  <img :src="'/photos/deepblue.jpg'" class="photo w-full" style="height:5.4rem;" />
-  <div class="mini-credit">portraits: Wikimedia Commons (public domain / CC BY 2.0)</div>
-</div>
+<div class="timeline timeline-big">
+  <div class="tl-row"><span class="tl-label">the dream</span><span class="tl-year">1600s</span><span class="tl-txt">Leibniz: <i>"calculemus"</i> · let us calculate <span class="tl-ref">Leibniz, De Arte Combinatoria</span></span></div>
+  <div class="tl-row"><span class="tl-label">the question</span><span class="tl-year">1950</span><span class="tl-txt">Turing: can machines think? <span class="dim">(the Turing test)</span> <span class="tl-ref">Turing, "Computing Machinery & Intelligence"</span></span></div>
+  <div class="tl-row"><span class="tl-label">the name</span><span class="tl-year">1956</span><span class="tl-txt">coined at the Dartmouth <i>"summer project"</i> <span class="dim">· one summer?!</span> <span class="tl-ref">Dartmouth Workshop, 1956</span></span></div>
+  <div class="tl-row"><span class="tl-label">the proof</span><span class="tl-year">1997</span><span class="tl-txt">Deep Blue beats the world chess champion <span class="tl-ref">IBM Deep Blue vs Kasparov</span></span></div>
+  <div class="tl-you-flex"><span class="tl-label">already here</span><span class="eb-year">90s → now</span><span><b>the AI you already use</b> · <span class="dim">spam filters · Translate · Netflix picks</span></span></div>
 </div>
 
-<div class="mt-5 dim italic">"This dream is older than most of us."</div>
+<div class="mt-3 dim italic">"This dream is older than most of us — and you've been using it for years."</div>
 
 <!--
 Humans have wanted to build thinking machines for centuries. Leibniz, sixteen
 hundreds — the dream: arguments settled by computation, "calculemus", let us
-calculate. Then the computer arrives and the question comes with it: Turing,
-1950, can machines think? That's the Turing test.
+calculate. Turing helped invent the computer itself — and the moment it existed, he asked:
+can it think? The computer and the question were born together. 1950 — that's
+the Turing test.
 
 1956 — the field gets its name at a summer workshop in Dartmouth. Fun detail:
 the founders genuinely thought a handful of researchers could crack it in ONE
 summer. (Spoiler: that optimism sets up the first winter.)
 
 1997 — the proof of concept: Deep Blue beats the world chess champion. But
-notice: it beat Kasparov at exactly ONE thing. It couldn't play tic-tac-toe,
-couldn't hold a conversation. That gap — brilliant at one task, useless at the
-next — is exactly what AGI wants to close.
+notice: it beat the world champion at exactly ONE thing — it couldn't even play
+tic-tac-toe. The exact opposite of that AGI ambition we just met.
 
 So no, this did not start with ChatGPT. This dream is older than most of us.
 -->
@@ -433,8 +427,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 </svg>
 </div>
 
-<div class="mt-3 text-base dim">money in → hype → disappointment → winter → <b class="accent">a breakthrough revives it</b> → money in again<br>
-the ambition all along: <b class="accent">AGI</b> · AI that can do everything a human can</div>
+<div class="mt-3 text-lg dim">money in → hype → disappointment → winter → <b class="accent">a breakthrough revives it</b> → money in again</div>
 
 
 <!--
@@ -445,9 +438,9 @@ First winter, mid-70s: the algorithms simply hit a wall — the ideas were there
 the methods weren't good enough. Second winter, around 1990: not enough data,
 not enough compute. Remember those two — they matter in a minute.
 
-The ambition never changed though: AGI, artificial GENERAL intelligence — a
-system that can do everything a human can, not just one narrow trick. Still the
-stated goal of the big labs today.
+But notice the shape: every winter was followed by a breakthrough that pulled
+the money — and the belief — right back in. The dream never died; it just kept
+waiting for the pieces to arrive.
 
 And right now? We're in the hottest summer the field has ever had.
 -->
