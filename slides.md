@@ -1127,48 +1127,49 @@ someone says "the AI said so."
 
 <h1 style="font-size:2.6rem;">A model is just a gigantic file of numbers</h1>
 
+<div v-click class="fon-after mt-2">After training <svg class="fon-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Model is frozen</b> (= Parameters are saved)</div>
+
 <div class="grid grid-cols-2 gap-8 mt-3 items-start">
-  <div>
+  <div v-click>
     <div class="fon-lab">60 of the 124,000,000 numbers inside GPT-2</div>
     <img :src="'/ai_model_file_numbers.png'" class="rounded mx-auto" style="max-height:8.5rem; object-fit:contain;" />
     <div class="fon-cap">A frontier model holds ~10,000× more of these</div>
   </div>
-  <div>
+  <div v-click>
     <div class="fon-lab">The same file, drawn as an image</div>
     <img :src="'/ai_model_file_heatmap.png'" class="rounded mx-auto" style="max-height:8.5rem; object-fit:contain;" />
     <div class="fon-cap">Every pixel is one learned number</div>
   </div>
 </div>
 
-<div class="fon-after mt-3">After training <svg class="fon-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Model is frozen</b> (= Parameters are saved)</div>
-
-<div class="dg-note mt-2" style="max-width:47rem; font-size:1.08rem; padding:0.5rem 1.1rem; line-height:1.45;">
+<div v-click class="dg-note mt-2" style="max-width:47rem; font-size:1.08rem; padding:0.5rem 1.1rem; line-height:1.45;">
   <div><b>Open source:</b> Free to download these files and run on your own computer</div>
-  <div class="mt-1"><b>Closed:</b> Model specifications are secret and it runs on the provider's servers</div>
+  <div class="mt-1"><b>Closed:</b> Model parameters are secret and it runs on the provider's servers</div>
 </div>
 
-<div class="credit" style="position:absolute; left:2.2rem; bottom:0.8rem;">Source: real weights from the GPT-2 model file (OpenAI, 2019)</div>
+<div v-click="2" class="credit" style="position:absolute; left:2.2rem; bottom:0.8rem;">Source: real weights from the GPT-2 model file (OpenAI, 2019)</div>
 
 <img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" style="bottom:2.6rem;" />
 
 <!--
-And when all that training is done — my favorite moment — the weights are
-SAVED. A model is just a gigantic file of numbers. How gigantic: GPT-2 has
-124 million (that's 10 to the 8th), today's frontier models sit around a
-trillion (10 to the 12th). This is not an artist impression: these are real
-weights I pulled out of a real model, GPT-2. On the left: sixty of them, as
-they sit in the file. On the right: two slices of the same file drawn as an
-image — every pixel is one learned number. [If asked what the two panels
-are: the left panel is a slice of the connection weights inside the network
-(attention, layer 5); the right panel is the token table — one row per
-token. The pale band in it = rare tokens the model barely saw during
-training. You can literally SEE training in the file.]
+And when all that training is done — my favorite moment — the model is
+FROZEN. The parameters are saved, and that's it. A model is just a gigantic
+file of numbers. How gigantic: GPT-2 has 124 million (that's 10 to the
+8th), today's frontier models sit around a trillion (10 to the 12th).
 
-After training, the model is FROZEN — the parameters are saved, and that's
-it. One file. No database inside, no internet inside, no little person
+This is not an artist impression: these are real weights I pulled out of a
+real model, GPT-2 — here are sixty of them, as they sit in the file. And
+here is the same file drawn as an image — every pixel is one learned
+number. [If asked what the two panels are: the left panel is a slice of the
+connection weights inside the network (attention, layer 5); the right panel
+is the token table — one row per token. The pale band in it = rare tokens
+the model barely saw during training. You can literally SEE training in the
+file.]
+
+One file. No database inside, no internet inside, no little person
 inside — it's all pressed into the numbers. When people say a model is
 "open source", this is what they mean: you can download the file and run it
-on your own machine. Closed models: the specifications are secret — the
+on your own machine. Closed models: the parameters are secret — the
 file stays with the provider, and it runs on their servers. [If someone
 pushes on "is the model just
 the file?": strictly it's this file PLUS a small, generic program that runs

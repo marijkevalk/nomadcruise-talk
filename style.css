@@ -864,11 +864,11 @@
   font-size: 1.05rem; color: var(--ink);
 }
 
-/* file-of-numbers slide: image labels/captions (white), one-colour after-training line, purple open/closed box */
+/* file-of-numbers slide: image labels/captions (white), gold after-training line (top), purple open/closed box */
 .fon-lab { font-size: 1.15rem; text-align: center; margin-bottom: 0.4rem; color: var(--ink); }
 .fon-cap { font-size: 1rem; text-align: center; margin-top: 0.4rem; font-style: italic; color: var(--ink); }
-.fon-after { text-align: left; font-size: 1.15rem; color: var(--ink); }
-.fon-arr { display: inline-block; width: 2.1rem; vertical-align: -0.3rem; margin: 0 0.2rem; color: var(--ink); }
+.fon-after { text-align: left; font-size: 1.15rem; color: var(--talk-accent); }
+.fon-arr { display: inline-block; width: 2.1rem; vertical-align: -0.3rem; margin: 0 0.2rem; color: var(--talk-accent); }
 
 /* slide 24 (creativity & hallucination): column heads + italic hook questions */
 .ch-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.6rem; color: #ffffff; margin-bottom: 0.05rem; }
