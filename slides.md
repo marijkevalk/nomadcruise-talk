@@ -626,7 +626,7 @@ right now.
   <div class="credit mt-1">RMS Titanic leaving Southampton, 1912 · F.G.O. Stuart</div>
 </div>
 <div class="space-y-6 text-2xl" style="font-family:'Fraunces',serif;">
-  <p>"Titanic got stuck on …"</p>
+  <p>"Titanic hit an …"</p>
   <p v-click>"From Southampton, the ship sails<br>across the Atlantic to New …"</p>
   <p v-click>"A transatlantic crossing takes … days"</p>
 </div>
@@ -639,7 +639,11 @@ right now.
 <img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" />
 
 <!--
-Finish this sentence for me, all together: "Titanic got stuck on…" — [iceberg!]
+Finish this sentence for me, all together: "Titanic hit an…" — [iceberg!]
+
+[if the slide-3 wizard bubble is in: — and notice what you just did: the
+wizard told you at the start that the Titanic arrived SAFELY. You knew
+better. Hold on to that instinct today.]
 
 Next one: "From Southampton, the ship sails across the Atlantic to New…" —
 [York!] — very good, you clearly read the brochure.
@@ -658,10 +662,19 @@ whole section.
 
 # The list of percentages IS the answer
 
-<div class="grid grid-cols-[2fr_1fr] gap-8 items-center mt-2">
-  <img :src="'/art/top5.png'" class="rounded" />
-  <div class="text-lg dim leading-relaxed">everything the model outputs is this list <br><br>the reply you see is just a <b class="accent">draw</b> from it</div>
+<div class="grid grid-cols-[2fr_1fr] gap-8 items-center">
+  <div class="relative">
+    <img :src="'/art/top5.png'" class="rounded w-full" style="max-height:13rem; object-fit:contain;" />
+    <img v-click="2" :src="'/art/top5-2.png'" class="rounded absolute inset-0 w-full" style="max-height:13rem; object-fit:contain; background:#0a0e1a;" />
+  </div>
+  <div class="text-base dim leading-snug" style="padding-right:4rem;">
+    everything the model outputs is this list
+    <span v-click="1" class="block mt-2">"York" wins · <b>glued on</b> · predict again</span>
+    <span v-click="2" class="block mt-2">every word gets its <b>own fresh list</b> · even the comma is a candidate</span>
+  </div>
 </div>
+
+<div v-click="3" class="mt-3 accent text-lg">the reply you see = <b>draw, after draw, after draw</b> <span class="dim">· no two runs alike</span></div>
 
 
 
@@ -670,12 +683,27 @@ whole section.
 <!--
 Here's what that looks like inside a real model. [If someone asks which one:
 it's GPT-2 — small, open and older, chosen because I can show you its
-insides.] This is an actual language model, given our sentence — and this is its real output: a short list of
-candidate next words, each with a probability.
+insides.] This is an actual language model, given our sentence — and this is
+its real output: a short list of candidate next words, each with a
+probability. [Aside, only if someone asks "letters or words?": technically
+word-pieces — "tokens" — but think: words.]
 
 And here's the thing most people don't know: this list IS the answer.
-Everything else — the fluent reply, the paragraph, the personality — is just
-drawing from lists like this, one word at a time, again and again.
+
+[click] The draw lands on "York". The word gets glued onto the sentence…
+and the model simply predicts again.
+
+[click] New position — new list. Every single word gets its own fresh
+probability distribution. And look at the top candidate this time: a comma!
+For the model, even punctuation is just a candidate with a probability.
+It's text all the way down — no plan, no sentence in its head, just:
+list, draw, glue, repeat.
+
+[click] So the reply you see is a draw, after a draw, after a draw. And
+because it's a draw — run the same question twice, and somewhere along the
+way a different word wins. That's why you never get exactly the same answer
+twice. How adventurous those draws are — there's a knob for that, and it
+comes at the end of this section.
 
 Percentages. Sound familiar? That's… statistics.
 -->
@@ -730,6 +758,10 @@ An econometrician would call this a regression. Just… in absurdly many
 dimensions. That's not a joke, that's technically accurate — and it's the
 whole reason I can stand here and tell you: it's "just" statistics.
 Remember that word — "just". I'll come back for it.
+
+[Armor, only if a sharp attendee pushes: strictly, picking the next word
+from a vocabulary is CLASSIFICATION — closer to logistic than linear
+regression. Fair point, same family: fit parameters to data, predict.]
 
 [click — the fence comic] And this little robot shows you the fine print of
 pattern-continuation. Dad paints a few planks, each one a bit less than the
@@ -886,6 +918,10 @@ Step two: training. And this surprises people: the numbers start RANDOM. Pure
 noise. The model predicts the next word of a real sentence, gets it wrong,
 and every number gets a tiny nudge in the right direction. Then again. And
 again — billions of times.
+
+[Stress "in the RIGHT direction": trial and error, but GUIDED, not blind —
+the math knows which way to turn each dial. That's why it converges instead
+of wandering forever.]
 
 Picture a machine with billions of tiny dials. Training is the machine turning
 its OWN dials, a tiny nudge per example. [bubble] "Who turns billions of
@@ -1067,6 +1103,11 @@ magic after all.
 [click — the captcha comic] Even the captchas have noticed. "Click all the
 photos of places you would run for shelter during a robot uprising." We laugh…
 because it moved faster than anyone expected.
+
+[Armor, if the one AI-savvy person pushes back on "emergence": fair — part of
+the SUDDENNESS is a measurement artifact; all-or-nothing metrics make gradual
+growth look like a jump (Stanford, Schaeffer 2023). But that the abilities
+exist without being designed in — that part is not disputed.]
 -->
 
 ---
@@ -1093,10 +1134,12 @@ training carves the riverbed <br>new water <i>always</i> finds a way down
 
 **…and it rolls dice**
 
+<img :src="'/art/top5.png'" class="rounded w-full my-2" style="max-height:9rem; object-fit:contain;" />
+
 sometimes a less likely word wins<br>
 <span class="dim">(the knob: temperature)</span>
 
-training made the models differ from <i>each other</i> <br>the dice make the <i>same</i> model vary
+<span class="text-base leading-snug block">training: models differ from <i>each other</i><br>the dice: the <i>same</i> model varies</span>
 
 </div>
 </div>
@@ -1113,17 +1156,25 @@ produces a fluent, confident answer — whether the facts are there or not.
 Fluent is what it was trained to be. So: plausible is NOT the same as true.
 Never confuse the two again.
 
-And one more twist — remember the list of percentages? [show it again] The
-model rolls dice on that list. Usually the most likely word wins, but
-sometimes a less likely one gets picked — the knob for that is called
-temperature. Look at our own list: twenty-six percent New ZEALAND. Every so
-often, the dice send our ship to New Zealand. That's why the same question
-gives different answers each time.
+And one more twist — [click] remember the list of percentages? Here it is
+again. The model rolls dice on that list. Usually the most likely word wins,
+but sometimes a less likely one gets picked. Look at our own list: twenty-six
+percent New ZEALAND. Every so often, the dice send our ship to New Zealand.
+That's why the same question gives different answers each time.
+
+And the knob I promised you: temperature. It reshapes the list BEFORE the
+draw. Turn it down — the top candidate almost always wins, safe and
+predictable. Turn it up — the list flattens, adventurous words get their
+chance. At zero, same answer every time. Your chat app hides that knob;
+builders get to turn it.
 
 So keep the two kinds of randomness apart: training randomness made the
 models differ from EACH OTHER. The dice make the SAME model answer
 differently every time. Your ChatGPT and mine are the same file — we just
 roll different dice.
+
+One more honest thing, so this doesn't feel hopeless: what you can DO about
+hallucination — that's exactly where part three ends. Hold that question.
 
 Section two done — and I'd be amazed if you have no questions now.
 -->
@@ -1134,7 +1185,8 @@ Section two done — and I'd be amazed if you have no questions now.
 
 # <span class="green-title">Go one level deeper</span>
 
-<Countdown :minutes="5" :run="true" class="clock-lg" />
+<Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
+<span v-click></span>
 
 <hr class="rule" />
 
@@ -1356,7 +1408,8 @@ Last round of questions — and this one is the most practical.
 
 # <span class="green-title">Make it practical</span>
 
-<Countdown :minutes="5" :run="true" class="clock-lg" />
+<Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
+<span v-click></span>
 
 <hr class="rule" />
 
