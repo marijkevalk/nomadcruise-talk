@@ -4,7 +4,7 @@
  *   Cream #f0e6d2/#f5f5f5  body text / white icons
  *   Gold  #e3b04b       BASE accent — titles, kickers, structure, emphasis
  *   Green #5fae88/#8fcbab  WORKSHOP ONLY — rules slide, question rounds, timers, magician accent
- *   Blue  #38bdf8/#7dd3fc  YOU / filled-in words — audience fills, your prompt, timeline-you, S3 'you'
+ *   Blue  #38bdf8/#7dd3fc  S3 owner colour for 'you' (legend-defined; content accents are purple)
  *   Purple #7263b8/#b9a9ee  ACCENT — notes/insets/counts + standout (Outdoors block, slide-2 '?')
  *   Grey  #9a917f       subtle labels + the who-am-I cross
  * ============================================================ */
@@ -706,15 +706,15 @@
 }
 
 .tl-you { padding-top: 0.6rem; border-top: 1px solid var(--hairline); margin-top: 0.15rem; }
-.tl-you .tl-year { color: #7dd3fc; }
-.tl-you .tl-label { color: #7dd3fc; }
+.tl-you .tl-year { color: #b9a9ee; }
+.tl-you .tl-label { color: #b9a9ee; }
 
 /* timeline everyday-AI band */
 .everyday-band {
   display: flex; align-items: baseline; gap: 1.2rem;
   border-top: 1px solid var(--hairline); margin-top: 1rem; padding-top: 0.9rem;
 }
-.eb-year { font-family: 'Fraunces', serif; font-size: 1.35rem; color: #7dd3fc; flex: none; }
+.eb-year { font-family: 'Fraunces', serif; font-size: 1.35rem; color: #b9a9ee; flex: none; }
 .eb-txt { font-size: 1.35rem; }
 
 
@@ -725,15 +725,15 @@
 .timeline-big .tl-year { font-size: 1.5rem; }
 .timeline-big .tl-txt { font-size: 1.35rem; }
 .tl-ref { display: block; font-size: 0.74rem; color: var(--ink-dim); font-style: italic; opacity: 0.7; margin-top: 0.02rem; white-space: nowrap; }
-.timeline-big .eb-year { color: #7dd3fc; font-size: 1.35rem; }
-.timeline-big .tl-you .tl-label { color: #7dd3fc; }
+.timeline-big .eb-year { color: #b9a9ee; font-size: 1.35rem; }
+.timeline-big .tl-you .tl-label { color: #b9a9ee; }
 
 .tl-you-flex {
   display: flex; align-items: baseline; gap: 1.2rem; white-space: nowrap;
   border-top: 1px solid var(--hairline); margin-top: 0.7rem; padding-top: 0.7rem; font-size: 1.35rem;
 }
-.tl-you-flex .tl-label { color: #7dd3fc; flex: none; }
-.tl-you-flex .eb-year { color: #7dd3fc; flex: none; }
+.tl-you-flex .tl-label { color: #b9a9ee; flex: none; }
+.tl-you-flex .eb-year { color: #b9a9ee; flex: none; }
 
 .ex-bubble { right: 4rem; left: auto; bottom: 11.4rem; text-align: left; max-width: 16rem; font-style: normal; font-size: 0.85rem; padding: 0.6rem 0.9rem; line-height: 1.4; border-radius: 1.1rem; }
 .ex-bubble b { color: var(--talk-accent); font-size: 1rem; }
@@ -828,15 +828,15 @@
 .t18-ml b { letter-spacing: 0.03em; }
 .t18-ml .tri { font-size: 2rem; vertical-align: -0.18rem; margin-right: 0.15rem; }
 .t18-ml .dim { font-size: 1rem; margin-top: 0.1rem; }
-/* inference slide (22): the growing reply, one blue chip per word (blue = fill-word convention) */
+/* inference slide (22): the growing reply, one purple chip per word (purple = fill-word convention) */
 .inf-reply { display: flex; align-items: center; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.3rem; font-size: 1.7rem; }
 .inf-label { color: rgba(242, 236, 223, 0.6); font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 0.4rem; }
 .inf-word {
-  padding: 0.12rem 0.7rem; border: 2px solid rgba(125, 211, 252, 0.65);
-  border-radius: 0.4rem; background: rgba(125, 211, 252, 0.1); color: #7dd3fc;
+  padding: 0.12rem 0.7rem; border: 2px solid rgba(185, 169, 238, 0.65);
+  border-radius: 0.4rem; background: rgba(185, 169, 238, 0.1); color: #b9a9ee;
 }
 
-/* inference slide (22): flow diagram — blue = your prompt, neutral cream boxes for the model
+/* inference slide (22): flow diagram — purple = your prompt, neutral cream boxes for the model
    (gold reserved for the arrows + thick feed-back bracket), labels equal size on one line */
 .if-flow { display: flex; align-items: stretch; gap: 1.2rem; margin-bottom: 3rem; }
 .if-step {
@@ -845,7 +845,7 @@
   display: flex; flex-direction: column; justify-content: flex-start; text-align: center; gap: 0.1rem;
 }
 .if-lab { font-size: 1.4rem; font-weight: 600; white-space: nowrap; }
-.if-you { border-color: rgba(125, 211, 252, 0.8); }
+.if-you { border-color: rgba(185, 169, 238, 0.8); }
 .if-sub { color: rgba(242, 236, 223, 0.7); font-size: 1.05rem; }
 .if-arr { width: 3rem; flex: none; align-self: center; color: var(--talk-accent); }
 .if-loop { position: relative; display: flex; gap: 1rem; align-items: stretch; }
@@ -948,8 +948,8 @@
 .pt-quote { margin-top: 0.6rem; font-family: 'Fraunces', serif; font-size: 1.35rem; color: #b9a9ee; }
 
 /* Slide 14 (You are the model): audience-filled answer words + gold takeaway */
-.fill-blue {
-  color: #7dd3fc;
+.fill-word {
+  color: #b9a9ee;
   font-style: italic;
 }
 .auto-arrow {

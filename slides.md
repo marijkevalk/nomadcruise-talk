@@ -628,8 +628,8 @@ right now.
 
 <div class="grid grid-cols-[0.8fr_1.2fr] gap-5 items-center">
 <div class="space-y-5 text-xl" style="font-family:'Fraunces',serif;">
-  <p v-click="1">"The Titanic hit an <span class="ans"><span v-click.hide="3">…</span><span v-click="3" class="fill-blue">iceberg</span></span>"</p>
-  <p v-click="4">"The Queen Mary 2 sails<br>from Southampton to<br>New <span class="ans"><span v-click.hide="6">…</span><span v-click="6" class="fill-blue">York</span></span>"</p>
+  <p v-click="1">"The Titanic hit an <span class="ans"><span v-click.hide="3">…</span><span v-click="3" class="fill-word">iceberg</span></span>"</p>
+  <p v-click="4">"The Queen Mary 2 sails<br>from Southampton to<br>New <span class="ans"><span v-click.hide="6">…</span><span v-click="6" class="fill-word">York</span></span>"</p>
   <p v-click="7">"My favourite city in the world is …"</p>
 </div>
 <div v-click="2" class="relative">
