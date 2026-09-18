@@ -1254,14 +1254,14 @@ Percentages, all the way down. Sound familiar? That's… statistics.
 -->
 
 ---
-layout: center
----
 
 <div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
-<div class="display" style="font-size:3.1rem;">…and the results are <span class="em-spark">spectacular</span></div>
+# …and the results are <span class="em-spark">spectacular</span>
 
-<ul class="em-list mt-9 leading-snug" style="max-width:41rem; font-size:1.45rem;">
+<hr class="rule" />
+
+<ul class="em-list mt-6 leading-snug" style="max-width:41rem; font-size:1.45rem;">
   <li v-click><b>Abilities appear that nobody put in</b><div class="em-sub mt-1">Even the makers were surprised</div></li>
   <li v-click class="mt-7"><b class="em-word">Emergence</b>: It can do things it wasn't designed for<div class="em-ex mt-2">Coding · Passing the bar exam · Predicting protein structures</div></li>
   <li v-click class="mt-7">So maybe, it's a little <b class="accent">magic</b> after all…?</li>
