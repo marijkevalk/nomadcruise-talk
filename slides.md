@@ -396,42 +396,42 @@ machine that can do everything a human can.
 <div class="tl2">
   <div class="tl2-row">
     <div class="tl2-txt">
-      <div class="tl2-label">the dream <span class="tl2-year">· 1600s</span></div>
-      <div class="tl2-main">Leibniz dreams: <i>"calculemus"</i> · let us calculate</div>
+      <div class="tl2-label">dream</div>
+      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz dreams: <i>"calculemus"</i> · let us calculate</div>
       <div class="tl2-ref">Leibniz, <i>De Arte Combinatoria</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
   </div>
   <div class="tl2-row">
     <div class="tl2-txt">
-      <div class="tl2-label">the question <span class="tl2-year">· 1950</span></div>
-      <div class="tl2-main">Turing: can machines think? <span class="dim">(the Turing test)</span></div>
+      <div class="tl2-label">question</div>
+      <div class="tl2-main"><span class="tl2-year">1950:</span> Turing: can machines think? <span class="dim">(the Turing test)</span></div>
       <div class="tl2-ref">Turing, <i>Computing Machinery &amp; Intelligence</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/turing.jpg'" style="object-position:50% 20%;" />
   </div>
   <div class="tl2-row">
     <div class="tl2-txt">
-      <div class="tl2-label">the name <span class="tl2-year">· 1956</span></div>
-      <div class="tl2-main">coined at the Dartmouth <i>"summer project"</i> <span class="dim">· one summer?!</span></div>
+      <div class="tl2-label">name</div>
+      <div class="tl2-main"><span class="tl2-year">1956:</span> coined at the Dartmouth <i>"summer project"</i> <span class="dim">· one summer?!</span></div>
       <div class="tl2-ref">Dartmouth Workshop, 1956</div>
     </div>
     <img class="tl2-img" :src="'/photos/dartmouth.jpg'" />
   </div>
   <div class="tl2-row">
     <div class="tl2-txt">
-      <div class="tl2-label">the proof <span class="tl2-year">· 1997</span></div>
-      <div class="tl2-main">Deep Blue beats the world chess champion</div>
+      <div class="tl2-label">proof</div>
+      <div class="tl2-main"><span class="tl2-year">1997:</span> Deep Blue beats the world chess champion</div>
       <div class="tl2-ref">IBM Deep Blue vs Kasparov</div>
     </div>
     <img class="tl2-img" :src="'/photos/deepblue.jpg'" />
   </div>
-  <div class="tl2-row tl2-you">
+  <div class="tl2-row">
     <div class="tl2-txt">
-      <div class="tl2-label green">already here <span class="tl2-year green">· 90s → now</span></div>
-      <div class="tl2-main">the AI you already use <span class="dim">· spam filters · Translate · Netflix</span></div>
+      <div class="tl2-label">use cases</div>
+      <div class="tl2-main"><span class="tl2-year">90s →</span> the AI you already use <span class="dim">· spam filters · Translate · Netflix</span></div>
     </div>
-    <img class="tl2-img" :src="'/photos/everyday-ai.jpg'" />
+    <img class="tl2-img" :src="'/photos/datacenter.jpg'" />
   </div>
 </div>
 
