@@ -232,9 +232,9 @@ resonates: find me on board, I also run the morning workouts. [beat]
 <hr class="rule" />
 
 <div class="route">
-  <div class="stop" v-click="1"><span class="stop-num">1</span><span class="stop-title">AI is not new</span></div>
-  <div class="stop" v-click="2"><span class="stop-num">2</span><span class="stop-title">An LLM is statistics built on our written world</span></div>
-  <div class="stop" v-click="3"><span class="stop-num">3</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
+  <div class="stop" v-click="1"><span class="stop-num">1.</span><span class="stop-title">AI is not new</span></div>
+  <div class="stop" v-click="2"><span class="stop-num">2.</span><span class="stop-title">An LLM is statistics built on our written world</span></div>
+  <div class="stop" v-click="3"><span class="stop-num">3.</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
 </div>
 
 <img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage mage-left" />
@@ -336,11 +336,11 @@ fly-over.
 
 <div class="intel-block">
   <div class="intel-row">
-    <figure class="intel-cell" v-click="1"><img :src="'/photos/nat-slimemold.jpg'" /><figcaption>slime mold</figcaption></figure>
-    <figure class="intel-cell" v-click="2"><img :src="'/photos/nat-flytrap.jpg'" /><figcaption>plant</figcaption></figure>
-    <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-octopus.jpg'" /><figcaption>octopus</figcaption></figure>
-    <figure class="intel-cell" v-click="4"><img :src="'/photos/oldcouple.jpg'" /><figcaption>human</figcaption></figure>
     <div class="intel-side" v-click="5">Natural intelligence<br>in different <b class="accent">degrees</b></div>
+    <figure class="intel-cell" v-click="4"><img :src="'/photos/nat-slimemold.jpg'" /><figcaption>slime mold</figcaption></figure>
+    <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-flytrap.jpg'" /><figcaption>plant</figcaption></figure>
+    <figure class="intel-cell" v-click="2"><img :src="'/photos/nat-octopus.jpg'" /><figcaption>octopus</figcaption></figure>
+    <figure class="intel-cell" v-click="1"><img :src="'/photos/oldcouple.jpg'" /><figcaption>human</figcaption></figure>
   </div>
 </div>
 
@@ -351,16 +351,13 @@ fly-over.
   </div>
 </div>
 
-<div class="intel-block" v-click="7">
+<div class="intel-block">
   <div class="intel-row intel-row-ai">
-    <figure class="intel-cell"><img :src="'/photos/ai-calculator.jpg'" /><figcaption>calculator</figcaption></figure>
-    <figure class="intel-cell"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
-    <figure class="intel-cell"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
-    <figure class="intel-cell"><img :src="'/photos/ai-robot.jpg'" /><figcaption>humanoid robot</figcaption></figure>
-    <div class="intel-ai-side">
-      <div class="intel-side" v-click="[8,9]">Artificial intelligence<br>in different <b class="accent">degrees</b></div>
-      <div class="agi-box" v-click="9"><span class="agi-abbr">AGI</span><span class="agi-full">Artificial<br>General<br>Intelligence</span></div>
-    </div>
+    <div class="intel-side" v-click="7">Artificial intelligence<br>in different <b class="accent">degrees</b></div>
+    <figure class="intel-cell" v-click="8"><img :src="'/photos/ai-calculator.jpg'" /><figcaption>calculator</figcaption></figure>
+    <figure class="intel-cell" v-click="8"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
+    <figure class="intel-cell" v-click="8"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
+    <div class="agi-box" v-click="9"><span class="agi-abbr">AGI</span><span class="agi-full">Artificial<br>General<br>Intelligence</span></div>
   </div>
 </div>
 
@@ -397,7 +394,7 @@ machine that can do everything a human can.
   <div class="tl2-row">
     <div class="tl2-txt">
       <div class="tl2-label">dream</div>
-      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz dreams: <i>"calculemus"</i> · let us calculate</div>
+      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i> · let us calculate <span class="dim">(thinking by a machine)</span></div>
       <div class="tl2-ref">Leibniz, <i>De Arte Combinatoria</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
@@ -413,7 +410,7 @@ machine that can do everything a human can.
   <div class="tl2-row">
     <div class="tl2-txt">
       <div class="tl2-label">name</div>
-      <div class="tl2-main"><span class="tl2-year">1956:</span> coined at the Dartmouth <i>"summer project"</i> <span class="dim">· one summer?!</span></div>
+      <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i>"summer project"</i> names the field AI <span class="dim">· one summer?!</span></div>
       <div class="tl2-ref">Dartmouth Workshop, 1956</div>
     </div>
     <img class="tl2-img" :src="'/photos/dartmouth.jpg'" />
@@ -421,7 +418,7 @@ machine that can do everything a human can.
   <div class="tl2-row">
     <div class="tl2-txt">
       <div class="tl2-label">proof</div>
-      <div class="tl2-main"><span class="tl2-year">1997:</span> Deep Blue beats the world chess champion</div>
+      <div class="tl2-main"><span class="tl2-year">1997:</span> computer Deep Blue beats the world chess champion</div>
       <div class="tl2-ref">IBM Deep Blue vs Kasparov</div>
     </div>
     <img class="tl2-img" :src="'/photos/deepblue.jpg'" />
