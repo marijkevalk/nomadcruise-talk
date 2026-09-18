@@ -654,6 +654,8 @@
 .ig-n {
   font-weight: 700; font-size: 2.1rem; color: var(--talk-accent);
   line-height: 1.15; flex: none;
+  /* fixed column so the titles left-align regardless of digit width ("1." is narrower than "2.") */
+  min-width: 1em;
 }
 .ig-n::after { content: '.'; }
 .ig-txt { width: fit-content; }
