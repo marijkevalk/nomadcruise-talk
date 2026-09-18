@@ -900,15 +900,14 @@
 /* slide 23 (spectacular): single gold accent, dim supporting lines */
 .em-spark { color: var(--talk-accent); }
 .em-word { color: var(--talk-accent); }
-.em-sub { font-size: 1.1rem; color: rgba(242, 236, 223, 0.65); }
+.em-sub { font-size: 1.3rem; color: rgba(242, 236, 223, 0.65); }
 .em-ex { font-size: 1.3rem; color: rgba(242, 236, 223, 0.65); }
-.em-arr { display: inline-block; width: 2.2rem; vertical-align: -0.35rem; margin: 0 0.3rem; color: var(--talk-accent); }
 .em-list { list-style: none; padding: 0; margin-left: 0; }
 .em-list > li { list-style: none; position: relative; padding-left: 1.7rem; }
 .em-list > li::marker { content: ""; }
 .em-list > li::before {
-  content: "▸"; position: absolute; left: 0; top: 0.12rem;
-  color: var(--talk-accent); font-size: 1.45rem; line-height: 1;
+  content: "▸"; position: absolute; left: 0; top: 0;
+  color: var(--talk-accent); font-size: 1.45rem; line-height: inherit;
 }
 .tx-bar {
   display: inline-block; height: 0.55rem; margin-right: 0.6rem; border-radius: 0.2rem;

@@ -1255,17 +1255,15 @@ layout: center
 <div class="display" style="font-size:3.1rem;">…and the results are <span class="em-spark">spectacular</span></div>
 
 <ul class="em-list mt-9 leading-snug" style="max-width:41rem; font-size:1.45rem;">
-  <li v-click>It is trained to predict the next token <svg class="em-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Abilities appear that nobody put in</b><div class="em-sub mt-1">Even the makers were surprised</div></li>
+  <li v-click><b>Abilities appear that nobody put in</b><div class="em-sub mt-1">Even the makers were surprised</div></li>
   <li v-click class="mt-7"><b class="em-word">Emergence</b>: It can do things it wasn't designed for<div class="em-ex mt-2">Coding · Passing the bar exam · Predicting protein structures</div></li>
   <li v-click class="mt-7">So maybe, it's a little <b class="accent">magic</b> after all…?</li>
 </ul>
 
-<div v-click class="absolute" style="right:8.2rem; bottom:2.2rem; width:7.5rem;">
+<div v-click class="absolute" style="right:2.2rem; bottom:2rem; width:11rem;">
   <img :src="'/art/xkcd-2228.png'" class="photo w-full bg-white p-2" />
   <div class="credit mt-1 text-center" style="white-space:nowrap;">xkcd #2228 · CC BY-NC</div>
 </div>
-
-<img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
 
 <!--
 Now — here's where I have to be honest with you, because something strange
