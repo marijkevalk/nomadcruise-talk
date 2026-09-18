@@ -386,12 +386,12 @@ machine that can do everything a human can.
 
 <div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-# As old as the computer
+# As old as the Computer
 
 <hr class="rule" />
 
 <div class="tl2">
-  <div class="tl2-row">
+  <div class="tl2-row" v-click="1">
     <div class="tl2-txt">
       <div class="tl2-label">dream</div>
       <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i>, let us calculate <span class="dim">(thinking by a machine)</span></div>
@@ -399,7 +399,7 @@ machine that can do everything a human can.
     </div>
     <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
   </div>
-  <div class="tl2-row">
+  <div class="tl2-row" v-click="2">
     <div class="tl2-txt">
       <div class="tl2-label">question</div>
       <div class="tl2-main"><span class="tl2-year">1950:</span> Turing: can machines think? <span class="dim">(the Turing test)</span></div>
@@ -407,15 +407,15 @@ machine that can do everything a human can.
     </div>
     <img class="tl2-img" :src="'/photos/turing.jpg'" style="object-position:50% 20%;" />
   </div>
-  <div class="tl2-row">
+  <div class="tl2-row" v-click="3">
     <div class="tl2-txt">
       <div class="tl2-label">name</div>
       <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i>"summer project"</i> names the field AI <span class="dim">(one summer?!)</span></div>
       <div class="tl2-ref">Dartmouth Workshop, 1956</div>
     </div>
-    <img class="tl2-img" :src="'/photos/dartmouth.jpg'" />
+    <img class="tl2-img" :src="'/photos/dartmouth-hall.jpg'" style="object-position:50% 40%;" />
   </div>
-  <div class="tl2-row">
+  <div class="tl2-row" v-click="4">
     <div class="tl2-txt">
       <div class="tl2-label">proof</div>
       <div class="tl2-main"><span class="tl2-year">1997:</span> computer Deep Blue beats the world chess champion</div>
@@ -423,14 +423,16 @@ machine that can do everything a human can.
     </div>
     <img class="tl2-img" :src="'/photos/deepblue.jpg'" />
   </div>
-  <div class="tl2-row">
+  <div class="tl2-row" v-click="5">
     <div class="tl2-txt">
       <div class="tl2-label">use cases</div>
       <div class="tl2-main"><span class="tl2-year">90s →</span> the AI in your daily life <span class="dim">· Google Maps · Netflix picks · Face ID</span></div>
     </div>
-    <img class="tl2-img" :src="'/photos/datacenter.jpg'" />
+    <img class="tl2-img" :src="'/photos/face-id.jpg'" style="object-position:50% 25%;" />
   </div>
 </div>
+
+<img :src="'/art/tovenaar-03-ta-da.svg'" class="mage" style="top:2.6rem; right:3rem; bottom:auto; height:7.5rem;" />
 
 
 <!--
