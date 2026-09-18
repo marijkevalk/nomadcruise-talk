@@ -48,7 +48,7 @@ layout: center
   <span class="midzone">
     <svg v-click="[2,4]" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
     <span v-click="4" class="splitzone">
-      <svg viewBox="0 0 83 40" class="splitarrow"><line x1="4" y1="20" x2="57" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="55,4 83,20 55,36" fill="#e3b04b"/></svg>
+      <svg viewBox="0 0 340 40" class="splitarrows"><line x1="6" y1="20" x2="57" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="55,4 83,20 55,36" fill="#e3b04b"/><line x1="259" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
       <span class="qwrap">
         <svg v-click="5" class="cube" viewBox="0 0 124 124">
           <polygon points="14,46 34,26 106,26 86,46" fill="#141414" stroke="#f5f5f5" stroke-width="1.6"/>
@@ -57,7 +57,6 @@ layout: center
         </svg>
         <span class="qmark">?</span>
       </span>
-      <svg viewBox="0 0 83 40" class="splitarrow"><line x1="4" y1="20" x2="57" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="55,4 83,20 55,36" fill="#e3b04b"/></svg>
     </span>
   </span>
   <span v-click="2" style="justify-self:start;">RESPONSE</span>
@@ -237,7 +236,7 @@ resonates: find me on board, I also run the morning workouts. [beat]
   <div class="stop" v-click="3"><span class="stop-num">3.</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
 </div>
 
-<div v-click="4" class="route-note">AI is much more than LLMs, but LLMs are our focus for today (and the cruise).</div>
+<div v-click="4" class="route-note">AI is much more than LLMs, but these are our focus for today (and the cruise).</div>
 
 <img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage mage-left" />
 
@@ -388,7 +387,7 @@ machine that can do everything a human can.
 
 <div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-# As old as the Computer
+# As old as the computer
 
 <hr class="rule" />
 
@@ -480,10 +479,10 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
     <path d="M520,150 Q562,140 590,104 Q622,66 650,46" fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrHead)"/>
     <text x="598" y="38" fill="#e3b04b" font-size="28" font-weight="bold" text-anchor="middle">NOW</text>
     <text x="285" y="240" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter 1970s</text>
-    <text x="285" y="257" fill="#cfc9bb" font-size="12" text-anchor="middle">algorithms stalled</text>
+    <text x="285" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">algorithms stalled</text>
     <text x="490" y="240" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter 1990s</text>
-    <text x="490" y="257" fill="#cfc9bb" font-size="12" text-anchor="middle">too little data</text>
-    <text x="490" y="273" fill="#cfc9bb" font-size="12" text-anchor="middle">weak hardware</text>
+    <text x="490" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">too little data</text>
+    <text x="490" y="280" fill="#cfc9bb" font-size="12" text-anchor="middle">weak hardware</text>
   </g>
 </svg>
 </div>

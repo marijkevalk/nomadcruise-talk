@@ -361,11 +361,15 @@
   justify-content: center;
   gap: 0.6rem;
 }
-/* split arrows: same rem-per-unit scale as .longarrow (22rem midzone / 340 units),
-   so stroke-width 8 and the 28x32-unit head render exactly like the long arrow's */
-.splitarrow {
-  width: 5.37rem;
-  flex: none;
+/* split arrows live in ONE svg with the same viewBox + placement as .longarrow,
+   so the right head's coordinates are identical to the long arrow's head — the
+   heads coincide exactly when the arrow breaks open */
+.splitarrows {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 .zoo-cloud {
   line-height: 1.5;
