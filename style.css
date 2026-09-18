@@ -303,7 +303,7 @@
 
 /* svg text must not inherit slide font-size */
 .constellation text {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 /* slide 2 — the black box around the question mark */
@@ -784,72 +784,139 @@
   border-top: 0; border-radius: 0 0 5px 5px;
 }
 
-/* Slide 19 (Training = trial and error): loop diagram + one worked example */
-.loop-flow { display: flex; align-items: stretch; gap: 0.7rem; margin-top: 0.2rem; margin-bottom: 2.1rem; }
-.lf-step {
+.rule-tight { margin: 0.7rem 0 0.9rem; }
+.t18-slide h1 { margin-bottom: 0.7rem; }
+
+/* Slide 18 (Training is trial and error): vertical loop diagram left, worked example right */
+.t18-grid { display: grid; grid-template-columns: 17.2rem minmax(0, 1fr); column-gap: 1.6rem; margin-top: 0.3rem; }
+.t18-right {
+  border-left: 1px solid rgba(242, 236, 223, 0.14); padding-left: 2rem;
+  display: flex; flex-direction: column;
+}
+.lfv { display: flex; flex-direction: column; width: 16rem; }
+.lfv-step {
   border: 1.5px solid var(--hairline); border-radius: 0.5rem;
-  padding: 0.35rem 0.85rem; font-size: 0.98rem; line-height: 1.3;
-  display: flex; flex-direction: column; justify-content: center; text-align: center;
+  padding: 0.3rem 0.6rem; font-size: 1.05rem; line-height: 1.3; text-align: center;
   background: rgba(242, 236, 223, 0.03);
 }
-.lf-arr { color: var(--talk-accent); font-size: 1.35rem; align-self: center; }
-.lf-loop { position: relative; display: flex; gap: 0.7rem; }
-.lf-return {
-  position: absolute; left: 1.6rem; right: 1.6rem; top: calc(100% + 0.3rem); height: 0.85rem;
-  border: 1.5px solid rgba(227, 176, 75, 0.45); border-top: 0;
-  border-radius: 0 0 0.7rem 0.7rem;
+.lfv-arr { color: var(--talk-accent); text-align: center; line-height: 0; margin: 0.08rem 0; }
+.lfv-arr svg { height: 1.25rem; width: auto; }
+.lfv-loop { position: relative; display: flex; flex-direction: column; }
+.lfv-return {
+  position: absolute; right: -1.15rem; top: 1.15rem; bottom: 1.15rem; width: 1.15rem;
+  border: 2px solid rgba(227, 176, 75, 0.55); border-left: 0;
+  border-radius: 0 0.9rem 0.9rem 0;
 }
-.lf-return::before {
-  content: '\25B2'; position: absolute; left: -0.44rem; top: -0.8rem;
-  color: rgba(227, 176, 75, 0.8); font-size: 0.68rem;
+.lfv-return::before {
+  content: '\25C0'; position: absolute; top: -0.55rem; left: -0.5rem;
+  color: rgba(227, 176, 75, 0.85); font-size: 0.8rem;
 }
-.lf-return-label {
-  position: absolute; top: 0.35rem; left: 50%; transform: translateX(-50%);
-  background: #0a0e1a; padding: 0 0.7rem; white-space: nowrap;
-  font-size: 0.85rem; font-style: italic; color: var(--ink-dim);
-}
-/* inference slide: the growing reply, one gold chip per word */
-.inf-reply { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem; font-size: 1.4rem; }
-.inf-label { color: var(--ink-dim); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 0.35rem; }
+.lfv-repeat { margin-top: 0.45rem; text-align: center; font-size: 1.15rem; font-style: italic; color: var(--talk-accent); }
+.t18-ex-label { font-family: 'Fraunces', serif; font-size: 1.4rem; line-height: 1.3; color: var(--talk-accent); text-align: center; }
+.t18-sent { font-size: 1.22rem; text-align: center; margin: 0.1rem 0 0.55rem; }
+.t18-ml { margin-top: auto; padding-top: 0.15rem; text-align: right; font-size: 1.45rem; }
+.t18-ml b { letter-spacing: 0.03em; }
+.t18-ml .dim { font-size: 1rem; margin-top: 0.1rem; }
+/* inference slide (22): the growing reply, one green chip per word (green = fill-word convention) */
+.inf-reply { display: flex; align-items: center; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.3rem; font-size: 1.7rem; }
+.inf-label { color: rgba(242, 236, 223, 0.6); font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 0.4rem; }
 .inf-word {
-  padding: 0.12rem 0.65rem; border: 1.5px solid rgba(227, 176, 75, 0.45);
-  border-radius: 0.4rem; background: rgba(227, 176, 75, 0.08);
+  padding: 0.12rem 0.7rem; border: 2px solid rgba(143, 203, 171, 0.65);
+  border-radius: 0.4rem; background: rgba(143, 203, 171, 0.1); color: #8fcbab;
 }
-.train-ex { max-width: 44rem; }
-.tx-sent { font-size: 1.15rem; margin-bottom: 0.5rem; }
-.tx-row {
-  display: grid; grid-template-columns: 10.5rem 11rem 1fr;
-  align-items: baseline; column-gap: 0.9rem; padding: 0.26rem 0; font-size: 1.05rem;
+
+/* inference slide (22): flow diagram — thick gold arrows, green = you / gold = the model */
+.if-flow { display: flex; align-items: stretch; gap: 1.2rem; margin-bottom: 3rem; }
+.if-step {
+  border: 2px solid rgba(242, 236, 223, 0.4); border-radius: 0.6rem;
+  padding: 0.7rem 1.3rem; font-size: 1.32rem; line-height: 1.35;
+  display: flex; flex-direction: column; justify-content: center; text-align: center;
 }
-.tx-row > span:nth-child(2) { white-space: nowrap; }
-.tx-round { color: var(--ink-dim); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
-.tx-err { display: flex; align-items: center; white-space: nowrap; }
-.tx-err b { margin-left: 0.35rem; }
+.if-you { border-color: rgba(143, 203, 171, 0.8); }
+.if-model { border-color: rgba(227, 176, 75, 0.8); }
+.if-sub { color: rgba(242, 236, 223, 0.7); font-size: 1.05rem; }
+.if-arr { width: 3rem; flex: none; align-self: center; color: var(--talk-accent); }
+.if-loop { position: relative; display: flex; gap: 1rem; align-items: stretch; }
+.if-return {
+  position: absolute; left: 1.6rem; right: 1.6rem; top: calc(100% + 0.4rem); height: 1rem;
+  border: 2.5px solid rgba(227, 176, 75, 0.7); border-top: 0;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+.if-return::before {
+  content: '\25B2'; position: absolute; left: -0.5rem; top: -0.95rem;
+  color: var(--talk-accent); font-size: 0.8rem;
+}
+.if-return-label {
+  position: absolute; top: 0.4rem; left: 50%; transform: translateX(-50%);
+  background: #0a0e1a; padding: 0 0.7rem; white-space: nowrap;
+  font-size: 0.98rem; color: rgba(242, 236, 223, 0.85);
+}
+
+/* slide 21 (file of numbers): subtitle, image labels/captions, left-aligned takeaway lines */
+.fon-sub { font-size: 1.2rem; color: var(--ink-dim); margin-top: -0.4rem; }
+.fon-lab { font-size: 1.15rem; text-align: center; margin-bottom: 0.4rem; color: var(--ink); }
+.fon-cap { font-size: 1rem; text-align: center; margin-top: 0.4rem; font-style: italic; color: var(--ink-dim); }
+.fon-lines { text-align: left; font-size: 1.1rem; line-height: 1.7; }
+.fon-dim { color: var(--ink-dim); }
+
+/* slide 24 (creativity & hallucination): column heads + italic hook questions */
+.ch-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.6rem; color: var(--ink); margin-bottom: 0.3rem; }
+.ch-q { font-style: italic; color: var(--ink-dim); font-size: 1.05rem; line-height: 1.45; }
+
+/* slide 25 (data is gold): green/purple layout, no gold/greige */
+.dg-label { font-size: 1.05rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8fcbab; }
+.dg-list > div { font-size: 1.35rem; padding: 0.18rem 0; }
+.dg-list > div::before { content: '\25B8\00a0\00a0'; color: #8fcbab; }
+.dg-green {
+  border: 2px solid rgba(143, 203, 171, 0.7); background: rgba(143, 203, 171, 0.08);
+  border-radius: 0.7rem; padding: 0.9rem 1.2rem; font-size: 1.15rem; line-height: 1.5;
+}
+.dg-green b { color: #8fcbab; }
+.dg-ref { font-size: 0.8rem; color: rgba(242, 236, 223, 0.55); font-style: italic; margin-top: 0.3rem; text-align: right; }
+.dg-card { border: 2px solid rgba(114, 99, 184, 0.65); border-radius: 0.7rem; padding: 0.7rem 0.9rem; font-size: 1rem; line-height: 1.4; }
+.dg-card b { color: #b9a9ee; font-size: 1.12rem; }
+.dg-card > div { color: rgba(242, 236, 223, 0.85); }
+
+/* slide 23 (spectacular): purple standout + green examples, gold only for "magic" */
+.em-spark { color: #b9a9ee; }
+.em-word { color: #b9a9ee; }
+.em-sub { font-size: 1.1rem; color: rgba(242, 236, 223, 0.65); }
+.em-ex { font-size: 1.3rem; color: #8fcbab; }
+.em-arr { display: inline-block; width: 2.2rem; vertical-align: -0.35rem; margin: 0 0.3rem; color: #8fcbab; }
 .tx-bar {
   display: inline-block; height: 0.55rem; margin-right: 0.6rem; border-radius: 0.2rem;
   background: linear-gradient(90deg, rgba(227, 176, 75, 0.9), rgba(227, 176, 75, 0.5));
 }
 /* three training snapshots: the model's percentage list converging on the right word */
-.tr-wrap { display: flex; gap: 2.2rem; align-items: center; }
-.tr-side { max-width: 15rem; line-height: 1.35; }
-.tr-side > div:first-child { white-space: nowrap; }
-.tr-side .dim { font-size: 0.98rem; }
-.tr-cols { display: flex; gap: 1rem; max-width: 40rem; }
+.tr-cols { display: flex; gap: 1.1rem; justify-content: center; }
 .tr-col {
-  flex: 1; border: 1.5px solid var(--hairline); border-radius: 0.5rem;
-  padding: 0.35rem 0.7rem 0.45rem; background: rgba(242, 236, 223, 0.03);
+  flex: 1; max-width: 13rem; border: 1.5px solid var(--hairline); border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem 0.5rem; background: rgba(242, 236, 223, 0.03);
 }
 .tr-round {
-  color: var(--ink-dim); font-size: 0.76rem; letter-spacing: 0.08em;
+  color: var(--ink-dim); font-size: 0.86rem; letter-spacing: 0.08em;
   text-transform: uppercase; white-space: nowrap; margin-bottom: 0.2rem;
 }
-.tr-item { display: flex; justify-content: space-between; gap: 0.6rem; font-size: 0.92rem; line-height: 1.4; }
+.tr-item { display: flex; justify-content: space-between; gap: 0.6rem; font-size: 1.04rem; line-height: 1.35; }
 .tr-item > span:last-child { color: var(--ink-dim); font-variant-numeric: tabular-nums; }
 .tr-goal, .tr-goal > span:last-child { color: var(--talk-accent); font-weight: 600; }
-.tr-dots { color: var(--ink-dim); font-size: 0.78rem; line-height: 1.2; }
-.tr-err { display: flex; align-items: center; white-space: nowrap; margin-top: 0.3rem; font-size: 0.92rem; }
+.tr-dots { color: var(--ink-dim); font-size: 0.86rem; line-height: 1.2; }
+.tr-err { display: flex; align-items: center; white-space: nowrap; margin-top: 0.3rem; font-size: 1rem; }
 .tr-err b { margin-left: 0.3rem; }
-.tr-note { font-size: 0.78rem; font-style: italic; margin-top: 0.3rem; }
+.tr-note { font-size: 0.88rem; font-style: italic; margin-top: 0.2rem; text-align: center; }
+
+/* Slide 20 (Post-training: the human touch): three sections + RLHF loop */
+.pt-intro { display: flex; align-items: center; gap: 0.7rem; font-size: 1.3rem; }
+.pt-intro .pt-arr { width: 2.1rem; height: auto; color: var(--talk-accent); flex-shrink: 0; }
+.pt-grid { display: grid; grid-template-columns: minmax(0, 34rem) auto; column-gap: 2.4rem; margin-top: 0.35rem; }
+.pt-sec { grid-column: 1; padding: 0.42rem 0 0.48rem; font-size: 1.3rem; }
+.pt-line { border-top: 1px solid var(--hairline); }
+.pt-sub { display: inline-block; margin-top: 0.12rem; font-size: 1.06rem; color: var(--ink); }
+.pt-loop { grid-column: 2; grid-row: 2 / 4; align-self: center; display: flex; align-items: center; gap: 0.7rem; }
+.pt-cycle { font-size: 3.4rem; line-height: 1; }
+.pt-loop b { font-size: 1.3rem; }
+.pt-loop .pt-sub { font-size: 0.95rem; line-height: 1.3; margin-top: 0.05rem; }
+.pt-quote { margin-top: 0.6rem; font-family: 'Fraunces', serif; font-size: 1.35rem; color: #8fcbab; }
 
 /* Slide 14 (You are the model): audience-filled answer words + gold takeaway */
 .fill-blue {
@@ -860,10 +927,10 @@
   display: flex;
   align-items: center;
   color: #e3b04b;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
-.auto-arrow .arr { width: 2.6rem; height: auto; margin-right: 0.6rem; flex-shrink: 0; }
+.auto-arrow .arr { width: 1.9rem; height: auto; margin-right: 0.5rem; flex-shrink: 0; }
 .ans { display: inline-grid; vertical-align: baseline; }
 .ans > * { grid-area: 1 / 1; }
 
