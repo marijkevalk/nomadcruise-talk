@@ -14,3 +14,4 @@ datacenter: File:CERN Server 03.jpg | CC BY-SA 3.0 | Florian Hirzinger - <a rel=
 nat-human: File:Middle-aged woman reading a book closeup.jpg | CC BY 2.0 | Shixart1985 (https://www.flickr.com/photos/185745012@N08/)
 dartmouth-hall: File:Dartmouth Hall - Dartmouth College - DSC01608.jpg | CC0 | Daderot
 face-id: File:Dlib-face landmark detection.jpg | CC BY-SA 4.0 | MTheiler
+oral-exam: File:Marie-Antoinette Petit-Jean - L'Epreuve orale.jpg | Public domain | Marie-Antoinette Petit-Jean

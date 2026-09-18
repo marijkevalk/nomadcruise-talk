@@ -1185,7 +1185,7 @@ exist without being designed in — that part is not disputed.]
 
 <div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
-# Creativity & hallucination
+# Temperature
 
 <hr class="rule" />
 
@@ -1194,45 +1194,58 @@ exist without being designed in — that part is not disputed.]
 
 **it rolls dice**
 
-<img :src="'/art/top5.png'" class="rounded w-full my-2" style="max-height:9rem; object-fit:contain;" />
+the model is frozen — you'd expect<br>the <b>same answer</b> every time
 
-a less likely word wins → <b>creativity</b><br>
-<span class="dim">(the knob: temperature)</span>
+<img :src="'/art/top5.png'" class="rounded w-full my-1" style="max-height:6rem; object-fit:contain;" />
 
-<span class="text-base leading-snug block">training: models differ from <i>each other</i><br>the dice: the <i>same</i> model varies</span>
+but each word is a <b>draw</b> — not always the top pick → <b>creativity</b><br>
+<span class="dim text-base">the knob: <b>temperature</b> — how often a less likely word wins</span>
 
 </div>
 <div v-click class="leading-relaxed">
 
-**…and the riverbed**
+**Hallucination**
 
-<img :src="'/photos/riverbed.jpg'" class="photo h-32 w-full my-3" /><div class="mini-credit" style="margin-top:-0.4rem;">Paraná delta · Presidencia Argentina, CC BY 2.0</div>
+a word is <i>always</i> drawn —<br>even when there is <b>no clear answer</b>
 
-training carves the riverbed <br>new water <i>always</i> finds a way down
+<div class="grid grid-cols-2 gap-3 mt-2 mb-1">
+<div>
+  <img :src="'/photos/riverbed.jpg'" class="photo h-20 w-full" />
+  <div class="text-sm leading-snug mt-1">water <i>always</i> finds a way down</div>
+</div>
+<div>
+  <img :src="'/photos/oral-exam.jpg'" class="photo h-20 w-full" style="object-position:65% 60%;" />
+  <div class="text-sm leading-snug mt-1">a student <i>always</i> gives an answer</div>
+</div>
+</div>
 
-<div class="accent mt-3 text-xl" style="font-family:'Fraunces',serif;">plausible ≠ true</div>
+<div class="mini-credit" style="margin-top:0.1rem;">Paraná delta · Presidencia Argentina, CC BY 2.0 · "L'Épreuve orale" · M.-A. Petit-Jean, public domain</div>
+
+<div class="accent mt-2 text-xl" style="font-family:'Fraunces',serif;">plausible ≠ true</div>
 
 </div>
 </div>
 
 
 
-<img :src="'/art/tovenaar-13-facepalm.svg'" class="mage" />
+<img :src="'/art/tovenaar-13-facepalm.svg'" class="mage" style="top:2.2rem; right:2.6rem; bottom:auto; height:7rem;" />
 
 <!--
-Two things follow straight from those draws — one delightful, one dangerous.
+Here's something that should puzzle you. The model is a frozen file — same
+file, same question. So you'd expect the same answer, every single time.
+And you know from experience: that's not what happens. Why not?
 
-The delightful one first: the dice are where the surprise comes from.
-Usually the most likely word wins, but sometimes a less likely one gets
-picked — and the sentence takes a turn nobody planned. Look at our own
-list: two percent New ZEALAND. Every so often, the dice send our
-ship to New Zealand. That variety is a big part of what feels "creative"
-about these things.
+Because of the dice. The model hands over that list of percentages — and
+then a word is DRAWN from it. Usually the most likely word wins, but with
+a certain chance a less likely one gets picked instead. Look at our own
+list: two percent New ZEALAND. Every so often, the dice send our ship to
+New Zealand — and the sentence takes a turn nobody planned. That variety
+is a big part of what feels "creative" about these things.
 
-And the knob I promised you: temperature. It reshapes the list BEFORE the
-draw. Turn it down — the top candidate almost always wins, safe and
-predictable. Turn it up — the list flattens, adventurous words get their
-chance. At zero, same answer every time. Your chat app hides that knob;
+And the knob I promised you: temperature. It sets how big the chance of a
+less likely word is. Turn it down — the top candidate almost always wins,
+safe and predictable; at zero, same answer every time. Turn it up —
+adventurous words get their chance. Your chat app hides that knob;
 builders get to turn it.
 
 Keep the two kinds of randomness apart: training randomness made the models
@@ -1240,14 +1253,17 @@ differ from EACH OTHER. The dice make the SAME model answer differently
 every time. Your ChatGPT and mine are the same file — we just roll
 different dice.
 
-[click] Now the dangerous side of the same mechanism: hallucination. Here's
-my favorite way to picture it. Training carves a riverbed into the
-landscape. Every question you ask is new water — and water ALWAYS finds a
-way down. The model always produces a fluent, confident answer — whether
-the facts are there or not. Fluent is what it was trained to be. So:
-plausible is NOT the same as true. Never confuse the two again. And
-remember the little fence robot: it continues the pattern, whether that was
-the point or not.
+[click] But notice what that draw ALSO means: a word is always chosen. The
+list is never empty — "I don't know" is not on it by default. Even when
+the model doesn't KNOW, when there is no one clear answer, out comes a
+fluent, confident word anyway. That is hallucination.
+
+Two pictures for it. Water always finds a way down — but not always along
+the route you meant. And a student at an oral exam always gives an answer —
+never "I don't know". Here's the uncomfortable part: bluffing sounds
+exactly as fluent as knowing. So: plausible is NOT the same as true. Never
+confuse the two again. And remember the little fence robot: it continues
+the pattern, whether that was the point or not.
 
 One more honest thing, so this doesn't feel hopeless: what you can DO about
 hallucination — that's exactly where part three ends. Hold that question.
