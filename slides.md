@@ -944,9 +944,9 @@ class: t18-slide
     <div class="lfv-loop" v-click="1">
       <div class="lfv-step">Feed it a <b>real text</b></div>
       <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="lfv-step">Compute the next word</div>
+      <div class="lfv-step">Compute the next token</div>
       <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="lfv-step">Compare with the real word<br>= <b class="accent">error score</b></div>
+      <div class="lfv-step">Compare with the real token<br>= <b class="accent">error score</b></div>
       <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="lfv-step">Adjust <b>every weight</b></div>
       <div class="lfv-return"></div>
@@ -967,7 +967,7 @@ class: t18-slide
       <div class="tr-item"><span>the</span><span>0.003%</span></div>
       <div class="tr-item tr-goal"><span>ocean</span><span>0.002%</span></div>
       <div class="tr-item"><span>yellow</span><span>0.002%</span></div>
-      <div class="tr-dots">⋮ &ensp;All 50,000 words</div>
+      <div class="tr-dots" style="white-space:nowrap;">⋮ &ensp;All 50,000 tokens</div>
       <div class="tr-err"><span class="tx-bar" style="width:6.5rem"></span>Error <b class="accent">10.8</b></div>
     </div>
     <div class="tr-col" v-click="4">
@@ -1186,12 +1186,12 @@ it — but all the knowledge is in the file.]
 <div class="mt-2 text-xl"><b class="accent">Inference</b> = using the finished model: you <b>prompt</b>, it <b>replies</b>.</div>
 
 <div class="if-flow mt-6">
-  <div class="if-step if-you">Your <b>prompt</b><br><span class="if-sub">"Where does the QM2 sail to?"</span></div>
+  <div class="if-step if-you"><span class="if-lab">Your prompt</span><span class="if-sub">"Where does the QM2 sail to?"</span></div>
   <svg class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <div class="if-loop">
-    <div class="if-step if-model"><b>The model</b><br><span class="if-sub">The file of numbers</span></div>
+    <div class="if-step"><span class="if-lab">The model</span><span class="if-sub">The file of numbers</span></div>
     <svg class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <div class="if-step if-model">One<br><b>word</b></div>
+    <div class="if-step"><span class="if-lab">One token</span></div>
     <div class="if-return"><span class="if-return-label">Glue it on · Feed it all back</span></div>
   </div>
 </div>
@@ -1205,7 +1205,7 @@ it — but all the knowledge is in the file.]
   <span class="inf-word" v-click="5">York</span>
 </div>
 
-<div v-click="5" class="mt-3" style="font-size:1.1rem; color:rgba(242,236,223,0.85);">One word at a time · The model never writes the whole sentence at once</div>
+<div v-click="5" class="mt-4" style="font-size:1.25rem; color:var(--ink);">One <b>token</b> at a time</div>
 
 
 
@@ -1218,23 +1218,23 @@ model at work: you prompt, it replies. You already know everything it needs.
 
 Here's the whole machine. Your prompt goes IN — it's simply the start of the
 text. The model computes exactly the kind of list we started this section
-with, and out comes ONE word. Just one.
+with, and out comes ONE token. Just one.
 
-[click] "It". The model doesn't write a sentence — it produces a single word.
+[click] "It". The model doesn't write a sentence — it produces a single token.
 
-Then — and this is the whole trick — that word gets glued onto the text, and
+Then — and this is the whole trick — that token gets glued onto the text, and
 the WHOLE thing goes back into the model. Prompt plus "It". Round again.
 [click] "sails". Glue it on, feed it all back. [click] "to". [click] "New".
 Remember the seventy percent York from the start of this section? THIS is
 where that list comes from. [click] "York".
 
-So the reply builds up one word at a time. The model never writes the whole
-sentence at once — it only ever answers the question "what's the next word?",
+So the reply builds up one token at a time. The model never writes the whole
+sentence at once — it only ever answers the question "what's the next token?",
 over and over, feeding its own output back in. List, draw, glue, repeat.
 
-And because each word is a DRAW from a list, the reply you see is a
+And because each token is a DRAW from a list, the reply you see is a
 draw, after a draw, after a draw. Run the same question twice, and somewhere
-a different word wins — that's why you never get exactly the same answer
+a different token wins — that's why you never get exactly the same answer
 twice. How adventurous those draws are — there's a knob for that, coming up.
 
 Percentages, all the way down. Sound familiar? That's… statistics.
@@ -1314,7 +1314,7 @@ exist without being designed in — that part is not disputed.]
 <img :src="'/art/top5-city.png'" class="rounded w-full my-1" style="max-height:7.5rem; object-fit:contain;" />
 
 <div class="mt-1">Next token is a <b>draw</b> from the <b>probability distribution</b></div>
-<div class="mt-1"><b class="accent">Temperature</b>: determines how often a less likely word wins</div>
+<div class="mt-1"><b class="accent">Temperature</b>: determines how often a less likely token wins</div>
 
 </div>
 <div v-click>
