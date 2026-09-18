@@ -237,6 +237,8 @@ resonates: find me on board, I also run the morning workouts. [beat]
   <div class="stop" v-click="3"><span class="stop-num">3.</span><span class="stop-title">AI tools are cars wrapped around the same engines</span></div>
 </div>
 
+<div v-click="4" class="route-note">AI is much more than LLMs, but LLMs are our focus for today (and the cruise).</div>
+
 <img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage mage-left" />
 
 <!--
@@ -418,7 +420,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="4">
     <div class="tl2-txt">
       <div class="tl2-label">proof</div>
-      <div class="tl2-main"><span class="tl2-year">1997:</span> computer Deep Blue beats the world chess champion</div>
+      <div class="tl2-main"><span class="tl2-year">1997:</span> Computer Deep Blue beats the world chess champion</div>
       <div class="tl2-ref">IBM Deep Blue vs Kasparov</div>
     </div>
     <img class="tl2-img" :src="'/photos/deepblue.jpg'" />
@@ -426,7 +428,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="5">
     <div class="tl2-txt">
       <div class="tl2-label">use cases</div>
-      <div class="tl2-main"><span class="tl2-year">90s →</span> the AI in your daily life <span class="dim">· Google Maps · Netflix picks · Face ID</span></div>
+      <div class="tl2-main"><span class="tl2-year">90s →</span> AI in your daily life <span class="dim">· Google Maps · Netflix picks · Face ID</span></div>
     </div>
     <img class="tl2-img" :src="'/photos/face-id.jpg'" style="object-position:50% 25%;" />
   </div>
@@ -462,7 +464,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <hr class="rule" />
 
 <div style="text-align:center;">
-<svg viewBox="0 12 660 234" class="winters" style="height:17.5rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="0 12 660 258" class="winters" style="height:19rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
   <defs>
     <marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
     <g id="sun"><circle r="9" fill="none" stroke="#e3b04b" stroke-width="2.4"/><g stroke="#e3b04b" stroke-width="2.4" stroke-linecap="round"><line y1="-13" y2="-16.5"/><line y1="13" y2="16.5"/><line x1="-13" x2="-16.5"/><line x1="13" x2="16.5"/><line x1="-9.2" y1="-9.2" x2="-11.7" y2="-11.7"/><line x1="9.2" y1="9.2" x2="11.7" y2="11.7"/><line x1="9.2" y1="-9.2" x2="11.7" y2="-11.7"/><line x1="-9.2" y1="9.2" x2="-11.7" y2="11.7"/></g></g>
@@ -472,15 +474,16 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
         fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   <use href="#sun" transform="translate(175,56) scale(1.35)"/>
   <use href="#sun" transform="translate(400,51) scale(1.35)"/>
-  <use href="#snow" transform="translate(285,192) scale(1.3)"/>
-  <use href="#snow" transform="translate(490,192) scale(1.3)"/>
+  <use href="#snow" transform="translate(285,182) scale(1.3)"/>
+  <use href="#snow" transform="translate(490,182) scale(1.3)"/>
   <g v-click="2">
     <path d="M520,150 Q562,140 590,104 Q622,66 650,46" fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrHead)"/>
-    <text x="606" y="40" fill="#e3b04b" font-size="20" font-weight="bold" text-anchor="middle">now</text>
-    <text x="285" y="220" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1970s</text>
-    <text x="285" y="238" fill="#cfc9bb" font-size="12" text-anchor="middle">algorithms stalled</text>
-    <text x="490" y="220" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1990s</text>
-    <text x="490" y="238" fill="#cfc9bb" font-size="12" text-anchor="middle">too little data · weak hardware</text>
+    <text x="598" y="38" fill="#e3b04b" font-size="28" font-weight="bold" text-anchor="middle">NOW</text>
+    <text x="285" y="224" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter 1970s</text>
+    <text x="285" y="241" fill="#cfc9bb" font-size="12" text-anchor="middle">algorithms stalled</text>
+    <text x="490" y="224" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter 1990s</text>
+    <text x="490" y="241" fill="#cfc9bb" font-size="12" text-anchor="middle">too little data</text>
+    <text x="490" y="257" fill="#cfc9bb" font-size="12" text-anchor="middle">weak hardware</text>
   </g>
 </svg>
 </div>
@@ -518,9 +521,8 @@ And right now? We're in the hottest summer the field has ever had.
   <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>More data</b> <span>the internet finally had enough text</span></div></div>
 </div>
 
-<div class="mt-6 llm-note" v-click="4">Note: AI is much more than LLMs, but that's our focus today (on the cruise).</div>
+<div v-click="4" class="boom-note"><b>~100M users in ~2 months</b><br><span class="dim">ChatGPT · fastest-growing consumer app ever</span><br><span class="ref">UBS / Similarweb 2023</span></div>
 
-<div v-click="3" class="bubble bubble-dn ex-bubble"><b>~100M users in ~2 months</b><br><span class="dim">ChatGPT · fastest-growing consumer app ever</span><br><span class="ref">UBS / Similarweb 2023</span></div>
 <img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
 
 <!--
@@ -571,15 +573,15 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
   <div class="qlist">
     <div class="ql">What actually ended the last AI winter?</div>
     <div class="ql">Is a thermostat really a little bit intelligent?</div>
-    <div class="ql">What was groundbreaking about the transformer paper?</div>
+    <div class="ql">Why did the transformer paper matter?</div>
     <div class="ql">Why did GPUs beat CPUs for training?</div>
-    <div class="ql">Who was Alan Turing?</div>
+    <div class="ql">What is the Turing test?</div>
+    <div class="ql">Explain transformers like I'm 12</div>
   </div>
 </div>
 
 </div>
 
-<div class="bubble bubble-dn bubble-white" style="left:6.5rem; bottom:8rem; right:auto; text-align:left; max-width:15rem;"><b>Stuck? Start with:</b><br>"Why…"<br>"What ended…"<br>"Explain … like I'm 12"</div>
 <img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
 
 
@@ -619,25 +621,25 @@ right now.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
 # You are the model
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[2fr_3fr] gap-10 items-center">
-<div>
-  <img :src="'/photos/titanic.jpg'" class="photo w-full" />
-  <div class="credit mt-1">RMS Titanic leaving Southampton, 1912 · F.G.O. Stuart</div>
-</div>
-<div class="space-y-6 text-xl" style="font-family:'Fraunces',serif;">
+<div class="grid grid-cols-[3fr_2fr] gap-10 items-center">
+<div class="space-y-5 text-xl" style="font-family:'Fraunces',serif;">
   <p>"Titanic hit an …"</p>
-  <p v-click>"From Southampton, the ship sails across<br>the Atlantic to New …"</p>
-  <p v-click>"A transatlantic crossing takes … days"</p>
+  <p v-click="1">"From Southampton, the ship sails across<br>the Atlantic to New …"</p>
+  <p v-click="2">"A transatlantic crossing takes … days"</p>
+</div>
+<div v-click="3">
+  <img :src="'/art/top5.png'" class="rounded w-full" style="max-height:12rem; object-fit:contain;" />
+  <div class="credit mt-1">a real model (GPT-2), same sentence · its answer is a list of percentages</div>
 </div>
 </div>
 
-<div v-click class="mt-6 accent text-lg">you just predicted the next word from the previous words</div>
+<div v-click="4" class="mt-6 accent text-lg">you predicted the next word from the previous words · <b>so it's basically autocomplete</b></div>
 
 
 
@@ -659,67 +661,23 @@ Next one: "From Southampton, the ship sails across the Atlantic to New…" —
 Different answers! Same question, different completions. Remember that —
 we'll come back to it at the end of this section.
 
-Congratulations. You just did — literally — what an LLM does: you predicted
-the next word from the previous words. That's the entire job description.
-Keep that Southampton sentence in mind; it's going to follow us through this
-whole section.
+[click] And here is a real language model playing our game. [If someone asks
+which one: GPT-2 — small, open and older, chosen because I can show you its
+insides.] Same Southampton sentence — and this is its real output: not one
+word, but a LIST of candidate next words, each with a probability. Fifty
+percent York. Keep this list in mind — it comes back at the end of this
+section, and by then you'll know exactly where it comes from.
+
+[click] Congratulations. You just did — literally — what an LLM does: you
+predicted the next word from the previous words. That's the entire job
+description. So an LLM is basically… autocomplete. A very, very good
+autocomplete. Keep that Southampton sentence in mind; it's going to follow
+us through this whole section.
 -->
 
 ---
 
-<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
-
-# The list of percentages IS the answer
-
-<div class="grid grid-cols-[2fr_1fr] gap-8 items-center">
-  <div class="relative">
-    <img :src="'/art/top5.png'" class="rounded w-full" style="max-height:13rem; object-fit:contain;" />
-    <img v-click="2" :src="'/art/top5-2.png'" class="rounded absolute inset-0 w-full" style="max-height:13rem; object-fit:contain; background:#0a0e1a;" />
-  </div>
-  <div class="text-base dim leading-snug" style="padding-right:4rem;">
-    everything the model outputs is this list
-    <span v-click="1" class="block mt-2">"York" wins · <b>glued on</b> · predict again</span>
-    <span v-click="2" class="block mt-2">every word gets its <b>own fresh list</b> · even the comma is a candidate</span>
-  </div>
-</div>
-
-<div v-click="3" class="mt-3 accent text-lg">the reply you see = <b>draw, after draw, after draw</b> <span class="dim">· no two runs alike</span></div>
-
-
-
-<img :src="'/art/tovenaar-05-zittend.svg'" class="mage" />
-
-<!--
-Here's what that looks like inside a real model. [If someone asks which one:
-it's GPT-2 — small, open and older, chosen because I can show you its
-insides.] This is an actual language model, given our sentence — and this is
-its real output: a short list of candidate next words, each with a
-probability. [Aside, only if someone asks "letters or words?": technically
-word-pieces — "tokens" — but think: words.]
-
-And here's the thing most people don't know: this list IS the answer.
-
-[click] The draw lands on "York". The word gets glued onto the sentence…
-and the model simply predicts again.
-
-[click] New position — new list. Every single word gets its own fresh
-probability distribution. And look at the top candidate this time: a comma!
-For the model, even punctuation is just a candidate with a probability.
-It's text all the way down — no plan, no sentence in its head, just:
-list, draw, glue, repeat.
-
-[click] So the reply you see is a draw, after a draw, after a draw. And
-because it's a draw — run the same question twice, and somewhere along the
-way a different word wins. That's why you never get exactly the same answer
-twice. How adventurous those draws are — there's a knob for that, and it
-comes at the end of this section.
-
-Percentages. Sound familiar? That's… statistics.
--->
-
----
-
-<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
 # LLMs are pattern generators
 
@@ -780,9 +738,64 @@ Keep him in mind: he'll explain a lot when we get to hallucination.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
-# It learned the connections between words
+# Text becomes tokens
+
+<hr class="rule" />
+
+<div class="mt-4 text-xl" style="font-family:'Fraunces',serif;">"From Southampton, the ship sails across the Atlantic to New York."</div>
+
+<div v-click="1" class="mt-6 flex flex-wrap gap-2 items-start max-w-4xl">
+  <span class="tok">From<span class="tok-id">4863</span></span>
+  <span class="tok">Southampton<span class="tok-id">30035</span></span>
+  <span class="tok">,<span class="tok-id">11</span></span>
+  <span class="tok">the<span class="tok-id">262</span></span>
+  <span class="tok">ship<span class="tok-id">4074</span></span>
+  <span class="tok">sails<span class="tok-id">48370</span></span>
+  <span class="tok">across<span class="tok-id">1973</span></span>
+  <span class="tok">the<span class="tok-id">262</span></span>
+  <span class="tok">Atlantic<span class="tok-id">10596</span></span>
+  <span class="tok">to<span class="tok-id">284</span></span>
+  <span class="tok">New<span class="tok-id">968</span></span>
+  <span class="tok">York<span class="tok-id">1971</span></span>
+  <span class="tok">.<span class="tok-id">13</span></span>
+</div>
+
+<div v-click="2" class="mt-6 text-lg">rare words are built from pieces: transatlantic → <span class="tok">trans<span class="tok-id">1007</span></span> <span class="tok">atlantic<span class="tok-id">43342</span></span></div>
+
+<div v-click="3" class="mt-6 accent text-lg">the model never sees letters or words · <b>text is a sequence of numbers</b></div>
+
+
+
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" />
+
+<!--
+Before any statistics can happen, there's one translation step. A model
+doesn't read letters — and it doesn't quite read words either. A small
+algorithm chops the text into TOKENS: mostly whole words, sometimes pieces.
+
+[click] Here's our sentence, tokenized by a real model — GPT-2 again, and
+these are its real token numbers. Every token has a fixed number in the
+model's vocabulary. Notice "the" appears twice: same token, same number,
+262. That's all a token is — a fixed id for a chunk of text.
+
+[click] Common words get one token each. Rarer words are built from pieces:
+"transatlantic" becomes trans plus atlantic. That's how it can handle words
+it has never seen — it assembles them from pieces. [If someone asks how the
+pieces are chosen: by frequency — the most common chunks of text in the
+training data win a spot in the vocabulary.]
+
+[click] And this is the point of the slide: from here on, the model never
+sees text at all. It sees a sequence of numbers. Which raises the obvious
+question — what does it DO with those numbers?
+-->
+
+---
+
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+
+# The connections between tokens are weights
 
 <hr class="rule" />
 
@@ -819,12 +832,12 @@ those connections are numbers: <b class="accent">weights</b><br>
 <img :src="'/art/tovenaar-10-konijn-uit-hoed.svg'" class="mage" />
 
 <!--
-How can it predict so well? Because it has learned the connections between
-words. Like an old couple finishing each other's sentences — that's not
-telepathy, that's years of training on each other.
+So what does it do with those numbers? This: it has learned the connections
+between tokens. Like an old couple finishing each other's sentences — that's
+not telepathy, that's years of training on each other.
 
-Those connections are stored as numbers. They're called weights. And a big web
-of weighted connections has a name you've heard before: a neural network.
+Those connections are themselves numbers. They're called weights. And a big
+web of weighted connections has a name you've heard before: a neural network.
 That's it. That's the whole mystery behind the scary term.
 
 [bubble] And I hear the little wizard asking: "wait — so it never looks
@@ -833,40 +846,7 @@ anything up?" Hold that thought. It's exactly the right question.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· statistics built on our written world</span></div>
-
-# A model is literally a file of numbers
-
-<div class="grid grid-cols-2 gap-6 mt-2 items-center">
-  <img :src="'/ai_model_file_numbers.png'" class="rounded" />
-  <img :src="'/ai_model_file_heatmap.png'" class="rounded" />
-</div>
-
-<div class="mt-3 dim text-center">real weights from a real model (GPT-2) · this is <i>literally</i> what's inside</div>
-
-<div v-click class="mt-2 accent text-center text-lg">so… where do these numbers come from?</div>
-
-
-
-
-<!--
-And here's my favorite demystifier. A model is literally a file of numbers.
-This is not an artist impression — these are real weights I pulled out of a
-real model, GPT-2. On the left: sixty of them, as they sit in the file. On the
-right: two slices of the same file as an image — every pixel is one learned
-number.
-
-No database inside. No internet inside. No little person inside. One file of
-numbers that finishes sentences. You can download one yourself tonight —
-well, when we have internet again.
-
-Which leaves the only question that matters: where do these numbers COME from?
-That's the "built on our written world" part. Three steps.
--->
-
----
-
-<div class="kicker">Part two <span class="dim">· step 1 of 3</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
 # Data is gold
 
@@ -884,8 +864,9 @@ That's the "built on our written world" part. Three steps.
 <img :src="'/art/tovenaar-19-goudklomp.svg'" class="mage" />
 
 <!--
-Step one: data. You need a mountain of text — the public web, books, articles,
-code. How much? One open model was trained on more than twenty TRILLION
+So how does it learn those connections — where do all those numbers get
+their values? Three steps. Step one: data. You need a mountain of text — the
+public web, books, articles, code. How much? One open model was trained on more than twenty TRILLION
 words' worth of text. If you read around the clock, no sleep, that's well over
 a hundred thousand YEARS of reading. That's the "written world" in my title —
 and by the way, that includes things you wrote. All of us are in there.
@@ -903,7 +884,7 @@ train — per model.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· step 2 of 3</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
 # Training = trial and error
 
@@ -911,10 +892,11 @@ train — per model.
 
 <div class="grid grid-cols-[3fr_2fr] gap-10 items-start">
 <div class="rows text-lg">
-  <div>start with <b>random</b> numbers → billions of nudges</div>
-  <div class="dim italic">"the machine turns its <b>own</b> billions of dials, a nudge per example"</div>
-  <div v-click>nobody programs the numbers in → <b class="accent">machine learning</b></div>
-  <div v-click>it kept the <b>patterns, not the pages</b> · GPUs, data centers</div>
+  <div>start with <b>random</b> numbers</div>
+  <div v-click="1">guess · compare · <b class="accent">error score</b> · nudge</div>
+  <div v-click="2" class="dim italic">"the machine turns its <b>own</b> billions of dials, a nudge per example"</div>
+  <div v-click="3">nobody programs them → <b class="accent">machine learning</b></div>
+  <div v-click="4">it kept the <b>patterns, not the pages</b></div>
 </div>
 <div class="mt-2"><img :src="'/photos/dials.jpg'" class="photo h-44 w-full" /><div class="mini-credit">1940s mixing console · bobintraveling, CC BY 2.0</div></div>
 </div>
@@ -924,13 +906,16 @@ train — per model.
 
 <!--
 Step two: training. And this surprises people: the numbers start RANDOM. Pure
-noise. The model predicts the next word of a real sentence, gets it wrong,
-and every number gets a tiny nudge in the right direction. Then again. And
-again — billions of times.
+noise. [click] Then the loop begins: the model predicts the next word of a
+real sentence from the data, compares its guess with the real next word, and
+gets an ERROR SCORE — one number that says how wrong it was. [The math term,
+if anyone asks: the cost function.] And every number gets a tiny nudge in
+the direction that shrinks that score. Then again. And again — billions of
+times.
 
 [Stress "in the RIGHT direction": trial and error, but GUIDED, not blind —
-the math knows which way to turn each dial. That's why it converges instead
-of wandering forever.]
+the error score tells it which way to turn each dial. That's why it
+converges instead of wandering forever.]
 
 Picture a machine with billions of tiny dials. Training is the machine turning
 its OWN dials, a tiny nudge per example. [bubble] "Who turns billions of
@@ -949,7 +934,7 @@ That's the GPUs. That's the data centers. That's why ASML machines matter.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· training, made visible</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
 # Watch it grow up
 
@@ -973,7 +958,7 @@ nudge by nudge. This is training — made visible.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· flex</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
 # Meaning becomes geometry
 
@@ -998,19 +983,20 @@ model was never told what a king is. It's in the numbers anyway.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· step 3 of 3</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
-# Post-training
+# Post-training: show it · practice · grade it
 
 <hr class="rule" />
 
 <div class="rows text-lg max-w-3xl">
   <div>the raw model is a <b>text-completer</b> · not yet an assistant</div>
-  <div v-click>tuned with <b>human feedback</b>: helpful answers, good behaviour <span class="dim">(the term: RLHF)</span></div>
+  <div v-click><b class="accent">show it</b> examples of good answers</div>
+  <div v-click>let it <b class="accent">practice</b> · humans <b class="accent">grade</b> it · one more nudge <span class="dim">(RLHF)</span></div>
   <div v-click>+ safeguards & guardrails</div>
 </div>
 
-<div v-click class="mt-8 text-xl accent" style="font-family:'Fraunces',serif;">"AI is not neutral · it's built, tuned and controlled."</div>
+<div v-click class="mt-4 text-xl accent" style="font-family:'Fraunces',serif;">"AI is not neutral · it's built, tuned and controlled."</div>
 
 
 
@@ -1021,9 +1007,13 @@ Step three — the part people skip. After all that reading, the raw model is a
 brilliant text-completer, but not an assistant. Ask it a question and it
 might just… continue with three more questions. That's completing text!
 
-So it gets a finishing school: humans rate its answers — helpful, harmless,
-honest — and the dials get nudged once more toward the answers we prefer.
-The jargon for that is RLHF, you don't need to remember it. On top of that:
+So it gets a finishing school, and it works like teaching a person anything.
+[click] First you SHOW it: thousands of examples of good, helpful answers —
+here's a question, here's what a great answer looks like. [click] Then you
+let it PRACTICE: it writes answers itself, and humans GRADE them — helpful,
+harmless, honest — and the dials get nudged once more toward the answers we
+prefer. Show it, let it practice, grade the work. The jargon for that last
+loop is RLHF, you don't need to remember it. [click] On top of that:
 safeguards, guardrails, rules.
 
 But realize what that means: AI is not neutral. It's built, tuned and
@@ -1033,35 +1023,35 @@ someone says "the AI said so."
 
 ---
 
-<div class="kicker">Part two <span class="dim">· the click</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
-# Weights are <span class="accent">saved</span>
+# A model is literally a file of numbers
 
-<div class="grid grid-cols-2 gap-10 mt-4 items-center">
-  <img :src="'/ai_model_file_heatmap.png'" class="rounded" />
-  <div class="rows text-lg">
-
-<div>training happens <b>once</b>, in a data center</div>
-<div>what remains is <b>ONE file</b></div>
-<div>no database · no internet inside</div>
-<div class="dim">open source = download the file to your own server</div>
-
-  </div>
+<div class="grid grid-cols-2 gap-6 mt-2 items-center">
+  <img :src="'/ai_model_file_numbers.png'" class="rounded" style="max-height:12rem; object-fit:contain;" />
+  <img :src="'/ai_model_file_heatmap.png'" class="rounded" style="max-height:12rem; object-fit:contain;" />
 </div>
+
+<div class="mt-3 text-center text-lg" style="max-width:42rem; margin-left:auto; margin-right:auto;">training happens <b>once</b> · what remains is <b>ONE file</b> · no database, no internet inside <span class="dim">· open source = download the file</span></div>
 
 
 
 <img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" />
 
 <!--
-And then — my favorite moment — the weights are SAVED. Training happens once,
-in a data center, for months. And what remains… is this. The same file I
-showed you ten minutes ago. The file you watched guessing "New York" IS the
-frozen result of this whole pipeline.
+And when all that training is done — my favorite moment — the weights are
+SAVED. A model is literally a file of numbers. This is not an artist
+impression: these are real weights I pulled out of a real model, GPT-2. On
+the left: sixty of them, as they sit in the file. On the right: two slices
+of the same file as an image — every pixel is one learned number.
 
-That's why there's no database inside, no internet inside. It's all pressed
-into the numbers. When people say a model is "open source", this is what they
-mean: you can download the file and run it on your own machine.
+[click] Training happens once, in a data center, for months. And what
+remains… is ONE file. This one. No database inside, no internet inside, no
+little person inside — it's all pressed into the numbers. When people say a
+model is "open source", this is what they mean: you can download the file
+and run it on your own machine. [If someone pushes on "is the model just
+the file?": strictly it's this file PLUS a small, generic program that runs
+it — but all the knowledge is in the file.]
 
 [show the section title again] Remember the title of this section? "An LLM is
 statistics built on our written world." Statistics — the list of percentages.
@@ -1070,12 +1060,65 @@ thousand years of reading. Now every word in that title means something.
 -->
 
 ---
+
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+
+# Inference: the model at work
+
+<hr class="rule" />
+
+<div class="grid grid-cols-[2fr_1fr] gap-8 items-center">
+  <div class="relative">
+    <img :src="'/art/top5.png'" class="rounded w-full" style="max-height:13rem; object-fit:contain;" />
+    <img v-click="2" :src="'/art/top5-2.png'" class="rounded absolute inset-0 w-full" style="max-height:13rem; object-fit:contain; background:#0a0e1a;" />
+  </div>
+  <div class="text-base dim leading-snug" style="padding-right:4rem;">
+    your prompt = the start of the text · the file computes <b>the list from the beginning</b>
+    <span v-click="1" class="block mt-2">"York" wins · <b>glued on</b> · compute again</span>
+    <span v-click="2" class="block mt-2">every word gets its <b>own fresh list</b> · even the comma is a candidate</span>
+  </div>
+</div>
+
+<div v-click="3" class="mt-3 accent text-lg">the reply you see = <b>draw, after draw, after draw</b> <span class="dim">· no two runs alike</span></div>
+
+
+
+<img :src="'/art/tovenaar-05-zittend.svg'" class="mage" />
+
+<!--
+So what happens when you actually USE the thing — when you type a question
+and press Enter? The jargon word is inference, and you already know
+everything it needs.
+
+Your prompt is simply the START of the text. The file computes — for your
+words — exactly the kind of list we started this section with. Remember?
+Fifty percent York. THIS is where that list comes from: the trained weights,
+computing probabilities for your sentence.
+
+[click] The draw lands on "York". The word gets glued onto the sentence…
+and the model simply computes again.
+
+[click] New position — new list. Every single word gets its own fresh
+probability distribution. And look at the top candidate this time: a comma!
+For the model, even punctuation is just a candidate with a probability.
+It's text all the way down — no plan, no sentence in its head, just:
+list, draw, glue, repeat.
+
+[click] So the reply you see is a draw, after a draw, after a draw. Run the
+same question twice, and somewhere along the way a different word wins —
+that's why you never get exactly the same answer twice. How adventurous
+those draws are — there's a knob for that, two slides from now.
+
+Percentages, all the way down. Sound familiar? That's… statistics.
+-->
+
+---
 layout: center
 ---
 
 <div class="grid grid-cols-[3fr_2fr] gap-10 items-center">
 <div>
-<div class="kicker">Part two <span class="dim">· and yet</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
 <div class="display">…and the results are<br><span class="accent">spectacular</span></div>
 
@@ -1121,34 +1164,34 @@ exist without being designed in — that part is not disputed.]
 
 ---
 
-<div class="kicker">Part two <span class="dim">· and weird</span></div>
+<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
 
-# Hallucination
+# Creativity & hallucination
 
 <hr class="rule" />
 
 <div class="grid grid-cols-2 gap-14 text-lg">
 <div class="leading-relaxed">
 
-**the riverbed**
+**it rolls dice**
+
+<img :src="'/art/top5.png'" class="rounded w-full my-2" style="max-height:9rem; object-fit:contain;" />
+
+a less likely word wins → <b>creativity</b><br>
+<span class="dim">(the knob: temperature)</span>
+
+<span class="text-base leading-snug block">training: models differ from <i>each other</i><br>the dice: the <i>same</i> model varies</span>
+
+</div>
+<div v-click class="leading-relaxed">
+
+**…and the riverbed**
 
 <img :src="'/photos/riverbed.jpg'" class="photo h-32 w-full my-3" /><div class="mini-credit" style="margin-top:-0.4rem;">Paraná delta · Presidencia Argentina, CC BY 2.0</div>
 
 training carves the riverbed <br>new water <i>always</i> finds a way down
 
 <div class="accent mt-3 text-xl" style="font-family:'Fraunces',serif;">plausible ≠ true</div>
-
-</div>
-<div v-click class="leading-relaxed">
-
-**…and it rolls dice**
-
-<img :src="'/art/top5.png'" class="rounded w-full my-2" style="max-height:9rem; object-fit:contain;" />
-
-sometimes a less likely word wins<br>
-<span class="dim">(the knob: temperature)</span>
-
-<span class="text-base leading-snug block">training: models differ from <i>each other</i><br>the dice: the <i>same</i> model varies</span>
 
 </div>
 </div>
@@ -1158,18 +1201,14 @@ sometimes a less likely word wins<br>
 <img :src="'/art/tovenaar-13-facepalm.svg'" class="mage" />
 
 <!--
-But the same mechanism has a weird side: hallucination. Here's my favorite way
-to picture it. Training carves a riverbed into the landscape. Every question
-you ask is new water — and water ALWAYS finds a way down. The model always
-produces a fluent, confident answer — whether the facts are there or not.
-Fluent is what it was trained to be. So: plausible is NOT the same as true.
-Never confuse the two again.
+Two things follow straight from those draws — one delightful, one dangerous.
 
-And one more twist — [click] remember the list of percentages? Here it is
-again. The model rolls dice on that list. Usually the most likely word wins,
-but sometimes a less likely one gets picked. Look at our own list: twenty-six
-percent New ZEALAND. Every so often, the dice send our ship to New Zealand.
-That's why the same question gives different answers each time.
+The delightful one first: the dice are where the surprise comes from.
+Usually the most likely word wins, but sometimes a less likely one gets
+picked — and the sentence takes a turn nobody planned. Look at our own
+list: twenty-six percent New ZEALAND. Every so often, the dice send our
+ship to New Zealand. That variety is a big part of what feels "creative"
+about these things.
 
 And the knob I promised you: temperature. It reshapes the list BEFORE the
 draw. Turn it down — the top candidate almost always wins, safe and
@@ -1177,10 +1216,19 @@ predictable. Turn it up — the list flattens, adventurous words get their
 chance. At zero, same answer every time. Your chat app hides that knob;
 builders get to turn it.
 
-So keep the two kinds of randomness apart: training randomness made the
-models differ from EACH OTHER. The dice make the SAME model answer
-differently every time. Your ChatGPT and mine are the same file — we just
-roll different dice.
+Keep the two kinds of randomness apart: training randomness made the models
+differ from EACH OTHER. The dice make the SAME model answer differently
+every time. Your ChatGPT and mine are the same file — we just roll
+different dice.
+
+[click] Now the dangerous side of the same mechanism: hallucination. Here's
+my favorite way to picture it. Training carves a riverbed into the
+landscape. Every question you ask is new water — and water ALWAYS finds a
+way down. The model always produces a fluent, confident answer — whether
+the facts are there or not. Fluent is what it was trained to be. So:
+plausible is NOT the same as true. Never confuse the two again. And
+remember the little fence robot: it continues the pattern, whether that was
+the point or not.
 
 One more honest thing, so this doesn't feel hopeless: what you can DO about
 hallucination — that's exactly where part three ends. Hold that question.
@@ -1192,7 +1240,7 @@ Section two done — and I'd be amazed if you have no questions now.
 
 <div class="kicker green-kicker">Your turn <span class="dim">· part two</span></div>
 
-# <span class="green-title">Go one level deeper</span>
+# <span class="green-title">Ask AI a question</span>
 
 <Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
 <span v-click></span>
@@ -1215,23 +1263,28 @@ Section two done — and I'd be amazed if you have no questions now.
     <div class="ql">What did <i>your</i> model actually train on?</div>
     <div class="ql">If it just predicts words, how can it write code?</div>
     <div class="ql">What is "temperature" in a language model?</div>
+    <div class="ql">Why do I get a different answer every time?</div>
+    <div class="ql">Split this sentence into tokens</div>
   </div>
 </div>
 
 </div>
 
-<div class="bubble bubble-dn" style="left:7rem; bottom:8rem; right:auto; text-align:left; max-width:16rem;"><b>Go deeper:</b> ask a follow-up on the answer</div>
-<img :src="'/art/tovenaar-11-vergrootglas.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
 
 
 <!--
-Round two. Same game, one upgrade: don't stop at the first answer. Ask one
-follow-up — "why?", "give me an example", "explain that simpler". Not being
-satisfied with the first answer is the second half of the skill.
+Round two — same game. Look at the question you wrote down — or borrow one
+of mine. Ask it to any AI you have. Read the answer. Then ask ONE follow-up
+on whatever surprises you — "why?", "give me an example", "explain that
+simpler". Not being satisfied with the first answer is the second half of
+the skill.
 
-[walk the room]
+I'll walk around — wave at me if you want help or want to show me something.
 
-[debrief] Who got somewhere they didn't expect? [take 1–2]
+[during: walk the room, answer 1-on-1, collect one or two nice questions]
+
+[after 5 min] Who got somewhere they didn't expect? [take 1–2]
 
 [if the inversion question comes — "if it just predicts words, how can it
 write CODE?" — the answer:] predicting the next word WELL, across all human
@@ -1514,7 +1567,7 @@ and at the morning workouts on deck
 
 <div class="byline" style="bottom:8rem;">Marijke Valk · NomadCruise 17</div>
 <div class="credit" style="position:absolute; bottom:2rem; right:2rem; max-width:22rem; text-align:right;">
-photos: Wikimedia Commons · F.G.O. Stuart (PD) · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · bobintraveling (CC BY 2.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
+photos: Wikimedia Commons · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · bobintraveling (CC BY 2.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
 </div>
 
 

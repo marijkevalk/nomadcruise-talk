@@ -102,6 +102,8 @@
 }
 .kicker .dim {
   color: var(--ink-dim);
+  font-size: 0.82em;
+  letter-spacing: 0.16em;
 }
 
 /* hairline rule */
@@ -305,8 +307,8 @@
   position: relative;
   display: inline-flex;
   flex: none;
-  width: 11rem;
-  height: 11rem;
+  width: 10rem;
+  height: 10rem;
   z-index: 2;
 }
 .qmark {
@@ -332,13 +334,16 @@
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
   column-gap: 1.6rem;
+  /* RESPONSE is longer than PROMPT, so the centred midzone leaves it hugging
+     the right edge — nudge the whole row left to balance the margins */
+  transform: translateX(-1.3rem);
 }
 .midzone {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26rem;
+  width: 22rem;
   height: 12rem;
 }
 .longarrow {
@@ -354,7 +359,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.9rem;
+  gap: 0.6rem;
 }
 /* split arrows: same rem-per-unit scale as .longarrow (26rem / 340 units),
    so stroke-width 8 renders at exactly the long arrow's thickness */
@@ -492,7 +497,8 @@
   border: 2px solid rgba(95,174,136,0.6);
   background: rgba(95,174,136,0.12);
   border-radius: 0.7rem; padding: 0.6rem 1.3rem;
-  font-family: 'Fraunces', serif; font-size: 2.3rem; font-weight: 600;
+  font-family: 'Inter', sans-serif; font-size: 2.1rem; font-weight: 600;
+  font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1;
 }
 .clock-badge svg { width: 2rem; height: 2rem; }
 .workshop-flow { display: flex; flex-direction: column; gap: 1rem; margin-top: 0; max-width: 54rem; }
@@ -626,8 +632,10 @@
 .agi-full b { font-weight: 700; color: #bfe0cf; }
 
 /* why-now: stacked igniters + example inset */
-.igniters { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 0.8rem; }
-.ig { display: flex; align-items: baseline; gap: 1rem; }
+.igniters { display: flex; flex-direction: column; gap: 1rem; margin-top: 0.8rem; }
+/* equal min-height so the three numbers sit at equal vertical spacing,
+   even though point 1 carries an extra reference line */
+.ig { display: flex; align-items: baseline; gap: 1rem; min-height: 4rem; }
 .ig-n {
   font-weight: 700; font-size: 2.1rem; color: var(--talk-accent);
   line-height: 1.15; flex: none;
@@ -638,6 +646,21 @@
 .ig-txt span { color: var(--talk-accent); font-size: 1.5rem; margin-left: 0.5rem; }
 .ig-txt .ref { font-size: 0.82rem; margin-top: 0.55rem; text-align: right; }
 .llm-note { color: #8fcbab; font-size: 1.1rem; }
+/* slide 11 — green adoption note, sits directly under point 3 */
+.boom-note {
+  margin-top: 0.6rem; margin-left: 3rem; align-self: start; max-width: 34rem;
+  background: rgba(95, 174, 136, 0.16);
+  border: 1px solid #5fae88; border-left: 4px solid #5fae88;
+  border-radius: 0.5rem; padding: 0.55rem 1rem; line-height: 1.4;
+}
+.boom-note b { color: #8fcbab; font-size: 1.15rem; }
+.boom-note .dim { color: var(--ink-dim); font-size: 0.95rem; }
+.boom-note .ref { color: var(--ink-dim); font-size: 0.78rem; font-style: italic; opacity: 0.8; }
+/* slide 5 — moved "AI is much more than LLMs" note, italic under the route */
+.route-note {
+  margin-top: 2.2rem; margin-left: 6.5rem; max-width: 42rem;
+  font-style: italic; color: var(--ink-dim); font-size: 1.15rem;
+}
 .example-inset {
   border: 1.5px solid rgba(227,176,75,0.5); border-radius: 0.7rem;
   padding: 1.4rem 1.6rem; background: rgba(227,176,75,0.06); text-align: center;
@@ -719,3 +742,15 @@
   width: 8rem; height: 3.9rem; object-fit: cover; border-radius: 0.4rem;
   filter: saturate(0.85) contrast(1.03); justify-self: end;
 }
+
+/* tokens slide — token chips with vocabulary id underneath */
+.tok {
+  display: inline-flex; flex-direction: column; align-items: center;
+  padding: 0.22rem 0.6rem 0.28rem;
+  border: 1px solid rgba(227, 176, 75, 0.55); border-radius: 0.4rem;
+  background: rgba(227, 176, 75, 0.07);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 1.05rem; line-height: 1.25; color: var(--ink);
+  vertical-align: middle;
+}
+.tok-id { font-size: 0.62rem; color: var(--ink-dim); margin-top: 0.12rem; letter-spacing: 0.04em; }
