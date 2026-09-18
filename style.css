@@ -604,18 +604,22 @@
 .def-wrap { display: flex; flex-direction: column; align-items: center; margin: 1rem 0; }
 .def-box {
   font-family: 'Fraunces', serif; font-size: 1.7rem; letter-spacing: 0.04em;
-  background: rgba(95,174,136,0.12); border: 1.5px solid rgba(95,174,136,0.6);
+  background: rgba(227,176,75,0.10); border: 1.5px solid rgba(227,176,75,0.6);
   color: #f2ecdf; border-radius: 0.5rem; padding: 0.5rem 1.8rem;
+  display: flex; flex-direction: column; align-items: center;
 }
-.def-box .accent { margin: 0 0.5rem; color: #8fcbab; }
-.def-ref { font-size: 0.8rem; color: var(--ink-dim); font-style: italic; opacity: 0.8; margin-top: 0.35rem; align-self: center; padding-left: 22rem; }
+.def-box .accent { margin: 0 0.5rem; color: var(--talk-accent); }
+.def-ref { font-size: 0.78rem; color: var(--ink-dim); font-style: italic; opacity: 0.85; margin-top: 0.2rem; letter-spacing: 0; }
+/* AI-row 5th cell: label first, then it is replaced in place by the AGI box */
+.intel-ai-side { position: relative; height: 6.6rem; }
+.intel-ai-side > * { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.intel-ai-side .intel-side { text-align: center; padding-left: 0; }
 .agi-box {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  border: 2px dashed rgba(227,176,75,0.6); border-radius: 0.45rem; height: 6.6rem;
-  background: rgba(227,176,75,0.05);
+  border: 2px dashed rgba(95,174,136,0.65); border-radius: 0.45rem;
+  background: rgba(95,174,136,0.09);
 }
-.agi-abbr { font-family: 'Fraunces', serif; font-size: 1.6rem; color: var(--talk-accent); }
-.agi-full { font-size: 0.72rem; color: var(--ink-dim); text-align: center; line-height: 1.15; margin-top: 0.15rem; }
+.agi-abbr { font-family: 'Fraunces', serif; font-size: 2.3rem; color: #8fcbab; }
+.agi-full { font-size: 0.92rem; color: #a9c9b8; text-align: center; line-height: 1.2; margin-top: 0.2rem; }
 
 /* why-now: stacked igniters + example inset */
 .igniters { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 0.8rem; }

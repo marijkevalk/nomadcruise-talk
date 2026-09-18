@@ -338,24 +338,29 @@ fly-over.
   <div class="intel-row">
     <figure class="intel-cell" v-click="1"><img :src="'/photos/nat-slimemold.jpg'" /><figcaption>slime mold</figcaption></figure>
     <figure class="intel-cell" v-click="2"><img :src="'/photos/nat-flytrap.jpg'" /><figcaption>plant</figcaption></figure>
-    <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-mycelium.jpg'" /><figcaption>fungi</figcaption></figure>
-    <figure class="intel-cell" v-click="4"><img :src="'/photos/nat-bacteria.jpg'" /><figcaption>bacteria</figcaption></figure>
-    <div class="intel-side" v-click="4">Natural intelligence,<br>in different <b class="accent">degrees</b></div>
+    <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-octopus.jpg'" /><figcaption>octopus</figcaption></figure>
+    <figure class="intel-cell" v-click="4"><img :src="'/photos/oldcouple.jpg'" /><figcaption>human</figcaption></figure>
+    <div class="intel-side" v-click="5">Natural intelligence<br>in different <b class="accent">degrees</b></div>
   </div>
 </div>
 
-<div class="def-wrap" v-click="5">
-  <div class="def-box">PERCEPTION <span class="accent">→</span> PROCESSING <span class="accent">→</span> ACTION</div>
-  <div class="def-ref">Russell &amp; Norvig, <i>AI: A Modern Approach</i></div>
+<div class="def-wrap" v-click="6">
+  <div class="def-box">
+    <div class="def-line">PERCEPTION <span class="accent">→</span> PROCESSING <span class="accent">→</span> ACTION</div>
+    <div class="def-ref">Russell &amp; Norvig, <i>AI: A Modern Approach</i></div>
+  </div>
 </div>
 
-<div class="intel-block" v-click="6">
+<div class="intel-block" v-click="7">
   <div class="intel-row intel-row-ai">
     <figure class="intel-cell"><img :src="'/photos/ai-calculator.jpg'" /><figcaption>calculator</figcaption></figure>
     <figure class="intel-cell"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
     <figure class="intel-cell"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
     <figure class="intel-cell"><img :src="'/photos/ai-robot.jpg'" /><figcaption>humanoid robot</figcaption></figure>
-    <div class="agi-box" v-click="7"><span class="agi-abbr">AGI</span><span class="agi-full">Artificial<br>General<br>Intelligence</span></div>
+    <div class="intel-ai-side">
+      <div class="intel-side" v-click="[8,9]">Artificial intelligence<br>in different <b class="accent">degrees</b></div>
+      <div class="agi-box" v-click="9"><span class="agi-abbr">AGI</span><span class="agi-full">Artificial<br>General<br>Intelligence</span></div>
+    </div>
   </div>
 </div>
 
