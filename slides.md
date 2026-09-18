@@ -152,6 +152,9 @@ makes people take you seriously.
 
 [click] Three — and honestly, it's just FUN. Everyone's got a little nerd
 inside. Today we let it out.
+
+[click] And because this is a workshop: grab your phone or laptop and have an
+AI assistant ready to prompt — any chat app you already use is fine.
 -->
 
 ---
@@ -202,24 +205,25 @@ inside. Today we let it out.
 <img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
 <!--
-A short introduction about me. Before becoming a nomad I studied physics, and
-later econometrics — because I like to understand the world and describe it
-with math. That's the lens for today.
+A short introduction about me. [click] Before becoming a nomad I studied
+physics, and later econometrics — because I like to understand the world and
+describe it with math. That's the lens for today.
 
-My early career was in the Dutch high-tech industry. Back then we joked that
-ASML was the most important tech company you've never heard of. Now people
-know it from the stock charts — for who doesn't: they make the machines that
-make chips. The stuff all those AI data centers run on. So in a way I've seen
-this wave coming from the factory side.
+[click] My early career was in the Dutch high-tech industry. Back then we
+joked that ASML was the most important tech company you've never heard of.
+Now people know it from the stock charts — for who doesn't: they make the
+machines that make chips. The stuff all those AI data centers run on. So in a
+way I've seen this wave coming from the factory side.
 
-But like most of you, I didn't want to live in one place — so I went remote,
-freelancing for startups and research institutes. And now AI has become so
-capable that I'm building a personal human-and-software agency with it, and
-I've started a master's in AI to get back closer to my roots.
+[click] But like most of you, I didn't want to live in one place — so I went
+remote, freelancing for startups and research institutes. And now AI has
+become so capable that I'm building a personal human-and-software agency with
+it. [click] And I've started a master's in AI, to get back closer to my
+roots.
 
-One more thing — AI pulls us MORE behind the computer, while most of us want
-less of that. So for me the balance is outdoors, sports, community. If that
-resonates: find me on board, I also run the morning workouts. [beat]
+[click] One more thing — AI pulls us MORE behind the computer, while most of
+us want less of that. So for me the balance is outdoors, sports, community.
+If that resonates: find me on board, I also run the morning workouts. [beat]
 -->
 
 ---
@@ -244,9 +248,12 @@ resonates: find me on board, I also run the morning workouts. [beat]
 So here's the plan — three sections, and each title is a claim I'm going to
 prove to you.
 
-One: AI is not new. Two: an LLM is statistics built on our written world —
-sounds cryptic now, it won't in half an hour. Three: AI tools are cars around
-the same engine.
+[click] One: AI is not new. [click] Two: an LLM is statistics built on our
+written world — sounds cryptic now, it won't in half an hour. [click] Three:
+AI tools are cars around the same engine.
+
+[click] One honest note before we sail: AI is much more than LLMs — but the
+chat-style AI is what everyone here uses, so that's our focus today.
 -->
 
 ---
@@ -293,11 +300,11 @@ the same engine.
 But this is a workshop — so we will get active as well. Don't worry: we'll only
 do some prompting here, so you don't need anything fancy set up.
 
-Here's the deal. The talk has three sections. During each one, I challenge you
-to write down at least one question. Something you don't understand, something
-that makes you wonder, something you want to know more about — it can be
-anything. And after each section, you get five minutes to ask that question…
-to AI. And to learn from the answer.
+[click] Here's the deal. The talk has three sections. During each one, I
+challenge you to write down at least one question. Something you don't
+understand, something that makes you wonder, something you want to know more
+about — it can be anything. [click] And after each section, you get five
+minutes to ask that question… to AI. And to learn from the answer.
 
 Any chat app you already have on your phone works — ChatGPT, Claude, Gemini,
 the free tier is fine.
@@ -366,21 +373,23 @@ fly-over.
 
 <!--
 First: what even IS intelligence? There's no agreed definition — even the
-experts disagree. But look at nature: [clicks] a bee finding the shortest route,
-an octopus opening a jar, a dolphin recognising itself in a mirror, a crow
-bending a wire into a hook. All intelligent — in very different degrees.
+experts disagree. But look at nature: [click] us, obviously. [click] An
+octopus, opening a jar from the inside. [click] A flytrap that only snaps
+shut after it counts TWO touches. [click] Even slime mold — no brain at all —
+finds the shortest route through a maze. [click] All intelligent — in very
+different degrees.
 
 [click — the definition] A workable definition, borrowed from the AI textbook:
 perception, processing, action. You take something in, you do something with
 it, you act. And you need that action to OBSERVE intelligence — a brain in a
 jar shows you nothing.
 
-[click — artificial row] Now the artificial versions, and notice they're also
-in degrees: a calculator — fast but blind. A chess computer — brilliant at ONE
-thing. A self-driving car — perceives, decides, acts in the real world. A
-humanoid robot — reaching for something more general. From narrow to general —
-and at the far end of that dial sits the field's ultimate ambition: AGI, a
-machine that can do everything a human can.
+[click] Now the artificial versions — and notice they also come in degrees:
+[click] a calculator — fast but blind. [click] A chess computer — brilliant
+at ONE thing. [click] A self-driving car — perceives, decides, acts in the
+real world. [click] From narrow to general — and at the far end of that dial
+sits the field's ultimate ambition: AGI, a machine that can do everything a
+human can.
 -->
 
 ---
@@ -437,19 +446,24 @@ machine that can do everything a human can.
 
 
 <!--
-Humans have wanted to build thinking machines for centuries. Leibniz, sixteen
-hundreds — the dream: arguments settled by computation, "calculemus", let us
-calculate. Turing helped invent the computer itself — and the moment it existed, he asked:
-can it think? The computer and the question were born together. 1950 — that's
-the Turing test.
+[click] Humans have wanted to build thinking machines for centuries. Leibniz,
+sixteen hundreds — the dream: arguments settled by computation, "calculemus",
+let us calculate. [click] Turing helped invent the computer itself — and the
+moment it existed, he asked: can it think? The computer and the question were
+born together. 1950 — that's the Turing test.
 
-1956 — the field gets its name at a summer workshop in Dartmouth. Fun detail:
-the founders genuinely thought a handful of researchers could crack it in ONE
-summer. (Spoiler: that optimism sets up the first winter.)
+[click] 1956 — the field gets its name at a summer workshop in Dartmouth. Fun
+detail: the founders genuinely thought a handful of researchers could crack
+it in ONE summer. (Spoiler: that optimism sets up the first winter.)
 
-1997 — the proof of concept: Deep Blue beats the world chess champion. But
-notice: it beat the world champion at exactly ONE thing — it couldn't even play
-tic-tac-toe. The exact opposite of that AGI ambition we just met.
+[click] 1997 — the proof of concept: Deep Blue beats the world chess
+champion. But notice: it beat the world champion at exactly ONE thing — it
+couldn't even play tic-tac-toe. The exact opposite of that AGI ambition we
+just met.
+
+[click] And from the nineties on, AI quietly moved into your daily life:
+Google Maps picking your route, Netflix picking your evening, Face ID
+unlocking your phone. You've used AI for years without calling it that.
 
 So no, this did not start with ChatGPT. This dream is older than most of us.
 -->
@@ -499,16 +513,17 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
 <!--
-But the road was bumpy. AI moves in summers and winters: big promises, money
-floods in… results disappoint… funding dries up — winter. Twice.
+But the road was bumpy. AI moves in summers and winters. Twice.
 
-First winter, mid-70s: the algorithms simply hit a wall — the ideas were there,
-the methods weren't good enough. Second winter, around 1990: not enough data,
-not enough compute. Remember those two — they matter in a minute.
-
-But notice the shape: every winter was followed by a breakthrough that pulled
-the money — and the belief — right back in. The dream never died; it just kept
+[click] And it's always the same cycle: big promises, money floods in…
+results disappoint… funding dries up — freeze. Until a breakthrough pulls the
+money — and the belief — right back in. The dream never died; it just kept
 waiting for the pieces to arrive.
+
+[click] First winter, mid-70s: the algorithms simply hit a wall — the ideas
+were there, the methods weren't good enough. Second winter, around 1990: not
+enough data, not enough compute. Remember those two — they matter in a
+minute.
 
 And right now? We're in the hottest summer the field has ever had.
 -->
@@ -532,15 +547,11 @@ And right now? We're in the hottest summer the field has ever had.
 <img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
 
 <!--
-[click — everyday AI] Before the "why now": you've actually used AI for years
-without calling it that. Your spam filter. Google Translate. The picks Netflix
-and Spotify make for you. Face ID unlocking your phone. That's all AI. So when
-I say LLMs are only a small SLICE of AI — this is what I mean.
-
-[click — three igniters] So why did THIS summer explode, after seventy years?
-Three things arrived together. One: a new recipe — the transformer, one paper
-from 2017. Two: hardware — GPUs, built for gaming, perfect for this math.
-Three: data — the internet finally produced enough text to learn language from.
+So why did THIS summer explode, after seventy years? Three things arrived
+together. [click] One: a new recipe — the transformer, one paper from 2017.
+[click] Two: hardware — GPUs, built for gaming, perfect for this math.
+[click] Three: data — the internet finally produced enough text to learn
+language from.
 
 And here's the beautiful part: remember the two winters? Every winter was a
 missing ingredient — better algorithms, more compute, more data. All three have
@@ -594,7 +605,7 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 <!--
 Take out your phone. Look at the question you wrote down — or borrow one of
 mine. Ask it to any AI you have. Read the answer. Then ask ONE follow-up on
-whatever surprises you.
+whatever surprises you. [click — starts the five-minute clock]
 
 I'll walk around — wave at me if you want help or want to show me something.
 
@@ -763,7 +774,7 @@ through the dots; a space you just can't picture anymore.
 [Armor: "dimensions" here = the embedding width, how many numbers describe
 one token (GPT-2: 768, GPT-3: 12,288 — both from the papers; frontier
 models are bigger still, e.g. Llama 3 405B: 16,384). Not the parameter
-count — that's slide 22's 124M.]
+count — that's the file-of-numbers slide's 124M.]
 
 [Armor, only if a sharp attendee pushes: strictly, picking the next word
 from a vocabulary is CLASSIFICATION — closer to logistic than linear
@@ -1006,42 +1017,50 @@ class: t18-slide
 
 <!--
 So how do all those weights get their values? Nobody types them in — they
-are LEARNED. That's training. And this surprises people: the numbers start
-RANDOM. Pure noise. [click] Then the loop begins: the model predicts the
-next word of a real sentence — real text we feed it — compares its guess
-with the real next word, and gets an ERROR SCORE — one number that says how wrong it was. [The math term,
-if anyone asks: the cost function.] And every number gets a tiny nudge in
-the direction that shrinks that score. Then again. And again — billions of
-times.
+are LEARNED. That's training. And this surprises people: [click] the numbers
+start RANDOM. Pure noise.
+
+[click] Then the loop begins. Feed it a real sentence — real text we already
+have. [click] The model computes the next token — exactly the kind of list
+you've been seeing. [click] Compare that with the REAL next token, and you
+get an ERROR SCORE — one number that says how wrong it was. [The math term,
+if anyone asks: the cost function.] [click] Then every weight gets a tiny
+nudge in the direction that shrinks that score. [click] And round it goes
+again. And again — billions of times. [click] That is the entire goal:
+minimize the error score.
 
 [Stress "in the RIGHT direction": trial and error, but GUIDED, not blind —
-the error score tells it which way to turn each dial. That's why it
+the error score tells it which way to nudge each weight. That's why it
 converges instead of wandering forever.]
 
-[Visual: "We sail the transatlantic ___" (right word: ocean). Three
-snapshots of the model's output list. Key point to SAY: the model doesn't
-answer with one word — it gives EVERY word in its vocabulary a percentage,
-and the error score is simply "how much did it give the RIGHT word?".
-Round 1, random weights: every word ~0.002%, "apple" only happens to sit on
-top — that's what random looks like. Round ~1M: plausible words are rising,
-ocean is climbing. Round ~1B: ocean on top at 61% — and never 100%, because
-"sea" would have been fine too. Each column is not one dial-turn but
-millions of tiny nudges later. And this runs for many sentences at once —
-the errors are averaged, one nudge per batch. That's what the GPUs are for.]
+[click] Let's watch it happen on one data sentence: "We sail the
+transatlantic ___" — right answer: ocean. Key point to SAY: the model
+doesn't answer with one token — it gives EVERY token in its vocabulary a
+percentage, and the error score is simply "how much did it give the RIGHT
+one?".
+
+[click] Round 1, random weights: everything around 0.002%, "apple" only
+happens to sit on top — that's what random looks like. Error: 10.8.
+[click] Round ~1 million: plausible words are rising, ocean is climbing.
+[click] Round ~1 billion: ocean on top at 61% — and never 100%, because
+"sea" would have been fine too. Each column is not one nudge but millions of
+tiny nudges later. And this runs for many sentences at once — the errors are
+averaged, one nudge per batch. That's what the GPUs are for.
 
 [Numbers are indicative — except 10.8, which is the exact error of a blind
-guess over 50,000 words (ln 50,000). If anyone asks: that's cross-entropy.]
+guess over 50,000 tokens (ln 50,000). If anyone asks: that's cross-entropy.]
 
-Picture a machine with billions of tiny dials. Training is the machine turning
-its OWN dials, a tiny nudge per example. "Who turns billions of
-dials?!" — nobody! That's the point. Nobody programs the numbers in. The
-machine adjusts them itself, from data. THAT is why it's called machine
-learning. No mysticism required.
+[click] Picture it: a machine with billions of tiny dials, turning its OWN
+dials — a tiny nudge per example. "Who turns billions of dials?!" — nobody!
+That's the point. Nobody programs the numbers in. The machine adjusts them
+itself, from data. THAT is why it's called machine learning. No mysticism
+required.
 
-Important: it kept the patterns, not the pages. You can't pull the original
-books back out of the file — though rare memorized snippets exist, which is
-exactly what those lawsuits are about. And because it starts random, every
-training run ends up slightly different — no two models are ever the same.
+[click] Important: it kept the patterns, not the pages. You can't pull the
+original books back out of the file — though rare memorized snippets exist,
+which is exactly what those lawsuits are about. And because it starts
+random, every training run ends up slightly different — no two models are
+ever the same.
 
 Doing billions of nudges on trillions of words is only possible in parallel.
 That's the GPUs. That's the data centers. That's why ASML machines matter.
@@ -1159,24 +1178,24 @@ someone says "the AI said so."
 <img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" style="bottom:2.6rem;" />
 
 <!--
-And when all that training is done — my favorite moment — the model is
-FROZEN. The parameters are saved, and that's it. A model is just a gigantic
-file of numbers. How gigantic: GPT-2 has 124 million (that's 10 to the
-8th), today's frontier models sit around a trillion (10 to the 12th).
+And when all that training is done — my favorite moment — [click] the model
+is FROZEN. The parameters are saved, and that's it. A model is just a
+gigantic file of numbers. How gigantic: GPT-2 has 124 million (that's 10 to
+the 8th), today's frontier models sit around a trillion (10 to the 12th).
 
-This is not an artist impression: these are real weights I pulled out of a
-real model, GPT-2 — here are sixty of them, as they sit in the file. And
-here is the same file drawn as an image — every pixel is one learned
-number. [If asked what the two panels are: the left panel is a slice of the
-connection weights inside the network (attention, layer 5); the right panel
-is the token table — one row per token. The pale band in it = rare tokens
-the model barely saw during training. You can literally SEE training in the
-file.]
+[click] This is not an artist impression: these are real weights I pulled
+out of a real model, GPT-2 — here are sixty of them, as they sit in the
+file. [click] And here is the same file drawn as an image — every pixel is
+one learned number. [If asked what the two panels are: the left panel is a
+slice of the connection weights inside the network (attention, layer 5); the
+right panel is the token table — one row per token. The pale band in it =
+rare tokens the model barely saw during training. You can literally SEE
+training in the file.]
 
 One file. No database inside, no internet inside, no little person
-inside — it's all pressed into the numbers. When people say a model is
-"open source", this is what they mean: you can download the file and run it
-on your own machine. Closed models: the parameters are secret — the
+inside — it's all pressed into the numbers. [click] When people say a model
+is "open source", this is what they mean: you can download the file and run
+it on your own machine. Closed models: the parameters are secret — the
 file stays with the provider, and it runs on their servers. [If someone
 pushes on "is the model just
 the file?": strictly it's this file PLUS a small, generic program that runs
@@ -1276,7 +1295,7 @@ Percentages, all the way down. Sound familiar? That's… statistics.
 Now — here's where I have to be honest with you, because something strange
 happens at this scale.
 
-[click] We train it to do ONE thing: predict the next word. And abilities
+[click] We train it to do ONE thing: predict the next token. And abilities
 appear that nobody put in. It translates. It reasons through problems. It
 writes working code. Nobody designed those features — they emerged from the
 statistics, at scale. Even the makers were surprised.
@@ -1284,7 +1303,7 @@ statistics, at scale. Even the makers were surprised.
 [click] The field calls it emergence: it can do things it wasn't designed
 for. It codes. My favourite example: GPT-4 passed the bar exam — the American
 law exam. Nobody taught it law, there is no law module in there. It got very
-good at predicting the next word, and somewhere along the way, passing the
+good at predicting the next token, and somewhere along the way, passing the
 bar exam… emerged. And the same family of ideas, pointed at the language of
 proteins instead of English, now predicts protein structures — that one won
 the Nobel Prize in Chemistry in 2024.
@@ -1516,7 +1535,7 @@ Round two — same game. Look at the question you wrote down — or borrow one
 of mine. Ask it to any AI you have. Read the answer. Then ask ONE follow-up
 on whatever surprises you — "why?", "give me an example", "explain that
 simpler". Not being satisfied with the first answer is the second half of
-the skill.
+the skill. [click — starts the five-minute clock]
 
 I'll walk around — wave at me if you want help or want to show me something.
 
