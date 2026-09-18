@@ -633,8 +633,9 @@
   line-height: 1.15; flex: none;
 }
 .ig-n::after { content: '.'; }
+.ig-txt { width: fit-content; }
 .ig-txt b { font-size: 2.1rem; line-height: 1.15; }
-.ig-txt span { color: var(--talk-accent); font-size: 1.5rem; }
+.ig-txt span { color: var(--talk-accent); font-size: 1.5rem; margin-left: 0.5rem; }
 .ig-txt .ref { font-size: 0.82rem; margin-top: 0.55rem; text-align: right; }
 .llm-note { color: #8fcbab; font-size: 1.1rem; }
 .example-inset {
@@ -686,7 +687,7 @@
 .tl-you-flex .tl-label { color: #8fcbab; flex: none; }
 .tl-you-flex .eb-year { color: #8fcbab; flex: none; }
 
-.ex-bubble { right: 4rem; left: auto; bottom: 11.4rem; text-align: left; max-width: 16rem; font-style: normal; font-size: 0.82rem; padding: 0.55rem 0.85rem; line-height: 1.35; }
+.ex-bubble { right: 4rem; left: auto; bottom: 11.4rem; text-align: left; max-width: 16rem; font-style: normal; font-size: 0.85rem; padding: 0.6rem 0.9rem; line-height: 1.4; border-radius: 1.1rem; }
 .ex-bubble b { color: var(--talk-accent); font-size: 1rem; }
 
 .ex-bubble::after { left: auto; right: 1.4rem; }

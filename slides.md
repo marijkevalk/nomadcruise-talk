@@ -462,7 +462,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <hr class="rule" />
 
 <div style="text-align:center;">
-<svg viewBox="0 28 600 212" class="winters" style="height:17rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="0 12 660 234" class="winters" style="height:17.5rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
   <defs>
     <marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
     <g id="sun"><circle r="9" fill="none" stroke="#e3b04b" stroke-width="2.4"/><g stroke="#e3b04b" stroke-width="2.4" stroke-linecap="round"><line y1="-13" y2="-16.5"/><line y1="13" y2="16.5"/><line x1="-13" x2="-16.5"/><line x1="13" x2="16.5"/><line x1="-9.2" y1="-9.2" x2="-11.7" y2="-11.7"/><line x1="9.2" y1="9.2" x2="11.7" y2="11.7"/><line x1="9.2" y1="-9.2" x2="11.7" y2="-11.7"/><line x1="-9.2" y1="9.2" x2="-11.7" y2="11.7"/></g></g>
@@ -475,10 +475,12 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
   <use href="#snow" transform="translate(285,192) scale(1.3)"/>
   <use href="#snow" transform="translate(490,192) scale(1.3)"/>
   <g v-click="2">
-    <text x="285" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1970s</text>
-    <text x="285" y="230" fill="#9a917f" font-size="11" text-anchor="middle">algorithms stalled</text>
-    <text x="490" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1990s</text>
-    <text x="490" y="230" fill="#9a917f" font-size="11" text-anchor="middle">too little data</text>
+    <path d="M520,150 Q562,140 590,104 Q622,66 650,46" fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrHead)"/>
+    <text x="606" y="40" fill="#e3b04b" font-size="20" font-weight="bold" text-anchor="middle">now</text>
+    <text x="285" y="220" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1970s</text>
+    <text x="285" y="238" fill="#cfc9bb" font-size="12" text-anchor="middle">algorithms stalled</text>
+    <text x="490" y="220" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1990s</text>
+    <text x="490" y="238" fill="#cfc9bb" font-size="12" text-anchor="middle">too little data · weak hardware</text>
   </g>
 </svg>
 </div>
@@ -651,7 +653,11 @@ better. Hold on to that instinct today.]
 Next one: "From Southampton, the ship sails across the Atlantic to New…" —
 [York!] — very good, you clearly read the brochure.
 
-"A transatlantic crossing takes…" — [seven days!]
+"A transatlantic crossing takes…" — [6! 7! 8!]
+
+[If the room shouts DIFFERENT numbers — that's a gift, use it:] Hear that?
+Different answers! Same question, different completions. Remember that —
+we'll come back to it at the end of this section.
 
 Congratulations. You just did — literally — what an LLM does: you predicted
 the next word from the previous words. That's the entire job description.
