@@ -1309,7 +1309,7 @@ a word is <i>always</i> drawn —<br>even when there is <b>no clear answer</b>
 
 
 
-<img :src="'/art/tovenaar-13-facepalm.svg'" class="mage" style="top:2.2rem; right:2.6rem; bottom:auto; height:7rem;" />
+<img :src="'/art/tovenaar-13-facepalm.svg'" class="mage" style="top:5rem; right:1.6rem; bottom:auto; height:7rem;" />
 
 <!--
 Here's something that should puzzle you. The model is a frozen file — same
