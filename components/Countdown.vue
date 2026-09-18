@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, watch, onBeforeUnmount } from 'vue'
 const props = defineProps<{ minutes?: number, run?: boolean }>()
 const left = ref((props.minutes ?? 5) * 60)
 let timer: any = null
@@ -8,10 +8,17 @@ function fmt(s: number) {
   const ss = (s % 60).toString().padStart(2, '0')
   return `${m}:${ss}`
 }
-onMounted(() => {
-  if (props.run) timer = setInterval(() => { if (left.value > 0) left.value-- }, 1000)
-})
-onBeforeUnmount(() => timer && clearInterval(timer))
+function start() {
+  if (timer) return
+  timer = setInterval(() => {
+    if (left.value > 0) left.value--
+    else { clearInterval(timer); timer = null }
+  }, 1000)
+}
+function stop() { if (timer) { clearInterval(timer); timer = null } }
+// react to `run` toggling (e.g. bound to a slide click), so a click starts it
+watch(() => props.run, (r) => { r ? start() : stop() }, { immediate: true })
+onBeforeUnmount(stop)
 </script>
 
 <template>

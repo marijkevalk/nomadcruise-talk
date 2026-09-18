@@ -340,7 +340,7 @@ fly-over.
     <figure class="intel-cell" v-click="4"><img :src="'/photos/nat-slimemold.jpg'" /><figcaption>slime mold</figcaption></figure>
     <figure class="intel-cell" v-click="3"><img :src="'/photos/nat-flytrap.jpg'" /><figcaption>plant</figcaption></figure>
     <figure class="intel-cell" v-click="2"><img :src="'/photos/nat-octopus.jpg'" /><figcaption>octopus</figcaption></figure>
-    <figure class="intel-cell" v-click="1"><img :src="'/photos/oldcouple.jpg'" /><figcaption>human</figcaption></figure>
+    <figure class="intel-cell" v-click="1"><img :src="'/photos/nat-human.jpg'" style="object-position:50% 30%;" /><figcaption>human</figcaption></figure>
   </div>
 </div>
 
@@ -355,9 +355,9 @@ fly-over.
   <div class="intel-row intel-row-ai">
     <div class="intel-side" v-click="7">Artificial intelligence<br>in different <b class="accent">degrees</b></div>
     <figure class="intel-cell" v-click="8"><img :src="'/photos/ai-calculator.jpg'" /><figcaption>calculator</figcaption></figure>
-    <figure class="intel-cell" v-click="8"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
-    <figure class="intel-cell" v-click="8"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
-    <div class="agi-box" v-click="9"><span class="agi-abbr">AGI</span><span class="agi-full">Artificial<br>General<br>Intelligence</span></div>
+    <figure class="intel-cell" v-click="9"><img :src="'/photos/deepblue.jpg'" /><figcaption>chess computer</figcaption></figure>
+    <figure class="intel-cell" v-click="10"><img :src="'/photos/ai-selfdriving.jpg'" /><figcaption>self-driving car</figcaption></figure>
+    <div class="agi-box" v-click="11"><span class="agi-abbr">AGI</span><span class="agi-full">Artificial<br><b>General</b><br>Intelligence</span></div>
   </div>
 </div>
 
@@ -386,7 +386,7 @@ machine that can do everything a human can.
 
 <div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-# As old as the computer
+# As old as the Computer
 
 <hr class="rule" />
 
@@ -394,7 +394,7 @@ machine that can do everything a human can.
   <div class="tl2-row">
     <div class="tl2-txt">
       <div class="tl2-label">dream</div>
-      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i> · let us calculate <span class="dim">(thinking by a machine)</span></div>
+      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i>, let us calculate <span class="dim">(thinking by a machine)</span></div>
       <div class="tl2-ref">Leibniz, <i>De Arte Combinatoria</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
@@ -410,7 +410,7 @@ machine that can do everything a human can.
   <div class="tl2-row">
     <div class="tl2-txt">
       <div class="tl2-label">name</div>
-      <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i>"summer project"</i> names the field AI <span class="dim">· one summer?!</span></div>
+      <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i>"summer project"</i> names the field AI <span class="dim">(one summer?!)</span></div>
       <div class="tl2-ref">Dartmouth Workshop, 1956</div>
     </div>
     <img class="tl2-img" :src="'/photos/dartmouth.jpg'" />
@@ -426,7 +426,7 @@ machine that can do everything a human can.
   <div class="tl2-row">
     <div class="tl2-txt">
       <div class="tl2-label">use cases</div>
-      <div class="tl2-main"><span class="tl2-year">90s →</span> the AI you already use <span class="dim">· spam filters · Translate · Netflix</span></div>
+      <div class="tl2-main"><span class="tl2-year">90s →</span> the AI you already use <span class="dim">· Maps routes · Netflix picks · Face ID</span></div>
     </div>
     <img class="tl2-img" :src="'/photos/datacenter.jpg'" />
   </div>
@@ -468,10 +468,10 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
   </defs>
   <path d="M20,150 L70,150 Q110,150 130,120 Q150,90 175,90 Q200,90 220,120 Q245,155 285,155 Q320,155 345,120 Q372,85 400,85 Q428,85 452,120 Q485,158 520,150"
         fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <use href="#sun" transform="translate(175,64) scale(1.35)"/>
-  <use href="#sun" transform="translate(400,59) scale(1.35)"/>
-  <use href="#snow" transform="translate(285,184) scale(1.3)"/>
-  <use href="#snow" transform="translate(490,184) scale(1.3)"/>
+  <use href="#sun" transform="translate(175,56) scale(1.35)"/>
+  <use href="#sun" transform="translate(400,51) scale(1.35)"/>
+  <use href="#snow" transform="translate(285,192) scale(1.3)"/>
+  <use href="#snow" transform="translate(490,192) scale(1.3)"/>
   <g v-click="2">
     <text x="285" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1970s</text>
     <text x="285" y="230" fill="#9a917f" font-size="11" text-anchor="middle">algorithms stalled</text>
@@ -481,7 +481,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 </svg>
 </div>
 
-<div v-click="[1,2]" class="flow-cycle">money in <span class="fa">➔</span> hype <span class="fa">➔</span> disappointment <span class="fa">➔</span> freeze <span class="fa">➔</span> a breakthrough <span class="fa">➔</span> repeat</div>
+<div v-click="[1,2]" class="flow-cycle">money in <span class="fa">➔</span> hype <span class="fa">➔</span> disappointment <span class="fa">➔</span> freeze <span class="fa">➔</span> a breakthrough <span class="fa">➔</span> repeat …</div>
 
 <img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
@@ -510,7 +510,7 @@ And right now? We're in the hottest summer the field has ever had.
 
 <div class="igniters">
   <div class="ig" v-click="1"><span class="ig-n">1</span><div class="ig-txt"><b>New LLM architecture</b> <span>the transformer, 2017</span><div class="ref">Vaswani et al., "Attention Is All You Need"</div></div></div>
-  <div class="ig" v-click="2"><span class="ig-n">2</span><div class="ig-txt"><b>Better hardware</b> <span>GPUs, built for gaming</span></div></div>
+  <div class="ig" v-click="2"><span class="ig-n">2</span><div class="ig-txt"><b>Better hardware</b> <span>GPUs, from gaming</span></div></div>
   <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>More data</b> <span>the internet finally had enough text</span></div></div>
 </div>
 
@@ -548,7 +548,8 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 
 # <span class="green-title">Ask AI a question</span>
 
-<Countdown :minutes="5" :run="true" class="clock-lg" />
+<Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
+<span v-click></span>
 
 <hr class="rule" />
 
