@@ -1142,7 +1142,7 @@ someone says "the AI said so."
 
 <div class="fon-after mt-3">After training <svg class="fon-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Model is frozen</b> (= Parameters are saved)</div>
 
-<div class="dg-green mt-2" style="max-width:47rem; font-size:1.08rem; padding:0.5rem 1.1rem; line-height:1.45;">
+<div class="dg-note mt-2" style="max-width:47rem; font-size:1.08rem; padding:0.5rem 1.1rem; line-height:1.45;">
   <div><b>Open source:</b> Free to download these files and run on your own computer</div>
   <div class="mt-1"><b>Closed:</b> Model specifications are secret and it runs on the provider's servers</div>
 </div>
@@ -1598,7 +1598,7 @@ clicks: 4
 
 <S3Diagram :stage="2" :c="$clicks" />
 
-<div class="s3-legend"><span><span class="chip chip-gold"></span>model supplier</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-green"></span>you</span></div>
+<div class="s3-legend"><span><span class="chip chip-gold"></span>model supplier</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-blue"></span>you</span></div>
 
 <!--
 Have you ever driven an engine to the supermarket? Around the engine someone
@@ -1621,7 +1621,7 @@ engine. Cursor, Perplexity — and most AI startups you'll see pitched,
 including on this boat. The industry word is a WRAPPER. Not an insult — good
 cars are genuinely hard to build. But now you know what you're looking at.
 
-[click] Flavour three, green: you. Through the API you can build your own car
+[click] Flavour three, blue: you. Through the API you can build your own car
 around those very same engines. And harnesses NEST: my own assistant wraps
 Claude Code, which wraps the model. A car that carries smaller cars.
 
@@ -1685,14 +1685,14 @@ clicks: 2
 
 <S3Diagram :stage="4" :c="$clicks" />
 
-<div class="s3-legend"><span><span class="chip chip-gold"></span>model supplier</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-green"></span>you</span></div>
+<div class="s3-legend"><span><span class="chip chip-gold"></span>model supplier</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-blue"></span>you</span></div>
 
 <!--
 Last layer: the rules.
 
 [click] Every shell adds its own guardrails — what it will and won't do. The
 lab bakes safety rules into its own harness. The wrapper adds its own on
-top. And in your own harness the green lock is YOURS: your checks, your
+top. And in your own harness the blue lock is YOURS: your checks, your
 rules, in plain predictable code.
 
 [click] People constantly try to talk models past those rules — that's
@@ -1715,7 +1715,7 @@ clicks: 5
 <div class="s3-zoo">
   <div v-click="1"><div class="zh gold-t">ENGINE BUILDERS</div><div class="zn gold-t">OpenAI</div><div class="zn gold-t">Anthropic</div><div class="zn gold-t">Google</div><div class="zn gold-t">Mistral</div></div>
   <div v-click="2"><div class="zh">CARS YOU DRIVE</div><div class="zn gold-t">ChatGPT</div><div class="zn gold-t">Claude</div><div class="zn gold-t">Gemini</div><div class="zn purple-t">Perplexity</div><div class="zn purple-t">Notion AI</div><div class="zn purple-t">Cursor</div></div>
-  <div v-click="3"><div class="zh green-t2">BUILD YOUR OWN</div><div class="zn green-t2">Zapier</div><div class="zn green-t2">n8n</div><div class="zn green-t2">LangChain</div><div class="zn green-t2">the API</div></div>
+  <div v-click="3"><div class="zh blue-t2">BUILD YOUR OWN</div><div class="zn blue-t2">Zapier</div><div class="zn blue-t2">n8n</div><div class="zn blue-t2">LangChain</div><div class="zn blue-t2">the API</div></div>
 </div>
 
 <img :src="'/art/s3-anatomy-echo.svg'" class="s3-echo" />
@@ -1735,7 +1735,7 @@ Google, Mistral.
 Claude, Gemini. Some by third parties — Perplexity, Notion AI, Cursor. You
 can name the colour of every logo on this shelf now.
 
-[click] And green: where you build your own — Zapier, n8n, LangChain, or
+[click] And blue: where you build your own — Zapier, n8n, LangChain, or
 straight through the API.
 
 New tools will launch next week, and the week after. Doesn't matter. Every

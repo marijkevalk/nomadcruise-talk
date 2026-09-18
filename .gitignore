@@ -2,3 +2,4 @@ node_modules/
 dist/
 .slidev/
 release.sh
+dist-verify/
