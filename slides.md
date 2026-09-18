@@ -1213,7 +1213,7 @@ it — but all the knowledge is in the file.]
   <span class="inf-word" v-click="11">York</span>
 </div>
 
-<div v-click="11" class="mt-4" style="font-size:1.25rem; color:var(--ink);">One <b>token</b> at a time</div>
+<div v-click="6" class="mt-4" style="font-size:1.25rem; color:var(--ink);">One <b>token</b> at a time</div>
 
 
 
