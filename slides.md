@@ -175,7 +175,7 @@ inside. Today we let it out.
     <div class="q tr" v-click="2">
       <div class="q-item">
         <svg class="q-icon" viewBox="0 0 24 24" fill="none" stroke="#f0e6d2" stroke-width="1.5" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10.5" y="10.5" width="3" height="3"/><g stroke-linecap="round"><line x1="9.5" y1="7" x2="9.5" y2="4"/><line x1="14.5" y1="7" x2="14.5" y2="4"/><line x1="9.5" y1="17" x2="9.5" y2="20"/><line x1="14.5" y1="17" x2="14.5" y2="20"/><line x1="7" y1="9.5" x2="4" y2="9.5"/><line x1="7" y1="14.5" x2="4" y2="14.5"/><line x1="17" y1="9.5" x2="20" y2="9.5"/><line x1="17" y1="14.5" x2="20" y2="14.5"/></g></svg>
-        <div class="q-txt"><b>Mathware / R&D Engineer</b><span>ASML · Philips</span></div>
+        <div class="q-txt"><b>Mathware R&D Engineer</b><span>ASML · Philips</span></div>
       </div>
     </div>
     <div class="q bl" v-click="4">
@@ -207,7 +207,7 @@ later econometrics — because I like to understand the world and describe it
 with math. That's the lens for today.
 
 My early career was in the Dutch high-tech industry. Back then we joked that
-ASML was the most unknown important company in the Netherlands. Now people
+ASML was the most important tech company you've never heard of. Now people
 know it from the stock charts — for who doesn't: they make the machines that
 make chips. The stuff all those AI data centers run on. So in a way I've seen
 this wave coming from the factory side.
@@ -463,7 +463,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <hr class="rule" />
 
 <div style="text-align:center;">
-<svg viewBox="0 12 660 278" class="winters" style="height:20.4rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="0 12 660 296" class="winters" style="height:20.4rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
   <defs>
     <marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
     <g id="sun"><circle r="9" fill="none" stroke="#e3b04b" stroke-width="2.4"/><g stroke="#e3b04b" stroke-width="2.4" stroke-linecap="round"><line y1="-13" y2="-16.5"/><line y1="13" y2="16.5"/><line x1="-13" x2="-16.5"/><line x1="13" x2="16.5"/><line x1="-9.2" y1="-9.2" x2="-11.7" y2="-11.7"/><line x1="9.2" y1="9.2" x2="11.7" y2="11.7"/><line x1="9.2" y1="-9.2" x2="11.7" y2="-11.7"/><line x1="-9.2" y1="9.2" x2="-11.7" y2="11.7"/></g></g>
@@ -482,7 +482,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
     <text x="285" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">algorithms stalled</text>
     <text x="490" y="240" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter 1990s</text>
     <text x="490" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">too little data</text>
-    <text x="490" y="280" fill="#cfc9bb" font-size="12" text-anchor="middle">weak hardware</text>
+    <text x="490" y="296" fill="#cfc9bb" font-size="12" text-anchor="middle">weak hardware</text>
   </g>
 </svg>
 </div>
@@ -626,28 +626,29 @@ right now.
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[1fr_1fr] gap-8 items-center">
+<div class="grid grid-cols-[0.8fr_1.2fr] gap-5 items-center">
 <div class="space-y-5 text-xl" style="font-family:'Fraunces',serif;">
   <p>"The Titanic hit an <span class="ans"><span v-click.hide="2">…</span><span v-click="2" class="fill-blue">iceberg</span></span>"</p>
-  <p v-click="3">"The Queen Mary 2 sails from<br>Southampton to New <span class="ans"><span v-click.hide="5">…</span><span v-click="5" class="fill-blue">York</span></span>"</p>
+  <p v-click="3">"The Queen Mary 2 sails<br>from Southampton to<br>New <span class="ans"><span v-click.hide="5">…</span><span v-click="5" class="fill-blue">York</span></span>"</p>
   <p v-click="6">"My favourite city in the world is …"<br><span v-click="8" class="fill-blue" style="font-size:0.95rem; font-style:normal;">no single winner &middot; take your pick</span></p>
 </div>
 <div v-click="1" class="relative">
-  <img :src="'/art/top5-titanic.png'" class="rounded w-full" style="max-height:13rem; object-fit:contain;" />
-  <img v-click="4" :src="'/art/top5.png'" class="rounded absolute inset-0 w-full" style="max-height:13rem; object-fit:contain; background:#0a0e1a;" />
-  <img v-click="7" :src="'/art/top5-city.png'" class="rounded absolute inset-0 w-full" style="max-height:13rem; object-fit:contain; background:#0a0e1a;" />
+  <div class="relative">
+    <img :src="'/art/top5-titanic.png'" class="rounded w-full" style="max-height:15rem; object-fit:contain;" />
+    <img v-click="4" :src="'/art/top5.png'" class="rounded absolute inset-0 w-full" style="max-height:15rem; object-fit:contain; background:#0a0e1a;" />
+    <img v-click="7" :src="'/art/top5-city.png'" class="rounded absolute inset-0 w-full" style="max-height:15rem; object-fit:contain; background:#0a0e1a;" />
+  </div>
+  <div class="dim" style="position:absolute; right:0.5rem; bottom:0.15rem; font-size:0.85rem; font-style:italic; opacity:0.75;">data from GPT-2</div>
 </div>
 </div>
 
-<div v-click="9" class="auto-arrow mt-2"><span class="arr">⟶</span>AUTOCOMPLETE</div>
+<div v-click="9" class="auto-arrow mt-1"><span class="arr">⟶</span>AUTOCOMPLETE</div>
 
 <div v-click="10" class="text-lg" style="color:#8fcbab;">LLM <span class="dim">=</span> Large Language Model <span class="dim">→</span> <b>autocomplete on steroids</b></div>
 
 
 
 <img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" style="top:1.4rem; right:1.6rem; bottom:auto; height:5.5rem;" />
-
-<div class="src-ref" style="font-size:0.95rem;">data from GPT-2</div>
 
 <!--
 Finish this sentence for me, all together: "The Titanic hit an…" — [iceberg!]
@@ -1484,155 +1485,228 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 -->
 
 ---
+clicks: 4
+---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
-# The anatomy of every AI tool
+# Models are the engines
 
-<div class="diagram mt-6 mx-auto">
-  <div v-click="3" class="ring guard"><span class="ring-label">Guardrails <span class="dim normal-case tracking-normal">· the company's rules</span></span>
-    <div v-click="2" class="ring harness"><span class="ring-label">Harness <span class="dim normal-case tracking-normal">· the car: chat window · memory · tools</span></span>
-      <div class="ring engine">LLM<br><span class="text-sm dim" style="font-family:'Inter',sans-serif;">the engine</span></div>
-    </div>
+<img :src="'/art/s3-engine-matrix.svg'" class="s3-matrix" />
+
+<div v-click="1" class="s3-foot">a higher version number = a new training run (new data): Opus 4.7 → 4.8</div>
+
+<div v-click="2" class="s3-specs">
+  <div class="sp-title">ENGINE SPECS</div>
+  <div class="sp-row"><span>parameters</span><span class="bar"></span></div>
+  <div class="sp-row"><span>training data</span><span class="bar"></span></div>
+  <div class="sp-row"><span>recipe</span><span class="bar"></span></div>
+  <div class="sp-secret">companies keep their info secret</div>
+</div>
+
+<S3Diagram :stage="1" :c="$clicks" />
+
+<!--
+You never actually use a raw model — you use products built around one. So
+let's meet the engines first.
+
+Each lab builds its own: Claude from Anthropic, GPT from OpenAI, Gemini from
+Google. Under the hood there are three REAL differences: what data went in,
+how big it's built, and the post-training. Different food, different
+upbringing — so they have different personalities. Don't choose one on
+reviews or benchmarks: run YOUR OWN task on two or three of them, ten
+minutes, done.
+
+And every engine comes in sizes. Big: smarter, but slower and pricier per
+answer. Small: fast and cheap. Pick by the trip — and route the easy bulk
+work to the small one. That's most of what "AI cost optimization" means.
+
+[click] Versions: a higher number is a NEW TRAINING RUN — new data, sometimes
+a new architecture. A newly trained engine, not a software patch.
+
+[click] And what exactly is IN them? They won't tell you. The parameter
+counts, the data mix, the training code, the compute bill, the post-training
+recipe — all secret. You get the horsepower, never the blueprints.
+
+[click] We take one engine with us — keep an eye on it, it stays exactly
+there for the rest of this section while we build around it.
+
+[click] One thing you CAN do to the engine itself: fine-tune it — train it
+further on YOUR OWN data, which really changes the weights. Powerful, rare —
+most people never open the hood. Everything else you'll ever do sits AROUND
+the engine. Next slide.
+-->
+
+---
+clicks: 4
+---
+
+<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
+
+# The harness: three flavours
+
+<div class="s3-left">
+  <div class="s3-lead">the harness is what gives you:</div>
+  <div class="s3-list">
+    <div>· chat window</div>
+    <div>· memory</div>
+    <div>· file access</div>
+    <div>· tools & search</div>
   </div>
-  <div v-click="4" class="ctx-arrow"><span class="accent font-semibold">your context →</span><br><span class="dim text-sm">prompt · your data · instructions</span></div>
+  <div v-click="4" class="s3-sys dim">…and it ships its own hidden system prompt · text placed before yours, that you never see</div>
 </div>
 
+<S3Diagram :stage="2" :c="$clicks" />
 
-
-<img :src="'/art/tovenaar-11-vergrootglas.svg'" class="mage mage-left" />
+<div class="s3-legend"><span><span class="chip chip-gold"></span>model supplier</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-green"></span>you</span></div>
 
 <!--
-In the middle sits the model — the file of numbers. Think of it as the ENGINE.
-Raw, powerful, useless on its own. Have you ever driven an engine to the
-supermarket?
+Have you ever driven an engine to the supermarket? Around the engine someone
+builds the car: the harness. The chat window, the memory that remembers your
+conversation, access to your files, the tools it can use — search, code, your
+calendar. Everything that makes the engine drivable.
 
-[click] So around the engine, companies build the car: the harness. The chat
-window, the memory that remembers your conversation, the tools it can use —
-search, code, your calendar. Everything that makes the engine drivable.
+And the harness comes in three flavours — watch the colours, they mean who
+built it.
 
-[click] Around THAT: guardrails. The company's safety rules — what it will and
-won't do. That layer belongs to the companies, and people constantly try to
-trick their way past it — that's called a jailbreak.
+[click] Flavour one, gold: the car from the model supplier itself. Claude the
+chat app and Claude Code — the programming tool — feel completely different.
+Same engine behind. ChatGPT the app and GPT: same trick. And note: the
+engine changes rarely, with a version number — the car changes weekly. When
+your app "gets an update", it's usually the car, not the engine. The app is
+not the model.
 
-[click] And then the last arrow is YOURS: the context. Your prompt, your
-documents, your instructions — what you feed in, fresh, every single time.
-The engine you can't change, the car you didn't build — but this steering
-wheel is always in your hands.
+[click] Flavour two, purple: a third party builds a car around someone else's
+engine. Cursor, Perplexity — and most AI startups you'll see pitched,
+including on this boat. The industry word is a WRAPPER. Not an insult — good
+cars are genuinely hard to build. But now you know what you're looking at.
+
+[click] Flavour three, green: you. Through the API you can build your own car
+around those very same engines. And harnesses NEST: my own assistant wraps
+Claude Code, which wraps the model. A car that carries smaller cars.
+
+[click] One more thing every car ships with: its own hidden SYSTEM PROMPT —
+text the harness places before yours, that you never see. That's often the
+real answer to "it suddenly behaves differently".
 -->
 
+---
+clicks: 5
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
-# Same model behind
+# Context: what flows in
 
-<hr class="rule" />
+<S3Diagram :stage="3" :c="$clicks" />
 
-<div class="grid grid-cols-[3fr_2fr] gap-10 items-start">
-<div class="rows text-lg">
-  <div>Claude chat & Claude Code · <b>same model behind</b> <span class="dim">(ChatGPT: same trick)</span></div>
-  <div v-click>most "AI startups" = a new car around someone else's engine <span class="dim">(a wrapper)</span></div>
-  <div v-click>the labs each build their <b>own engines</b>, in versions & sizes</div>
-</div>
-<div class="mt-2"><img :src="'/photos/engine.jpg'" class="photo h-44 w-full" /><div class="mini-credit">MG B V8 engine · CC BY 2.0</div></div>
-</div>
-
-
-
-<img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
+<div v-click="5" class="s3-close">context is your anti-hallucination lever · give it your facts instead of letting it guess</div>
 
 <!--
-Once you see the car-around-engine picture, the whole AI landscape snaps into
-focus.
+Third layer — and this one is always YOURS: context. Remember: the engine is
+a frozen file of numbers. It remembers NOTHING. Everything it knows about
+you arrives fresh, every single turn, through these taps.
 
-Claude the chat app and Claude Code — the programming tool — feel completely
-different. Same model behind. Different car, same engine. ChatGPT the app and
-the thousand products "powered by GPT"? Same trick.
+[click] Your prompt — plus the whole conversation so far, resent every turn.
+That's why a new chat is a blank slate: nothing flowed in yet.
 
-And most AI startups you see pitched — including on this boat — are a new car
-around someone else's engine. The industry word is a wrapper. That's not an
-insult, by the way: good cars are genuinely hard to build. But now you know
-what you're looking at — and what to ask about it.
+[click] Your standing instructions, and saved memory. No magic there: notes
+the harness pastes back into the window for you.
 
-The engines themselves come from a handful of labs — OpenAI, Anthropic,
-Google, Mistral — each with their own models, in versions and sizes. Big
-engine: smarter, pricier. Small engine: fast and cheap. Most of "AI cost
-optimization" is just: route the easy work to the small engine.
+[click] Your documents. You've all heard the buzzword RAG? Here's the entire
+secret: a tool that SEARCHES your documents and pastes what it finds into
+the prompt. That's it. That's all RAG is. One buzzword down. Same for search
+and tool results — everything lands in the same place.
+
+[click] That place is the CONTEXT WINDOW: everything the model can see right
+now. It has a size — fill it up and the oldest turns fall out; that's the
+"it forgot what I said" feeling. One well, many taps. And more is not
+better: relevance beats volume.
+
+[click] And here's the payoff from the hallucination story: context is your
+anti-hallucination lever. The river always flows — if you don't give it your
+facts, it will guess. You can't change the engine and you didn't build the
+car — but you're always the driver, and context is the wheel.
 -->
 
+---
+clicks: 2
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
-# Three ways to make it yours
+# Safety: rules in every shell
 
-<hr class="rule" />
-
-<div class="rows text-lg max-w-3xl">
-  <div><span class="big-num" style="font-size:1.6rem;">1</span>&ensp;<b>fine-tuning</b> · extra training data, changes the weights <span class="dim">(rare)</span></div>
-  <div v-click><span class="big-num" style="font-size:1.6rem;">2</span>&ensp;<b>harness</b> · build tools & memory around the engine</div>
-  <div v-click><span class="big-num" style="font-size:1.6rem;">3</span>&ensp;<b>context</b> · what <b>you</b> feed it, every call · <span class="accent">the only layer you always control</span></div>
-  <div v-click class="dim italic">"a tool that searches your documents and pastes what it finds into the prompt · that's all 'RAG' is"</div>
-  <div v-click class="accent">context is also your anti-hallucination lever: give it your facts instead of letting it guess</div>
+<div class="s3-left">
+  <div class="s3-lead">guardrails</div>
+  <div v-click="1">each layer adds its own rules:<br>what it will and won't do</div>
+  <div v-click="2" class="mt-8">talking the model past its rules<br><span class="accent">= a "jailbreak"</span></div>
 </div>
 
+<S3Diagram :stage="4" :c="$clicks" />
 
-
-<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" />
+<div class="s3-legend"><span><span class="chip chip-gold"></span>model supplier</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-green"></span>you</span></div>
 
 <!--
-So how do you make this thing YOURS? Three ways, from heavy to light.
+Last layer: the rules.
 
-One: fine-tuning — feed it extra training data and actually change the
-weights. Powerful, rare, you'll probably never need it.
+[click] Every shell adds its own guardrails — what it will and won't do. The
+lab bakes safety rules into its own harness. The wrapper adds its own on
+top. And in your own harness the green lock is YOURS: your checks, your
+rules, in plain predictable code.
 
-Two: build a better car — a harness with your tools and your memory around an
-engine. That's what half the products on this ship are.
+[click] People constantly try to talk models past those rules — that's
+called a JAILBREAK. It's an ongoing arms race, and it's exactly why these
+layers exist.
 
-Three — and this is the one for everyone in this room: context. What you feed
-it, every single call. Your background, your documents, your instructions.
-
-You've all heard the buzzword RAG? Here's the entire secret: a tool that
-searches your documents and pastes what it finds into the prompt. That's it.
-That's all RAG is. One buzzword down.
-
-And here's the payoff from the hallucination story: context is your
-anti-hallucination lever. Remember — the river always flows. If you don't
-give it your facts, it will guess. So give it your facts.
+And look at the picture now — it's complete. The engine. The cars around it.
+Your context steering in from outside. Rules in every shell. That is the
+anatomy of every AI tool you have ever opened — no exceptions.
 -->
 
+---
+clicks: 5
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # The tool zoo, sorted
 
-<hr class="rule" />
-
-<div class="strip text-lg">
-  <div><div class="font-semibold">cars you drive</div><div class="dim mt-2">ChatGPT · Claude · Gemini<br>Perplexity · Notion AI</div></div>
-  <div><div class="font-semibold">car factories</div><div class="dim mt-2">Zapier · n8n<br>Cursor · LangChain</div></div>
-  <div><div class="font-semibold">engine builders</div><div class="dim mt-2">OpenAI · Anthropic<br>Google · Mistral</div></div>
+<div class="s3-zoo">
+  <div v-click="1"><div class="zh gold-t">ENGINE BUILDERS</div><div class="zn gold-t">OpenAI</div><div class="zn gold-t">Anthropic</div><div class="zn gold-t">Google</div><div class="zn gold-t">Mistral</div></div>
+  <div v-click="2"><div class="zh">CARS YOU DRIVE</div><div class="zn gold-t">ChatGPT</div><div class="zn gold-t">Claude</div><div class="zn gold-t">Gemini</div><div class="zn purple-t">Perplexity</div><div class="zn purple-t">Notion AI</div><div class="zn purple-t">Cursor</div></div>
+  <div v-click="3"><div class="zh green-t2">BUILD YOUR OWN</div><div class="zn green-t2">Zapier</div><div class="zn green-t2">n8n</div><div class="zn green-t2">LangChain</div><div class="zn green-t2">the API</div></div>
 </div>
 
-<div class="mt-12 text-2xl accent" style="font-family:'Fraunces',serif;">Overwhelmed? It doesn't matter what you use exactly · just start.</div>
+<img :src="'/art/s3-anatomy-echo.svg'" class="s3-echo" />
+<div class="s3-echo-cap">you'll recognize the anatomy now</div>
 
+<div v-click="4" class="s3-whose">first question for any AI product: whose engine? whose car?</div>
 
-
-<img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" />
+<div v-click="5" class="s3-land">Overwhelmed? It doesn't matter what you use exactly · just start.</div>
 
 <!--
-And with that, the overwhelming tool zoo sorts itself into three shelves.
+And with that, the overwhelming tool zoo sorts itself — by colour.
 
-Cars you just drive: ChatGPT, Claude, Gemini, Perplexity, Notion AI. Car
-factories, for building your own: Zapier, n8n, Cursor, LangChain. And the
-engine builders underneath it all: a handful of labs.
+[click] Gold: the engine builders. A handful of labs — OpenAI, Anthropic,
+Google, Mistral.
 
-New tools will launch next week, and the week after. Doesn't matter. They'll
-all be one of these three. So if you're overwhelmed — here's my honest
-advice: it doesn't matter what you use exactly. Just start. You'll recognize
-the anatomy now.
+[click] The cars you drive. Some built by the labs themselves — ChatGPT,
+Claude, Gemini. Some by third parties — Perplexity, Notion AI, Cursor. You
+can name the colour of every logo on this shelf now.
+
+[click] And green: where you build your own — Zapier, n8n, LangChain, or
+straight through the API.
+
+New tools will launch next week, and the week after. Doesn't matter. Every
+single one lands on one of these shelves, in one of these colours.
+
+[click] So here's the first question for any AI product — in a demo, in a
+pitch, on this boat: whose engine? And whose car? Watch how fast the
+marketing fog clears.
+
+[click] And if you're overwhelmed — honest advice: it doesn't matter what
+you use exactly. Just start. You'll recognize the anatomy now.
 
 Last round of questions — and this one is the most practical.
 -->
@@ -1740,7 +1814,7 @@ and at the morning workouts on deck
 
 <div class="byline" style="bottom:8rem;">Marijke Valk · NomadCruise 17</div>
 <div class="credit" style="position:absolute; bottom:2rem; right:2rem; max-width:22rem; text-align:right;">
-photos: Wikimedia Commons · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · MG B V8 (CC BY 2.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
+photos: Wikimedia Commons · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · Presidencia de la Nación Argentina (CC BY 2.0) · F. Hirzinger (CC BY-SA 3.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
 </div>
 
 
