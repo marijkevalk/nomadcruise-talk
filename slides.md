@@ -362,7 +362,7 @@ fly-over.
   </div>
 </div>
 
-<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" style="top:1.4rem; right:1.6rem; bottom:auto; height:5.5rem;" />
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" style="top:1.4rem; right:1.6rem; bottom:auto; height:7.5rem;" />
 
 <!--
 First: what even IS intelligence? There's no agreed definition — even the
@@ -395,7 +395,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="1">
     <div class="tl2-txt">
       <div class="tl2-label">dream</div>
-      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i>,&nbsp;let us calculate <span class="dim">(Thinking by a machine)</span></div>
+      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"Calculemus"</i>,&nbsp;&nbsp;let us calculate <span class="dim">(Thinking by a machine)</span></div>
       <div class="tl2-ref">Leibniz, <i>De Arte Combinatoria</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
@@ -520,7 +520,7 @@ And right now? We're in the hottest summer the field has ever had.
   <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>More data</b> <span>The internet finally had enough text</span></div></div>
 </div>
 
-<div v-click="4" class="boom-note"><b>ChatGPT: ±100M users in 2 months</b><br><span class="dim">Fastest-growing consumer app</span><br><span class="ref">UBS / Similarweb 2023</span></div>
+<div v-click="4" class="boom-note"><b>ChatGPT: ±100M users in 2 months</b><br><span class="dim">Fastest growing consumer app ever</span><br><span class="ref">UBS / Similarweb 2023</span></div>
 
 <img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
 
@@ -628,30 +628,31 @@ right now.
 
 <div class="grid grid-cols-[0.8fr_1.2fr] gap-5 items-center">
 <div class="space-y-5 text-xl" style="font-family:'Fraunces',serif;">
-  <p>"The Titanic hit an <span class="ans"><span v-click.hide="2">…</span><span v-click="2" class="fill-blue">iceberg</span></span>"</p>
-  <p v-click="3">"The Queen Mary 2 sails<br>from Southampton to<br>New <span class="ans"><span v-click.hide="5">…</span><span v-click="5" class="fill-blue">York</span></span>"</p>
-  <p v-click="6">"My favourite city in the world is …"</p>
+  <p v-click="1">"The Titanic hit an <span class="ans"><span v-click.hide="3">…</span><span v-click="3" class="fill-blue">iceberg</span></span>"</p>
+  <p v-click="4">"The Queen Mary 2 sails<br>from Southampton to<br>New <span class="ans"><span v-click.hide="6">…</span><span v-click="6" class="fill-blue">York</span></span>"</p>
+  <p v-click="7">"My favourite city in the world is …"</p>
 </div>
-<div v-click="1" class="relative">
+<div v-click="2" class="relative">
   <div class="relative">
     <img :src="'/art/top5-titanic.png'" class="rounded w-full" style="max-height:15rem; object-fit:contain;" />
-    <img v-click="4" :src="'/art/top5.png'" class="rounded absolute inset-0 w-full" style="max-height:15rem; object-fit:contain; background:#0a0e1a;" />
-    <img v-click="7" :src="'/art/top5-city.png'" class="rounded absolute inset-0 w-full" style="max-height:15rem; object-fit:contain; background:#0a0e1a;" />
+    <img v-click="5" :src="'/art/top5.png'" class="rounded absolute inset-0 w-full" style="max-height:15rem; object-fit:contain; background:#0a0e1a;" />
+    <img v-click="8" :src="'/art/top5-city.png'" class="rounded absolute inset-0 w-full" style="max-height:15rem; object-fit:contain; background:#0a0e1a;" />
   </div>
   <div class="dim" style="position:absolute; right:0.5rem; bottom:0.15rem; font-size:0.85rem; font-style:italic; opacity:0.75;">data from GPT-2</div>
 </div>
 </div>
 
-<div v-click="8" class="auto-arrow mt-1"><svg class="arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AUTOCOMPLETE</div>
+<div v-click="9" class="auto-arrow mt-1"><svg class="arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AUTOCOMPLETE</div>
 
-<div v-click="9" class="text-sm" style="color:#e3b04b;">LLM <span class="dim">=</span> Large Language Model <span class="dim">→</span> <b>autocomplete on steroids</b></div>
+<div v-click="10" class="text-base mt-3" style="color:#e3b04b;">LLM <span style="font-weight:600;">=</span> Large Language Model <svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:-0.2rem; margin:0 0.15rem;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>autocomplete on steroids</b></div>
 
 
 
-<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" style="top:1.4rem; right:1.6rem; bottom:auto; height:5.5rem;" />
+<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" style="top:3.4rem; right:0.6rem; bottom:auto; height:7.5rem;" />
 
 <!--
-Finish this sentence for me, all together: "The Titanic hit an…" — [iceberg!]
+[click — the Titanic sentence appears] Finish this sentence for me, all
+together: "The Titanic hit an…" — [iceberg!]
 
 [if the slide-3 wizard bubble is in: — and notice what you just did: the
 wizard told you at the start that the Titanic arrived SAFELY. You knew
@@ -700,7 +701,8 @@ it's going to follow us through this whole section.
 
 <div class="grid grid-cols-[2fr_3fr] gap-8 items-stretch" style="margin-top:-0.75rem;">
 <div class="pat-block self-start">
-  <img :src="'/photos/fence.jpg'" class="photo mx-auto" style="max-height:17.9rem; object-fit:contain; background:#f5f5f0; border-radius:0.4rem;" />
+  <img :src="'/photos/fence.jpg'" class="photo mx-auto" style="max-height:17.4rem; object-fit:contain; background:#f5f5f0; border-radius:0.4rem;" />
+  <div class="dim text-center" style="font-size:0.7rem; font-style:italic; opacity:0.75; margin-top:0.15rem;">cartoon: unknown artist, shared online</div>
   <div v-click="2" class="mt-1 text-center text-lg"><b class="pat-dim">1 dimension</b></div>
 </div>
 <div class="flex flex-col gap-3">
@@ -717,7 +719,7 @@ it's going to follow us through this whole section.
 <div v-click="2" class="mt-1 text-lg"><b class="pat-dim">2 dimensions</b></div>
 </div>
 <div v-click="3" class="pat-block mt-auto text-base leading-snug" style="border:2px solid #e3b04b;">
-<div class="text-lg">LLMs: <b>1000s of dimensions</b></div>
+<div class="text-lg"><b>LLMs</b>: <b>1000s of dimensions</b></div>
 <div class="mt-1">GPT-2: <span class="pat-dim">768 dimensions</span></div>
 <div>GPT-3: <span class="pat-dim">12,288 dimensions</span></div>
 <div style="font-style:italic;">and growing</div>
@@ -727,7 +729,7 @@ it's going to follow us through this whole section.
 
 
 
-<img :src="'/art/tovenaar-12-zwevend.svg'" class="mage" style="top:1.2rem; right:1.6rem; bottom:auto; height:5.5rem;" />
+<img :src="'/art/tovenaar-12-zwevend.svg'" class="mage" style="top:3.5rem; right:0.6rem; bottom:auto; height:7.5rem;" />
 
 <!--
 Start with the comic. Dad paints a few planks, each one a bit less than the
@@ -769,12 +771,13 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 <hr class="rule" />
 
-<div class="mt-4 text-xl" style="font-family:'Fraunces',serif;">"The nomads miss the crow's nest on the Queen Mary II"</div>
+<div v-click="1" class="mt-4 text-xl" style="font-family:'Fraunces',serif;">"The nomads are missing the crow's nest on the Queen Mary II"</div>
 
-<div v-click="1" class="mt-6 flex flex-wrap gap-2 items-start max-w-4xl">
+<div v-click="2" class="mt-6 flex flex-wrap gap-2 items-start max-w-4xl">
   <span class="tok">The<span class="tok-id">464</span></span>
   <span class="wtok"><span class="tok">nom<span class="tok-id">4515</span></span><span class="tok">ads<span class="tok-id">5643</span></span></span>
-  <span class="tok">miss<span class="tok-id">2051</span></span>
+  <span class="tok">are<span class="tok-id">389</span></span>
+  <span class="tok">missing<span class="tok-id">4814</span></span>
   <span class="tok">the<span class="tok-id">262</span></span>
   <span class="wtok"><span class="tok">crow<span class="tok-id">37593</span></span><span class="tok">'s<span class="tok-id">338</span></span></span>
   <span class="tok">nest<span class="tok-id">16343</span></span>
@@ -785,11 +788,11 @@ regression. Fair point, same family: fit parameters to data, predict.]
   <span class="tok">II<span class="tok-id">2873</span></span>
 </div>
 
-<div v-click="2" class="mt-6 accent text-lg">▸ Text becomes a sequence of numbers (= tokens) for an LLM</div>
+<div v-click="3" class="mt-6 accent text-lg">▸ Text becomes a sequence of numbers (= tokens) for an LLM</div>
 
-<div v-click="3" class="mt-6 accent text-lg">▸ Every new token an LLM produces is a separate calculation</div>
+<div v-click="4" class="mt-6 accent text-lg">▸ Every new token an LLM produces results from a new calculation</div>
 
-<div v-click="4" class="mt-2 ml-8 accent text-lg">▸ Payment is therefore often per token</div>
+<div v-click="5" class="mt-2 ml-8 dim text-lg">▸ Payment is therefore often per token</div>
 
 
 
@@ -802,7 +805,10 @@ Before any statistics can happen, there's one translation step. A model
 doesn't read letters — and it doesn't quite read words either. A small
 algorithm chops the text into TOKENS: mostly whole words, sometimes pieces.
 
-[click] Here's our sentence, tokenized by a real model — GPT-2, and these are
+[click — the sentence appears] Take this sentence — the nomads are missing
+the crow's nest on the Queen Mary II.
+
+[click] And here it is, tokenized by a real model — GPT-2, and these are
 its real token numbers. First surprise: "nomads" — our own word — doesn't even
 survive as one piece. It becomes nom + ads. And "crow's" splits too: crow plus
 'apostrophe-s'. So a token isn't a word — it's a chunk, sometimes a whole word,
@@ -832,20 +838,20 @@ the model DO with those numbers?
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[3fr_2fr] gap-10 items-center">
+<div class="grid grid-cols-[3.2fr_1.8fr] gap-6 items-center">
 <div class="space-y-6">
-<div>
-<div class="text-xl leading-snug"><b class="accent">Weights</b>: a set of numbers defining the relationships between tokens</div>
-<div class="mt-1 text-base" style="color:var(--ink-dim);">They group tokens that tend to go together</div>
+<div v-click>
+<div class="text-lg leading-snug"><b class="accent">Weights</b>: a set of numbers defining the relationships between tokens</div>
+<div class="mt-1 text-sm" style="color:var(--ink-dim);">They group tokens that tend to go together</div>
 </div>
 
 <div v-click>
-<div class="text-xl leading-snug"><b class="accent">Parameters</b>: a model's degrees of freedom <span class="dim">=</span> weights + a few extra variables</div>
-<div class="mt-1 text-base" style="color:var(--ink-dim);">"175 billion parameters" counts exactly these</div>
+<div class="text-lg leading-snug"><b class="accent">Parameters</b>: a model's degrees of freedom <span class="dim">=</span> weights + some variables</div>
+<div class="mt-1 text-sm" style="color:var(--ink-dim);">They define the complexity of a model</div>
 </div>
 
 <div v-click>
-<div class="text-xl leading-snug" style="white-space:nowrap;">This results in <b class="accent">a neural network</b><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#e3b04b" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:-0.55rem;margin-left:0.55rem;">
+<div class="text-lg leading-snug" style="white-space:nowrap;">This results in <b class="accent">a neural network</b><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#e3b04b" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:-0.55rem;margin-left:0.55rem;">
   <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
   <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/>
   <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
@@ -857,10 +863,10 @@ the model DO with those numbers?
   <path d="M19.967 17.484A4 4 0 0 1 18 18"/>
 </svg>
 </div>
-<div class="mt-1 text-base" style="color:var(--ink-dim);">Loosely modelled on the neurons in the brain</div>
+<div class="mt-1 text-sm" style="color:var(--ink-dim);">Loosely modelled on the neurons in the brain</div>
 </div>
 </div>
-<svg viewBox="0 0 320 300" class="w-72 mx-auto constellation">
+<svg viewBox="0 0 320 300" class="w-72 constellation" style="margin:-2.5rem auto 0 0;">
   <g stroke="#e3b04b" stroke-width="3" stroke-linecap="round" opacity="0.75">
     <line x1="60" y1="60" x2="160" y2="40"/><line x1="60" y1="60" x2="90" y2="150"/>
     <line x1="160" y1="40" x2="240" y2="90"/><line x1="90" y1="150" x2="240" y2="90"/>
@@ -881,9 +887,10 @@ the model DO with those numbers?
 <img :src="'/art/tovenaar-10-konijn-uit-hoed.svg'" class="mage" />
 
 <!--
-So what does the model DO with those numbers? This: from all that reading,
-it has learned which tokens tend to go together — the connections between
-tokens.
+So what does the model DO with those numbers?
+
+[click — Weights] This: from all that reading, it has learned which tokens
+tend to go together — the connections between tokens.
 
 You know how an old couple finish each other's sentences? That's not
 telepathy. It's years of hearing each other, until one word just pulls the
@@ -933,18 +940,19 @@ class: t18-slide
 <div class="t18-left">
   <div class="lfv">
     <div class="lfv-step">Start with <b>random weights</b></div>
-    <div class="lfv-arr" v-click="1"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="lfv-arr" v-click="1"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
     <div class="lfv-loop" v-click="1">
       <div class="lfv-step">Feed it a <b>real text</b></div>
-      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="lfv-step">Compute the next word</div>
-      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="lfv-step">Compare with the real word<br>= <b class="accent">error score</b></div>
-      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="lfv-step">Nudge <b>every weight</b></div>
+      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="lfv-step">Adjust <b>every weight</b></div>
       <div class="lfv-return"></div>
     </div>
-    <div class="lfv-repeat" v-click="1">Repeat · billions of times</div>
+    <div class="lfv-repeat" v-click="1">Repeat billions of times</div>
+    <div class="lfv-goal" v-click="1">Goal: <b>minimize error score</b></div>
   </div>
 </div>
 <div class="t18-right">
@@ -980,10 +988,10 @@ class: t18-slide
       <div class="tr-dots">⋮</div>
       <div class="tr-err"><span class="tx-bar" style="width:0.45rem"></span>Error <b class="accent">0.5</b></div>
     </div>
+    <div class="tr-note dim" v-click="3">Numbers are indicative</div>
   </div>
-  <div class="tr-note dim" v-click="5">Numbers are indicative</div>
   <div class="t18-ml">
-    <div v-click="6"><span class="accent">▸</span> <b class="accent">MACHINE LEARNING</b></div>
+    <div v-click="6"><span class="accent tri">▸</span> <b class="accent">MACHINE LEARNING</b></div>
     <div v-click="7" class="dim">Patterns are saved, not original data</div>
   </div>
 </div>
@@ -1117,9 +1125,7 @@ someone says "the AI said so."
 
 <div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
-# A model is just a file of numbers
-
-<div class="fon-sub">but many many numbers (10<sup>8</sup> – 10<sup>12</sup>)</div>
+<h1 style="font-size:2.6rem;">A model is just a gigantic file of numbers</h1>
 
 <div class="grid grid-cols-2 gap-8 mt-3 items-start">
   <div>
@@ -1134,10 +1140,11 @@ someone says "the AI said so."
   </div>
 </div>
 
-<div class="fon-lines mt-4">
-  <div>After training <span class="accent" style="font-weight:700;">⟶</span> <b>model is frozen</b> <span class="fon-dim">(= parameters are saved)</span></div>
-  <div><span class="accent" style="font-weight:600;">Open source:</span> free to download these files and run on your own computer</div>
-  <div><span style="font-weight:600; color:var(--ink-dim);">Closed:</span> inference runs on the provider's servers</div>
+<div class="fon-after mt-3">After training <svg class="fon-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Model is frozen</b> (= Parameters are saved)</div>
+
+<div class="dg-green mt-2" style="max-width:47rem; font-size:1.08rem; padding:0.5rem 1.1rem; line-height:1.45;">
+  <div><b>Open source:</b> Free to download these files and run on your own computer</div>
+  <div class="mt-1"><b>Closed:</b> Model specifications are secret and it runs on the provider's servers</div>
 </div>
 
 <div class="credit" style="position:absolute; left:2.2rem; bottom:0.8rem;">Source: real weights from the GPT-2 model file (OpenAI, 2019)</div>
@@ -1146,19 +1153,24 @@ someone says "the AI said so."
 
 <!--
 And when all that training is done — my favorite moment — the weights are
-SAVED. A model is just a file of numbers. But many, MANY numbers: GPT-2 has
+SAVED. A model is just a gigantic file of numbers. How gigantic: GPT-2 has
 124 million (that's 10 to the 8th), today's frontier models sit around a
 trillion (10 to the 12th). This is not an artist impression: these are real
 weights I pulled out of a real model, GPT-2. On the left: sixty of them, as
 they sit in the file. On the right: two slices of the same file drawn as an
-image — every pixel is one learned number.
+image — every pixel is one learned number. [If asked what the two panels
+are: the left panel is a slice of the connection weights inside the network
+(attention, layer 5); the right panel is the token table — one row per
+token. The pale band in it = rare tokens the model barely saw during
+training. You can literally SEE training in the file.]
 
 After training, the model is FROZEN — the parameters are saved, and that's
 it. One file. No database inside, no internet inside, no little person
 inside — it's all pressed into the numbers. When people say a model is
 "open source", this is what they mean: you can download the file and run it
-on your own machine. Closed models: the file stays with the provider, and
-inference runs on their servers. [If someone pushes on "is the model just
+on your own machine. Closed models: the specifications are secret — the
+file stays with the provider, and it runs on their servers. [If someone
+pushes on "is the model just
 the file?": strictly it's this file PLUS a small, generic program that runs
 it — but all the knowledge is in the file.]
 -->
