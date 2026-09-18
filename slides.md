@@ -1134,7 +1134,7 @@ someone says "the AI said so."
 
 <h1 style="font-size:2.6rem;">A model is just a gigantic file of numbers</h1>
 
-<div v-click class="fon-after mt-2">After training <svg class="fon-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Model is frozen</b> (= Parameters are saved)</div>
+<div v-click class="fon-after mt-2" style="font-size:1.4rem;"><b>After training: model is frozen</b> (= Parameters are saved)</div>
 
 <div class="grid grid-cols-2 gap-8 mt-3 items-start">
   <div v-click>
