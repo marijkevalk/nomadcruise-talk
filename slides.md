@@ -386,7 +386,7 @@ machine that can do everything a human can.
 
 <div class="kicker">Part one <span class="dim">· AI is not new</span></div>
 
-# As old as the Computer
+# As old as the computer
 
 <hr class="rule" />
 
@@ -626,9 +626,9 @@ right now.
   <img :src="'/photos/titanic.jpg'" class="photo w-full" />
   <div class="credit mt-1">RMS Titanic leaving Southampton, 1912 · F.G.O. Stuart</div>
 </div>
-<div class="space-y-6 text-2xl" style="font-family:'Fraunces',serif;">
+<div class="space-y-6 text-xl" style="font-family:'Fraunces',serif;">
   <p>"Titanic hit an …"</p>
-  <p v-click>"From Southampton, the ship sails<br>across the Atlantic to New …"</p>
+  <p v-click>"From Southampton, the ship sails across<br>the Atlantic to New …"</p>
   <p v-click>"A transatlantic crossing takes … days"</p>
 </div>
 </div>
