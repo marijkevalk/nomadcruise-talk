@@ -867,22 +867,31 @@
 .fon-arr { display: inline-block; width: 2.1rem; vertical-align: -0.3rem; margin: 0 0.2rem; color: var(--ink); }
 
 /* slide 24 (creativity & hallucination): column heads + italic hook questions */
-.ch-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.6rem; color: var(--ink); margin-bottom: 0.3rem; }
-.ch-q { font-style: italic; color: var(--ink-dim); font-size: 1.05rem; line-height: 1.45; }
+.ch-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.6rem; color: #ffffff; margin-bottom: 0.05rem; }
+.ch-q { font-style: italic; color: #ffffff; font-size: 0.95rem; line-height: 1.45; min-height: 2.9rem; }
 
-/* slide 25 (data is gold): green/purple layout, no gold/greige */
-.dg-label { font-size: 1.05rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8fcbab; }
-.dg-list > div { font-size: 1.35rem; padding: 0.18rem 0; }
-.dg-list > div::before { content: '\25B8\00a0\00a0'; color: #8fcbab; }
+/* slide 25 (data is gold): white/gold base, purple only on the reading example.
+   .dg-green stays for slide 21 (file of numbers). */
+.dg-label { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--talk-accent); }
+.dg-list > div { font-size: 1.35rem; padding: 0.04rem 0; }
+.dg-list > div::before { content: '\25B8\00a0\00a0'; color: var(--talk-accent); }
 .dg-green {
   border: 2px solid rgba(143, 203, 171, 0.7); background: rgba(143, 203, 171, 0.08);
   border-radius: 0.7rem; padding: 0.9rem 1.2rem; font-size: 1.15rem; line-height: 1.5;
 }
 .dg-green b { color: #8fcbab; }
+.dg-purple {
+  border: 2px solid rgba(114, 99, 184, 0.65); background: rgba(114, 99, 184, 0.08);
+  border-radius: 0.7rem; padding: 0.9rem 1.2rem; font-size: 1.15rem; line-height: 1.5;
+}
+.dg-purple b { color: #b9a9ee; }
 .dg-ref { font-size: 0.8rem; color: rgba(242, 236, 223, 0.55); font-style: italic; margin-top: 0.3rem; text-align: right; }
-.dg-card { border: 2px solid rgba(114, 99, 184, 0.65); border-radius: 0.7rem; padding: 0.7rem 0.9rem; font-size: 1rem; line-height: 1.4; }
-.dg-card b { color: #b9a9ee; font-size: 1.12rem; }
-.dg-card > div { color: rgba(242, 236, 223, 0.85); }
+.dg-slide h1 { margin-bottom: 0.7rem; }
+.dg-slide .rule { margin: 0.6rem 0 0.9rem; }
+.dg-ch > div { padding: 0.1rem 0; }
+.dg-main { font-size: 1.35rem; line-height: 1.3; color: var(--ink); }
+.dg-main::before { content: '\25B8\00a0\00a0'; color: var(--talk-accent); }
+.dg-sub { font-size: 0.92rem; line-height: 1.3; color: rgba(242, 236, 223, 0.72); padding-left: 1.55rem; }
 
 /* slide 23 (spectacular): single gold accent, dim supporting lines */
 .em-spark { color: var(--talk-accent); }

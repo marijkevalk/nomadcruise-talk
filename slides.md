@@ -1,7 +1,7 @@
 ---
 theme: default
 title: AI is not magic
-titleTemplate: '%s — NomadCruise 17'
+titleTemplate: '%s · NomadCruise 17'
 author: Marijke Valk
 colorSchema: dark
 exportFilename: ai-is-not-magic
@@ -1305,26 +1305,27 @@ exist without being designed in — that part is not disputed.]
 
 <hr class="rule" />
 
-<div class="grid grid-cols-2 gap-12 text-base leading-snug">
+<div class="grid grid-cols-2 gap-12 text-base leading-snug" style="margin-top:-0.6rem;">
 <div>
 
 <div class="ch-head">Creativity</div>
 <div class="ch-q">As the weights are frozen, why don't you get the same answer every time?</div>
 
-<img :src="'/art/top5-city.png'" class="rounded w-full my-1" style="max-height:7.5rem; object-fit:contain;" />
+<img :src="'/art/top5-city-24.png'" class="rounded w-full my-1" style="height:8.5rem; object-fit:contain;" />
 
-<div class="mt-1">Next token is a <b>draw</b> from the <b>probability distribution</b></div>
+<div class="mt-1" style="min-height:3.4rem;">Next token is a <b>draw</b> from the <b>options</b></div>
 <div class="mt-1"><b class="accent">Temperature</b>: determines how often a less likely token wins</div>
 
 </div>
 <div v-click>
 
 <div class="ch-head">Hallucination</div>
-<div class="ch-q">A next token is always drawn — even when there is no clear answer</div>
+<div class="ch-q">Why do you sometimes get completely wrong answers with full confidence?</div>
 
-<img :src="'/art/top5-flat.png'" class="rounded w-full my-1" style="max-height:7.5rem; object-fit:contain;" />
+<img :src="'/art/top5-flat.png'" class="rounded w-full my-1" style="height:8.5rem; object-fit:contain;" />
 
-<div class="accent mt-2 text-xl" style="font-family:'Fraunces',serif;">Plausible doesn't mean true</div>
+<div class="mt-1" style="min-height:3.4rem;">A next token is <b>always drawn</b>, even when there is no clear answer</div>
+<div class="mt-1"><b class="accent">Plausible</b> doesn't mean true</div>
 
 </div>
 </div>
@@ -1338,8 +1339,8 @@ Here's something that should puzzle you. The model is a frozen file — same
 file, same question. So you'd expect the same answer, every single time.
 And you know from experience: that's not what happens. Why not?
 
-Because of the dice. The next token is a DRAW from the probability
-distribution — that list of percentages the model hands over. Usually the
+Because of the dice. The next token is a DRAW from the options — that
+list of percentages the model hands over. Usually the
 most likely word wins, but with a certain chance a less likely one gets
 picked instead. Remember the favourite-city list: London, Tokyo, New York,
 Paris, Barcelona — no single winner. The dice pick one, and each run the
@@ -1381,6 +1382,8 @@ just saw stands on it.
 -->
 
 ---
+class: dg-slide
+---
 
 <div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
@@ -1390,25 +1393,25 @@ just saw stands on it.
 
 <div class="grid grid-cols-[1fr_1.25fr] gap-10 items-center mt-1">
 <div>
-  <div class="dg-label">The raw material</div>
-  <div class="dg-list mt-2">
+  <div class="dg-label">The raw data</div>
+  <div class="dg-list mt-1">
     <div>Public web</div>
     <div>Books</div>
     <div>Code</div>
   </div>
 </div>
-<div class="dg-green">
+<div class="dg-purple">
   <b>Llama 4 read over 30 trillion tokens</b>
   <div class="mt-1">= 100,000+ years of full-time reading for a human</div>
   <div class="dg-ref">Meta 2025</div>
 </div>
 </div>
 
-<div class="dg-label mt-5">Challenges</div>
-<div class="grid grid-cols-3 gap-4 mt-2">
-  <div v-click class="dg-card"><b>Polluted data</b><div class="mt-1">What it reads is what it learns (biases)</div></div>
-  <div v-click class="dg-card"><b>Ownership & copyright</b><div class="mt-1">Nobody asked the people who wrote it</div></div>
-  <div v-click class="dg-card"><b>The well is running dry</b><div class="mt-1">The web is nearly read out · Hardly any new data is left</div></div>
+<div class="dg-label mt-4">Challenges</div>
+<div class="dg-ch mt-1">
+  <div v-click><div class="dg-main">Polluted data</div><div class="dg-sub">What it reads is what it learns (biases)</div></div>
+  <div v-click><div class="dg-main">Ownership & copyright</div><div class="dg-sub">Nobody asked the people who wrote it</div></div>
+  <div v-click><div class="dg-main">The well is running dry</div><div class="dg-sub">The web is nearly read out · Hardly any new data is left</div></div>
 </div>
 
 <img :src="'/art/tovenaar-19-goudklomp.svg'" class="mage" style="top:4.2rem; right:1.8rem; bottom:auto; height:6.5rem;" />
