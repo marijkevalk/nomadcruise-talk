@@ -605,7 +605,7 @@
   font-family: 'Fraunces', serif; font-size: 0.9rem; color: #fff;
   background: rgba(0,0,0,0.55); padding: 0.05rem 0.5rem; border-radius: 0.3rem;
 }
-.intel-side { font-size: 1.15rem; color: var(--ink); line-height: 1.35; padding-left: 0.5rem; }
+.intel-side { font-size: 1rem; color: var(--ink); line-height: 1.35; padding-left: 0.5rem; }
 .def-wrap { display: flex; flex-direction: column; align-items: center; margin: 1rem 0; }
 .def-box {
   font-family: 'Fraunces', serif; font-size: 1.7rem; letter-spacing: 0.04em;
