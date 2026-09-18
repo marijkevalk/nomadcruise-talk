@@ -871,7 +871,7 @@
 .fon-arr { display: inline-block; width: 2.1rem; vertical-align: -0.3rem; margin: 0 0.2rem; color: var(--talk-accent); }
 
 /* slide 24 (creativity & hallucination): column heads + italic hook questions */
-.ch-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.6rem; color: #ffffff; margin-bottom: 0.05rem; }
+.ch-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.6rem; color: var(--talk-accent); margin-bottom: 0.05rem; }
 .ch-q { font-style: italic; color: #ffffff; font-size: 0.95rem; line-height: 1.45; min-height: 2.9rem; }
 
 /* slide 25 (data is gold): white/gold base, purple only on the reading example.

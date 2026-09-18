@@ -1312,24 +1312,32 @@ exist without being designed in — that part is not disputed.]
 <div class="grid grid-cols-2 gap-12 text-base leading-snug" style="margin-top:-0.6rem;">
 <div>
 
+<div v-click="1">
 <div class="ch-head">Creativity</div>
 <div class="ch-q">As the weights are frozen, why don't you get the same answer every time?</div>
+</div>
 
+<div v-click="2">
 <img :src="'/art/top5-city-24.png'" class="rounded w-full my-1" style="height:8.5rem; object-fit:contain;" />
+<div class="mt-1" style="min-height:3.4rem;">Next token is <b><u>a draw</u></b> from the <b>options</b></div>
+</div>
 
-<div class="mt-1" style="min-height:3.4rem;">Next token is a <b>draw</b> from the <b>options</b></div>
-<div class="mt-1"><b class="accent">Temperature</b>: determines how often a less likely token wins</div>
+<div v-click="3" class="mt-1"><b class="accent">Temperature</b>: determines how often a less likely token wins</div>
 
 </div>
-<div v-click>
+<div>
 
+<div v-click="4">
 <div class="ch-head">Hallucination</div>
-<div class="ch-q">Why do you sometimes get completely wrong answers with full confidence?</div>
+<div class="ch-q">What happens when the model doesn't know the answer?</div>
+</div>
 
+<div v-click="5">
 <img :src="'/art/top5-flat.png'" class="rounded w-full my-1" style="height:8.5rem; object-fit:contain;" />
+<div class="mt-1" style="min-height:3.4rem;">A next token is <b><u>always drawn</u></b>, even when there is no clear answer</div>
+</div>
 
-<div class="mt-1" style="min-height:3.4rem;">A next token is <b>always drawn</b>, even when there is no clear answer</div>
-<div class="mt-1"><b class="accent">Plausible</b> doesn't mean true</div>
+<div v-click="6" class="mt-1">Plausible doesn't mean true</div>
 
 </div>
 </div>
@@ -1339,20 +1347,20 @@ exist without being designed in — that part is not disputed.]
 <img :src="'/art/tovenaar-13-facepalm.svg'" class="mage" style="top:5rem; right:1.6rem; bottom:auto; height:7rem;" />
 
 <!--
-Here's something that should puzzle you. The model is a frozen file — same
-file, same question. So you'd expect the same answer, every single time.
-And you know from experience: that's not what happens. Why not?
+[click] Here's something that should puzzle you. The model is a frozen
+file — same file, same question. So you'd expect the same answer, every
+single time. And you know from experience: that's not what happens. Why not?
 
-Because of the dice. The next token is a DRAW from the options — that
-list of percentages the model hands over. Usually the
+[click] Because of the dice. The next token is a DRAW from the options —
+that list of percentages the model hands over. Usually the
 most likely word wins, but with a certain chance a less likely one gets
 picked instead. Remember the favourite-city list: London, Tokyo, New York,
 Paris, Barcelona — no single winner. The dice pick one, and each run the
 sentence can take a different turn. That variety is a big part of what
 feels "creative" about these things.
 
-And the knob I promised you: temperature. It determines how often a less
-likely word wins. Turn it down — the top candidate almost always wins,
+[click] And the knob I promised you: temperature. It determines how often a
+less likely word wins. Turn it down — the top candidate almost always wins,
 safe and predictable; at zero, same answer every time. Turn it up —
 adventurous words get their chance. Your chat app hides that knob;
 builders get to turn it.
@@ -1362,19 +1370,21 @@ differ from EACH OTHER. The dice make the SAME model answer differently
 every time. Your ChatGPT and mine are the same file — we just roll
 different dice.
 
-[click] But notice what that draw ALSO means: a word is always chosen. The
-list is never empty — "I don't know" is not on it by default. Even when
-the model doesn't KNOW, when there is no one clear answer, out comes a
+[click] But notice what that draw ALSO means. What happens when the model
+does NOT know the answer? The list is never empty — "I don't know" is not
+on it by default. Even when there is no one clear answer, out comes a
 fluent, confident word anyway. That is hallucination.
 
-One real chart. I asked GPT-2: "We are sailing on the Queen Mary 2. The
-ship's captain is Captain…" — look at that list. John, five percent. James,
-four. Nothing above five. The model has NO idea who the captain is — there
-is no clear answer in there. But a token is always drawn, so out comes a
-name anyway: "Captain John", said with full confidence. Compare that with
+[click] One real chart. I asked GPT-2: "We are sailing on the Queen Mary 2.
+The ship's captain is Captain…" — look at that list. John, five percent.
+James, four. Nothing above five. The model has NO idea who the captain is —
+there is no clear answer in there. But a token is always drawn, so out comes
+a name anyway: "Captain John", said with full confidence. Compare that with
 the iceberg's seventy-nine percent earlier — THIS is what not-knowing looks
 like, and the model bluffs right through it. Bluffing sounds exactly as
-fluent as knowing. So: plausible doesn't mean true. Never confuse the two
+fluent as knowing.
+
+[click] So: plausible doesn't mean true. Never confuse the two
 again. And remember the little fence robot: it continues the pattern,
 whether that was the point or not.
 
