@@ -1406,7 +1406,7 @@ class: dg-slide
 <hr class="rule" />
 
 <div class="grid grid-cols-[1fr_1.25fr] gap-10 items-center mt-1">
-<div>
+<div v-click="1">
   <div class="dg-label">The raw data</div>
   <div class="dg-list mt-1">
     <div>Public web</div>
@@ -1414,43 +1414,45 @@ class: dg-slide
     <div>Code</div>
   </div>
 </div>
-<div class="dg-purple">
+<div v-click="2" class="dg-purple">
   <b>Llama 4 read over 30 trillion tokens</b>
   <div class="mt-1">= 100,000+ years of full-time reading for a human</div>
   <div class="dg-ref">Meta 2025</div>
 </div>
 </div>
 
-<div class="dg-label mt-4">Challenges</div>
+<div v-click="3" class="dg-label mt-4">Challenges</div>
 <div class="dg-ch mt-1">
-  <div v-click><div class="dg-main">Polluted data</div><div class="dg-sub">What it reads is what it learns (biases)</div></div>
-  <div v-click><div class="dg-main">Ownership & copyright</div><div class="dg-sub">Written by millions of people, permission asked of none</div></div>
-  <div v-click><div class="dg-main">The well is running dry</div><div class="dg-sub">Most of the good text is already used</div></div>
+  <div v-click="3"><div class="dg-main">Polluted data <span class="dg-sub">What it reads is what it learns (biases)</span></div></div>
+  <div v-click="4"><div class="dg-main">Ownership & copyright <span class="dg-sub">Written by millions of people, permission asked of none</span></div></div>
+  <div v-click="5"><div class="dg-main">The well is running dry <span class="dg-sub">Most of the good text is already used</span></div></div>
 </div>
 
-<img :src="'/art/tovenaar-19-goudklomp.svg'" class="mage" style="top:4.2rem; right:1.8rem; bottom:auto; height:6.5rem;" />
+<img :src="'/art/tovenaar-19-goudklomp.svg'" class="mage" />
 
 <!--
 Remember the open question from training: where did all those trillions of
 words come from? This is the ingredient everything else stood on: data.
-The raw material is a mountain of text — the public web, books, code.
 
-How much? Llama 4, one open model, read more than thirty TRILLION tokens.
-If you read around the clock, no sleep, that's well over a hundred thousand
-YEARS of reading. And by the way — that includes things you wrote. All of
-us are in there.
+[click — the raw data] The raw material is a mountain of text — the public
+web, books, code.
 
-But this mountain of text comes with three challenges. One: polluted data.
-What it read is what it learned. If wedding photos on the internet are
+[click — the purple block] How much? Llama 4, one open model, read more than
+thirty TRILLION tokens. If you read around the clock, no sleep, that's well
+over a hundred thousand YEARS of reading. And by the way — that includes
+things you wrote. All of us are in there.
+
+But this mountain of text comes with three challenges. [click] One: polluted
+data. What it read is what it learned. If wedding photos on the internet are
 mostly one style, the model thinks that IS a wedding. Bias doesn't get
 programmed in — it rides in with the data.
 
-Two: whose text was all this? Nobody asked us. Who owns it, who is
+[click] Two: whose text was all this? Nobody asked us. Who owns it, who is
 responsible for what comes out — that fight is in the courts right now.
 
-Three: the well is running dry. The high-quality public web has largely
-been read. So newer models increasingly learn from text that AI wrote —
-a copy of a copy. Whether that keeps working is an open question.
+[click] Three: the well is running dry. The high-quality public web has
+largely been read. So newer models increasingly learn from text that AI
+wrote — a copy of a copy. Whether that keeps working is an open question.
 
 [Q&A armor: the exact data mix is a trade secret; one training run costs
 $78M–$490M (Stanford AI Index 2025 / Epoch AI).]
