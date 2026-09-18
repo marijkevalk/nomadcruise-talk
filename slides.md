@@ -1336,7 +1336,7 @@ exist without being designed in — that part is not disputed.]
 
 <div v-click="4">
 <div class="ch-head">Hallucination</div>
-<div class="ch-q">What happens when the model doesn't know the answer?</div>
+<div class="ch-q">Where do those confident wrong answers come from?</div>
 </div>
 
 <div v-click="5">
@@ -1377,10 +1377,11 @@ differ from EACH OTHER. The dice make the SAME model answer differently
 every time. Your ChatGPT and mine are the same file — we just roll
 different dice.
 
-[click] But notice what that draw ALSO means. What happens when the model
-does NOT know the answer? The list is never empty — "I don't know" is not
-on it by default. Even when there is no one clear answer, out comes a
-fluent, confident word anyway. That is hallucination.
+[click] But notice what that draw ALSO means. Where do those confident
+WRONG answers come from? The list is never empty — "I don't know" is not
+on it by default. Even when the model does not know, when there is no one
+clear answer, out comes a fluent, confident word anyway. That is
+hallucination.
 
 [click] One real chart. I asked GPT-2: "We are sailing on the Queen Mary 2.
 The ship's captain is Captain…" — look at that list. John, five percent.
