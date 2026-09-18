@@ -644,7 +644,7 @@ right now.
 
 <div v-click="9" class="auto-arrow mt-1"><svg class="arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AUTOCOMPLETE</div>
 
-<div v-click="10" class="text-base mt-3" style="color:#e3b04b;">LLM <span style="font-weight:600;">=</span> Large Language Model <svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:-0.2rem; margin:0 0.15rem;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>autocomplete on steroids</b></div>
+<div v-click="10" class="text-base mt-3" style="color:#e3b04b;">LLM <span style="font-weight:600;">=</span> Large Language Model <svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:middle; margin:0 0.15rem 0.15rem;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Autocomplete on steroids</b></div>
 
 
 
@@ -773,7 +773,7 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 <div v-click="1" class="mt-4 text-xl" style="font-family:'Fraunces',serif;">"The nomads are missing the crow's nest on the Queen Mary II"</div>
 
-<div v-click="2" class="mt-6 flex flex-wrap gap-2 items-start max-w-4xl">
+<div v-click="2" class="mt-6 flex flex-nowrap gap-1.5 items-start">
   <span class="tok">The<span class="tok-id">464</span></span>
   <span class="wtok"><span class="tok">nom<span class="tok-id">4515</span></span><span class="tok">ads<span class="tok-id">5643</span></span></span>
   <span class="tok">are<span class="tok-id">389</span></span>
@@ -790,7 +790,7 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 <div v-click="3" class="mt-6 accent text-lg">▸ Text becomes a sequence of numbers (= tokens) for an LLM</div>
 
-<div v-click="4" class="mt-6 accent text-lg">▸ Every new token an LLM produces results from a new calculation</div>
+<div v-click="4" class="mt-6 accent text-lg">▸ Each new token takes a whole new calculation</div>
 
 <div v-click="5" class="mt-2 ml-8 dim text-lg">▸ Payment is therefore often per token</div>
 
@@ -1410,8 +1410,8 @@ class: dg-slide
 <div class="dg-label mt-4">Challenges</div>
 <div class="dg-ch mt-1">
   <div v-click><div class="dg-main">Polluted data</div><div class="dg-sub">What it reads is what it learns (biases)</div></div>
-  <div v-click><div class="dg-main">Ownership & copyright</div><div class="dg-sub">Nobody asked the people who wrote it</div></div>
-  <div v-click><div class="dg-main">The well is running dry</div><div class="dg-sub">The web is nearly read out · Hardly any new data is left</div></div>
+  <div v-click><div class="dg-main">Ownership & copyright</div><div class="dg-sub">Written by millions of people, permission asked of none</div></div>
+  <div v-click><div class="dg-main">The well is running dry</div><div class="dg-sub">Most of the good text is already used</div></div>
 </div>
 
 <img :src="'/art/tovenaar-19-goudklomp.svg'" class="mage" style="top:4.2rem; right:1.8rem; bottom:auto; height:6.5rem;" />
