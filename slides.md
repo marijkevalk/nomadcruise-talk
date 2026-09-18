@@ -460,7 +460,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <hr class="rule" />
 
 <div style="text-align:center;">
-<svg viewBox="0 0 580 250" class="winters" style="height:15rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="0 28 600 212" class="winters" style="height:17rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
   <defs>
     <marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
     <g id="sun"><circle r="9" fill="none" stroke="#e3b04b" stroke-width="2.4"/><g stroke="#e3b04b" stroke-width="2.4" stroke-linecap="round"><line y1="-13" y2="-16.5"/><line y1="13" y2="16.5"/><line x1="-13" x2="-16.5"/><line x1="13" x2="16.5"/><line x1="-9.2" y1="-9.2" x2="-11.7" y2="-11.7"/><line x1="9.2" y1="9.2" x2="11.7" y2="11.7"/><line x1="9.2" y1="-9.2" x2="11.7" y2="-11.7"/><line x1="-9.2" y1="9.2" x2="-11.7" y2="11.7"/></g></g>
@@ -468,10 +468,10 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
   </defs>
   <path d="M20,150 L70,150 Q110,150 130,120 Q150,90 175,90 Q200,90 220,120 Q245,155 285,155 Q320,155 345,120 Q372,85 400,85 Q428,85 452,120 Q485,158 520,150"
         fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <use href="#sun" x="175" y="66"/>
-  <use href="#sun" x="400" y="61"/>
-  <use href="#snow" x="285" y="182"/>
-  <use href="#snow" x="490" y="182"/>
+  <use href="#sun" transform="translate(175,64) scale(1.35)"/>
+  <use href="#sun" transform="translate(400,59) scale(1.35)"/>
+  <use href="#snow" transform="translate(285,184) scale(1.3)"/>
+  <use href="#snow" transform="translate(490,184) scale(1.3)"/>
   <g v-click="2">
     <text x="285" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1970s</text>
     <text x="285" y="230" fill="#9a917f" font-size="11" text-anchor="middle">algorithms stalled</text>
@@ -481,7 +481,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 </svg>
 </div>
 
-<div v-click="[1,2]" class="mt-3 text-xl dim" style="text-align:center;">money in → hype → disappointment → <b class="accent">freeze</b> → a breakthrough → money in again</div>
+<div v-click="[1,2]" class="flow-cycle">money in <span class="fa">➔</span> hype <span class="fa">➔</span> disappointment <span class="fa">➔</span> freeze <span class="fa">➔</span> a breakthrough <span class="fa">➔</span> repeat</div>
 
 <img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
@@ -509,9 +509,9 @@ And right now? We're in the hottest summer the field has ever had.
 <hr class="rule" />
 
 <div class="igniters">
-  <div class="ig" v-click="1"><span class="ig-n">1</span><div class="ig-txt"><b>New algorithms</b> <span>the transformer architecture, 2017</span><div class="ref">Vaswani et al., "Attention Is All You Need"</div></div></div>
-  <div class="ig" v-click="2"><span class="ig-n">2</span><div class="ig-txt"><b>Hardware</b> <span>GPUs · built for games</span></div></div>
-  <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>Data</b> <span>the internet finally had enough text</span></div></div>
+  <div class="ig" v-click="1"><span class="ig-n">1</span><div class="ig-txt"><b>New LLM architecture</b> <span>the transformer, 2017</span><div class="ref">Vaswani et al., "Attention Is All You Need"</div></div></div>
+  <div class="ig" v-click="2"><span class="ig-n">2</span><div class="ig-txt"><b>Better hardware</b> <span>GPUs, built for gaming</span></div></div>
+  <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>More data</b> <span>the internet finally had enough text</span></div></div>
 </div>
 
 <div class="mt-6 accent text-xl" v-click="4">Note: AI is much more than LLMs · but that's our focus today.</div>

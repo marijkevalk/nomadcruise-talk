@@ -539,6 +539,11 @@
 .tl-year { font-family: 'Fraunces', serif; font-size: 1.35rem; color: var(--talk-accent); }
 .tl-txt { font-size: 1.35rem; }
 .winters text { font-size: 17px; }
+.flow-cycle {
+  text-align: center; white-space: nowrap; margin-top: 0.8rem; padding-right: 7rem;
+  font-size: 1.2rem; font-weight: 700; color: var(--ink); letter-spacing: 0.01em;
+}
+.flow-cycle .fa { color: var(--talk-accent); font-weight: 700; padding: 0 0.25rem; }
 /* everyday-AI beat */
 .everyday { margin-top: 1.6rem; font-size: 1.25rem; }
 
@@ -621,13 +626,14 @@
 
 /* why-now: stacked igniters + example inset */
 .igniters { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 0.8rem; }
-.ig { display: flex; align-items: baseline; gap: 1.8rem; }
+.ig { display: flex; align-items: baseline; gap: 1rem; }
 .ig-n {
-  font-family: 'Fraunces', serif; font-size: 4rem; color: var(--talk-accent);
-  line-height: 0.9; flex: none; width: 3rem; text-align: center;
+  font-family: 'Fraunces', serif; font-size: 2.1rem; color: var(--talk-accent);
+  line-height: 1.15; flex: none;
 }
-.ig-txt b { font-size: 1.8rem; }
-.ig-txt span { color: var(--ink-dim); font-size: 1.35rem; }
+.ig-n::after { content: '.'; }
+.ig-txt b { font-size: 2.1rem; }
+.ig-txt span { color: var(--talk-accent); font-size: 1.5rem; }
 .ig-txt .ref { font-size: 0.82rem; margin-top: 0.15rem; }
 .example-inset {
   border: 1.5px solid rgba(227,176,75,0.5); border-radius: 0.7rem;
