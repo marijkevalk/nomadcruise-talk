@@ -1413,7 +1413,7 @@ class: dg-slide
 
 <hr class="rule" />
 
-<div class="grid grid-cols-[1fr_1.25fr] gap-10 items-center mt-1">
+<div class="grid grid-cols-[1fr_1.3fr] gap-6 items-center mt-1">
 <div v-click="1">
   <div class="dg-label">The raw data</div>
   <div class="dg-list mt-1">
@@ -1423,8 +1423,8 @@ class: dg-slide
   </div>
 </div>
 <div v-click="2" class="dg-purple">
-  <b>Llama 4 read over 30 trillion tokens</b>
-  <div class="mt-1">= 100,000+ years of full-time reading for a human</div>
+  <b>Llama 4 read over 30 trillion (3·10¹³) tokens</b>
+  <div class="mt-1" style="width:0; min-width:100%;">100,000+ years of full-time reading for a human</div>
   <div class="dg-ref">Meta 2025</div>
 </div>
 </div>

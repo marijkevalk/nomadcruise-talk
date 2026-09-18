@@ -887,13 +887,14 @@
 .dg-purple {
   border: 2px solid rgba(114, 99, 184, 0.65); background: rgba(114, 99, 184, 0.08);
   border-radius: 0.7rem; padding: 0.9rem 1.2rem; font-size: 1.15rem; line-height: 1.5;
+  width: fit-content;
 }
 .dg-purple b { color: #b9a9ee; }
 .dg-ref { font-size: 0.8rem; color: rgba(242, 236, 223, 0.55); font-style: italic; margin-top: 0.3rem; text-align: right; }
 .dg-slide h1 { margin-bottom: 0.7rem; }
 .dg-slide .rule { margin: 0.6rem 0 0.9rem; }
-.dg-ch > div { padding: 0.1rem 0; }
-.dg-main { font-size: 1.35rem; line-height: 1.3; color: #fff; }
+.dg-ch > div { padding: 0.04rem 0; }
+.dg-main { font-size: 1.35rem; line-height: inherit; color: #fff; }
 .dg-main::before { content: '\25B8\00a0\00a0'; color: var(--talk-accent); }
 .dg-sub { font-size: 1.05rem; color: rgba(242, 236, 223, 0.72); margin-left: 0.5rem; }
 
