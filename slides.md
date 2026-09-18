@@ -956,7 +956,7 @@ class: t18-slide
       <div class="lfv-step" v-click="4">Compare with the real token<br>= <b class="accent">error score</b></div>
       <div class="lfv-arr" v-click="5"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="lfv-step" v-click="5">Adjust <b>every weight</b></div>
-      <div class="lfv-return" v-click="6"></div>
+      <div class="lfv-return" v-click="6"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 3 L4 10 L17 17 Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
     </div>
     <div class="lfv-repeat" v-click="6">Repeat billions of times</div>
     <div class="lfv-goal" v-click="7">Goal: <b>minimize error score</b></div>
