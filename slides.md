@@ -1184,29 +1184,29 @@ it — but all the knowledge is in the file.]
 
 <hr class="rule" />
 
-<div class="mt-2 text-xl"><b class="accent">Inference</b> = using the finished model: you <b>prompt</b>, it <b>replies</b>.</div>
+<div v-click="1" class="mt-2 text-xl"><b class="accent">Inference</b> = using the finished model: you <b>prompt</b>, it <b>replies</b>.</div>
 
 <div class="if-flow mt-6">
-  <div class="if-step if-you"><span class="if-lab">Your prompt</span><span class="if-sub">"Where does the QM2 sail to?"</span></div>
-  <svg class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div v-click="2" class="if-step if-you"><span class="if-lab">Your prompt</span><span class="if-sub">"Where does the QM2 sail to?"</span></div>
+  <svg v-click="3" class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <div class="if-loop">
-    <div class="if-step"><span class="if-lab">The model</span><span class="if-sub">The file of numbers</span></div>
-    <svg class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <div class="if-step"><span class="if-lab">One token</span></div>
-    <div class="if-return"><span class="if-return-label">Glue it on · Feed it all back</span></div>
+    <div v-click="3" class="if-step"><span class="if-lab">The model</span><span class="if-sub">The file of numbers</span></div>
+    <svg v-click="4" class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div v-click="4" class="if-step"><span class="if-lab">One token</span><span class="if-sub">Drawn from the list</span></div>
+    <div v-click="5" class="if-return"><span class="if-return-label">Glue it on · Feed it all back</span></div>
   </div>
 </div>
 
 <div class="inf-reply mt-8">
-  <span class="inf-label">Reply</span>
-  <span class="inf-word" v-click="1">It</span>
-  <span class="inf-word" v-click="2">sails</span>
-  <span class="inf-word" v-click="3">to</span>
-  <span class="inf-word" v-click="4">New</span>
-  <span class="inf-word" v-click="5">York</span>
+  <span v-click="6" class="inf-label">Reply</span>
+  <span class="inf-word" v-click="7">It</span>
+  <span class="inf-word" v-click="8">sails</span>
+  <span class="inf-word" v-click="9">to</span>
+  <span class="inf-word" v-click="10">New</span>
+  <span class="inf-word" v-click="11">York</span>
 </div>
 
-<div v-click="5" class="mt-4" style="font-size:1.25rem; color:var(--ink);">One <b>token</b> at a time</div>
+<div v-click="11" class="mt-4" style="font-size:1.25rem; color:var(--ink);">One <b>token</b> at a time</div>
 
 
 
@@ -1214,17 +1214,22 @@ it — but all the knowledge is in the file.]
 
 <!--
 So what happens when you actually USE the thing — when you type a question
-and press Enter? The jargon word is inference. And it's just the finished
-model at work: you prompt, it replies. You already know everything it needs.
+and press Enter? The jargon word is inference. [click] And it's just the
+finished model at work: you prompt, it replies. You already know everything
+it needs. Here's the whole machine.
 
-Here's the whole machine. Your prompt goes IN — it's simply the start of the
-text. The model computes exactly the kind of list we started this section
-with, and out comes ONE token. Just one.
+[click] Your prompt goes IN — it's simply the start of the text.
 
-[click] "It". The model doesn't write a sentence — it produces a single token.
+[click] It goes into the model — the file of numbers. The model computes
+exactly the kind of list we started this section with…
 
-Then — and this is the whole trick — that token gets glued onto the text, and
-the WHOLE thing goes back into the model. Prompt plus "It". Round again.
+[click] …and out comes ONE token. Just one. A draw from that list.
+
+[click] Then — and this is the whole trick — that token gets glued onto the
+text, and the WHOLE thing goes back into the model. Round again.
+
+[click] Watch the reply build. [click] "It". The model doesn't write a
+sentence — it produces a single token. Prompt plus "It" — round again.
 [click] "sails". Glue it on, feed it all back. [click] "to". [click] "New".
 Remember the seventy percent York from the start of this section? THIS is
 where that list comes from. [click] "York".
