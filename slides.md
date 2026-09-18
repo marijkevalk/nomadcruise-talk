@@ -1267,7 +1267,7 @@ layout: center
   <li v-click class="mt-7">So maybe, it's a little <b class="accent">magic</b> after all…?</li>
 </ul>
 
-<div v-click class="absolute" style="right:2.2rem; bottom:2rem; width:11rem;">
+<div class="absolute" style="right:2.2rem; bottom:2rem; width:11rem;">
   <img :src="'/art/xkcd-2228.png'" class="photo w-full bg-white p-2" />
   <div class="credit mt-1 text-center" style="white-space:nowrap;">xkcd #2228 · CC BY-NC</div>
 </div>
@@ -1298,9 +1298,9 @@ take the word "just" back. [magician puts his hat back on] The recipe is
 statistics — what the statistics learned, is the interesting part. So maybe
 it's a little magic after all.
 
-[click — the captcha comic] Even the captchas have noticed. "Click all the
-photos of places you would run for shelter during a robot uprising." We laugh…
-because it moved faster than anyone expected.
+[the captcha comic, on screen the whole time] Even the captchas have noticed.
+"Click all the photos of places you would run for shelter during a robot
+uprising." We laugh… because it moved faster than anyone expected.
 
 [Armor, if the one AI-savvy person pushes back on "emergence": fair — part of
 the SUDDENNESS is a measurement artifact; all-or-nothing metrics make gradual
