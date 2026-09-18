@@ -426,7 +426,7 @@ machine that can do everything a human can.
   <div class="tl2-row">
     <div class="tl2-txt">
       <div class="tl2-label">use cases</div>
-      <div class="tl2-main"><span class="tl2-year">90s →</span> the AI you already use <span class="dim">· Maps routes · Netflix picks · Face ID</span></div>
+      <div class="tl2-main"><span class="tl2-year">90s →</span> the AI in your daily life <span class="dim">· Google Maps · Netflix picks · Face ID</span></div>
     </div>
     <img class="tl2-img" :src="'/photos/datacenter.jpg'" />
   </div>
@@ -514,7 +514,7 @@ And right now? We're in the hottest summer the field has ever had.
   <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>More data</b> <span>the internet finally had enough text</span></div></div>
 </div>
 
-<div class="mt-6 accent text-xl" v-click="4">Note: AI is much more than LLMs · but that's our focus today.</div>
+<div class="mt-6 llm-note" v-click="4">Note: AI is much more than LLMs, but that's our focus today (on the cruise).</div>
 
 <div v-click="3" class="bubble bubble-dn ex-bubble"><b>~100M users in ~2 months</b><br><span class="dim">ChatGPT · fastest-growing consumer app ever</span><br><span class="ref">UBS / Similarweb 2023</span></div>
 <img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
