@@ -25,7 +25,7 @@ layout: default
 <div class="dim" style="font-size:1.42rem; margin-top:0.8rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; z-index:0; height:120%; width:64%; object-fit:cover; object-position:42% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, transparent 24%, black 46%); mask-image:linear-gradient(to right, transparent 0%, transparent 24%, black 46%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; z-index:0; height:120%; width:64%; object-fit:cover; object-position:42% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, transparent 8%, rgba(0,0,0,0.07) 18%, rgba(0,0,0,0.22) 28%, rgba(0,0,0,0.48) 37%, rgba(0,0,0,0.78) 45%, black 52%); mask-image:linear-gradient(to right, transparent 0%, transparent 8%, rgba(0,0,0,0.07) 18%, rgba(0,0,0,0.22) 28%, rgba(0,0,0,0.48) 37%, rgba(0,0,0,0.78) 45%, black 52%);" />
 
 <div class="byline" style="font-size:1.25rem; bottom:3.6rem; z-index:2;">Marijke Valk</div>
 
