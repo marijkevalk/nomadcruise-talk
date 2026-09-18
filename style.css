@@ -515,7 +515,7 @@
 .wf-step b { color: #8fcbab; }
 
 /* agenda — "Our route today": three stops, box opens per stop */
-.route { display: flex; flex-direction: column; gap: 2rem; margin-top: 1.6rem; margin-left: 2.5rem; }
+.route { display: flex; flex-direction: column; gap: 2rem; margin-top: 1.6rem; margin-left: 6.5rem; }
 .stop { display: grid; grid-template-columns: 2.4rem 1fr; align-items: baseline; column-gap: 1.2rem; white-space: nowrap; }
 .stop-num {
   font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.85rem;

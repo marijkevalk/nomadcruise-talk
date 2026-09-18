@@ -280,13 +280,13 @@ the same engine.
   <ul class="wf-list">
     <li>Something new that you learned</li>
     <li>Something you don't understand</li>
-    <li>A follow-up question you got</li>
+    <li>A follow-up question it sparked</li>
   </ul>
 </div>
 
 </div>
 
-<img :src="'/art/tovenaar-12-zwevend.svg'" class="mage mage-left" style="height:7rem; bottom:1rem;" />
+<img :src="'/art/tovenaar-liggend-breed.svg'" class="mage mage-left" style="height:6rem; left:1.5rem; bottom:1.2rem;" />
 
 <!--
 But this is a workshop — so we will get active as well. Don't worry: we'll only
