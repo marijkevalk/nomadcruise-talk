@@ -395,7 +395,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="1">
     <div class="tl2-txt">
       <div class="tl2-label">dream</div>
-      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i>, let us calculate <span class="dim">(Thinking by a machine)</span></div>
+      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i>,&nbsp;let us calculate <span class="dim">(Thinking by a machine)</span></div>
       <div class="tl2-ref">Leibniz, <i>De Arte Combinatoria</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
@@ -411,7 +411,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="3">
     <div class="tl2-txt">
       <div class="tl2-label">name</div>
-      <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i>"summer project"</i> names the field AI <span class="dim">(One summer?!)</span></div>
+      <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i style="margin-right:0.16em">"summer project"</i> names the field AI <span class="dim">(One summer?!)</span></div>
       <div class="tl2-ref">Dartmouth Workshop, 1956</div>
     </div>
     <img class="tl2-img" :src="'/photos/dartmouth-hall.jpg'" style="object-position:50% 40%;" />
@@ -479,10 +479,10 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
     <path d="M520,150 Q562,140 590,104 Q622,66 650,46" fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrHead)"/>
     <text x="598" y="38" fill="#e3b04b" font-size="28" font-weight="bold" text-anchor="middle">NOW</text>
     <text x="285" y="240" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter 1970s</text>
-    <text x="285" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">algorithms stalled</text>
+    <text x="285" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">Algorithms stalled</text>
     <text x="490" y="240" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter 1990s</text>
-    <text x="490" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">too little data</text>
-    <text x="490" y="296" fill="#cfc9bb" font-size="12" text-anchor="middle">weak hardware</text>
+    <text x="490" y="264" fill="#cfc9bb" font-size="12" text-anchor="middle">Too little data</text>
+    <text x="490" y="288" fill="#cfc9bb" font-size="12" text-anchor="middle">Weak hardware</text>
   </g>
 </svg>
 </div>
@@ -520,7 +520,7 @@ And right now? We're in the hottest summer the field has ever had.
   <div class="ig" v-click="3"><span class="ig-n">3</span><div class="ig-txt"><b>More data</b> <span>The internet finally had enough text</span></div></div>
 </div>
 
-<div v-click="4" class="boom-note"><b>ChatGPT: ±100M users in 2 months</b><br><span class="dim">fastest-growing consumer app</span><br><span class="ref">UBS / Similarweb 2023</span></div>
+<div v-click="4" class="boom-note"><b>ChatGPT: ±100M users in 2 months</b><br><span class="dim">Fastest-growing consumer app</span><br><span class="ref">UBS / Similarweb 2023</span></div>
 
 <img :src="'/art/tovenaar-16-juichend.svg'" class="mage" />
 
@@ -630,7 +630,7 @@ right now.
 <div class="space-y-5 text-xl" style="font-family:'Fraunces',serif;">
   <p>"The Titanic hit an <span class="ans"><span v-click.hide="2">…</span><span v-click="2" class="fill-blue">iceberg</span></span>"</p>
   <p v-click="3">"The Queen Mary 2 sails<br>from Southampton to<br>New <span class="ans"><span v-click.hide="5">…</span><span v-click="5" class="fill-blue">York</span></span>"</p>
-  <p v-click="6">"My favourite city in the world is …"<br><span v-click="8" class="fill-blue" style="font-size:0.95rem; font-style:normal;">no single winner &middot; take your pick</span></p>
+  <p v-click="6">"My favourite city in the world is …"</p>
 </div>
 <div v-click="1" class="relative">
   <div class="relative">
@@ -642,9 +642,9 @@ right now.
 </div>
 </div>
 
-<div v-click="9" class="auto-arrow mt-1"><span class="arr">⟶</span>AUTOCOMPLETE</div>
+<div v-click="8" class="auto-arrow mt-1"><svg class="arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AUTOCOMPLETE</div>
 
-<div v-click="10" class="text-lg" style="color:#8fcbab;">LLM <span class="dim">=</span> Large Language Model <span class="dim">→</span> <b>autocomplete on steroids</b></div>
+<div v-click="9" class="text-lg" style="color:#e3b04b;">LLM <span class="dim">=</span> Large Language Model <span class="dim">→</span> <b>autocomplete on steroids</b></div>
 
 
 
@@ -676,11 +676,9 @@ Everyone said something different. There is no single right answer.
 [click] Now look at the model — same thing. No confident winner this time:
 London, Tokyo, New York, Paris, Barcelona, all clustered around four or
 five percent. When the answer is a matter of taste, the model doesn't pick
-one — it spreads its bet across many options.
-
-[click] No single winner — take your pick. Hold on to that: this spread,
-this not-being-sure, is exactly where variety and creativity come from.
-We'll come back to it.
+one — it spreads its bet across many options. No single winner — take your
+pick. Hold on to that: this spread, this not-being-sure, is exactly where
+variety and creativity come from. We'll come back to it.
 
 [click] Congratulations. You just did — literally — what an LLM does: you
 predicted the next word from the previous words. That's the entire job
