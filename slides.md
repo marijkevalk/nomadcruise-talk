@@ -362,7 +362,7 @@ fly-over.
   </div>
 </div>
 
-
+<img :src="'/art/tovenaar-06-denkend.svg'" class="mage" style="top:1.4rem; right:1.6rem; bottom:auto; height:5.5rem;" />
 
 <!--
 First: what even IS intelligence? There's no agreed definition — even the
@@ -395,7 +395,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="1">
     <div class="tl2-txt">
       <div class="tl2-label">dream</div>
-      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i>, let us calculate <span class="dim">(thinking by a machine)</span></div>
+      <div class="tl2-main"><span class="tl2-year">1600s:</span> Leibniz: <i>"calculemus"</i>, let us calculate <span class="dim">(Thinking by a machine)</span></div>
       <div class="tl2-ref">Leibniz, <i>De Arte Combinatoria</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/leibniz.jpg'" style="object-position:50% 15%;" />
@@ -403,7 +403,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="2">
     <div class="tl2-txt">
       <div class="tl2-label">question</div>
-      <div class="tl2-main"><span class="tl2-year">1950:</span> Turing: can machines think? <span class="dim">(the Turing test)</span></div>
+      <div class="tl2-main"><span class="tl2-year">1950:</span> Turing: can machines think? <span class="dim">(The Turing test)</span></div>
       <div class="tl2-ref">Turing, <i>Computing Machinery &amp; Intelligence</i></div>
     </div>
     <img class="tl2-img" :src="'/photos/turing.jpg'" style="object-position:50% 20%;" />
@@ -411,7 +411,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="3">
     <div class="tl2-txt">
       <div class="tl2-label">name</div>
-      <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i>"summer project"</i> names the field AI <span class="dim">(one summer?!)</span></div>
+      <div class="tl2-main"><span class="tl2-year">1956:</span> Dartmouth <i>"summer project"</i> names the field AI <span class="dim">(One summer?!)</span></div>
       <div class="tl2-ref">Dartmouth Workshop, 1956</div>
     </div>
     <img class="tl2-img" :src="'/photos/dartmouth-hall.jpg'" style="object-position:50% 40%;" />
@@ -487,7 +487,7 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 </svg>
 </div>
 
-<div v-click="[1,2]" class="flow-cycle">money in <span class="fa">➔</span> hype <span class="fa">➔</span> disappointment <span class="fa">➔</span> freeze <span class="fa">➔</span> a breakthrough <span class="fa">➔</span> repeat …</div>
+<div v-click="[1,2]" class="flow-cycle">Money In <span class="fa">➔</span> Hype <span class="fa">➔</span> Disappointment <span class="fa">➔</span> Freeze <span class="fa">➔</span> A Breakthrough <span class="fa">➔</span> Repeat …</div>
 
 <img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
@@ -620,7 +620,7 @@ right now.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # You are the model
 
@@ -694,7 +694,7 @@ it's going to follow us through this whole section.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # LLMs are pattern generators
 
@@ -765,7 +765,7 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # Text becomes tokens
 
@@ -828,7 +828,7 @@ the model DO with those numbers?
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 <h1 style="font-size:2.5rem;">Weights: the connections between tokens</h1>
 
@@ -927,7 +927,7 @@ expect. That's the next slide.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # Training = trial and error
 
@@ -1039,7 +1039,7 @@ of its own. I'm saving it for the end of this section.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # Meaning becomes geometry
 
@@ -1062,7 +1062,7 @@ model was never told what a king is. It's in the numbers anyway.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # Post-training: the finishing school
 
@@ -1108,7 +1108,7 @@ someone says "the AI said so."
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # A model is literally a file of numbers
 
@@ -1146,7 +1146,7 @@ it — but all the knowledge is in the file.]
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # Inference: the model at work
 
@@ -1215,7 +1215,7 @@ Percentages, all the way down. Sound familiar? That's… statistics.
 layout: center
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 <div class="display" style="font-size:2.9rem;">…and the results are <span class="accent">spectacular</span></div>
 
@@ -1264,7 +1264,7 @@ exist without being designed in — that part is not disputed.]
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # Temperature
 
@@ -1355,7 +1355,7 @@ just saw stands on it.
 
 ---
 
-<div class="kicker">Part two <span class="dim">· an LLM is statistics built on our written world</span></div>
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
 # Data is gold
 
