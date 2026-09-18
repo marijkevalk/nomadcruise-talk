@@ -1472,13 +1472,13 @@ Section two done — and I'd be amazed if you have no questions now.
 
 <div class="qmain">
   <div class="ex-title">Examples</div>
-  <div class="qlist">
-    <div class="ql">Why can't it just look things up?</div>
-    <div class="ql">What did <i>your</i> model actually train on?</div>
-    <div class="ql">If it just predicts words, how can it write code?</div>
-    <div class="ql">What is "temperature" in a language model?</div>
-    <div class="ql">Why do I get a different answer every time?</div>
-    <div class="ql">Split this sentence into tokens</div>
+  <div class="qlist qlist-tight">
+    <div class="ql">Explain "temperature" as if I am 12 years old</div>
+    <div class="ql">What does "GPT" actually stand for?</div>
+    <div class="ql">Is it better to prompt in English than in my own language?</div>
+    <div class="ql">What is the connection between an artificial neural network and the human brain?</div>
+    <div class="ql">How is polluted data cleaned before it's used for training?</div>
+    <div class="ql">How is it ensured that the nudging of the weights converges?</div>
   </div>
 </div>
 
