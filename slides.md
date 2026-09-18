@@ -11,6 +11,7 @@ drawings:
 transition: fade
 mdc: true
 favicon: /favicon.svg
+layout: default
 ---
 
 <div style="position:absolute; top:3.8rem; left:3.8rem; z-index:2;">
@@ -24,7 +25,7 @@ favicon: /favicon.svg
 <div class="dim" style="font-size:1.42rem; margin-top:0.8rem; width:0; min-width:100%; text-align:justify; text-align-last:justify;">Demystifying the technology for curious minds</div>
 </div>
 
-<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; z-index:0; height:120%; width:64%; object-fit:cover; object-position:42% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%); mask-image:linear-gradient(to right, transparent 4%, rgba(0,0,0,0.22) 30%, black 62%);" />
+<img :src="'/art/neural-gold.png'" style="position:absolute; right:0; top:-10%; z-index:0; height:120%; width:64%; object-fit:cover; object-position:42% 50%; opacity:0.92; -webkit-mask-image:linear-gradient(to right, transparent 0%, transparent 24%, black 46%); mask-image:linear-gradient(to right, transparent 0%, transparent 24%, black 46%);" />
 
 <div class="byline" style="font-size:1.25rem; bottom:3.6rem; z-index:2;">Marijke Valk</div>
 
@@ -42,17 +43,21 @@ layout: center
 
 <div class="text-center">
 
-<div class="prow" style="font-family:'Fraunces',serif; font-size:3.1rem; min-height:15rem; letter-spacing:0.02em;">
+<div class="prow" style="font-family:'Fraunces',serif; font-size:2.8rem; min-height:15rem; letter-spacing:0.02em;">
   <span v-click="1" style="justify-self:end;">PROMPT</span>
   <span class="midzone">
-    <svg v-click="2" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
-    <span v-click="4" class="qwrap">
-      <svg v-click="5" class="cube" viewBox="0 0 124 124">
-        <polygon points="14,46 34,26 106,26 86,46" fill="#141414" stroke="#f5f5f5" stroke-width="1.6"/>
-        <polygon points="86,46 106,26 106,98 86,118" fill="#0a0a0a" stroke="#f5f5f5" stroke-width="1.6"/>
-        <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#f5f5f5" stroke-width="2"/>
-      </svg>
-      <span class="qmark">?</span>
+    <svg v-click="[2,4]" viewBox="0 0 340 40" class="longarrow"><line x1="6" y1="20" x2="310" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="308,4 336,20 308,36" fill="#e3b04b"/></svg>
+    <span v-click="4" class="splitzone">
+      <svg viewBox="0 0 70 40" class="splitarrow"><line x1="4" y1="20" x2="48" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="46,6 68,20 46,34" fill="#e3b04b"/></svg>
+      <span class="qwrap">
+        <svg v-click="5" class="cube" viewBox="0 0 124 124">
+          <polygon points="14,46 34,26 106,26 86,46" fill="#141414" stroke="#f5f5f5" stroke-width="1.6"/>
+          <polygon points="86,46 106,26 106,98 86,118" fill="#0a0a0a" stroke="#f5f5f5" stroke-width="1.6"/>
+          <polygon points="14,46 86,46 86,118 14,118" fill="#000000" stroke="#f5f5f5" stroke-width="2"/>
+        </svg>
+        <span class="qmark">?</span>
+      </span>
+      <svg viewBox="0 0 70 40" class="splitarrow"><line x1="4" y1="20" x2="48" y2="20" stroke="#e3b04b" stroke-width="8" stroke-linecap="round"/><polygon points="46,6 68,20 46,34" fill="#e3b04b"/></svg>
     </span>
   </span>
   <span v-click="2" style="justify-self:start;">RESPONSE</span>
@@ -273,15 +278,15 @@ the same engine.
   <div class="wf-lead"><b>Individually:</b> choose one of your questions and ask it to your AI assistant.</div>
   <div class="wf-lead mt-2">Share with your neighbours:</div>
   <ul class="wf-list">
-    <li>Something striking you learned</li>
-    <li>A new question that was raised</li>
-    <li>Something that's still unclear</li>
+    <li>Something new that you learned</li>
+    <li>Something you don't understand</li>
+    <li>A follow-up question you got</li>
   </ul>
 </div>
 
 </div>
 
-<img :src="'/art/tovenaar-04-liggend.svg'" class="mage mage-left" />
+<img :src="'/art/tovenaar-12-zwevend.svg'" class="mage mage-left" style="height:7rem; bottom:1rem;" />
 
 <!--
 But this is a workshop — so we will get active as well. Don't worry: we'll only
