@@ -939,29 +939,29 @@ class: t18-slide
 <div class="t18-grid">
 <div class="t18-left">
   <div class="lfv">
-    <div class="lfv-step">Start with <b>random weights</b></div>
-    <div class="lfv-arr" v-click="1"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-    <div class="lfv-loop" v-click="1">
-      <div class="lfv-step">Feed it a <b>real text</b></div>
-      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="lfv-step">Compute the next token</div>
-      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="lfv-step">Compare with the real token<br>= <b class="accent">error score</b></div>
-      <div class="lfv-arr"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="lfv-step">Adjust <b>every weight</b></div>
-      <div class="lfv-return"></div>
+    <div class="lfv-step" v-click="1">Start with <b>random weights</b></div>
+    <div class="lfv-arr" v-click="2"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="lfv-loop">
+      <div class="lfv-step" v-click="2">Feed it a <b>real text</b></div>
+      <div class="lfv-arr" v-click="3"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="lfv-step" v-click="3">Compute the next token</div>
+      <div class="lfv-arr" v-click="4"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="lfv-step" v-click="4">Compare with the real token<br>= <b class="accent">error score</b></div>
+      <div class="lfv-arr" v-click="5"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M12 2v20M4 16l8 12 8-12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="lfv-step" v-click="5">Adjust <b>every weight</b></div>
+      <div class="lfv-return" v-click="6"></div>
     </div>
-    <div class="lfv-repeat" v-click="1">Repeat billions of times</div>
-    <div class="lfv-goal" v-click="1">Goal: <b>minimize error score</b></div>
+    <div class="lfv-repeat" v-click="6">Repeat billions of times</div>
+    <div class="lfv-goal" v-click="7">Goal: <b>minimize error score</b></div>
   </div>
 </div>
 <div class="t18-right">
-  <div v-click="2">
+  <div v-click="8">
     <div class="t18-ex-label">Example</div>
     <div class="t18-sent">One data sentence: <i>"We sail the transatlantic <b class="accent">ocean</b>"</i></div>
   </div>
   <div class="tr-cols">
-    <div class="tr-col" v-click="3">
+    <div class="tr-col" v-click="9">
       <div class="tr-round">Round 1</div>
       <div class="tr-item"><span>apple</span><span>0.003%</span></div>
       <div class="tr-item"><span>the</span><span>0.003%</span></div>
@@ -970,7 +970,7 @@ class: t18-slide
       <div class="tr-dots" style="white-space:nowrap;">⋮ &ensp;All 50,000 tokens</div>
       <div class="tr-err"><span class="tx-bar" style="width:6.5rem"></span>Error <b class="accent">10.8</b></div>
     </div>
-    <div class="tr-col" v-click="4">
+    <div class="tr-col" v-click="10">
       <div class="tr-round">Round ~1 million</div>
       <div class="tr-item"><span>sea</span><span>11%</span></div>
       <div class="tr-item tr-goal"><span>ocean</span><span>8%</span></div>
@@ -979,7 +979,7 @@ class: t18-slide
       <div class="tr-dots">⋮</div>
       <div class="tr-err"><span class="tx-bar" style="width:1.8rem"></span>Error <b class="accent">2.5</b></div>
     </div>
-    <div class="tr-col" v-click="5">
+    <div class="tr-col" v-click="11">
       <div class="tr-round">Round ~1 billion</div>
       <div class="tr-item tr-goal"><span>ocean <span class="accent">✓</span></span><span>61%</span></div>
       <div class="tr-item"><span>sea</span><span>14%</span></div>
@@ -988,11 +988,11 @@ class: t18-slide
       <div class="tr-dots">⋮</div>
       <div class="tr-err"><span class="tx-bar" style="width:0.45rem"></span>Error <b class="accent">0.5</b></div>
     </div>
-    <div class="tr-note dim" v-click="3">Numbers are indicative</div>
+    <div class="tr-note dim" v-click="9">Numbers are indicative</div>
   </div>
   <div class="t18-ml">
-    <div v-click="6"><span class="accent tri">▸</span> <b class="accent">MACHINE LEARNING</b></div>
-    <div v-click="7" class="dim">Patterns are saved, not original data</div>
+    <div v-click="12"><span class="accent tri">▸</span> <b class="accent">MACHINE LEARNING</b></div>
+    <div v-click="13" class="dim">Patterns are saved, not original data</div>
   </div>
 </div>
 </div>
