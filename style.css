@@ -659,7 +659,7 @@
 .ig-txt { width: fit-content; }
 .ig-txt b { font-size: 2.1rem; line-height: 1.15; }
 .ig-txt span { color: var(--talk-accent); font-size: 1.5rem; margin-left: 0.5rem; }
-.ig-txt .ref { font-size: 0.82rem; margin-top: 0.55rem; text-align: right; }
+.ig-txt .ref { font-size: 0.82rem; margin-top: 0.1rem; text-align: right; }
 .llm-note { color: #8fcbab; font-size: 1.1rem; }
 /* slide 11 — green adoption note, sits directly under point 3 */
 .boom-note {
@@ -769,17 +769,12 @@
   vertical-align: middle;
 }
 .tok-id { font-size: 0.62rem; color: var(--ink-dim); margin-top: 0.12rem; letter-spacing: 0.04em; }
-/* grouped sub-word tokens: brace binds the pieces + shows the word they form */
-.wtok { display: inline-flex; gap: 0.18rem; position: relative; padding-bottom: 1.15rem; }
+/* grouped sub-word tokens: brace binds the pieces of one word */
+.wtok { display: inline-flex; gap: 0.18rem; position: relative; padding-bottom: 0.55rem; }
 .wtok::before {
-  content: ''; position: absolute; left: 0.1rem; right: 0.1rem; bottom: 0.78rem;
+  content: ''; position: absolute; left: 0.1rem; right: 0.1rem; bottom: 0.1rem;
   height: 0.3rem; border: 2px solid rgba(227, 176, 75, 0.55);
   border-top: 0; border-radius: 0 0 5px 5px;
-}
-.wtok::after {
-  content: attr(data-word); position: absolute; left: 0; right: 0; bottom: 0;
-  text-align: center; font-family: 'Fraunces', serif; font-style: italic;
-  font-size: 0.82rem; color: var(--ink-dim);
 }
 
 /* Slide 19 (Training = trial and error): loop diagram + one worked example */
@@ -806,6 +801,13 @@
   background: #0a0e1a; padding: 0 0.7rem; white-space: nowrap;
   font-size: 0.85rem; font-style: italic; color: var(--ink-dim);
 }
+/* inference slide: the growing reply, one gold chip per word */
+.inf-reply { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem; font-size: 1.4rem; }
+.inf-label { color: var(--ink-dim); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 0.35rem; }
+.inf-word {
+  padding: 0.12rem 0.65rem; border: 1.5px solid rgba(227, 176, 75, 0.45);
+  border-radius: 0.4rem; background: rgba(227, 176, 75, 0.08);
+}
 .train-ex { max-width: 44rem; }
 .tx-sent { font-size: 1.15rem; margin-bottom: 0.5rem; }
 .tx-row {
@@ -820,10 +822,31 @@
   display: inline-block; height: 0.55rem; margin-right: 0.6rem; border-radius: 0.2rem;
   background: linear-gradient(90deg, rgba(227, 176, 75, 0.9), rgba(227, 176, 75, 0.5));
 }
+/* three training snapshots: the model's percentage list converging on the right word */
+.tr-wrap { display: flex; gap: 2.2rem; align-items: center; }
+.tr-side { max-width: 15rem; line-height: 1.35; }
+.tr-side > div:first-child { white-space: nowrap; }
+.tr-side .dim { font-size: 0.98rem; }
+.tr-cols { display: flex; gap: 1rem; max-width: 40rem; }
+.tr-col {
+  flex: 1; border: 1.5px solid var(--hairline); border-radius: 0.5rem;
+  padding: 0.35rem 0.7rem 0.45rem; background: rgba(242, 236, 223, 0.03);
+}
+.tr-round {
+  color: var(--ink-dim); font-size: 0.76rem; letter-spacing: 0.08em;
+  text-transform: uppercase; white-space: nowrap; margin-bottom: 0.2rem;
+}
+.tr-item { display: flex; justify-content: space-between; gap: 0.6rem; font-size: 0.92rem; line-height: 1.4; }
+.tr-item > span:last-child { color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+.tr-goal, .tr-goal > span:last-child { color: var(--talk-accent); font-weight: 600; }
+.tr-dots { color: var(--ink-dim); font-size: 0.78rem; line-height: 1.2; }
+.tr-err { display: flex; align-items: center; white-space: nowrap; margin-top: 0.3rem; font-size: 0.92rem; }
+.tr-err b { margin-left: 0.3rem; }
+.tr-note { font-size: 0.78rem; font-style: italic; margin-top: 0.3rem; }
 
 /* Slide 14 (You are the model): audience-filled answer words + green takeaway */
 .fill-blue {
-  color: #7dd3fc;
+  color: #8fcbab;
   font-style: italic;
 }
 .auto-arrow {
@@ -835,3 +858,28 @@
 .auto-arrow .arr { font-size: 2.2rem; letter-spacing: 0; margin-right: 0.5rem; }
 .ans { display: inline-grid; vertical-align: baseline; }
 .ans > * { grid-area: 1 / 1; }
+
+/* Slide 15 (pattern generators): dimension blocks, counts in green */
+.pat-block {
+  border: 1px solid rgba(242, 236, 223, 0.22);
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.95rem;
+  background: rgba(242, 236, 223, 0.04);
+}
+.pat-dim { color: #8fcbab; font-weight: 600; }
+
+/* Slide 25 (Data is gold): green fact inset */
+.data-inset {
+  display: inline-block;
+  border: 2px solid rgba(95, 174, 136, 0.6);
+  background: rgba(95, 174, 136, 0.12);
+  border-radius: 0.7rem;
+  padding: 0.65rem 1.3rem;
+  margin: 0.55rem 0;
+  color: #8fcbab;
+  font-size: 1.25rem;
+  line-height: 1.45;
+}
+.data-inset b { color: #8fcbab; }
+.data-inset .ref { color: var(--ink-dim); }
+.rows-tight > * { padding: 0.45rem 0; }
