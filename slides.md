@@ -428,7 +428,7 @@ machine that can do everything a human can.
   <div class="tl2-row" v-click="5">
     <div class="tl2-txt">
       <div class="tl2-label">use cases</div>
-      <div class="tl2-main"><span class="tl2-year">90s →</span> AI in your daily life <span class="dim">· Google Maps · Netflix picks · Face ID</span></div>
+      <div class="tl2-main"><span class="tl2-year">90s →</span> AI in your daily life: <span class="dim">Google Maps, Netflix picks, Face ID</span></div>
     </div>
     <img class="tl2-img" :src="'/photos/face-id.jpg'" style="object-position:50% 25%;" />
   </div>

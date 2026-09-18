@@ -521,7 +521,7 @@
 .wf-step b { color: #8fcbab; }
 
 /* agenda — "Our route today": three stops, box opens per stop */
-.route { display: flex; flex-direction: column; gap: 2rem; margin-top: 4.5rem; margin-left: 6.5rem; }
+.route { display: flex; flex-direction: column; gap: 2rem; margin-top: 3.2rem; margin-left: 6.5rem; }
 .stop { display: grid; grid-template-columns: 2.4rem 1fr; align-items: baseline; column-gap: 1.2rem; white-space: nowrap; }
 .stop-num {
   font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.85rem;
@@ -658,8 +658,8 @@
 .boom-note .ref { color: var(--ink-dim); font-size: 0.78rem; font-style: italic; opacity: 0.8; }
 /* slide 5 — moved "AI is much more than LLMs" note, italic under the route */
 .route-note {
-  margin-top: 2.2rem; margin-left: 6.5rem; max-width: 42rem;
-  font-style: italic; color: var(--ink-dim); font-size: 1.15rem;
+  margin-top: 2.4rem; margin-left: 10.1rem; /* = route left + num column + gap → aligns with the stop titles */
+  font-style: italic; color: var(--ink-dim); font-size: 1.05rem; white-space: nowrap;
 }
 .example-inset {
   border: 1.5px solid rgba(227,176,75,0.5); border-radius: 0.7rem;
