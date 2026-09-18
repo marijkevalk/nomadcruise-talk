@@ -463,30 +463,28 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <hr class="rule" />
 
 <div style="text-align:center;">
-<svg viewBox="0 0 720 250" class="winters" style="height:15rem; width:auto;" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="0 0 580 250" class="winters" style="height:15rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
   <defs>
     <marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
     <g id="sun"><circle r="9" fill="none" stroke="#e3b04b" stroke-width="2.4"/><g stroke="#e3b04b" stroke-width="2.4" stroke-linecap="round"><line y1="-13" y2="-16.5"/><line y1="13" y2="16.5"/><line x1="-13" x2="-16.5"/><line x1="13" x2="16.5"/><line x1="-9.2" y1="-9.2" x2="-11.7" y2="-11.7"/><line x1="9.2" y1="9.2" x2="11.7" y2="11.7"/><line x1="9.2" y1="-9.2" x2="11.7" y2="-11.7"/><line x1="-9.2" y1="9.2" x2="-11.7" y2="11.7"/></g></g>
-    <g id="snow"><path d="M-13,2 a7,7 0 0,1 3,-13.6 a9,9 0 0,1 17.5,1.6 a7,7 0 0,1 0.5,12 z" fill="none" stroke="#8cbedc" stroke-width="2.2"/><g stroke="#8cbedc" stroke-width="2" stroke-linecap="round"><line x1="-7" y1="8" x2="-9" y2="13"/><line x1="0" y1="8" x2="-2" y2="14"/><line x1="7" y1="8" x2="5" y2="13"/></g></g>
+    <g id="snow"><path d="M-13,2 a7,7 0 0,1 3,-13.6 a9,9 0 0,1 17.5,1.6 a7,7 0 0,1 0.5,12 z" fill="none" stroke="#8cbedc" stroke-width="2.2"/><g fill="#8cbedc"><circle cx="-7" cy="11.5" r="1.7"/><circle cx="0" cy="14" r="1.7"/><circle cx="7" cy="11.5" r="1.7"/></g></g>
   </defs>
-  <path d="M20,150 L70,150 Q110,150 130,120 Q150,90 175,90 Q200,90 220,120 Q245,155 285,155 Q320,155 345,120 Q372,85 400,85 Q428,85 452,120 Q485,158 520,150 Q560,140 585,120 Q640,70 700,40"
-        fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrHead)"/>
+  <path d="M20,150 L70,150 Q110,150 130,120 Q150,90 175,90 Q200,90 220,120 Q245,155 285,155 Q320,155 345,120 Q372,85 400,85 Q428,85 452,120 Q485,158 520,150"
+        fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   <use href="#sun" x="175" y="66"/>
   <use href="#sun" x="400" y="61"/>
-  <use href="#snow" x="70" y="128"/>
   <use href="#snow" x="285" y="182"/>
-  <use href="#snow" x="452" y="182"/>
-  <text x="672" y="52" fill="#e3b04b" font-size="20" font-weight="bold" text-anchor="middle">now</text>
+  <use href="#snow" x="490" y="182"/>
   <g v-click="2">
     <text x="285" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1970s</text>
     <text x="285" y="230" fill="#9a917f" font-size="11" text-anchor="middle">algorithms stalled</text>
-    <text x="452" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1990s</text>
-    <text x="452" y="230" fill="#9a917f" font-size="11" text-anchor="middle">too little data</text>
+    <text x="490" y="212" fill="#8cbedc" font-size="14" font-weight="bold" text-anchor="middle">AI Winter · 1990s</text>
+    <text x="490" y="230" fill="#9a917f" font-size="11" text-anchor="middle">too little data</text>
   </g>
 </svg>
 </div>
 
-<div v-click="[1,2]" class="mt-3 text-xl dim" style="text-align:center;">money in → hype → disappointment → <b class="accent">winter</b> → a breakthrough → money in again</div>
+<div v-click="[1,2]" class="mt-3 text-xl dim" style="text-align:center;">money in → hype → disappointment → <b class="accent">freeze</b> → a breakthrough → money in again</div>
 
 <img :src="'/art/tovenaar-06-schouderophalend.svg'" class="mage" />
 
