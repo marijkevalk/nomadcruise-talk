@@ -808,6 +808,82 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 <div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
+# Parameters: the model's dials
+
+<hr class="rule" />
+
+<div v-click class="mt-4">
+  <div class="text-2xl leading-snug">A <b class="accent">parameter</b> is one dial of the model</div>
+  <div class="mt-1 text-lg" style="color:var(--ink-dim);">Turn a dial, and the answer changes a little</div>
+
+  <svg viewBox="0 0 380 110" style="width:24rem; margin:1.6rem 0 0 1rem;">
+    <g stroke-linecap="round">
+      <g transform="translate(60,58)">
+        <circle r="40" fill="none" stroke="#f2ecdf" stroke-width="2.5"/>
+        <g stroke="#9a917f" stroke-width="2">
+          <line x1="-29.4" y1="-17" x2="-34.6" y2="-20"/><line x1="-17" y1="-29.4" x2="-20" y2="-34.6"/>
+          <line x1="0" y1="-34" x2="0" y2="-40"/><line x1="17" y1="-29.4" x2="20" y2="-34.6"/>
+          <line x1="29.4" y1="-17" x2="34.6" y2="-20"/>
+        </g>
+        <line x1="0" y1="0" x2="-19" y2="-21" stroke="#e3b04b" stroke-width="4.5"/>
+        <circle r="4.5" fill="#e3b04b"/>
+      </g>
+      <g transform="translate(190,58)">
+        <circle r="40" fill="none" stroke="#f2ecdf" stroke-width="2.5"/>
+        <g stroke="#9a917f" stroke-width="2">
+          <line x1="-29.4" y1="-17" x2="-34.6" y2="-20"/><line x1="-17" y1="-29.4" x2="-20" y2="-34.6"/>
+          <line x1="0" y1="-34" x2="0" y2="-40"/><line x1="17" y1="-29.4" x2="20" y2="-34.6"/>
+          <line x1="29.4" y1="-17" x2="34.6" y2="-20"/>
+        </g>
+        <line x1="0" y1="0" x2="3" y2="-28" stroke="#e3b04b" stroke-width="4.5"/>
+        <circle r="4.5" fill="#e3b04b"/>
+      </g>
+      <g transform="translate(320,58)">
+        <circle r="40" fill="none" stroke="#f2ecdf" stroke-width="2.5"/>
+        <g stroke="#9a917f" stroke-width="2">
+          <line x1="-29.4" y1="-17" x2="-34.6" y2="-20"/><line x1="-17" y1="-29.4" x2="-20" y2="-34.6"/>
+          <line x1="0" y1="-34" x2="0" y2="-40"/><line x1="17" y1="-29.4" x2="20" y2="-34.6"/>
+          <line x1="29.4" y1="-17" x2="34.6" y2="-20"/>
+        </g>
+        <line x1="0" y1="0" x2="21" y2="-19" stroke="#e3b04b" stroke-width="4.5"/>
+        <circle r="4.5" fill="#e3b04b"/>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<div v-click class="text-xl mt-8"><span class="accent">▸</span> More dials: <b>more complex patterns</b> it can capture</div>
+
+<div v-click class="text-xl mt-3"><span class="accent">▸</span> More dials: <b>slower</b> and <b>more expensive</b> calculations</div>
+
+<img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" />
+
+<!--
+New word, and it's the most famous jargon word in AI: parameters.
+
+[click] Think of a parameter as one dial of the model. Turn one dial, and
+the answer changes a tiny little bit. A model is a machine with an
+enormous amount of these dials.
+
+[click] The more dials a model has, the more complex the patterns it can
+capture.
+
+[click] But more dials also has a price: every answer takes more
+calculating. A bigger model is a slower model, and a more expensive one.
+
+So this week, when you hear "a bigger model" or "so-many billion
+parameters": it just means more dials. Where do all those dials get their
+settings? That's coming in a minute — that's what training is.
+
+[Armor — "who turns the dials?": nobody by hand. Training turns them,
+automatically, billions of times. That's the trial-and-error slide coming
+up.]
+-->
+
+---
+
+<div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
+
 # Text becomes tokens
 
 <hr class="rule" />
