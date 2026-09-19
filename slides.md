@@ -1216,7 +1216,7 @@ it — but all the knowledge is in the file.]
   <div v-click="2" class="if-step if-you"><span class="if-lab">Your prompt</span><span class="if-sub">"Where does the QM2 sail to?"</span></div>
   <svg v-click="3" class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <div class="if-loop">
-    <div v-click="3" class="if-step"><span class="if-lab">The model</span><span class="if-sub">The file of numbers</span></div>
+    <div v-click="3" class="if-step"><span class="if-lab">The model</span><span class="if-sub">Calculates the list of new token options</span></div>
     <svg v-click="4" class="if-arr" viewBox="0 0 44 24" aria-hidden="true"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <div v-click="4" class="if-step"><span class="if-lab">One token</span><span class="if-sub">Drawn from the list</span></div>
     <div v-click="5" class="if-return"><span class="if-return-label">Glue it on · Feed it all back</span></div>
