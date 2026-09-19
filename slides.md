@@ -1765,7 +1765,7 @@ clicks: 5
 
 <S3Diagram :stage="3" :c="$clicks" />
 
-<div v-click="5" class="accent" style="position:absolute; left:3.8rem; bottom:0.9rem; font-size:1.05rem; font-weight:600;">The quality of your input determines the quality of your output</div>
+<div v-click="5" class="accent" style="position:absolute; left:3.8rem; bottom:1.55rem; font-size:1.05rem; font-weight:600;">The quality of your input determines the quality of your output</div>
 
 <div class="s3-legend">
   <span><span class="chip chip-gold"></span>Model provider</span>
@@ -1779,21 +1779,27 @@ remembers NOTHING. So everything it needs has to be brought along, every
 single turn. In a car, that has a name: fuel. Context is the fuel.
 
 [click] Here's the tank, and everything YOU put in it. Your prompt. The
-whole conversation so far — resent every turn; that's why a new chat is a
-blank slate. Your standing instructions and saved memory — no magic: notes
-the harness pours back into the tank for you. Your documents — you've all
-heard the buzzword RAG? Here's the entire secret: a tool that SEARCHES your
-documents and pastes what it finds into the tank. That's it. That's all RAG
-is. One buzzword down. And search & tool results — a web page it fetches,
-anything from the internet, it all lands in exactly the same tank.
+whole conversation so far — resent every turn, and notice: that includes
+its OWN answers. The model re-reads itself every round. That's also why a
+new chat is a blank slate. Your custom instructions — the settings field in
+ChatGPT or Claude, and for the coders here: a CLAUDE.md or .cursorrules
+file. All the same trick: a note poured into the tank every turn — that's
+the entire reason those files work. Same for saved memory: notes the
+harness keeps for you and pours back in. Your documents — you've all heard
+the buzzword RAG? Here's the entire secret: a tool that SEARCHES your
+documents and pastes what it finds into the tank. That's it. That's all
+RAG is. One buzzword down. And search & tool results — a web page it
+fetches, anything from the internet, it all lands in exactly the same tank.
 
-[click] But you're not the only one at the pump. The app adds its own
-instructions…
+[click] But you're not the only one at the pump. The app pours in its own
+hidden instructions — you never see them…
 
-[click] …and the model provider pours in a hidden SYSTEM PROMPT — text
-placed before yours, every turn, that you never see. That's often the real
-answer to "it suddenly behaves differently". Three owners, one tank — watch
-the colours.
+[click] …and the model provider does too. The jargon word for these: the
+SYSTEM PROMPT — text placed before yours, every turn. That's often the
+real answer to "it suddenly behaves differently". Three owners, one tank —
+watch the colours. [Fun fact if it fits: in the real bundle the order is
+reversed — the provider's instructions come FIRST, your prompt comes LAST.
+The provider literally has the first word.]
 
 [click] And every turn, the WHOLE tank flows into the engine — fresh, every
 single time. Not just your last message: everything, again. [If a techie
@@ -2031,17 +2037,15 @@ giving it CONTEXT. You're already applying section three.
 
 <div>
 
-<div class="text-xl dim">data · weights · math · the box is grey now</div>
+<div class="display" style="font-size:2.3rem;">Keep asking.</div>
 
-<div class="mt-5 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
+<div class="mt-4 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
 "Treat the model as a noisy estimator,<br>not an oracle."
 </div>
 
-<div class="mt-5 display" style="font-size:2.3rem;">Keep asking.</div>
-
-<div class="mt-4 text-base dim leading-relaxed">
-find me on board · questions, AI talk, or just a chat<br>
-and at the morning workouts on deck
+<div class="mt-6 text-base leading-relaxed">
+Find me on board to continue the talk.<br>
+<span class="dim">Contact information in the NC app.</span>
 </div>
 
 </div>
