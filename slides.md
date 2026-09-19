@@ -1769,8 +1769,6 @@ clicks: 5
 
 <S3Diagram :stage="3" :c="$clicks" />
 
-<div v-click="5" class="s3-close">Context is your anti-hallucination lever · Give it your facts instead of letting it guess</div>
-
 <div class="s3-legend">
   <span><span class="chip chip-gold"></span>Model provider</span>
   <span><span class="chip chip-purple"></span>Third party</span>
@@ -1799,15 +1797,21 @@ the prompt. That's it. That's all RAG is. One buzzword down. Same for search
 and tool results — a web page it fetches, anything from the internet, it all
 lands in exactly the same place.
 
-[click] That place is the CONTEXT WINDOW: everything the model can see right
-now. It has a size — fill it up and the oldest turns fall out; that's the
-"it forgot what I said" feeling. One well, many taps. And more is not
-better: relevance beats volume.
+[click] Because here's the trick: all of it gets pasted TOGETHER — your
+words, its notes, the hidden instructions, what the search found — into one
+single bundle of text. That bundle is the context. It's you, as the model
+sees you. This little figure is everything the model will ever know about
+you.
 
-[click] And here's the payoff from the hallucination story: context is your
-anti-hallucination lever. The river always flows — if you don't give it your
-facts, it will guess. You can't change the engine and you didn't build the
-car — but you're always the driver, and context is the wheel.
+[click] And every turn, the whole figure travels into the engine — fresh,
+every single time. Where it lands is the CONTEXT WINDOW: everything the
+model can see right now. It has a size — fill it up and the oldest turns
+fall out; that's the "it forgot what I said" feeling. And more is not
+better: relevance beats volume. Which is the payoff from the hallucination
+story: context is your anti-hallucination lever. The river always flows —
+if you don't give it your facts, it will guess. You can't change the engine
+and you didn't build the car — but you're always the driver, and context is
+the wheel.
 -->
 
 ---

@@ -33,14 +33,14 @@ const shells = [
 // everything that flows in — one stacked column on the left, owner colours;
 // ye = where the stream lands on the figure's silhouette at the merge (click 4)
 const rows = [
-  { y: 178, ye: 280, g: 1, lab: 'Your prompt' },
-  { y: 212, ye: 292, g: 1, lab: 'The conversation so far' },
-  { y: 246, ye: 303, g: 2, lab: 'Your standing instructions' },
-  { y: 280, ye: 313, g: 2, lab: 'Saved memory' },
-  { y: 314, ye: 321, g: 2, lab: 'Hidden system prompt', col: GOLD, labCol: GOLD },
-  { y: 348, ye: 329, g: 2, lab: "The app's own instructions", col: PURPLE, labCol: PURPLE_B },
-  { y: 382, ye: 336, g: 3, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)' },
-  { y: 428, ye: 343, g: 3, lab: 'Search & tool results', sub: 'Anything from the internet lands here too' },
+  { y: 178, xe: 374, ye: 281, g: 1, lab: 'Your prompt' },
+  { y: 212, xe: 371, ye: 293, g: 1, lab: 'The conversation so far' },
+  { y: 246, xe: 365, ye: 305, g: 2, lab: 'Your standing instructions' },
+  { y: 280, xe: 361, ye: 314, g: 2, lab: 'Saved memory' },
+  { y: 314, xe: 361, ye: 322, g: 2, lab: 'Hidden system prompt', col: GOLD, labCol: GOLD },
+  { y: 348, xe: 361, ye: 330, g: 2, lab: "The app's own instructions", col: PURPLE, labCol: PURPLE_B },
+  { y: 382, xe: 362, ye: 336, g: 3, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)' },
+  { y: 428, xe: 364, ye: 341, g: 3, lab: 'Search & tool results', sub: 'Anything from the internet lands here too' },
 ]
 const ribs = [602, 629, 656, 683]
 
@@ -86,31 +86,35 @@ const carD = (s) => {
       <marker id="s3da" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
         <path d="M0,0 L6,3.5 L0,7 z" :fill="DIM" />
       </marker>
-      <marker id="s3oa" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-        <path d="M0,0 L7,4 L0,8 z" :fill="GOLD" />
-      </marker>
-      <marker id="s3pa" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-        <path d="M0,0 L7,4 L0,8 z" :fill="PURPLE_B" />
-      </marker>
     </defs>
 
-    <!-- context taps (stage 3; kept faint in stage 4) -->
-    <g v-if="arrOn(1) || arrOn(2) || arrOn(3)" :opacity="arrOp">
-      <template v-for="(t, k) in taps" :key="k">
-        <g v-if="arrOn(t.g)">
-          <text v-if="arrLabels" :x="318" :y="t.y + 4" style="font-size:12px" :fill="BLUE_B" text-anchor="end">{{ t.lab }}</text>
-          <text v-if="arrLabels && t.sub" :x="318" :y="t.y + 19" style="font-size:10px" :fill="BLUE" text-anchor="end">{{ t.sub }}</text>
-          <path :d="`M 330 ${t.y} C 390 ${t.y} 475 ${t.ye} 545 ${t.ye}`" fill="none" :stroke="BLUE" stroke-width="1.8" marker-end="url(#s3ga)" />
+    <!-- stage 3: what flows in — stacked column left (clicks 1-3) -->
+    <g v-if="rowOn(1)">
+      <template v-for="(t, k) in rows" :key="k">
+        <g v-if="rowOn(t.g)">
+          <text :x="296" :y="t.y + 5" style="font-size:16px" :fill="t.labCol || BLUE_B" text-anchor="end">{{ t.lab }}</text>
+          <text v-if="t.sub" :x="296" :y="t.y + 22" style="font-size:11.5px" :fill="BLUE" text-anchor="end">{{ t.sub }}</text>
         </g>
       </template>
     </g>
 
-    <!-- context the other owners inject (from the right, owner colours) -->
-    <g v-if="arrOn(2)" :opacity="arrOp">
-      <template v-for="(t, k) in otaps" :key="'o' + k">
-        <text v-if="arrLabels" :x="945" :y="t.y - 8" style="font-size:12px" :fill="t.labCol" text-anchor="end">{{ t.lab }}</text>
-        <path :d="`M 940 ${t.y} C 880 ${t.y} 815 ${t.ye} 755 ${t.ye}`" fill="none" :stroke="t.col" stroke-width="1.8" :marker-end="t.mk" />
+    <!-- click 4: everything merges into one figure — the context -->
+    <g v-if="mergeOn" :opacity="ctxOp">
+      <template v-for="(t, k) in rows" :key="'m' + k">
+        <path v-if="rowOn(t.g)"
+          :d="`M 302 ${t.y} C 336 ${t.y} ${t.xe - 32} ${t.ye} ${t.xe} ${t.ye}`"
+          fill="none" :stroke="t.col || BLUE" stroke-width="1.8" stroke-linecap="round" />
       </template>
+      <circle cx="383" cy="288" r="10.5" fill="rgba(56,189,248,0.15)" :stroke="BLUE_B" stroke-width="2" />
+      <path d="M 363 340 L 363 322 Q 363 303 383 303 Q 403 303 403 322 L 403 340 Z"
+        fill="rgba(56,189,248,0.15)" :stroke="BLUE_B" stroke-width="2" stroke-linejoin="round" />
+      <text v-if="stage === 3" x="383" y="362" text-anchor="middle" style="font-size:10.5px;letter-spacing:1.5px" :fill="BLUE_B">THE CONTEXT</text>
+    </g>
+
+    <!-- click 5: one flow into the engine, fresh every turn -->
+    <g v-if="flowOn" :opacity="ctxOp">
+      <path d="M 408 315 C 452 315 497 323 543 325" fill="none" :stroke="BLUE_B" stroke-width="3.5" marker-end="url(#s3ga)" />
+      <text v-if="stage === 3" x="472" y="301" text-anchor="middle" style="font-size:10.5px;font-style:italic" :fill="DIM">every turn, afresh</text>
     </g>
 
     <!-- harness shells -->
