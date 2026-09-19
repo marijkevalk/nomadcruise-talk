@@ -1093,6 +1093,8 @@
 .tp-item { font-size: 1.2rem; padding: 0.26rem 0 0.26rem 1.7rem; position: relative; line-height: 1.38; }
 .tp-item::before { content: '\25B8'; position: absolute; left: 0.15rem; color: var(--talk-accent); }
 .tp-item.tp-n::before { content: attr(data-n); font-weight: 600; font-variant-numeric: tabular-nums; }
+.tp-item.tp-plain { padding-left: 0; }
+.tp-item.tp-plain::before { content: none; }
 .tp-ml { margin-top: auto; padding-top: 0.6rem; font-size: 1.2rem; }
 
 /* using-the-model: per-word probability bar charts */

@@ -916,7 +916,7 @@ up.]
 <div v-click="1" class="tp-box">
   <div class="tp-head">Training</div>
   <div class="tp-sub">The model teaches itself</div>
-  <div class="tp-item">Start with <b>random parameters</b></div>
+  <div class="tp-item tp-plain">Start with <b>random parameters</b></div>
   <div class="tp-item tp-n" data-n="1"><b>Calculate</b> the next word</div>
   <div class="tp-item tp-n" data-n="2">Learn from its mistakes by <b>adjusting the parameters</b></div>
   <div class="tp-item tp-n" data-n="3"><b>Repeat, billions of times</b></div>
@@ -1041,7 +1041,7 @@ clicks: 12
 
 <div v-click="1" class="mt-1">
   <div class="text-2xl leading-snug">You <b class="accent">prompt</b>, it <b class="accent">replies</b>.</div>
-  <div class="text-lg" style="color:var(--ink-dim);">The reply is calculated word by word</div>
+  <div class="text-lg" style="color:#ffffff;">The reply is calculated word by word</div>
 </div>
 
 <div v-click="1" class="um-line mt-2"><span class="um-lab">Prompt:</span> “Where does the QM2 sail to?”</div>
