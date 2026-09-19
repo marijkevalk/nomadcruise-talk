@@ -1087,6 +1087,7 @@
 .tp-sub { font-style: italic; color: var(--ink-dim); margin: 0.15rem 0 1rem; font-size: 1.15rem; }
 .tp-item { font-size: 1.3rem; padding: 0.34rem 0 0.34rem 1.4rem; position: relative; line-height: 1.4; }
 .tp-item::before { content: '\25B8'; position: absolute; left: 0; color: var(--talk-accent); }
+.tp-item.tp-n::before { content: attr(data-n); font-weight: 600; }
 
 /* using-the-model: per-word probability bar charts */
 .um-line { font-family: 'Fraunces', serif; font-size: 1.5rem; }
