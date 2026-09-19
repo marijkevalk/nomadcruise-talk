@@ -1946,16 +1946,36 @@ layout: center
 
 <div class="kicker">Closing</div>
 
+<div style="margin-bottom:4.5rem;">
+
 <div class="display">AI is not magic.</div>
 
-<div class="mt-6 text-xl dim">data · weights · math · the box is grey now</div>
+<div class="mt-4 text-xl dim">data · weights · math · the box is grey now</div>
 
-<div class="mt-10 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
+<div class="mt-7 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
 "Treat the model as a noisy estimator,<br>not an oracle."
 </div>
 
-<img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" />
+<div class="mt-7 display" style="font-size:2.3rem;">Keep asking.</div>
 
+<div class="mt-4 text-base dim leading-relaxed">
+find me on board · questions, AI talk, or just a chat<br>
+and at the morning workouts on deck
+</div>
+
+<div class="mt-4 dim" style="font-size:0.82rem; letter-spacing:0.18em; text-transform:uppercase;">Marijke Valk · NomadCruise 17</div>
+
+</div>
+
+<img :src="'/art/neural-gold.png'" style="position:absolute; left:0; bottom:0; width:100%; height:7rem; object-fit:cover; object-position:50% 42%; opacity:0.5; z-index:0; -webkit-mask-image:linear-gradient(to top, black 55%, transparent 100%); mask-image:linear-gradient(to top, black 55%, transparent 100%);" />
+
+<img :src="'/art/box-open-grey.svg'" style="position:absolute; left:2.4rem; bottom:1.6rem; height:9rem; filter:drop-shadow(0 8px 26px rgba(0,0,0,0.5));" />
+
+<div class="credit" style="position:absolute; bottom:2rem; right:8.5rem; max-width:22rem; text-align:right;">
+photos: Wikimedia Commons · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · F. Hirzinger (CC BY-SA 3.0) · xkcd #1838 (CC BY-NC)
+</div>
+
+<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" />
 
 <!--
 Let's close the loop. AI is not magic. It's data, weights and math — statistics
@@ -1973,36 +1993,7 @@ noticing what you don't know — and just asking. AI moves faster than anyone
 can follow. Me included. The people who stay ahead are not the ones who know
 everything. They're the ones who keep asking.
 
-So: keep asking.
--->
-
----
-layout: center
----
-
-<div class="kicker">Thank you</div>
-
-<div class="display" style="font-size:2.6rem;">Keep asking.</div>
-
-<div class="mt-8 text-lg dim leading-relaxed">
-find me on board · questions, AI talk, or just a chat<br>
-and at the morning workouts on deck
-</div>
-
-<img :src="'/photos/qm2.jpg'" class="photo h-40 mx-auto mt-8" />
-
-<img :src="'/art/flammarion-gold.png'" style="position:absolute; left:0; bottom:0; width:100%; height:7rem; object-fit:cover; object-position:50% 20%; opacity:0.5;" />
-
-<div class="byline" style="bottom:8rem;">Marijke Valk · NomadCruise 17</div>
-<div class="credit" style="position:absolute; bottom:2rem; right:2rem; max-width:22rem; text-align:right;">
-photos: Wikimedia Commons · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · F. Hirzinger (CC BY-SA 3.0) · QM2 Hamburg (CC BY-SA 4.0) · xkcd #1838 (CC BY-NC)
-</div>
-
-
-<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" />
-
-<!--
-Thank you! I'm on this ship all week — find me for questions, deep AI talk, or
-just a chat. And if you want to start the day properly: morning workouts on
-deck, every day. See you there!
+So: keep asking. Thank you! I'm on this ship all week — find me for questions,
+deep AI talk, or just a chat. And if you want to start the day properly:
+morning workouts on deck, every day. See you there!
 -->
