@@ -1076,3 +1076,22 @@
 .s3-land .ztri { color: var(--talk-accent); margin-right: 0.4rem; }
 .gold-t { color: #e3b04b; } .purple-t { color: #b9a9ee; } .blue-t2 { color: #7dd3fc; }
 .s3d text { font-family: 'Inter', sans-serif; line-height: 1; }
+
+/* combined training + post-training slide */
+.tp-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 2.1rem; color: var(--talk-accent); }
+.tp-sub { font-style: italic; color: var(--ink-dim); margin: 0.15rem 0 1rem; font-size: 1.15rem; }
+.tp-item { font-size: 1.3rem; padding: 0.34rem 0 0.34rem 1.4rem; position: relative; line-height: 1.4; }
+.tp-item::before { content: '\25B8'; position: absolute; left: 0; color: var(--talk-accent); }
+
+/* using-the-model: per-word probability bar charts */
+.um-line { font-family: 'Fraunces', serif; font-size: 1.5rem; }
+.um-fill { color: #7dd3fc; font-weight: 600; }
+.um-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; margin-top: 1.1rem; }
+.um-chart { border: 1.5px solid var(--hairline); border-radius: 0.6rem; padding: 0.55rem 0.9rem 0.65rem; }
+.um-title { font-size: 0.88rem; color: var(--ink-dim); margin-bottom: 0.55rem; }
+.um-row { display: grid; grid-template-columns: 4.4rem 1fr 3rem; align-items: center; gap: 0.5rem; font-size: 0.98rem; padding: 0.13rem 0; }
+.um-bar { height: 0.72rem; border-radius: 2px; background: var(--talk-accent); opacity: 0.85; }
+.um-row.um-win { color: #7dd3fc; font-weight: 600; }
+.um-row.um-win .um-bar { background: #7dd3fc; opacity: 1; }
+.um-pct { text-align: right; color: var(--ink-dim); font-variant-numeric: tabular-nums; font-size: 0.9rem; }
+.um-note { margin-top: 0.4rem; font-size: 0.85rem; font-style: italic; color: #7dd3fc; }
