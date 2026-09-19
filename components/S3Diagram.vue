@@ -26,7 +26,7 @@ const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
 // one car around the engine: the app (purple, matching the app-rows in the tank)
-const car = { x: 435, y: 171, w: 430, h: 288, col: PURPLE, bright: PURPLE_B }
+const car = { x: 465, y: 195, w: 370, h: 240, col: PURPLE, bright: PURPLE_B }
 // what's in the tank — blue first (yours), then the app's, then the provider's
 const tankRows = [
   { y: 270, g: 1, lab: 'Your prompt' },
@@ -113,7 +113,7 @@ const carD = (s) => {
     <!-- the car: the app around the engine -->
     <g v-if="carOn" :opacity="shellOp">
       <path :d="carD(car)" fill="none" :stroke="car.col" stroke-width="2" stroke-linejoin="round" />
-      <text x="630" :y="car.y + car.h - 0.06 * car.h - 4" text-anchor="middle" style="font-size:11px;letter-spacing:1.6px" :fill="car.bright">THE APP</text>
+      <text x="630" :y="car.y + car.h - 0.06 * car.h - 4" text-anchor="middle" style="font-size:12px;font-weight:700;letter-spacing:1.6px" :fill="car.bright">THE APP</text>
     </g>
 
     <!-- the engine (the anchor); fine-tuning = a thin blue layer ON the engine -->
