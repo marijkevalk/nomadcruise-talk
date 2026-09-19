@@ -925,11 +925,11 @@ up.]
 
 <div v-click="2" class="tp-box">
   <div class="tp-head">Post-training</div>
-  <div class="tp-sub">Done by humans</div>
+  <div class="tp-sub">Done by humans · thousands of them</div>
   <div class="tp-item tp-n" data-n="1"><b>Show it</b> what a good answer looks like</div>
   <div class="tp-item tp-n" data-n="2">Let it <b>practice</b></div>
   <div class="tp-item tp-n" data-n="3"><b>Grade</b> its answers</div>
-  <div v-click="3" class="pt-quote" style="margin-top:auto; padding-top:0.6rem; font-size:1.2rem;">"AI is not neutral:<br>it's built, tuned and controlled."</div>
+  <div v-click="3" class="pt-quote" style="margin-top:auto; padding-top:0.6rem; font-size:1.45rem;">"AI is not neutral:<br>it's built, tuned and controlled."</div>
 </div>
 
 </div>
