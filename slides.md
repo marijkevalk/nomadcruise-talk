@@ -1568,22 +1568,22 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 -->
 
 ---
-clicks: 3
+clicks: 5
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # Models are the engines
 
-<svg class="eng-grid" viewBox="0 0 505 330" aria-hidden="true">
+<svg v-click.hide="4" class="eng-grid" viewBox="-16 0 521 330" aria-hidden="true">
   <defs>
     <marker id="engArr" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
   </defs>
   <g class="eng-head" fill="#f2ecdf" text-anchor="middle">
     <text x="110" y="20">Claude</text><text x="265" y="20">GPT</text><text x="420" y="20">Gemini</text>
   </g>
-  <line x1="30" y1="48" x2="30" y2="300" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#engArr)"/>
-  <text class="eng-larger" transform="rotate(-90 11 174)" x="11" y="174" fill="#e3b04b" text-anchor="middle">Larger</text>
+  <line x1="18" y1="48" x2="18" y2="300" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#engArr)"/>
+  <text class="eng-larger" transform="rotate(-90 1 174)" x="1" y="174" fill="#e3b04b" text-anchor="middle">Larger</text>
   <g>
     <g v-for="(col, ci) in [
         {x: 110, names: ['Haiku', 'Sonnet', 'Opus']},
@@ -1596,7 +1596,7 @@ clicks: 3
         <rect v-for="t in 4" :key="t" :x="col.x - row.w/2 + row.w*(0.14 + 0.22*(t-1))" :y="row.y - 6" width="10" height="8" rx="1.5" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.8"/>
         <rect :x="col.x - row.w/2" :y="row.y" :width="row.w" :height="row.h" rx="8" fill="#0d1322" stroke="#e3b04b" :stroke-width="row.sw"/>
         <circle :cx="col.x + row.w/2 - row.h*0.22" :cy="row.y + row.h - row.h*0.24" :r="row.h*0.1" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.75"/>
-        <text :class="'ename-' + ri" :x="col.x" :y="row.y + row.h/2 + 5.5" fill="#f2ecdf" text-anchor="middle">{{ col.names[ri] }}</text>
+        <text :class="'ename-' + ri" :x="col.x" :y="row.y + row.h/2 + 5.5" fill="#e3b04b" text-anchor="middle">{{ col.names[ri] }}</text>
       </g>
     </g>
   </g>
@@ -1613,19 +1613,28 @@ clicks: 3
 </div>
 
 <div v-click="2" class="eng-note">
-  <div><b>Larger models</b> <span class="dim" style="font-size:0.92em;">(= more parameters)</span></div>
+  <div><b>Larger models</b> = more parameters</div>
   <div class="mt-1"><svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:middle; margin:0 0.3rem 0.15rem 0;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>More capable · Slower · More expensive</div>
 </div>
 
 <div v-click="3" class="eng-version">
-  <div class="ev-title">Version numbers</div>
+  <div class="ev-ex">Example:</div>
+  <div class="ev-title">Claude version numbers</div>
   <div class="mt-1">Opus 4 <span class="ev-arr">→</span> 5: new generation, new recipe</div>
   <div>Opus 4.7 <span class="ev-arr">→</span> 4.8: new training run, fresh data</div>
 </div>
 
 </div>
 
-<div class="credit" style="position:absolute; right:2.6rem; bottom:2.6rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.15rem 0.55rem;">schematic drawing</div>
+<S3Diagram :stage="1" :c="$clicks" />
+
+<div v-click="5" class="eng-ft">
+  <div class="ft-title">Fine-tuning</div>
+  <div>Extra training on <b>your own data</b></div>
+  <div class="dim" style="font-size:0.88em; margin-top:0.1rem;">A thin layer of new weights on top of the engine</div>
+</div>
+
+<div class="credit" style="position:absolute; right:3.4rem; top:27.9rem; font-size:0.85rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.18rem 0.6rem;">schematic drawing</div>
 
 <!--
 You never actually use a raw model — you use products built around one. So
@@ -1656,12 +1665,15 @@ generation — Opus 4 to 5 means a new recipe. After the dot — 4.7 to 4.8 —
 is a new training run on fresh data. Either way a newly trained engine, not
 a software patch.
 
-[if fine-tuning comes up: you CAN train an engine further on your own
-data — fine-tuning. It really changes the weights; powerful, and rare.
-Everything else you'll ever do sits AROUND the engine — next slide.]
+[click] Now the showroom goes away, and we take ONE engine with us — keep
+an eye on it, it stays exactly there for the rest of this section while we
+build around it.
 
-Now we take one engine with us — keep an eye on it, it stays exactly there
-for the rest of this section while we build around it.
+[click] One thing you CAN do to the engine itself: fine-tune it — extra
+training on YOUR OWN data. It really changes the weights: think of it as a
+thin extra layer of learned numbers laid on top of the engine. Powerful,
+and rare — most people never open the hood. Everything else you'll ever do
+sits AROUND the engine. Next slide.
 -->
 
 ---

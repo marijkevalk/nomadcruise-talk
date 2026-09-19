@@ -9,10 +9,8 @@ const props = defineProps({
 // element visible when born in an earlier stage, or in this stage at click k
 const v = (s, k) => props.stage > s || (props.stage === s && props.c >= k)
 
-const engineOn = computed(() => v(1, 3))
-const rimOn = computed(() => v(1, 4))
-const tagOn = computed(() => props.stage === 1 && props.c >= 4)
-const handOn = computed(() => props.stage === 1 && props.c >= 3)
+const engineOn = computed(() => v(1, 4))
+const layerOn = computed(() => v(1, 5))
 const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
 const arrLabels = computed(() => props.stage === 3)
 const arrOp = computed(() => (props.stage === 4 ? 0.22 : 1))
@@ -78,22 +76,14 @@ const ribs = [602, 629, 656, 683]
       </g>
     </g>
 
-    <!-- hand-over arrow from the matrix (slide 29 only) -->
-    <path v-if="handOn" d="M 455 176 C 540 190 575 230 598 268" fill="none" :stroke="DIM"
-      stroke-width="1.2" stroke-dasharray="3 4" marker-end="url(#s3da)" />
-
-    <!-- the engine (the anchor) -->
+    <!-- the engine (the anchor); fine-tuning = a thin blue layer ON the engine -->
     <g v-if="engineOn">
-      <rect v-if="rimOn" x="567" y="282" width="166" height="96" rx="12" fill="none" :stroke="BLUE_B" stroke-width="2" stroke-dasharray="6 5" />
       <rect x="575" y="290" width="150" height="80" rx="9" fill="rgba(227,176,75,0.08)" :stroke="GOLD" stroke-width="2" />
+      <rect v-if="layerOn" x="580" y="295" width="140" height="70" rx="7" fill="rgba(56,189,248,0.16)" :stroke="BLUE_B" stroke-width="1.8" />
       <rect v-for="rx in ribs" :key="rx" :x="rx" y="283" width="10" height="7" rx="2" fill="none" :stroke="GOLD" stroke-width="1.6" />
       <circle cx="704" cy="344" r="9" fill="none" :stroke="GOLD" stroke-width="1.6" />
       <text x="630" y="332" text-anchor="middle" style="font-size:15px;font-weight:700" :fill="INK">LLM</text>
       <text x="630" y="348" text-anchor="middle" style="font-size:10px" :fill="DIM">the engine</text>
-      <g v-if="tagOn">
-        <text x="750" y="324" style="font-size:11.5px" :fill="BLUE_B">fine-tuned</text>
-        <text x="750" y="340" style="font-size:11.5px" :fill="BLUE_B">on your own data</text>
-      </g>
     </g>
 
     <!-- context window bracket + captions -->
