@@ -1769,6 +1769,8 @@ clicks: 5
 
 <S3Diagram :stage="3" :c="$clicks" />
 
+<div v-click="5" class="accent" style="position:absolute; left:3.8rem; bottom:0.9rem; font-size:1.05rem; font-weight:600;">The quality of your input determines the quality of your output</div>
+
 <div class="s3-legend">
   <span><span class="chip chip-gold"></span>Model provider</span>
   <span><span class="chip chip-purple"></span>Third party</span>
@@ -1776,42 +1778,52 @@ clicks: 5
 </div>
 
 <!--
-Third layer — and this one is always YOURS: context. Remember: the engine is
-a frozen file of numbers. It remembers NOTHING. Everything it knows about
-you arrives fresh, every single turn, through these taps.
+Third layer: context. Remember: the engine is a frozen file of numbers. It
+remembers NOTHING. So everything it needs has to be brought along, every
+single turn. In a car, that has a name: fuel. Context is the fuel.
 
-[click] Your prompt — plus the whole conversation so far, resent every turn.
-That's why a new chat is a blank slate: nothing flowed in yet.
+[click] Here's the tank, and everything YOU put in it. Your prompt. The
+whole conversation so far — resent every turn; that's why a new chat is a
+blank slate. Your standing instructions and saved memory — no magic: notes
+the harness pours back into the tank for you. Your documents — you've all
+heard the buzzword RAG? Here's the entire secret: a tool that SEARCHES your
+documents and pastes what it finds into the tank. That's it. That's all RAG
+is. One buzzword down. And search & tool results — a web page it fetches,
+anything from the internet, it all lands in exactly the same tank.
 
-[click] Your standing instructions, and saved memory. No magic there: notes
-the harness pastes back into the window for you. And one more thing flows in
-here that you never see: the harness's own hidden SYSTEM PROMPT — text it
-places before yours, every turn. That's often the real answer to "it
-suddenly behaves differently". And notice the colours: the model provider
-injects that system prompt, and a third-party wrapper adds its own
-instructions on top — context flows in from all three owners, not just you.
+[click] But you're not the only one at the pump. The app adds its own
+instructions…
 
-[click] Your documents. You've all heard the buzzword RAG? Here's the entire
-secret: a tool that SEARCHES your documents and pastes what it finds into
-the prompt. That's it. That's all RAG is. One buzzword down. Same for search
-and tool results — a web page it fetches, anything from the internet, it all
-lands in exactly the same place.
+[click] …and the model provider pours in a hidden SYSTEM PROMPT — text
+placed before yours, every turn, that you never see. That's often the real
+answer to "it suddenly behaves differently". Three owners, one tank — watch
+the colours.
 
-[click] Because here's the trick: all of it gets pasted TOGETHER — your
-words, its notes, the hidden instructions, what the search found — into one
-single bundle of text. That bundle is the context. It's you, as the model
-sees you. This little figure is everything the model will ever know about
-you.
+[click] And every turn, the WHOLE tank flows into the engine — fresh, every
+single time. Not just your last message: everything, again. [If a techie
+asks: strictly, for every generated token the model attends over the entire
+context again — the maths reads the whole tank per token; servers cache the
+computation, but logically that's what happens.]
 
-[click] And every turn, the whole figure travels into the engine — fresh,
-every single time. Where it lands is the CONTEXT WINDOW: everything the
-model can see right now. It has a size — fill it up and the oldest turns
-fall out; that's the "it forgot what I said" feeling. And more is not
+[click] The tank is what the jargon calls the CONTEXT WINDOW: everything
+the model can see right now. And it has a MAX: fill it up and the oldest
+turns fall out — that's the "it forgot what I said" feeling. More is not
 better: relevance beats volume. Which is the payoff from the hallucination
 story: context is your anti-hallucination lever. The river always flows —
-if you don't give it your facts, it will guess. You can't change the engine
-and you didn't build the car — but you're always the driver, and context is
-the wheel.
+if you don't give it your facts, it will guess. The quality of your input
+determines the quality of your output. You can't change the engine and you
+didn't build the car — but you're always the driver. And in this car, you
+steer with what you put in the tank.
+
+[Q&A armor — "who drives the car?": you do. Your prompt is the wheel — but
+mechanically there is no separate steering channel: steering IS what goes
+into the tank, for you, the app and the provider alike. That's exactly why
+hidden system prompts are powerful and why prompt injection exists.]
+
+[Q&A armor — "where do agents fit?": an agent is the self-driving mode. You
+give the destination; the harness lets the model act (search, click, run
+code), each result lands back in the tank, and it goes again — the
+inference loop, but with actions. Claude Code and Cursor work like this.]
 -->
 
 ---
@@ -1900,7 +1912,7 @@ Last round of questions — and this one is the most practical.
 
 <div class="kicker green-kicker">Your turn <span class="dim">· part three</span></div>
 
-# <span class="green-title">Make it practical</span>
+# <span class="green-title">Ask AI a question</span>
 
 <Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
 <span v-click></span>
@@ -1919,7 +1931,7 @@ Last round of questions — and this one is the most practical.
 <div class="qmain">
   <div class="ex-title">Examples</div>
   <div class="qlist qlist-tight">
-    <div class="ql">Which AI companies are there besides OpenAI?</div>
+    <div class="ql">Which other AI model providers are there?</div>
     <div class="ql">Why would Meta give Llama away for free?</div>
     <div class="ql">What runs under the hood of Perplexity / Notion AI / Cursor?</div>
     <div class="ql">Difference between ChatGPT the app and GPT the model?</div>

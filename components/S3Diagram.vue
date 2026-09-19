@@ -15,10 +15,10 @@ const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
 const capOn = computed(() => props.stage === 3 && props.c >= 5)
 const lockOn = computed(() => v(4, 1))
 const shellOn = (i) => v(2, i + 3)
-// stage 3: rows appear in groups (clicks 1-3), merge into the figure (4), flow (5)
-const rowOn = (g) => props.stage === 3 && props.c >= g
-const mergeOn = computed(() => (props.stage === 3 && props.c >= 4) || props.stage === 4)
-const flowOn = computed(() => (props.stage === 3 && props.c >= 5) || props.stage === 4)
+// stage 3: the context is the fuel — a tank that fills in groups
+// (1 = tank + everything you put in, 2 = the app's, 3 = the provider's),
+// then flows into the engine (4); captions (5). Faint on stage 4.
+const ctxOn = (g) => (props.stage === 3 && props.c >= g) || props.stage === 4
 const ctxOp = computed(() => (props.stage === 4 ? 0.22 : 1))
 
 const GOLD = '#e3b04b', BLUE = '#38bdf8', BLUE_B = '#7dd3fc'
@@ -30,17 +30,16 @@ const shells = [
   { x: 480, y: 204, w: 340, h: 218, col: PURPLE, bright: PURPLE_B },
   { x: 435, y: 171, w: 430, h: 288, col: BLUE, bright: BLUE_B },
 ]
-// everything that flows in — one stacked column on the left, owner colours;
-// ye = where the stream lands on the figure's silhouette at the merge (click 4)
-const rows = [
-  { y: 178, xe: 374, ye: 281, g: 1, lab: 'Your prompt' },
-  { y: 212, xe: 371, ye: 293, g: 1, lab: 'The conversation so far' },
-  { y: 246, xe: 365, ye: 305, g: 2, lab: 'Your standing instructions' },
-  { y: 280, xe: 361, ye: 314, g: 2, lab: 'Saved memory' },
-  { y: 314, xe: 361, ye: 322, g: 2, lab: 'Hidden system prompt', col: GOLD, labCol: GOLD },
-  { y: 348, xe: 361, ye: 330, g: 2, lab: "The app's own instructions", col: PURPLE, labCol: PURPLE_B },
-  { y: 382, xe: 362, ye: 336, g: 3, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)' },
-  { y: 428, xe: 364, ye: 341, g: 3, lab: 'Search & tool results', sub: 'Anything from the internet lands here too' },
+// what's in the tank — blue first (yours), then the app's, then the provider's
+const tankRows = [
+  { y: 259, g: 1, lab: 'Your prompt' },
+  { y: 282, g: 1, lab: 'The conversation so far' },
+  { y: 305, g: 1, lab: 'Your standing instructions' },
+  { y: 328, g: 1, lab: 'Saved memory' },
+  { y: 351, g: 1, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)', suby: 367 },
+  { y: 388, g: 1, lab: 'Search & tool results', sub: 'Anything from the internet lands here too', suby: 404 },
+  { y: 426, g: 2, lab: "The app's own instructions", col: PURPLE_B },
+  { y: 447, g: 3, lab: 'Hidden system prompt', col: GOLD },
 ]
 const ribs = [602, 629, 656, 683]
 
@@ -88,33 +87,27 @@ const carD = (s) => {
       </marker>
     </defs>
 
-    <!-- stage 3: what flows in — stacked column left (clicks 1-3) -->
-    <g v-if="rowOn(1)">
-      <template v-for="(t, k) in rows" :key="k">
-        <g v-if="rowOn(t.g)">
-          <text :x="296" :y="t.y + 5" style="font-size:16px" :fill="t.labCol || BLUE_B" text-anchor="end">{{ t.lab }}</text>
-          <text v-if="t.sub" :x="296" :y="t.y + 22" style="font-size:11.5px" :fill="BLUE" text-anchor="end">{{ t.sub }}</text>
-        </g>
-      </template>
+    <!-- stage 3: the context is the fuel — a tank on the left, filled in groups -->
+    <g v-if="ctxOn(1)" :opacity="ctxOp">
+      <rect x="74" y="196" width="296" height="260" rx="14" fill="none" :stroke="BLUE_B" stroke-width="2" />
+      <rect x="310" y="178" width="30" height="20" rx="4" fill="none" :stroke="BLUE_B" stroke-width="2" />
+      <g v-if="stage === 3">
+        <text x="222" y="219" text-anchor="middle" style="font-size:10.5px;letter-spacing:1.6px" :fill="BLUE_B">THE CONTEXT</text>
+        <path d="M 90 233 H 354" fill="none" :stroke="BLUE_B" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.55" />
+        <text x="354" y="229" text-anchor="end" style="font-size:9.5px;letter-spacing:1px" :fill="BLUE_B">MAX</text>
+        <template v-for="(t, k) in tankRows" :key="'tr' + k">
+          <g v-if="ctxOn(t.g)">
+            <text x="96" :y="t.y" style="font-size:13.5px" :fill="t.col || BLUE_B">{{ t.lab }}</text>
+            <text v-if="t.sub" x="96" :y="t.suby" style="font-size:10.5px" :fill="BLUE">{{ t.sub }}</text>
+          </g>
+        </template>
+      </g>
     </g>
 
-    <!-- click 4: everything merges into one figure — the context -->
-    <g v-if="mergeOn" :opacity="ctxOp">
-      <template v-for="(t, k) in rows" :key="'m' + k">
-        <path v-if="rowOn(t.g)"
-          :d="`M 302 ${t.y} C 336 ${t.y} ${t.xe - 32} ${t.ye} ${t.xe} ${t.ye}`"
-          fill="none" :stroke="t.col || BLUE" stroke-width="1.8" stroke-linecap="round" />
-      </template>
-      <circle cx="383" cy="288" r="10.5" fill="rgba(56,189,248,0.15)" :stroke="BLUE_B" stroke-width="2" />
-      <path d="M 363 340 L 363 322 Q 363 303 383 303 Q 403 303 403 322 L 403 340 Z"
-        fill="rgba(56,189,248,0.15)" :stroke="BLUE_B" stroke-width="2" stroke-linejoin="round" />
-      <text v-if="stage === 3" x="383" y="362" text-anchor="middle" style="font-size:10.5px;letter-spacing:1.5px" :fill="BLUE_B">THE CONTEXT</text>
-    </g>
-
-    <!-- click 5: one flow into the engine, fresh every turn -->
-    <g v-if="flowOn" :opacity="ctxOp">
-      <path d="M 408 315 C 452 315 497 323 543 325" fill="none" :stroke="BLUE_B" stroke-width="3.5" marker-end="url(#s3ga)" />
-      <text v-if="stage === 3" x="472" y="301" text-anchor="middle" style="font-size:10.5px;font-style:italic" :fill="DIM">every turn, afresh</text>
+    <!-- click 4: the fuel line — the whole tank flows into the engine, fresh every turn -->
+    <g v-if="ctxOn(4)" :opacity="ctxOp">
+      <path d="M 374 324 C 434 324 500 328 558 329" fill="none" :stroke="BLUE_B" stroke-width="3" marker-end="url(#s3ga)" />
+      <text v-if="stage === 3" x="468" y="308" text-anchor="middle" style="font-size:11.5px;font-style:italic" :fill="DIM">Every turn, a fresh tank</text>
     </g>
 
     <!-- harness shells -->
@@ -147,8 +140,8 @@ const carD = (s) => {
 
     <!-- context window captions -->
     <g v-if="capOn">
-      <text x="48" y="470" style="font-size:11.5px;font-style:italic" :fill="DIM">The model itself remembers nothing</text>
-      <text x="650" y="494" text-anchor="middle" style="font-size:11.5px" :fill="BLUE_B">The context window · Everything it can see right now · It has a size</text>
+      <text x="222" y="478" text-anchor="middle" style="font-size:11.5px" :fill="BLUE_B">The tank = the context window · It has a max size</text>
+      <text x="222" y="496" text-anchor="middle" style="font-size:11.5px;font-style:italic" :fill="DIM">The model itself remembers nothing</text>
     </g>
   </svg>
 </template>
