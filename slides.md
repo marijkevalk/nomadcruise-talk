@@ -611,12 +611,12 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 <div class="qmain">
   <div class="ex-title">Examples</div>
   <div class="qlist">
-    <div class="ql">What actually ended the last AI winter?</div>
-    <div class="ql">Is a thermostat really a little bit intelligent?</div>
-    <div class="ql">Why did the transformer paper matter?</div>
-    <div class="ql">Why did GPUs beat CPUs for training?</div>
-    <div class="ql">What is the Turing test?</div>
+    <div class="ql">Is a thermostat intelligent?</div>
+    <div class="ql">What is the difference between a computer and AI?</div>
     <div class="ql">Are Siri and Alexa "real" AI?</div>
+    <div class="ql">Is AI smarter than a human?</div>
+    <div class="ql">Why is everyone talking about AI right now?</div>
+    <div class="ql">Was there AI before ChatGPT?</div>
   </div>
 </div>
 
