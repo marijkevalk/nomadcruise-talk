@@ -26,7 +26,7 @@ const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
 const shells = [
-  { x: 525, y: 256, w: 250, h: 148, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER' },
+  { x: 505, y: 236, w: 280, h: 168, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER' },
   { x: 480, y: 221, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY' },
   { x: 435, y: 186, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU' },
 ]
@@ -40,13 +40,33 @@ const taps = [
 ]
 const ribs = [602, 629, 656, 683]
 
-// car-icon outline per shell: body with rounded corners + cabin hump (slanted
-// windscreens) on top; wheels are drawn separately below the ground line
-const carD = (s, i) => {
-  const rr = 14, h = [22, 28, 34][i], sl = 26
-  const c1 = s.x + (i === 0 ? 0.34 : 0.30) * s.w, c2 = s.x + (i === 0 ? 0.66 : 0.62) * s.w
-  const yg = s.y + s.h
-  return `M ${s.x + rr} ${s.y} L ${c1 - sl} ${s.y} L ${c1} ${s.y - h} L ${c2} ${s.y - h} L ${c2 + sl} ${s.y} L ${s.x + s.w - rr} ${s.y} Q ${s.x + s.w} ${s.y} ${s.x + s.w} ${s.y + rr} L ${s.x + s.w} ${yg - rr} Q ${s.x + s.w} ${yg} ${s.x + s.w - rr} ${yg} L ${s.x + rr} ${yg} Q ${s.x} ${yg} ${s.x} ${yg - rr} L ${s.x} ${s.y + rr} Q ${s.x} ${s.y} ${s.x + rr} ${s.y} Z`
+// true car-icon silhouette per shell (side view, facing right): trunk, rear
+// window, roof, windscreen, bonnet, front bumper, wheel arches. Parametric in
+// the shell's box; s.y+s.h is the ground line, roof sits at 95% of the height.
+const wheelR = (s) => 0.06 * s.w
+const wheelCY = (s) => s.y + s.h - 0.06 * s.h + 0.45 * wheelR(s)
+const wheelCX = (s, f) => s.x + f * s.w
+const carD = (s) => {
+  const X = (f) => (s.x + f * s.w).toFixed(1)
+  const H = s.h, yg = s.y + s.h
+  const Y = (f) => (yg - f * H).toFixed(1)
+  const yb = (yg - 0.06 * H).toFixed(1)
+  return [
+    `M ${X(0.03)} ${Y(0.3)}`,
+    `C ${X(0.02)} ${Y(0.46)} ${X(0.05)} ${Y(0.52)} ${X(0.12)} ${Y(0.55)}`,
+    `L ${X(0.2)} ${Y(0.57)}`,
+    `L ${X(0.4)} ${Y(0.93)}`,
+    `Q ${X(0.42)} ${Y(0.95)} ${X(0.45)} ${Y(0.95)}`,
+    `L ${X(0.64)} ${Y(0.95)}`,
+    `Q ${X(0.67)} ${Y(0.95)} ${X(0.69)} ${Y(0.93)}`,
+    `L ${X(0.84)} ${Y(0.57)}`,
+    `C ${X(0.92)} ${Y(0.53)} ${X(0.97)} ${Y(0.45)} ${X(0.985)} ${Y(0.32)}`,
+    `L ${X(0.985)} ${Y(0.14)}`,
+    `Q ${X(0.985)} ${yb} ${X(0.93)} ${yb}`,
+    `L ${X(0.06)} ${yb}`,
+    `Q ${X(0.015)} ${yb} ${X(0.03)} ${Y(0.3)}`,
+    'Z',
+  ].join(' ')
 }
 </script>
 
@@ -75,21 +95,21 @@ const carD = (s, i) => {
     <!-- harness shells -->
     <g v-for="(s, i) in shells" :key="'sh' + i">
       <g v-if="shellOn(i)" :opacity="shellOp">
-        <path :d="carD(s, i)" fill="none" :stroke="s.col" stroke-width="2" stroke-linejoin="round" />
+        <path :d="carD(s)" fill="none" :stroke="s.col" stroke-width="2" stroke-linejoin="round" />
         <!-- wheels: each harness shell is a car -->
-        <circle :cx="s.x + s.w * 0.24" :cy="s.y + s.h + (9 + i * 2) * 0.3" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
-        <circle :cx="s.x + s.w * 0.76" :cy="s.y + s.h + (9 + i * 2) * 0.3" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
-        <text :x="s.x + 13" :y="s.y + 17" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">{{ s.owner }}</text>
+        <circle :cx="wheelCX(s, 0.24)" :cy="wheelCY(s)" :r="wheelR(s)" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
+        <circle :cx="wheelCX(s, 0.76)" :cy="wheelCY(s)" :r="wheelR(s)" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
+        <text :x="s.x + (i === 2 ? 0.08 : 0.34) * s.w" :y="s.y + s.h - 0.06 * s.h - 3" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">{{ s.owner }}</text>
       </g>
       <g v-if="shellOn(i) && lockOn" :stroke="s.bright" fill="none" stroke-width="1.8">
-        <rect :x="s.x + s.w - 27" :y="s.y + 15" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
-        <path :d="`M ${s.x + s.w - 24} ${s.y + 15} v -3 a5 5 0 0 1 10 0 v 3`" />
+        <rect :x="s.x + 0.9 * s.w - 8" :y="s.y + s.h - 0.44 * s.h" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
+        <path :d="`M ${s.x + 0.9 * s.w - 5} ${s.y + s.h - 0.44 * s.h} v -3 a5 5 0 0 1 10 0 v 3`" />
       </g>
     </g>
 
     <!-- the engine (the anchor); fine-tuning = a thin blue layer ON the engine -->
     <g v-if="engineOn">
-      <rect x="575" y="290" width="150" height="80" rx="9" fill="rgba(227,176,75,0.08)" :stroke="GOLD" stroke-width="2" />
+      <rect x="575" y="290" width="150" height="80" rx="9" fill="#0d1322" :stroke="GOLD" stroke-width="2" />
       <rect v-for="rx in ribs" :key="rx" :x="rx" y="283" width="10" height="7" rx="2" fill="none" :stroke="GOLD" stroke-width="1.6" />
       <!-- fine-tune layer: a thin blue cap on top, silhouetting the four terminals -->
       <path v-if="layerOn" d="M 576 294 Q 578 290 584 290
@@ -105,7 +125,7 @@ const carD = (s, i) => {
 
     <!-- context window bracket + captions -->
     <g v-if="brOn" :opacity="brOp">
-      <rect x="559" y="274" width="182" height="112" rx="10" fill="none" :stroke="BLUE_B" stroke-width="1.6" stroke-dasharray="5 4" />
+      <rect x="559" y="274" width="182" height="104" rx="10" fill="none" :stroke="BLUE_B" stroke-width="1.6" stroke-dasharray="5 4" />
     </g>
     <g v-if="capOn">
       <text x="650" y="494" text-anchor="middle" style="font-size:11.5px" :fill="BLUE_B">the context window · everything it can see right now · it has a size</text>
