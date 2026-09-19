@@ -910,28 +910,29 @@ up.]
 
 <hr class="rule" />
 
-<div class="grid grid-cols-2 gap-10 mt-3">
+<div class="grid grid-cols-2 gap-8 mt-2 items-stretch">
 
-<div v-click="1">
+<div v-click="1" class="tp-box">
   <div class="tp-head">Training</div>
   <div class="tp-sub">The model teaches itself</div>
   <div class="tp-item">Start with <b>random parameters</b></div>
-  <div class="tp-item tp-n" data-n="1."><b>Calculate</b> the next word</div>
-  <div class="tp-item tp-n" data-n="2.">Learn from its mistakes by <b>adjusting the parameters</b></div>
-  <div class="tp-item tp-n" data-n="3."><b>Repeat, billions of times</b></div>
-  <div class="mt-3" style="font-size:1.45rem;"><span style="color:var(--talk-accent); font-size:1.9rem; vertical-align:-0.18rem; margin-right:0.3rem;">&#9656;</span><b style="letter-spacing:0.03em;">MACHINE LEARNING</b></div>
+  <div class="tp-item tp-n" data-n="1"><b>Calculate</b> the next word</div>
+  <div class="tp-item tp-n" data-n="2">Learn from its mistakes by <b>adjusting the parameters</b></div>
+  <div class="tp-item tp-n" data-n="3"><b>Repeat, billions of times</b></div>
+  <div class="tp-ml"><span class="accent" style="font-size:1.5rem; vertical-align:-0.1rem; margin-right:0.4rem;">&#9656;</span><b style="letter-spacing:0.04em;">MACHINE LEARNING</b></div>
 </div>
 
-<div v-click="2">
+<div v-click="2" class="tp-box">
   <div class="tp-head">Post-training</div>
   <div class="tp-sub">Done by humans</div>
-  <div class="tp-item tp-n" data-n="1."><b>Show it</b> what a good answer looks like</div>
-  <div class="tp-item tp-n" data-n="2.">Let it <b>practice</b></div>
-  <div class="tp-item tp-n" data-n="3."><b>Grade</b> its answers</div>
-  <div v-click="3" class="pt-quote mt-6">"AI is not neutral:<br>it's built, tuned and controlled."</div>
+  <div class="tp-item tp-n" data-n="1"><b>Show it</b> what a good answer looks like</div>
+  <div class="tp-item tp-n" data-n="2">Let it <b>practice</b></div>
+  <div class="tp-item tp-n" data-n="3"><b>Grade</b> its answers</div>
 </div>
 
 </div>
+
+<div v-click="3" class="pt-quote mt-4" style="text-align:center; font-size:1.25rem;">"AI is not neutral: it's built, tuned and controlled."</div>
 
 <!--
 So who turns those billions of dials to the right positions? Nobody does.
@@ -1089,7 +1090,7 @@ clicks: 12
 
 <div v-click="11" class="um-closer text-lg">One word at a time, each one <b class="accent">a draw</b> · run it again and the reply can differ.</div>
 
-<div v-click="12" class="um-greedy">Always picking <b>#1</b> instead? <span class="ug-q">“The QM2 is a very small vessel, but it is very capable of…”</span> <span class="dim">· identical, every single time</span></div>
+<div v-click="12" class="um-greedy"><span class="ug-q">“What is the capital of France?”</span> <b>“The capital of France is Paris.”</b> <span class="dim">· here <b>#1</b> won every single draw</span></div>
 
 <div class="src-ref" style="left:auto; right:2.2rem; bottom:2.6rem;">data from GPT-2</div>
 
@@ -1123,14 +1124,17 @@ And THAT is why you never get exactly the same answer twice: run it again
 and somewhere a different word wins the draw. How adventurous the draws
 are — there's a knob for that, coming up.
 
-[click] And what if we removed the dice — always pick number one? Real
-GPT-2 output, same prompt: "The QM2 is a very small vessel, but it is very
-capable of carrying a large number of passengers." Fluent, confident — and
-notice it never actually answers the question. But the real point: run it
-a thousand times and you get this EXACT sentence, word for word, a
-thousand times. The dice are what keep replies alive. [Armor: always-#1 is
-called "greedy" decoding, temperature zero; bigger models answer fine that
-way, but the determinism is universal — no dice, no variety.]
+[click] And the flip side. Ask something the written world fully agrees
+on — "What is the capital of France?" — and the lists get so lopsided
+(capital 69%, of 79%, France 85%) that number one wins every single draw:
+"The capital of France is Paris." Crisp knowledge makes steep lists and
+steady replies; vague knowledge makes flat lists and wobbly replies —
+remember that for the hallucination slide in a minute.
+
+[Armor: with the dice a less likely word can still occasionally win — but
+the steeper the list, the rarer that gets. Forcing #1 at every step has a
+name: greedy decoding, or temperature zero — then the reply is literally
+identical every run. Real GPT-2 numbers, same Q:/A: prompt format.]
 
 Percentages, all the way down. Sound familiar? That's… statistics.
 
