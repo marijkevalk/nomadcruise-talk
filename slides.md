@@ -1044,53 +1044,43 @@ clicks: 12
   <div class="text-lg" style="color:#ffffff;">The reply is calculated word by word</div>
 </div>
 
-<div v-click="1" class="um-line mt-2"><span class="um-lab">Prompt:</span> “Where does the QM2 sail to?”</div>
+<div v-click="2" class="um-line mt-2"><span class="um-lab">Prompt:</span> “What is the capital of the Netherlands?”</div>
 
-<div v-click="1" class="um-line"><span class="um-lab">Reply:</span> <span v-click="3" class="um-fill">It</span><span v-click="5" class="um-fill"> sails</span><span v-click="7" class="um-fill"> to</span><span v-click="9" class="um-fill"> New</span><span v-click="11" class="um-fill"> York</span></div>
+<div v-click="3" class="um-line"><span class="um-lab">Reply:</span> <span v-click="5" class="um-fill">The</span><span v-click="7" class="um-fill"> capital of the</span><span v-click="9" class="um-fill"> Netherlands is the city of</span><span v-click="11" class="um-fill"> Amsterdam.</span></div>
 
 <div class="um-stack">
-  <div v-click="2" class="um-chart">
-    <div class="um-title">word 1 · after the question</div>
-    <div class="um-row"><span>The</span><span class="um-bar" style="width:100%"></span><span class="um-pct">18.2%</span></div>
-    <div class="um-row um-win"><span>It</span><span class="um-bar" style="width:82%"></span><span class="um-pct">14.9%</span></div>
-    <div class="um-row"><span>We</span><span class="um-bar" style="width:33%"></span><span class="um-pct">6.0%</span></div>
-    <div class="um-row"><span>In</span><span class="um-bar" style="width:27%"></span><span class="um-pct">5.0%</span></div>
-    <div v-click="3" class="um-note">the draw picked #2 · it happens</div>
-  </div>
   <div v-click="4" class="um-chart">
-    <div class="um-title">word 2 · “It …”</div>
-    <div class="um-row"><span>'s</span><span class="um-bar" style="width:100%"></span><span class="um-pct">30.8%</span></div>
-    <div class="um-row"><span>is</span><span class="um-bar" style="width:64%"></span><span class="um-pct">19.6%</span></div>
-    <div class="um-row"><span>will</span><span class="um-bar" style="width:37%"></span><span class="um-pct">11.4%</span></div>
-    <div class="um-row um-dots"><span>…</span><span></span><span></span></div>
-    <div class="um-row um-win"><span>sails</span><span class="um-bar" style="width:6%"></span><span class="um-pct">1.7%</span></div>
+    <div class="um-title">word 1 · after the question</div>
+    <div class="um-row um-win"><span>The</span><span class="um-bar" style="width:100%"></span><span class="um-pct">40.7%</span></div>
+    <div class="um-row"><span>It</span><span class="um-bar" style="width:22%"></span><span class="um-pct">8.9%</span></div>
+    <div class="um-row"><span>We</span><span class="um-bar" style="width:10%"></span><span class="um-pct">3.9%</span></div>
+    <div class="um-row"><span>I</span><span class="um-bar" style="width:10%"></span><span class="um-pct">3.9%</span></div>
+    <div v-click="5" class="um-note">#1 wins the draw</div>
   </div>
   <div v-click="6" class="um-chart">
-    <div class="um-title">word 3 · “It sails …”</div>
-    <div class="um-row um-win"><span>to</span><span class="um-bar" style="width:100%"></span><span class="um-pct">40.6%</span></div>
-    <div class="um-row"><span>from</span><span class="um-bar" style="width:23%"></span><span class="um-pct">9.4%</span></div>
-    <div class="um-row"><span>in</span><span class="um-bar" style="width:10%"></span><span class="um-pct">4.1%</span></div>
-    <div class="um-row"><span>directly</span><span class="um-bar" style="width:9%"></span><span class="um-pct">3.7%</span></div>
+    <div class="um-title">word 2 · “The …”</div>
+    <div class="um-row um-win"><span>capital</span><span class="um-bar" style="width:100%"></span><span class="um-pct">66.0%</span></div>
+    <div class="um-row"><span>Netherlands</span><span class="um-bar" style="width:19%"></span><span class="um-pct">12.7%</span></div>
+    <div class="um-row"><span>Dutch</span><span class="um-bar" style="width:8%"></span><span class="um-pct">5.0%</span></div>
+    <div class="um-row"><span>city</span><span class="um-bar" style="width:3%"></span><span class="um-pct">2.1%</span></div>
   </div>
   <div v-click="8" class="um-chart">
-    <div class="um-title">word 4 · “…sails to …”</div>
-    <div class="um-row"><span>the</span><span class="um-bar" style="width:100%"></span><span class="um-pct">25.4%</span></div>
-    <div class="um-row"><span>a</span><span class="um-bar" style="width:10%"></span><span class="um-pct">2.6%</span></div>
-    <div class="um-row um-win"><span>New</span><span class="um-bar" style="width:4%"></span><span class="um-pct">0.9%</span></div>
-    <div class="um-row"><span>our</span><span class="um-bar" style="width:3%"></span><span class="um-pct">0.7%</span></div>
+    <div class="um-title">word 5 · “The capital of the …”</div>
+    <div class="um-row um-win"><span>Netherlands</span><span class="um-bar" style="width:100%"></span><span class="um-pct">94.5%</span></div>
+    <div class="um-row"><span>Dutch</span><span class="um-bar" style="width:3.3%"></span><span class="um-pct">3.1%</span></div>
+    <div class="um-row"><span>Republic</span><span class="um-bar" style="width:0.6%"></span><span class="um-pct">0.6%</span></div>
+    <div class="um-row"><span>United</span><span class="um-bar" style="width:0.2%"></span><span class="um-pct">0.2%</span></div>
   </div>
   <div v-click="10" class="um-chart">
-    <div class="um-title">word 5 · “…to New …”</div>
-    <div class="um-row um-win"><span>York</span><span class="um-bar" style="width:100%"></span><span class="um-pct">46.5%</span></div>
-    <div class="um-row"><span>Zealand</span><span class="um-bar" style="width:44%"></span><span class="um-pct">20.4%</span></div>
-    <div class="um-row"><span>Orleans</span><span class="um-bar" style="width:18%"></span><span class="um-pct">8.2%</span></div>
-    <div class="um-row"><span>Jersey</span><span class="um-bar" style="width:12%"></span><span class="um-pct">5.4%</span></div>
+    <div class="um-title">word 10 · “…is the city of …”</div>
+    <div class="um-row um-win"><span>Amsterdam</span><span class="um-bar" style="width:100%"></span><span class="um-pct">14.3%</span></div>
+    <div class="um-row"><span>Rotterdam</span><span class="um-bar" style="width:83%"></span><span class="um-pct">11.9%</span></div>
+    <div class="um-row"><span>Utrecht</span><span class="um-bar" style="width:48%"></span><span class="um-pct">6.9%</span></div>
+    <div class="um-row um-dots"><span>…</span><span></span><span></span></div>
   </div>
 </div>
 
-<div v-click="11" class="um-closer text-lg">One word at a time, each one <b class="accent">a draw</b> · run it again and the reply can differ.</div>
-
-<div v-click="12" class="um-greedy"><span class="ug-q">“What is the capital of the Netherlands?”</span> <b>“The capital of the Netherlands is the city of Amsterdam.”</b> <span class="dim">· here <b>#1</b> won every single draw</span></div>
+<div v-click="12" class="um-closer text-lg">One word at a time, each one <b class="accent">a draw</b> · here <b>#1</b> won every single draw.</div>
 
 <div class="src-ref" style="left:auto; right:7.5rem; bottom:0.9rem;">data from GPT-2</div>
 
@@ -1099,44 +1089,46 @@ clicks: 12
 <!--
 So what happens when you actually USE the thing — type a question, press
 Enter? [click] You prompt, it replies. And the reply is calculated word by
-word: for every word the model computes a list of options with percentages —
-exactly the list you saw at the start of this section — and DRAWS one. Then
-the chosen word is glued on, everything goes back in, and it calculates the
-next list. (Jargon word, for who wants it: this is called inference.) Here's
-our prompt — let's watch the reply get built, with real numbers from a real
-model.
+word: for every word the model computes a list of options with
+percentages — exactly the list you saw at the start of this section — and
+DRAWS one. Then the chosen word is glued on, everything goes back in, and
+it calculates the next list. (Jargon word, for who wants it: this is
+called inference.)
 
-[click] Word one. The model's list of ways to start the reply: "The",
-"It", "We"… [click] The draw picks "It" — second place, not first. That's
-allowed: it's a DRAW, not "highest always wins".
+[click] Here's our prompt: what is the capital of the Netherlands?
 
-[click] Word two — glue "It" on, everything back in, new list: "It's",
-"It is", "It will"… [click] and the draw lands on an outsider: "sails".
-Less likely, still possible — that's what makes replies feel alive.
+[click] And here comes the reply — let's watch it get built word by word,
+with real numbers from a real model.
 
-[click] Word three, new list — [click] "to" wins, clear favourite this
-time. [click] Word four: "the" is the favourite… [click] but the draw
-picks "New". [click] And word five — you know this list by now.
-[click] York. With New Zealand in second place, at twenty percent.
-For a ship, quite the detour.
+[click] Word one. The model's list of ways to start the reply: "The" at
+forty percent, far ahead of "It" and "We". [click] "The" wins the draw.
 
-And THAT is why you never get exactly the same answer twice: run it again
-and somewhere a different word wins the draw. How adventurous the draws
-are — there's a knob for that, coming up.
+[click] Word two — glue it on, everything back in, new list: "capital",
+with two thirds of all the odds. [click] It wins, and the little words
+"of the" follow the same way.
 
-[click] And the flip side. Ask something the written world fully agrees
-on — "What is the capital of the Netherlands?" — and the lists get so
-lopsided (capital 66%, of 71%, Netherlands 95%) that number one wins every
-single draw: "The capital of the Netherlands is the city of Amsterdam."
-Crisp knowledge makes steep lists and steady replies; vague knowledge
-makes flat lists and wobbly replies — remember that for the hallucination
-slide in a minute. [Fun detail for the Dutch: at the Amsterdam step,
-Rotterdam was in second place at twelve percent.]
+[click] Now watch this one: "Netherlands" at ninety-four and a half
+percent. After "the capital of the…", the written world leaves almost no
+alternatives. [click] And on it rolls: "Netherlands is the city of…"
 
-[Armor: with the dice a less likely word can still occasionally win — but
-the steeper the list, the rarer that gets. Forcing #1 at every step has a
-name: greedy decoding, or temperature zero — then the reply is literally
-identical every run. Real GPT-2 numbers, same Q:/A: prompt format.]
+[click] One more list — and a very Dutch one: Amsterdam at fourteen
+percent, Rotterdam just behind at twelve, Utrecht at seven.
+[click] Amsterdam wins: "The capital of the Netherlands is the city of
+Amsterdam."
+
+[click] One word at a time, each one a draw — and here number one won
+every single draw. That's what crisp knowledge looks like: the written
+world agrees, so the lists are steep and the reply is steady. Remember
+this for the next slides: when the lists go FLAT, the draws start to
+wander.
+
+[Armor — Rotterdam at twelve percent: yes, that list is actually close!
+Roughly one run in eight, this small model would say Rotterdam. Frontier
+models put Amsterdam near certainty — same mechanism, sharper lists.
+"Rot"/"Ut" are split tokens, relabelled Rotterdam/Utrecht on the chart.]
+
+[Armor — forcing #1 at every step has a name: greedy decoding, or
+temperature zero — then the reply is literally identical every run.]
 
 Percentages, all the way down. Sound familiar? That's… statistics.
 
