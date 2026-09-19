@@ -27,7 +27,7 @@ const INK = '#f2ecdf', DIM = '#9a917f'
 
 const shells = [
   { x: 505, y: 229, w: 280, h: 168, col: GOLD, bright: GOLD },
-  { x: 480, y: 208, w: 340, h: 218, col: PURPLE, bright: PURPLE_B },
+  { x: 480, y: 204, w: 340, h: 218, col: PURPLE, bright: PURPLE_B },
   { x: 435, y: 171, w: 430, h: 288, col: BLUE, bright: BLUE_B },
 ]
 // everything that flows in — one stacked column on the left, owner colours;
