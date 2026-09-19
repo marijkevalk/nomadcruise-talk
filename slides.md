@@ -1695,6 +1695,8 @@ clicks: 5
 
 # The harness is the car
 
+<hr class="rule" />
+
 <div class="s3-left">
   <div v-click="1">
     <div class="s3-lead s3-fit">The harness is everything around the engine:</div>
@@ -1702,8 +1704,7 @@ clicks: 5
       <div>Chat window</div>
       <div>Memory</div>
       <div>File access</div>
-      <div>Tools & search</div>
-      <div>…</div>
+      <div>Tools & search&ensp;…</div>
     </div>
   </div>
   <div v-click="2" class="s3-lead2 mt-4">Three types of harness builders:</div>

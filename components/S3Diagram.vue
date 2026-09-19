@@ -24,9 +24,9 @@ const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
 const shells = [
-  { x: 505, y: 236, w: 280, h: 168, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER' },
-  { x: 480, y: 221, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY' },
-  { x: 435, y: 186, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU' },
+  { x: 505, y: 229, w: 280, h: 168, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER' },
+  { x: 480, y: 214, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY' },
+  { x: 435, y: 179, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU' },
 ]
 const taps = [
   { y: 186, ye: 273, g: 1, lab: 'Your prompt' },
