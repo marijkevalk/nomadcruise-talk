@@ -1030,7 +1030,7 @@ it — but all the knowledge is in the file.]
 -->
 
 ---
-clicks: 12
+clicks: 13
 ---
 
 <div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
@@ -1046,7 +1046,7 @@ clicks: 12
 
 <div v-click="2" class="um-line mt-2"><span class="um-lab">Prompt:</span> “What is the capital of the Netherlands?”</div>
 
-<div v-click="3" class="um-line"><span class="um-lab">Reply:</span> <span v-click="5" class="um-fill">The</span><span v-click="7" class="um-fill"> capital of the</span><span v-click="9" class="um-fill"> Netherlands is the city of</span><span v-click="11" class="um-fill"> Amsterdam.</span></div>
+<div v-click="3" class="um-line"><span class="um-lab">Reply:</span> <span v-click="4" class="um-fill">The</span><span v-click="5" class="um-fill"> capital</span><span v-click="6" class="um-fill"> of</span><span v-click="7" class="um-fill"> the</span><span v-click="8" class="um-fill"> Netherlands</span><span v-click="9" class="um-fill"> is</span><span v-click="10" class="um-fill"> the</span><span v-click="11" class="um-fill"> city</span><span v-click="12" class="um-fill"> of</span><span v-click="13" class="um-fill"> Amsterdam.</span></div>
 
 <div class="um-stack">
   <div v-click="4" class="um-chart">
@@ -1055,32 +1055,71 @@ clicks: 12
     <div class="um-row"><span>It</span><span class="um-bar" style="width:22%"></span><span class="um-pct">8.9%</span></div>
     <div class="um-row"><span>We</span><span class="um-bar" style="width:10%"></span><span class="um-pct">3.9%</span></div>
     <div class="um-row"><span>I</span><span class="um-bar" style="width:10%"></span><span class="um-pct">3.9%</span></div>
-    <div v-click="5" class="um-note">#1 wins the draw</div>
   </div>
-  <div v-click="6" class="um-chart">
+  <div v-click="5" class="um-chart">
     <div class="um-title">word 2 · “The …”</div>
     <div class="um-row um-win"><span>capital</span><span class="um-bar" style="width:100%"></span><span class="um-pct">66.0%</span></div>
     <div class="um-row"><span>Netherlands</span><span class="um-bar" style="width:19%"></span><span class="um-pct">12.7%</span></div>
     <div class="um-row"><span>Dutch</span><span class="um-bar" style="width:8%"></span><span class="um-pct">5.0%</span></div>
     <div class="um-row"><span>city</span><span class="um-bar" style="width:3%"></span><span class="um-pct">2.1%</span></div>
   </div>
+  <div v-click="6" class="um-chart">
+    <div class="um-title">word 3 · “The capital …”</div>
+    <div class="um-row um-win"><span>of</span><span class="um-bar" style="width:100%"></span><span class="um-pct">71.1%</span></div>
+    <div class="um-row"><span>is</span><span class="um-bar" style="width:25%"></span><span class="um-pct">17.9%</span></div>
+    <div class="um-row"><span>city</span><span class="um-bar" style="width:2%"></span><span class="um-pct">1.4%</span></div>
+    <div class="um-row"><span>,</span><span class="um-bar" style="width:1.4%"></span><span class="um-pct">1.0%</span></div>
+  </div>
+  <div v-click="7" class="um-chart">
+    <div class="um-title">word 4 · “…capital of …”</div>
+    <div class="um-row um-win"><span>the</span><span class="um-bar" style="width:100%"></span><span class="um-pct">77.4%</span></div>
+    <div class="um-row"><span>Netherlands</span><span class="um-bar" style="width:4%"></span><span class="um-pct">2.9%</span></div>
+    <div class="um-row"><span>Holland</span><span class="um-bar" style="width:3%"></span><span class="um-pct">2.0%</span></div>
+    <div class="um-row"><span>Amsterdam</span><span class="um-bar" style="width:2%"></span><span class="um-pct">1.5%</span></div>
+  </div>
   <div v-click="8" class="um-chart">
-    <div class="um-title">word 5 · “The capital of the …”</div>
+    <div class="um-title">word 5 · “…of the …”</div>
     <div class="um-row um-win"><span>Netherlands</span><span class="um-bar" style="width:100%"></span><span class="um-pct">94.5%</span></div>
     <div class="um-row"><span>Dutch</span><span class="um-bar" style="width:3.3%"></span><span class="um-pct">3.1%</span></div>
     <div class="um-row"><span>Republic</span><span class="um-bar" style="width:0.6%"></span><span class="um-pct">0.6%</span></div>
     <div class="um-row"><span>United</span><span class="um-bar" style="width:0.2%"></span><span class="um-pct">0.2%</span></div>
   </div>
+  <div v-click="9" class="um-chart">
+    <div class="um-title">word 6 · “…the Netherlands …”</div>
+    <div class="um-row um-win"><span>is</span><span class="um-bar" style="width:100%"></span><span class="um-pct">76.4%</span></div>
+    <div class="um-row"><span>.</span><span class="um-bar" style="width:10%"></span><span class="um-pct">7.4%</span></div>
+    <div class="um-row"><span>,</span><span class="um-bar" style="width:5%"></span><span class="um-pct">3.7%</span></div>
+    <div class="um-row"><span>was</span><span class="um-bar" style="width:2%"></span><span class="um-pct">1.6%</span></div>
+  </div>
   <div v-click="10" class="um-chart">
-    <div class="um-title">word 10 · “…is the city of …”</div>
+    <div class="um-title">word 7 · “…Netherlands is …”</div>
+    <div class="um-row um-win"><span>the</span><span class="um-bar" style="width:100%"></span><span class="um-pct">10.5%</span></div>
+    <div class="um-row"><span>Amsterdam</span><span class="um-bar" style="width:95%"></span><span class="um-pct">10.0%</span></div>
+    <div class="um-row"><span>Rotterdam</span><span class="um-bar" style="width:50%"></span><span class="um-pct">5.2%</span></div>
+    <div class="um-row um-dots"><span>…</span><span></span><span></span></div>
+  </div>
+  <div v-click="11" class="um-chart">
+    <div class="um-title">word 8 · “…is the …”</div>
+    <div class="um-row um-win"><span>city</span><span class="um-bar" style="width:100%"></span><span class="um-pct">5.8%</span></div>
+    <div class="um-row"><span>capital</span><span class="um-bar" style="width:98%"></span><span class="um-pct">5.7%</span></div>
+    <div class="um-row"><span>Netherlands</span><span class="um-bar" style="width:78%"></span><span class="um-pct">4.5%</span></div>
+    <div class="um-row"><span>Hague</span><span class="um-bar" style="width:57%"></span><span class="um-pct">3.3%</span></div>
+  </div>
+  <div v-click="12" class="um-chart">
+    <div class="um-title">word 9 · “…the city …”</div>
+    <div class="um-row um-win"><span>of</span><span class="um-bar" style="width:100%"></span><span class="um-pct">89.8%</span></div>
+    <div class="um-row"><span>.</span><span class="um-bar" style="width:2%"></span><span class="um-pct">1.4%</span></div>
+    <div class="um-row"><span>,</span><span class="um-bar" style="width:1.4%"></span><span class="um-pct">1.2%</span></div>
+    <div class="um-row"><span>and</span><span class="um-bar" style="width:0.5%"></span><span class="um-pct">0.4%</span></div>
+  </div>
+  <div v-click="13" class="um-chart">
+    <div class="um-title">word 10 · “…city of …”</div>
     <div class="um-row um-win"><span>Amsterdam</span><span class="um-bar" style="width:100%"></span><span class="um-pct">14.3%</span></div>
     <div class="um-row"><span>Rotterdam</span><span class="um-bar" style="width:83%"></span><span class="um-pct">11.9%</span></div>
     <div class="um-row"><span>Utrecht</span><span class="um-bar" style="width:48%"></span><span class="um-pct">6.9%</span></div>
     <div class="um-row um-dots"><span>…</span><span></span><span></span></div>
   </div>
 </div>
-
-<div v-click="12" class="um-closer text-lg">One word at a time, each one <b class="accent">a draw</b> · here <b>#1</b> won every single draw.</div>
 
 <div class="src-ref" style="left:auto; right:7.5rem; bottom:0.9rem;">data from GPT-2</div>
 
@@ -1100,27 +1139,26 @@ called inference.)
 [click] And here comes the reply — let's watch it get built word by word,
 with real numbers from a real model.
 
-[click] Word one. The model's list of ways to start the reply: "The" at
-forty percent, far ahead of "It" and "We". [click] "The" wins the draw.
+Now watch the reply appear one word at a time — and every single click,
+that's a fresh list and a fresh draw.
 
-[click] Word two — glue it on, everything back in, new list: "capital",
-with two thirds of all the odds. [click] It wins, and the little words
-"of the" follow the same way.
+[click] Word one: "The" at forty percent, ahead of "It" and "We". It wins,
+and it's glued onto the reply.
 
-[click] Now watch this one: "Netherlands" at ninety-four and a half
-percent. After "the capital of the…", the written world leaves almost no
-alternatives. [click] And on it rolls: "Netherlands is the city of…"
+[click] Word two — everything back in, new list: "capital", two thirds of
+the odds. [click] "of", [click] "the" — the little words are near-certain,
+steep lists. [click] "Netherlands" at ninety-four percent: after "the
+capital of the…" the written world leaves almost no alternatives.
 
-[click] One more list — and a very Dutch one: Amsterdam at fourteen
-percent, Rotterdam just behind at twelve, Utrecht at seven.
-[click] Amsterdam wins: "The capital of the Netherlands is the city of
-Amsterdam."
+[click] "is", [click] "the", [click] "city", [click] "of" — on it rolls,
+a draw each time. [click] And the last one, a very Dutch list: Amsterdam
+at fourteen percent, Rotterdam right behind at twelve, Utrecht at seven.
+Amsterdam wins: "The capital of the Netherlands is the city of Amsterdam."
 
-[click] One word at a time, each one a draw — and here number one won
-every single draw. That's what crisp knowledge looks like: the written
-world agrees, so the lists are steep and the reply is steady. Remember
-this for the next slides: when the lists go FLAT, the draws start to
-wander.
+Ten words, ten lists, ten draws — and here number one won every single
+one. That's what crisp knowledge looks like: the written world agrees, so
+the lists are steep and the reply is steady. Remember this for the next
+slides: when the lists go FLAT, the draws start to wander.
 
 [Armor — Rotterdam at twelve percent: yes, that list is actually close!
 Roughly one run in eight, this small model would say Rotterdam. Frontier
