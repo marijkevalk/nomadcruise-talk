@@ -812,15 +812,15 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 <hr class="rule" />
 
-<div v-click="1" class="mt-4">
+<div v-click="1" class="mt-1">
   <div class="text-2xl leading-snug">A <b class="accent">parameter</b> = one dial on the machine</div>
   <div class="mt-1 text-lg" style="color:var(--ink-dim);">Turn it, and the answer changes a tiny bit</div>
 </div>
 
-<div style="margin-top:0.9rem;">
+<div style="margin-top:0.2rem;">
 
 <div v-click="1">
-  <svg viewBox="0 0 380 110" style="width:21rem; margin-left:2.5rem;">
+  <svg viewBox="0 0 380 110" style="width:15rem; margin-left:2.5rem;">
     <g stroke-linecap="round">
       <g transform="translate(60,58)">
         <circle r="40" fill="none" stroke="#f2ecdf" stroke-width="2.5"/>
@@ -858,14 +858,14 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 </div>
 
-<div v-click="2" class="text-2xl leading-snug mt-5">All the dials <b class="accent">together</b> decide the next word</div>
+<div v-click="2" class="text-2xl leading-snug mt-2">All the dials <b class="accent">together</b> decide the next word</div>
 
-<div v-click="3" class="mt-4 text-xl" style="line-height:1.6;">
+<div v-click="3" class="mt-2 text-lg" style="line-height:1.45;">
   <div style="white-space:nowrap;">Newer models have even more.</div>
   <div style="white-space:nowrap;">The exact numbers are secret.</div>
 </div>
 
-<div v-click="4" class="text-2xl mt-5"><b class="accent">More dials</b><svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.9rem; height:auto; vertical-align:middle; margin:0 0.55rem 0.2rem;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><b>better answers</b></div>
+<div v-click="4" class="text-2xl mt-2"><b class="accent">More dials</b> <span class="accent" style="font-weight:700; padding:0 0.35rem;">⟶</span> <b>better answers</b></div>
 
 <img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" style="top:5rem; right:2.2rem; bottom:auto; height:6rem;" />
 
@@ -911,23 +911,24 @@ up.]
 
 <div v-click="1">
   <div class="tp-head">Training</div>
-  <div class="tp-sub">the model teaches itself</div>
-  <div class="tp-item">Play <b>"guess the next word"</b> — with the whole internet</div>
-  <div class="tp-item">Wrong guess? Turn <b>all the dials</b> a tiny bit</div>
-  <div class="tp-item"><b>Repeat billions of times</b></div>
+  <div class="tp-sub">THE MODEL TEACHES ITSELF</div>
+  <div class="tp-item">Start with <b>random parameters</b></div>
+  <div class="tp-item"><b>Calculate</b> the next word</div>
+  <div class="tp-item">Learn from its mistakes by <b>adjusting the parameters</b></div>
+  <div class="tp-item"><b>Repeat, billions of times</b></div>
+  <div class="mt-5" style="font-size:1.45rem;"><span style="color:var(--talk-accent); font-size:1.9rem; vertical-align:-0.18rem; margin-right:0.3rem;">&#9656;</span><b style="letter-spacing:0.03em;">MACHINE LEARNING</b></div>
 </div>
 
 <div v-click="2">
   <div class="tp-head">Post-training</div>
-  <div class="tp-sub">done by humans</div>
+  <div class="tp-sub">DONE BY HUMANS</div>
   <div class="tp-item"><b>Show it</b> what a good answer looks like</div>
   <div class="tp-item">Let it <b>practice</b></div>
-  <div class="tp-item"><b>Grade</b> its answers <span class="dim">(RLHF)</span></div>
+  <div class="tp-item"><b>Grade</b> its answers</div>
+  <div v-click="3" class="pt-quote mt-6">"AI is not neutral: it's built, tuned and controlled."</div>
 </div>
 
 </div>
-
-<div v-click="3" class="pt-quote mt-8">"AI is not neutral: it's built, tuned and controlled."</div>
 
 <img :src="'/art/tovenaar-18-bouwend-hamer.svg'" class="mage" />
 
@@ -959,7 +960,7 @@ by humans. Show it what a good answer looks like. Let it practice. And
 then grade its answers — literally report grades, from human reviewers:
 helpful, honest, harmless — including learning when to refuse. Same dial-
 turning, but now steered by human judgment instead of the internet. That
-loop has a name, RLHF — on the slide, no need to remember it.
+loop has a name, RLHF — jargon, no need to remember it.
 
 [click] But realize what that means: AI is not neutral. It's built, tuned
 and controlled — by people, at companies, with choices. Remember that next
@@ -1384,132 +1385,12 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 -->
 
 ---
-clicks: 6
----
-
-<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
-
-# Models are the engines
-
-<svg v-click="[2, 5]" class="eng-grid" viewBox="-16 0 521 330" aria-hidden="true">
-  <defs>
-    <marker id="engArr" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
-  </defs>
-  <g class="eng-head" fill="#f2ecdf" text-anchor="middle">
-    <text x="110" y="20">Claude</text><text x="265" y="20">GPT</text><text x="420" y="20">Llama</text>
-  </g>
-  <line x1="18" y1="48" x2="18" y2="300" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#engArr)"/>
-  <text class="eng-larger" transform="rotate(-90 1 174)" x="1" y="174" fill="#e3b04b" text-anchor="middle">Larger</text>
-  <g>
-    <g v-for="(col, ci) in [
-        {x: 110, names: ['Haiku', 'Sonnet', 'Opus']},
-        {x: 265, names: ['GPT-5 nano', 'GPT-5 mini', 'GPT-5']},
-        {x: 420, names: ['8B', '70B', '405B']}]" :key="ci">
-      <g v-for="(row, ri) in [
-          {y: 46, w: 98, h: 40, sw: 2.2},
-          {y: 114, w: 120, h: 58, sw: 2.6},
-          {y: 200, w: 140, h: 80, sw: 3}]" :key="ri">
-        <rect v-for="t in 4" :key="t" :x="col.x - row.w/2 + row.w*(0.14 + 0.22*(t-1))" :y="row.y - 6" width="10" height="8" rx="1.5" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.8"/>
-        <rect :x="col.x - row.w/2" :y="row.y" :width="row.w" :height="row.h" rx="8" fill="#0d1322" stroke="#e3b04b" :stroke-width="row.sw"/>
-        <circle :cx="col.x + row.w/2 - row.h*0.22" :cy="row.y + row.h - row.h*0.24" :r="row.h*0.1" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.75"/>
-        <text :class="'ename-' + ri" :x="col.x" :y="row.y + row.h/2 + 5.5" fill="#b8af9b" text-anchor="middle">{{ col.names[ri] }}</text>
-      </g>
-    </g>
-  </g>
-</svg>
-
-<div class="eng-left">
-
-<div v-click="1" class="s3-specs">
-  <div class="sp-title">ENGINE SPECS</div>
-  <div class="sp-row"><span>Parameters</span><span class="bar"></span></div>
-  <div class="sp-row"><span>Training data</span><span class="bar"></span></div>
-  <div class="sp-row"><span>Recipe</span><span class="bar"></span></div>
-  <div class="sp-secret">Providers keep their info secret</div>
-</div>
-
-<div v-click="3" class="eng-note">
-  <div><b>Larger models = more parameters</b></div>
-  <div class="mt-1"><svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:middle; margin:0 0.3rem 0.15rem 0;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>More capable · Slower · More expensive</div>
-</div>
-
-<div v-click="4" class="eng-version">
-  <div><span class="ev-ex">Example:</span> <span class="ev-title">Claude version numbers</span></div>
-  <div class="mt-1">Opus 4 <span class="ev-arr">→</span> 5: new generation, new recipe</div>
-  <div>Opus 4.7 <span class="ev-arr">→</span> 4.8: new training run, same recipe</div>
-</div>
-
-</div>
-
-<S3Diagram :stage="1" :c="$clicks" />
-
-<div v-click="6" class="eng-ft">
-  <div class="ft-title">Fine-tuning</div>
-  <div>Extra training with <b>your own data</b></div>
-  <div class="dim" style="font-size:0.9em; margin-top:0.1rem;">Small adjustments to the weights</div>
-</div>
-
-<div v-click="[2, 5]" class="credit" style="position:absolute; right:3.4rem; top:27.05rem; font-size:0.85rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.18rem 0.6rem;">schematic drawing</div>
-
-<!--
-You never actually use a raw model — you use products built around one. So
-let's meet the engines first.
-
-[click] First honest thing about these engines: what exactly is IN them?
-They won't tell you. The parameter counts, the data mix, the training code,
-the compute bill, the post-training recipe — all secret. You get the
-horsepower, never the blueprints.
-
-[click] Here they are. Each lab builds its own: Claude from Anthropic, GPT
-from OpenAI — and Llama from Meta, the open-source one: remember the file
-of numbers? Meta lets you download those files and run them yourself.
-Under the hood there are three REAL differences: what data went in, how
-big it's built, and the post-training. Different food, different
-upbringing — so they have different personalities. Don't choose one on
-reviews or benchmarks: run YOUR OWN task on two or three of them, ten
-minutes, done. And every engine comes in sizes — the labs even name them.
-Claude's sizes are poem lengths: Haiku, Sonnet, Opus — short to long. GPT
-keeps it plain: nano, mini, and the full model with no suffix. And Llama,
-being open, just tells you the parameter count: 8, 70 or 405 billion —
-the size IS the name.
-
-[Q&A armor: those counts are the Llama 3 ladder; the newest Llama 4 family
-uses names again — Scout and Maverick. Google's Gemini also comes in
-sizes: Flash-Lite, Flash, Pro — named for speed.]
-
-[click] Bigger is not simply better. Larger literally means more
-parameters — remember the file of numbers — and that buys capability, but
-every answer gets slower and pricier. Small: fast and cheap. Pick by the
-trip — and route the easy bulk work to the small one. That's most of what
-"AI cost optimization" means.
-
-[click] And the version numbers: the number before the dot is the
-generation — Opus 4 to 5 means a new recipe. After the dot — 4.7 to 4.8 —
-is a new training run on the same recipe. Either way a newly trained
-engine, not a software patch.
-
-[click] Now the showroom goes away, and we take ONE engine with us — keep
-an eye on it, it stays exactly there for the rest of this section while we
-build around it.
-
-[click] One thing you CAN do to the engine itself: fine-tune it — extra
-training with YOUR OWN data. It adjusts the weights themselves: small
-nudges on top of everything training built. Powerful, and rare — most
-people never open the hood. Everything else you'll ever do sits AROUND
-the engine. Next slide.
-
-[If a techie pushes on the "layer" picture: the efficient shortcut, LoRA,
-literally learns a thin extra set of weights on top while the originals
-stay frozen — full fine-tuning adjusts the original weights.]
--->
-
----
 clicks: 3
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
-# The app is the car
+<h1 style="font-size:2.4rem;">Models are the engines, apps are the cars</h1>
 
 <hr class="rule" />
 
@@ -1560,6 +1441,17 @@ Which proves the whole point. Industry word for such a car: a "wrapper".]
 [Armor, "can I build my own car?": yes — through the API, from a Zapier
 or n8n kit car to fully hand-built code. Your car, your rules.]
 
+[Armor, engine names/sizes/versions: Claude's engine comes in sizes —
+Haiku, Sonnet, Opus, small to large (poem lengths!); GPT has nano/mini;
+Gemini has Flash/Pro. A higher version number (Opus 4.7 → 4.8) = a newer
+training run. What's inside — parameters, data, recipe — providers keep
+secret.]
+
+[Armor, safety/jailbreak: the rules live in two places — baked into the
+engine by post-training, and added around it by the app. Talking a model
+past its rules is called a "jailbreak"; it's an arms race, which is why
+the rules live in more than one place.]
+
 [click] But here's the relief: to start, none of this matters. Any car
 with any engine — they all drive. Pick whatever is in front of you and
 drive.
@@ -1576,12 +1468,6 @@ clicks: 5
 <S3Diagram :stage="3" :c="$clicks" />
 
 <div v-click="5" class="accent" style="position:absolute; left:3.8rem; bottom:1.55rem; font-size:1.05rem; font-weight:600;">The quality of your input determines the quality of your output</div>
-
-<div class="s3-legend">
-  <span><span class="chip chip-blue"></span>You</span>
-  <span><span class="chip chip-purple"></span>The app</span>
-  <span><span class="chip chip-gold"></span>The model provider</span>
-</div>
 
 <!--
 Third layer: context. Remember: the engine is a frozen file of numbers. It
@@ -1636,154 +1522,6 @@ hidden system prompts are powerful and why prompt injection exists.]
 give the destination; the app lets the model act (search, click, run
 code), each result lands back in the tank, and it goes again — the
 inference loop, but with actions. Claude Code and Cursor work like this.]
--->
-
----
-clicks: 2
----
-
-<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
-
-<h1 style="font-size:2.6rem;">Safety: rules in the engine and the car</h1>
-
-<div class="s3-left">
-  <div v-click="1">
-    <div class="s3-guard">Guardrails</div>
-    <div>The engine has rules built in,<br>and the app adds its own:<br>What it will and won't do</div>
-  </div>
-  <div v-click="2" class="mt-8">
-    <div class="s3-guard">Jailbreak</div>
-    <div>Talking the model past its rules</div>
-  </div>
-</div>
-
-<S3Diagram :stage="4" :c="$clicks" />
-
-<!--
-Last layer: the rules.
-
-[click] They live in two places. The engine has rules baked in — that's the
-post-training you saw: what it will and won't do. And the app adds its own
-guardrails around it: filters and checks in plain, predictable code. [If
-you build your own app, those outer checks are yours to write.]
-
-[click] People constantly try to talk models past those rules — that's
-called a JAILBREAK. It's an ongoing arms race, and it's exactly why the
-rules live in more than one place.
-
-And look at the picture now — it's complete. The engine. The car around it.
-The fuel flowing in. Rules in both. That is the anatomy of every AI tool
-you have ever opened — no exceptions.
--->
-
----
-clicks: 5
----
-
-<div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
-
-# The tool zoo, sorted
-
-<div class="s3-zoo">
-  <div v-click="1">
-    <div class="zh gold-t">ENGINE BUILDERS<div class="zs">Models</div></div>
-    <div class="zn gold-t">OpenAI <span class="zm">(GPT)</span></div>
-    <div class="zn gold-t">Anthropic <span class="zm">(Claude)</span></div>
-    <div class="zn gold-t">Google <span class="zm">(Gemini)</span></div>
-    <div class="zn gold-t">Meta <span class="zm">(Llama)</span></div>
-    <div class="zn gold-t">xAI <span class="zm">(Grok)</span></div>
-    <div class="zn gold-t">Mistral</div>
-    <div class="zn gold-t">DeepSeek</div>
-    <div class="zn gold-t">Alibaba <span class="zm">(Qwen)</span></div>
-  </div>
-  <div v-click="2">
-    <div class="zh">CARS YOU DRIVE<div class="zs">Apps</div></div>
-    <div class="z2col">
-      <div>
-        <div class="zn gold-t">ChatGPT <span class="zm">(OpenAI)</span></div>
-        <div class="zn gold-t">Claude <span class="zm">(Anthropic)</span></div>
-        <div class="zn gold-t">Gemini <span class="zm">(Google)</span></div>
-        <div class="zn gold-t">Grok <span class="zm">(xAI)</span></div>
-        <div class="zn gold-t">Meta AI <span class="zm">(Meta)</span></div>
-        <div class="zn gold-t">Le Chat <span class="zm">(Mistral)</span></div>
-      </div>
-      <div>
-        <div class="zn purple-t">Perplexity</div>
-        <div class="zn purple-t">Microsoft Copilot</div>
-        <div class="zn purple-t">Notion AI</div>
-        <div class="zn purple-t">Canva</div>
-        <div class="zn purple-t">Grammarly</div>
-        <div class="zn purple-t">Cursor</div>
-        <div class="zn purple-t">Lovable</div>
-      </div>
-    </div>
-  </div>
-  <div v-click="3">
-    <div class="zh zh-fit blue-t2">BUILD / UPGRADE YOUR OWN CAR<div class="zs">Apps</div></div>
-    <div class="z2col">
-      <div>
-        <div class="zn blue-t2">Zapier</div>
-        <div class="zn blue-t2">Make</div>
-        <div class="zn blue-t2">n8n</div>
-        <div class="zn blue-t2">Bolt</div>
-        <div class="zn blue-t2">Replit</div>
-      </div>
-      <div>
-        <div class="zn blue-t2">LangChain</div>
-        <div class="zn blue-t2">Hugging Face</div>
-        <div class="zn blue-t2">Ollama</div>
-        <div class="zn blue-t2">LM Studio</div>
-        <div class="zn blue-t2">the API</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="s3-mini">
-  <S3Diagram :stage="4" :c="2" hide-ctx />
-</div>
-<div class="s3-mini-legend"><span><span class="chip chip-gold"></span>Model provider</span><span><span class="chip chip-purple"></span>Third party</span><span><span class="chip chip-blue"></span>You</span></div>
-
-<div v-click="4" class="s3-whose">First question for any AI product: whose engine? whose car?</div>
-
-<div v-click="5" class="s3-land"><span class="ztri">▸</span>Overwhelmed? It doesn't matter what you use exactly: just start!</div>
-
-<!--
-And with that, the overwhelming tool zoo sorts itself — by colour.
-
-[click] Gold: the engine builders, with their model in brackets — OpenAI
-makes GPT, Anthropic makes Claude, Google Gemini, Meta Llama, xAI Grok.
-Mistral and DeepSeek named the model after the company. Alibaba's is called
-Qwen. This shelf is the models — everything else on this slide is a
-harness.
-
-[click] The cars you drive. Gold cars, built by the labs themselves —
-ChatGPT, Claude, Gemini, Grok, Meta AI inside WhatsApp, Le Chat from
-Europe's Mistral. And purple, the third-party cars — Perplexity, Microsoft
-Copilot, Notion AI, Canva, Grammarly, Cursor, Lovable. You can name the
-colour of every logo on this shelf now.
-
-[click] And blue: build — or upgrade — your own. It's the kit-car spectrum:
-a Zapier, Make or n8n flow; Bolt or Replit building an app for you;
-LangChain for developers; Hugging Face is the shop where the open files of
-numbers live, and Ollama or LM Studio run them on your own laptop; and at
-the far end, your own code straight on the API.
-
-[Armor — "what about Midjourney?": an image model, not a language model —
-different engine, same anatomy: Midjourney builds its own engine AND its
-own car around it.]
-
-New tools will launch next week, and the week after. Doesn't matter. Every
-single one lands on one of these shelves, in one of these colours.
-
-[click] So here's the first question for any AI product — in a demo, in a
-pitch, on this boat: whose engine? And whose car? Watch how fast the
-marketing fog clears.
-
-[click] And if you're overwhelmed — honest advice: it doesn't matter what
-you use exactly. Just start. You'll recognize the anatomy now.
-
-Last round of questions — and this one is the most practical.
 -->
 
 ---
