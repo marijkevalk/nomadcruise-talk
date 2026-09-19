@@ -1604,12 +1604,12 @@ Section two done — and I'd be amazed if you have no questions now.
 <div class="qmain">
   <div class="ex-title">Examples</div>
   <div class="qlist qlist-tight">
+    <div class="ql">What is the difference between training an LLM and using an LLM?</div>
+    <div class="ql">What is prompting?</div>
     <div class="ql">Explain "temperature" as if I am 12 years old</div>
-    <div class="ql">What does "GPT" actually stand for?</div>
-    <div class="ql">Is it better to prompt in English than in my own language?</div>
-    <div class="ql">What is the connection between an artificial neural network and the human brain?</div>
-    <div class="ql">How is polluted data cleaned before it's used for training?</div>
-    <div class="ql">How is it ensured that the nudging of the weights converges?</div>
+    <div class="ql">Is it better to ask a chatbot in English or in my own language?</div>
+    <div class="ql">What does "GPT" stand for?</div>
+    <div class="ql">Does the AI actually understand what it is saying?</div>
   </div>
 </div>
 
