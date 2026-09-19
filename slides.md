@@ -1914,25 +1914,26 @@ Last round of questions — and this one is the most practical.
 
 <div class="qmain">
   <div class="ex-title">Examples</div>
-  <div class="qlist">
-    <div class="ql">Which AI tool fits what I actually do?</div>
+  <div class="qlist qlist-tight">
+    <div class="ql">Which company builds which model, and how do they differ?</div>
     <div class="ql">Difference between ChatGPT the app and GPT the model?</div>
+    <div class="ql">Can open-source models keep up with the frontier models?</div>
+    <div class="ql">What is the difference between the Claude desktop app and Claude Code?</div>
+    <div class="ql">Which AI tool fits what I actually do?</div>
     <div class="ql">How do I give an AI my own documents to work from?</div>
-    <div class="ql">When should I build my own tool instead of using one?</div>
   </div>
 </div>
 
 </div>
 
-<div class="bubble bubble-dn" style="left:6.5rem; bottom:8rem; right:auto; text-align:left; max-width:17rem;"><b>This time:</b> describe what <i>you</i> do, ask what would help</div>
 <img :src="'/art/tovenaar-14-achter-laptop.svg'" class="mage mage-left" />
 
 
 <!--
 Last round — make it practical. Tell the AI what you actually do — your
-business, your work — and ask what would genuinely help. And notice what
-you're doing while you do it: you're giving it CONTEXT. You're already
-applying section three.
+business, your work — and ask what would genuinely help. Or borrow one of
+mine from the list. And notice what you're doing while you do it: you're
+giving it CONTEXT. You're already applying section three.
 
 [walk the room]
 
