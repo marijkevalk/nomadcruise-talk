@@ -1580,7 +1580,7 @@ clicks: 6
     <marker id="engArr" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
   </defs>
   <g class="eng-head" fill="#f2ecdf" text-anchor="middle">
-    <text x="110" y="20">Claude</text><text x="265" y="20">GPT</text><text x="420" y="20">Gemini</text>
+    <text x="110" y="20">Claude</text><text x="265" y="20">GPT</text><text x="420" y="20">Llama</text>
   </g>
   <line x1="18" y1="48" x2="18" y2="300" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#engArr)"/>
   <text class="eng-larger" transform="rotate(-90 1 174)" x="1" y="174" fill="#e3b04b" text-anchor="middle">Larger</text>
@@ -1588,7 +1588,7 @@ clicks: 6
     <g v-for="(col, ci) in [
         {x: 110, names: ['Haiku', 'Sonnet', 'Opus']},
         {x: 265, names: ['GPT-5 nano', 'GPT-5 mini', 'GPT-5']},
-        {x: 420, names: ['Flash-Lite', 'Flash', 'Pro']}]" :key="ci">
+        {x: 420, names: ['8B', '70B', '405B']}]" :key="ci">
       <g v-for="(row, ri) in [
           {y: 46, w: 98, h: 40, sw: 2.2},
           {y: 114, w: 120, h: 58, sw: 2.6},
@@ -1645,14 +1645,21 @@ the compute bill, the post-training recipe — all secret. You get the
 horsepower, never the blueprints.
 
 [click] Here they are. Each lab builds its own: Claude from Anthropic, GPT
-from OpenAI, Gemini from Google. Under the hood there are three REAL
-differences: what data went in, how big it's built, and the post-training.
-Different food, different upbringing — so they have different
-personalities. Don't choose one on reviews or benchmarks: run YOUR OWN task
-on two or three of them, ten minutes, done. And every engine comes in
-sizes — the labs even name them. Claude's sizes are poem lengths: Haiku,
-Sonnet, Opus — short to long. Gemini names for speed: Flash-Lite, Flash,
-Pro. GPT keeps it plain: nano, mini, and the full model with no suffix.
+from OpenAI — and Llama from Meta, the open-source one: remember the file
+of numbers? Meta lets you download those files and run them yourself.
+Under the hood there are three REAL differences: what data went in, how
+big it's built, and the post-training. Different food, different
+upbringing — so they have different personalities. Don't choose one on
+reviews or benchmarks: run YOUR OWN task on two or three of them, ten
+minutes, done. And every engine comes in sizes — the labs even name them.
+Claude's sizes are poem lengths: Haiku, Sonnet, Opus — short to long. GPT
+keeps it plain: nano, mini, and the full model with no suffix. And Llama,
+being open, just tells you the parameter count: 8, 70 or 405 billion —
+the size IS the name.
+
+[Q&A armor: those counts are the Llama 3 ladder; the newest Llama 4 family
+uses names again — Scout and Maverick. Google's Gemini also comes in
+sizes: Flash-Lite, Flash, Pro — named for speed.]
 
 [click] Bigger is not simply better. Larger literally means more
 parameters — remember the file of numbers — and that buys capability, but
@@ -1701,9 +1708,9 @@ clicks: 5
   </div>
   <div v-click="2" class="s3-lead2 mt-4">Three types of harness builders:</div>
   <div class="s3-owners">
-    <div v-click="3" class="ow ow-gold">Model provider <span class="ow-ex">Claude app · Claude Code</span></div>
-    <div v-click="4" class="ow ow-purple">Third-party harness (wrapper) <span class="ow-ex">Cursor · Perplexity</span></div>
-    <div v-click="5" class="ow ow-blue">Own harness <span class="ow-ex">built via the API</span></div>
+    <div v-click="3" class="ow ow-gold">Model provider <span class="ow-ex">Claude Desktop · Claude Code · ChatGPT</span></div>
+    <div v-click="4" class="ow ow-purple">Third-party harness (wrapper) <span class="ow-ex">Cursor · Notion AI · Microsoft Copilot</span></div>
+    <div v-click="5" class="ow ow-blue">Own harness <span class="ow-ex">custom build</span></div>
   </div>
 </div>
 
@@ -1732,9 +1739,16 @@ your app "gets an update", it's usually the car, not the engine. The app is
 not the model.
 
 [click] Kind two, purple: a third party builds a car around someone else's
-engine. Cursor, Perplexity — and most AI startups you'll see pitched,
+engine. Cursor, Notion AI — and most AI startups you'll see pitched,
 including on this boat. The industry word is a WRAPPER. Not an insult — good
-cars are genuinely hard to build. But now you know what you're looking at.
+cars are genuinely hard to build. And my favourite example: Microsoft
+Copilot. Even the biggest software company in the world drives someone
+else's engine — OpenAI's. But now you know what you're looking at.
+
+[Armor, if pushed on Copilot: Microsoft invests in OpenAI but doesn't build
+the frontier engine; and in 2025 Microsoft started slotting Anthropic
+engines into Office Copilot too — same car, swapped engine. Which proves
+the whole point.]
 
 [click] Kind three, blue: you. Through the API you can build your own car
 around those very same engines. And harnesses NEST: my own assistant wraps
