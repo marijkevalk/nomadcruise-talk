@@ -1935,11 +1935,10 @@ clicks: 5
   <S3Diagram :stage="4" :c="2" />
 </div>
 <div class="s3-mini-legend"><span><span class="chip chip-gold"></span>Model provider</span><span><span class="chip chip-purple"></span>Third party</span><span><span class="chip chip-blue"></span>You</span></div>
-<div class="s3-echo-cap">you'll recognize the anatomy now</div>
 
 <div v-click="4" class="s3-whose">First question for any AI product: whose engine? whose car?</div>
 
-<div v-click="5" class="s3-land"><span class="ztri">▸</span>Overwhelmed? It doesn't matter what you use exactly · just start.</div>
+<div v-click="5" class="s3-land"><span class="ztri">▸</span>Overwhelmed? It doesn't matter what you use exactly: just start!</div>
 
 <!--
 And with that, the overwhelming tool zoo sorts itself — by colour.
@@ -2065,7 +2064,7 @@ Find me on board to continue the talk.<br>
 photos: Wikimedia Commons · A.R. Chaffin (PD) · C.B. Francke (PD) · Morn/CHM (CC BY 2.0) · Virtual-Pano (CC BY-SA 4.0) · F. Hirzinger (CC BY-SA 3.0) · xkcd #1838 (CC BY-NC)
 </div>
 
-<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" />
+<img :src="'/art/tovenaar-15-zwaaiend.svg'" class="mage" style="top:3.4rem; right:0.6rem; bottom:auto; height:7.5rem;" />
 
 <!--
 Let's close the loop. AI is not magic. It's data, weights and math — statistics
