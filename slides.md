@@ -1479,16 +1479,18 @@ drive.
 -->
 
 ---
-clicks: 5
+clicks: 4
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # Context: what flows in
 
+<hr class="rule" />
+
 <S3Diagram :stage="3" :c="$clicks" />
 
-<div v-click="5" class="accent" style="position:absolute; left:3.8rem; bottom:1.55rem; font-size:1.05rem; font-weight:600;">The quality of your input determines the quality of your output</div>
+<div v-click="4" class="accent" style="position:absolute; left:3.8rem; bottom:1.3rem; font-size:1.55rem; font-weight:600; font-family:'Fraunces',serif;">The quality of your input determines the quality of your output</div>
 
 <!--
 Third layer: context. Remember: the engine is a frozen file of numbers. It
@@ -1509,14 +1511,12 @@ RAG is. One buzzword down. And search & tool results — a web page it
 fetches, anything from the internet, it all lands in exactly the same tank.
 
 [click] But you're not the only one at the pump. The app pours in its own
-hidden instructions — you never see them…
-
-[click] …and the model provider does too. The jargon word for these: the
-SYSTEM PROMPT — text placed before yours, every turn. That's often the
-real answer to "it suddenly behaves differently". Three owners, one tank —
-watch the colours. [Fun fact if it fits: in the real bundle the order is
-reversed — the provider's instructions come FIRST, your prompt comes LAST.
-The provider literally has the first word.]
+hidden instructions — you never see them. The jargon word: the SYSTEM
+PROMPT — text placed before yours, every turn. That's often the real
+answer to "it suddenly behaves differently". (And the model provider adds
+its own on top — say it, it's not in the tank drawing.) [Fun fact if it
+fits: in the real bundle the order is reversed — those hidden instructions
+come FIRST, your prompt comes LAST.]
 
 [click] And every turn, the WHOLE tank flows into the engine — fresh, every
 single time. Not just your last message: everything, again. [If a techie

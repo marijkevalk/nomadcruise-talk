@@ -11,7 +11,6 @@ const props = defineProps({
 const v = (s, k) => props.stage > s || (props.stage === s && props.c >= k)
 
 const engineOn = computed(() => v(1, 5))
-const layerOn = computed(() => v(1, 6))
 const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
 const lockOn = computed(() => v(4, 1))
 const carOn = computed(() => v(2, 1))
@@ -36,7 +35,6 @@ const tankRows = [
   { y: 396, g: 1, lab: 'Your documents' },
   { y: 423, g: 1, lab: 'Search & tool results (internet)' },
   { y: 452, g: 2, lab: "The app's hidden instructions", col: PURPLE_B },
-  { y: 479, g: 3, lab: "The provider's hidden instructions", col: GOLD },
 ]
 const ribs = [602, 629, 656, 683]
 
@@ -79,9 +77,6 @@ const carD = (s) => {
       <marker id="s3ga" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
         <path d="M0,0 L7,4 L0,8 z" :fill="BLUE_B" />
       </marker>
-      <marker id="s3fuel" markerUnits="userSpaceOnUse" markerWidth="26" markerHeight="26" refX="20" refY="13" orient="auto">
-        <path d="M0,0 L24,13 L0,26 z" :fill="BLUE_B" />
-      </marker>
       <marker id="s3da" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
         <path d="M0,0 L6,3.5 L0,7 z" :fill="DIM" />
       </marker>
@@ -104,10 +99,10 @@ const carD = (s) => {
       </g>
     </g>
 
-    <!-- click 4: the fuel line — the whole tank flows into the engine, fresh every turn -->
-    <g v-if="ctxOn(4)" :opacity="ctxOp">
-      <path d="M 392 330 C 448 330 504 331 552 331" fill="none" :stroke="BLUE_B" stroke-width="5.5" marker-end="url(#s3fuel)" />
-      <text v-if="stage === 3" x="470" y="306" text-anchor="middle" style="font-size:14.5px;font-weight:600;font-style:italic" :fill="BLUE_B">Every turn, a fresh tank</text>
+    <!-- click 3: the fuel line — the whole tank flows into the engine, fresh every turn -->
+    <g v-if="ctxOn(3)" :opacity="ctxOp">
+      <path d="M 392 330 C 442 330 492 331 534 331" fill="none" :stroke="BLUE_B" stroke-width="5.5" />
+      <path d="M 530 318 L 558 331 L 530 344 Z" :fill="BLUE_B" />
     </g>
 
     <!-- the car: the app around the engine -->
@@ -120,14 +115,6 @@ const carD = (s) => {
     <g v-if="engineOn">
       <rect x="575" y="290" width="150" height="80" rx="9" fill="#0d1322" :stroke="GOLD" stroke-width="2" />
       <rect v-for="rx in ribs" :key="rx" :x="rx" y="283" width="10" height="7" rx="2" fill="none" :stroke="GOLD" stroke-width="1.6" />
-      <!-- fine-tune layer: a thin blue cap on top, silhouetting the four terminals -->
-      <path v-if="layerOn" d="M 576 294 Q 578 290 584 290
-        L 602 290 L 602 285 Q 602 283 604 283 L 610 283 Q 612 283 612 285 L 612 290
-        L 629 290 L 629 285 Q 629 283 631 283 L 637 283 Q 639 283 639 285 L 639 290
-        L 656 290 L 656 285 Q 656 283 658 283 L 664 283 Q 666 283 666 285 L 666 290
-        L 683 290 L 683 285 Q 683 283 685 283 L 691 283 Q 693 283 693 285 L 693 290
-        L 716 290 Q 722 290 724 294 Z"
-        fill="rgba(56,189,248,0.18)" :stroke="BLUE_B" stroke-width="1.8" stroke-linejoin="round" />
       <circle cx="704" cy="344" r="9" fill="none" :stroke="GOLD" stroke-width="1.6" />
       <text x="630" y="341" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="INK">LLM</text>
     </g>
