@@ -976,22 +976,36 @@ time someone says "the AI said so."
 
 <hr class="rule" />
 
-<div v-click class="fon-after mt-1" style="font-size:1.4rem;"><b>After training: the model is frozen</b> (= Parameters are saved)</div>
+<div class="grid grid-cols-[1.05fr_1fr] gap-12 mt-5 items-start">
 
-<div v-click class="mt-3" style="max-width:36rem; margin-left:auto; margin-right:auto;">
+<div>
+  <div v-click="1">
+    <div class="text-xl leading-snug" style="white-space:nowrap;"><b>After training: the model is <span class="accent">frozen</span></b></div>
+    <div class="mt-1 text-base" style="color:var(--ink-dim);">All the dials are saved — into one file</div>
+  </div>
+
+  <div v-click="3" class="mt-7">
+    <div>
+      <div class="text-xl"><b class="accent">Open source</b></div>
+      <div class="mt-0.5 text-base leading-snug">Download the file, run it on your own computer</div>
+    </div>
+    <div class="mt-4">
+      <div class="text-xl"><b class="accent">Closed</b></div>
+      <div class="mt-0.5 text-base leading-snug">The file is secret — it runs on the provider's servers</div>
+    </div>
+  </div>
+</div>
+
+<div v-click="2">
   <div class="fon-lab">60 of the 124,000,000 numbers inside GPT-2</div>
-  <img :src="'/ai_model_file_numbers.png'" class="rounded mx-auto" style="max-height:8.5rem; object-fit:contain;" />
+  <img :src="'/ai_model_file_numbers.png'" class="rounded" style="width:100%; object-fit:contain;" />
   <div class="fon-cap">A frontier model holds ~10,000× more of these</div>
+  <div class="credit" style="text-align:center; margin-top:0.4rem;">Source: real weights from the GPT-2 model file (OpenAI, 2019)</div>
 </div>
 
-<div v-click class="dg-note mt-2" style="max-width:47rem; font-size:1.08rem; padding:0.5rem 1.1rem; line-height:1.45;">
-  <div><b>Open source:</b> Free to download these files and run on your own computer</div>
-  <div class="mt-1"><b>Closed:</b> Model parameters are secret and it runs on the provider's servers</div>
 </div>
 
-<div v-click="2" class="credit" style="position:absolute; left:2.2rem; bottom:0.25rem;">Source: real weights from the GPT-2 model file (OpenAI, 2019)</div>
-
-<img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" style="bottom:2.6rem;" />
+<img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" style="top:2.2rem; right:0.8rem; bottom:auto; height:6rem;" />
 
 <!--
 And when all that training is done — my favorite moment — [click] the model
