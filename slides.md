@@ -866,7 +866,7 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 </div>
 
-<div v-click="4" class="text-xl mt-3"><span class="accent">▸</span> More dials: <b>more complex patterns</b> it can capture</div>
+<div v-click="4" class="text-xl mt-3"><span class="accent">▸</span> More dials: <b>more complex patterns</b> it can capture <span class="accent" style="margin:0 0.15rem;">→</span> <b>better answers</b></div>
 
 <div v-click="5" class="text-xl mt-2"><span class="accent">▸</span> More dials: <b>slower</b> and <b>more expensive</b> calculations</div>
 
@@ -889,7 +889,8 @@ five and a half thousand years. Today's models have even more; the makers
 keep the exact numbers secret.
 
 [click] Why keep adding dials? More dials means the model can capture more
-complex patterns. [click] But there's a catch: every answer takes more
+complex patterns — and that shows up where you feel it: better answers.
+[click] But there's a catch: every answer takes more
 calculating, so a bigger model is slower and more expensive. That
 trade-off returns in part three, on the engines slide.
 
@@ -1089,9 +1090,9 @@ clicks: 12
 
 <div v-click="11" class="um-closer text-lg">One word at a time, each one <b class="accent">a draw</b> · run it again and the reply can differ.</div>
 
-<div v-click="12" class="um-greedy"><span class="ug-q">“What is the capital of France?”</span> <b>“The capital of France is Paris.”</b> <span class="dim">· here <b>#1</b> won every single draw</span></div>
+<div v-click="12" class="um-greedy"><span class="ug-q">“What is the capital of the Netherlands?”</span> <b>“The capital of the Netherlands is the city of Amsterdam.”</b> <span class="dim">· here <b>#1</b> won every single draw</span></div>
 
-<div class="src-ref" style="left:auto; right:2.2rem; bottom:2.6rem;">data from GPT-2</div>
+<div class="src-ref" style="left:auto; right:7.5rem; bottom:0.9rem;">data from GPT-2</div>
 
 <img :src="'/art/tovenaar-05-zittend.svg'" class="mage" style="top:3.2rem; right:0.6rem; bottom:auto; height:7rem;" />
 
@@ -1124,11 +1125,13 @@ and somewhere a different word wins the draw. How adventurous the draws
 are — there's a knob for that, coming up.
 
 [click] And the flip side. Ask something the written world fully agrees
-on — "What is the capital of France?" — and the lists get so lopsided
-(capital 69%, of 79%, France 85%) that number one wins every single draw:
-"The capital of France is Paris." Crisp knowledge makes steep lists and
-steady replies; vague knowledge makes flat lists and wobbly replies —
-remember that for the hallucination slide in a minute.
+on — "What is the capital of the Netherlands?" — and the lists get so
+lopsided (capital 66%, of 71%, Netherlands 95%) that number one wins every
+single draw: "The capital of the Netherlands is the city of Amsterdam."
+Crisp knowledge makes steep lists and steady replies; vague knowledge
+makes flat lists and wobbly replies — remember that for the hallucination
+slide in a minute. [Fun detail for the Dutch: at the Amsterdam step,
+Rotterdam was in second place at twelve percent.]
 
 [Armor: with the dice a less likely word can still occasionally win — but
 the steeper the list, the rarer that gets. Forcing #1 at every step has a
