@@ -616,7 +616,7 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
     <div class="ql">Was there AI before ChatGPT?</div>
     <div class="ql">Is my navigation app AI?</div>
     <div class="ql">Where do I use AI every day without noticing?</div>
-    <div class="ql">What is AGI?</div>
+    <div class="ql">What do the letters AGI stand for and what is its definition?</div>
   </div>
 </div>
 
