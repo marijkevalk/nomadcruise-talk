@@ -969,13 +969,15 @@ time someone says "the AI said so."
 
 <div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
 
-<h1 style="font-size:2.6rem;">A model is just a gigantic file of numbers</h1>
+# A gigantic file of numbers
 
-<div v-click class="fon-after mt-2" style="font-size:1.4rem;"><b>After training: model is frozen</b> (= Parameters are saved)</div>
+<hr class="rule" />
+
+<div v-click class="fon-after mt-1" style="font-size:1.4rem;"><b>After training: the model is frozen</b> (= Parameters are saved)</div>
 
 <div v-click class="mt-3" style="max-width:36rem; margin-left:auto; margin-right:auto;">
   <div class="fon-lab">60 of the 124,000,000 numbers inside GPT-2</div>
-  <img :src="'/ai_model_file_numbers.png'" class="rounded mx-auto" style="max-height:9.5rem; object-fit:contain;" />
+  <img :src="'/ai_model_file_numbers.png'" class="rounded mx-auto" style="max-height:8.5rem; object-fit:contain;" />
   <div class="fon-cap">A frontier model holds ~10,000× more of these</div>
 </div>
 
@@ -984,7 +986,7 @@ time someone says "the AI said so."
   <div class="mt-1"><b>Closed:</b> Model parameters are secret and it runs on the provider's servers</div>
 </div>
 
-<div v-click="2" class="credit" style="position:absolute; left:2.2rem; bottom:0.8rem;">Source: real weights from the GPT-2 model file (OpenAI, 2019)</div>
+<div v-click="2" class="credit" style="position:absolute; left:2.2rem; bottom:0.25rem;">Source: real weights from the GPT-2 model file (OpenAI, 2019)</div>
 
 <img :src="'/art/tovenaar-09-applaudisserend.svg'" class="mage" style="bottom:2.6rem;" />
 
