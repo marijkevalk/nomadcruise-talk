@@ -1052,12 +1052,19 @@
 .s3-legend .chip { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; margin-right: 0.45rem; }
 .chip-gold { background: #e3b04b; } .chip-purple { background: #b9a9ee; } .chip-blue { background: #7dd3fc; }
 .s3-close { position: absolute; left: 3rem; bottom: 1.2rem; font-family: 'Fraunces', serif; color: var(--talk-accent); font-size: 1rem; max-width: 24rem; }
-.s3-zoo { display: grid; grid-template-columns: repeat(3, max-content); gap: 0 4rem; margin-top: 2.2rem; }
-.s3-zoo .zh { font-size: 0.78rem; letter-spacing: 0.18em; padding-bottom: 0.4rem; border-bottom: 1px solid var(--hairline); margin-bottom: 0.7rem; }
-.s3-zoo .zn { padding: 0.22rem 0; font-size: 1rem; }
-.s3-echo { position: absolute; right: 2.6rem; top: 6.8rem; width: 15rem; }
-.s3-echo-cap { position: absolute; right: 2.6rem; top: 17.6rem; width: 15rem; text-align: center; color: var(--ink-dim); font-size: 0.75rem; }
-.s3-whose { position: absolute; left: 3rem; bottom: 5.8rem; color: var(--ink-dim); font-size: 0.95rem; }
-.s3-land { position: absolute; left: 3rem; bottom: 2rem; font-family: 'Fraunces', serif; color: var(--talk-accent); font-size: 1.35rem; }
+.s3-zoo { display: grid; grid-template-columns: repeat(3, max-content); gap: 0 2.4rem; margin-top: 0.9rem; }
+.s3-zoo .zh { font-size: 0.78rem; letter-spacing: 0.18em; padding-bottom: 0.35rem; border-bottom: 1px solid var(--hairline); margin-bottom: 0.55rem; white-space: nowrap; }
+.s3-zoo .zh-fit { font-size: 0.7rem; letter-spacing: 0.12em; padding-top: 0.12rem; }
+.s3-zoo .zs { font-style: italic; letter-spacing: 0; color: var(--ink-dim); font-size: 0.85rem; margin-top: 0.12rem; }
+.s3-zoo .zn { padding: 0.07rem 0; font-size: 0.95rem; line-height: 1.4; white-space: nowrap; }
+.s3-zoo .zm { color: var(--ink-dim); font-size: 0.85em; }
+.s3-zoo .z2col { display: flex; gap: 1.4rem; }
+.s3-mini { position: absolute; right: 2rem; top: 4.6rem; width: 14rem; height: 7.9rem; }
+.s3-mini-legend { position: absolute; right: 2rem; top: 12.6rem; width: 14rem; display: flex; justify-content: center; gap: 0.7rem; color: var(--ink-dim); font-size: 0.62rem; white-space: nowrap; }
+.s3-mini-legend .chip { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 2px; margin-right: 0.28rem; }
+.s3-echo-cap { position: absolute; right: 2rem; top: 13.6rem; width: 14rem; text-align: center; color: var(--ink-dim); font-size: 0.72rem; }
+.s3-whose { position: absolute; left: 3rem; bottom: 4.9rem; color: #fff; font-size: 1.15rem; }
+.s3-land { position: absolute; left: 3rem; bottom: 2rem; color: #fff; font-size: 1.15rem; }
+.s3-land .ztri { color: var(--talk-accent); margin-right: 0.4rem; }
 .gold-t { color: #e3b04b; } .purple-t { color: #b9a9ee; } .blue-t2 { color: #7dd3fc; }
 .s3d text { font-family: 'Inter', sans-serif; line-height: 1; }

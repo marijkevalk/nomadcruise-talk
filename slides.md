@@ -1866,30 +1866,94 @@ clicks: 5
 # The tool zoo, sorted
 
 <div class="s3-zoo">
-  <div v-click="1"><div class="zh gold-t">ENGINE BUILDERS</div><div class="zn gold-t">OpenAI</div><div class="zn gold-t">Anthropic</div><div class="zn gold-t">Google</div><div class="zn gold-t">Mistral</div></div>
-  <div v-click="2"><div class="zh">CARS YOU DRIVE</div><div class="zn gold-t">ChatGPT</div><div class="zn gold-t">Claude</div><div class="zn gold-t">Gemini</div><div class="zn purple-t">Perplexity</div><div class="zn purple-t">Notion AI</div><div class="zn purple-t">Cursor</div></div>
-  <div v-click="3"><div class="zh blue-t2">BUILD YOUR OWN</div><div class="zn blue-t2">Zapier</div><div class="zn blue-t2">n8n</div><div class="zn blue-t2">LangChain</div><div class="zn blue-t2">the API</div></div>
+  <div v-click="1">
+    <div class="zh gold-t">ENGINE BUILDERS<div class="zs">Models</div></div>
+    <div class="zn gold-t">OpenAI <span class="zm">(GPT)</span></div>
+    <div class="zn gold-t">Anthropic <span class="zm">(Claude)</span></div>
+    <div class="zn gold-t">Google <span class="zm">(Gemini)</span></div>
+    <div class="zn gold-t">Meta <span class="zm">(Llama)</span></div>
+    <div class="zn gold-t">xAI <span class="zm">(Grok)</span></div>
+    <div class="zn gold-t">Mistral</div>
+    <div class="zn gold-t">DeepSeek</div>
+    <div class="zn gold-t">Alibaba <span class="zm">(Qwen)</span></div>
+  </div>
+  <div v-click="2">
+    <div class="zh">CARS YOU DRIVE<div class="zs">Harnesses</div></div>
+    <div class="z2col">
+      <div>
+        <div class="zn gold-t">ChatGPT <span class="zm">(OpenAI)</span></div>
+        <div class="zn gold-t">Claude <span class="zm">(Anthropic)</span></div>
+        <div class="zn gold-t">Gemini <span class="zm">(Google)</span></div>
+        <div class="zn gold-t">Grok <span class="zm">(xAI)</span></div>
+        <div class="zn gold-t">Meta AI <span class="zm">(Meta)</span></div>
+        <div class="zn gold-t">Le Chat <span class="zm">(Mistral)</span></div>
+      </div>
+      <div>
+        <div class="zn purple-t">Perplexity</div>
+        <div class="zn purple-t">Microsoft Copilot</div>
+        <div class="zn purple-t">Notion AI</div>
+        <div class="zn purple-t">Canva</div>
+        <div class="zn purple-t">Grammarly</div>
+        <div class="zn purple-t">Cursor</div>
+        <div class="zn purple-t">Lovable</div>
+      </div>
+    </div>
+  </div>
+  <div v-click="3">
+    <div class="zh zh-fit blue-t2">BUILD / UPGRADE YOUR OWN CAR<div class="zs">Harnesses</div></div>
+    <div class="z2col">
+      <div>
+        <div class="zn blue-t2">Zapier</div>
+        <div class="zn blue-t2">Make</div>
+        <div class="zn blue-t2">n8n</div>
+        <div class="zn blue-t2">Bolt</div>
+        <div class="zn blue-t2">Replit</div>
+      </div>
+      <div>
+        <div class="zn blue-t2">LangChain</div>
+        <div class="zn blue-t2">Hugging Face</div>
+        <div class="zn blue-t2">Ollama</div>
+        <div class="zn blue-t2">LM Studio</div>
+        <div class="zn blue-t2">the API</div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<img :src="'/art/s3-anatomy-echo.svg'" class="s3-echo" />
+<div class="s3-mini">
+  <S3Diagram :stage="4" :c="2" />
+</div>
+<div class="s3-mini-legend"><span><span class="chip chip-gold"></span>Model provider</span><span><span class="chip chip-purple"></span>Third party</span><span><span class="chip chip-blue"></span>You</span></div>
 <div class="s3-echo-cap">you'll recognize the anatomy now</div>
 
-<div v-click="4" class="s3-whose">first question for any AI product: whose engine? whose car?</div>
+<div v-click="4" class="s3-whose">First question for any AI product: whose engine? whose car?</div>
 
-<div v-click="5" class="s3-land">Overwhelmed? It doesn't matter what you use exactly · just start.</div>
+<div v-click="5" class="s3-land"><span class="ztri">▸</span>Overwhelmed? It doesn't matter what you use exactly · just start.</div>
 
 <!--
 And with that, the overwhelming tool zoo sorts itself — by colour.
 
-[click] Gold: the engine builders. A handful of labs — OpenAI, Anthropic,
-Google, Mistral.
+[click] Gold: the engine builders, with their model in brackets — OpenAI
+makes GPT, Anthropic makes Claude, Google Gemini, Meta Llama, xAI Grok.
+Mistral and DeepSeek named the model after the company. Alibaba's is called
+Qwen. This shelf is the models — everything else on this slide is a
+harness.
 
-[click] The cars you drive. Some built by the labs themselves — ChatGPT,
-Claude, Gemini. Some by third parties — Perplexity, Notion AI, Cursor. You
-can name the colour of every logo on this shelf now.
+[click] The cars you drive. Gold cars, built by the labs themselves —
+ChatGPT, Claude, Gemini, Grok, Meta AI inside WhatsApp, Le Chat from
+Europe's Mistral. And purple, the third-party cars — Perplexity, Microsoft
+Copilot, Notion AI, Canva, Grammarly, Cursor, Lovable. You can name the
+colour of every logo on this shelf now.
 
-[click] And blue: where you build your own — Zapier, n8n, LangChain, or
-straight through the API.
+[click] And blue: build — or upgrade — your own. It's the kit-car spectrum:
+a Zapier, Make or n8n flow; Bolt or Replit building an app for you;
+LangChain for developers; Hugging Face is the shop where the open files of
+numbers live, and Ollama or LM Studio run them on your own laptop; and at
+the far end, your own code straight on the API.
+
+[Armor — "what about Midjourney?": an image model, not a language model —
+different engine, same anatomy: Midjourney builds its own engine AND its
+own car around it.]
 
 New tools will launch next week, and the week after. Doesn't matter. Every
 single one lands on one of these shelves, in one of these colours.
