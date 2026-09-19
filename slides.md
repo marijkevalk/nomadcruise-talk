@@ -908,16 +908,16 @@ up.]
 
 <div v-click="1">
   <div class="tp-head">Training</div>
-  <div class="tp-sub">where the model learns — by itself, from data</div>
-  <div class="tp-item">Start with <b>random numbers</b> <span class="dim">(the weights)</span></div>
-  <div class="tp-item">Guess the next word · compare with <b>real text</b></div>
-  <div class="tp-item">Adjust the weights · <b>repeat billions of times</b></div>
+  <div class="tp-sub">the model teaches itself</div>
+  <div class="tp-item">Play <b>"guess the next word"</b> — with the whole internet</div>
+  <div class="tp-item">Wrong guess? Turn <b>all the dials</b> a tiny bit</div>
+  <div class="tp-item"><b>Repeat billions of times</b></div>
 </div>
 
 <div v-click="2">
   <div class="tp-head">Post-training</div>
   <div class="tp-sub">done by humans</div>
-  <div class="tp-item"><b>Show it</b> examples of good answers</div>
+  <div class="tp-item"><b>Show it</b> what a good answer looks like</div>
   <div class="tp-item">Let it <b>practice</b></div>
   <div class="tp-item"><b>Grade</b> its answers <span class="dim">(RLHF)</span></div>
 </div>
@@ -929,28 +929,34 @@ up.]
 <img :src="'/art/tovenaar-18-bouwend-hamer.svg'" class="mage" />
 
 <!--
-So where do all those numbers come from? Nobody types them in — they are
-LEARNED. That's training.
+So who turns those billions of dials to the right positions? Nobody does.
+The machine turns them ITSELF. That's training — and it works like a game.
 
-[click — Training] And it's trial and error, nothing smarter. The model
-starts as pure noise: random numbers. Then the loop: take real text we
-already have, let the model guess the next word, compare with the REAL next
-word, and nudge every weight a tiny bit in the direction that would have
-made the guess better. Repeat — billions of times, on trillions of words.
-That's the whole secret. Nobody programs the knowledge in; the machine
-adjusts its own numbers, from data. THAT is machine learning. And note: it
-keeps the patterns, not the pages — you can't pull the original books back
-out. [If asked: the guided part is the error score — one number saying how
-wrong the guess was; every nudge shrinks it. Doing this at scale is what
-the GPUs and data centers are for.]
+[click — Training] The game is "guess the next word". Take any sentence
+from the internet, hide the last word, let the model guess. At the start
+all the dials are random, so it just babbles. But here's the trick: the
+internet already CONTAINS the right answer to every guess — reveal the
+hidden word, and the model knows how wrong it was. Wrong guess? Every dial
+gets turned a tiny bit, so next time the guess is a little less wrong.
+It's like the children's game "warmer… colder": you never need to be told
+where the treasure is — you only need to hear, every step, whether you're
+getting warmer. Repeat billions of times, and the babbling becomes
+language. Nobody programs the knowledge in; the machine tunes its own
+dials, from data. THAT is machine learning. And note: it keeps the
+patterns, not the pages — you can't pull the original books back out.
+[If asked: the "warmer/colder" voice is the error score — one number
+saying how wrong the guess was; every nudge shrinks it. Doing this at
+scale is what the GPUs and data centers are for.]
 
-[click — Post-training] After all that reading the model is a brilliant
-text completer — but not an assistant. Ask it a question and it may just
-continue with three more questions. That's completing text! So people step
-in — post-training, done by humans. Show it examples of good answers. Let
-it practice. Grade what it writes: helpful, honest, harmless — including
-learning when to refuse. Same nudging, but now steered by human judgment.
-That loop has a name, RLHF — on the slide, no need to remember it.
+[click — Post-training] After all that, the model can TALK — but it hasn't
+been raised yet. It's a brilliant text completer, not an assistant: ask it
+a question and it may just continue with three more questions. That's
+completing text! So people step in — post-training is the upbringing, done
+by humans. Show it what a good answer looks like. Let it practice. And
+then grade its answers — literally report grades, from human reviewers:
+helpful, honest, harmless — including learning when to refuse. Same dial-
+turning, but now steered by human judgment instead of the internet. That
+loop has a name, RLHF — on the slide, no need to remember it.
 
 [click] But realize what that means: AI is not neutral. It's built, tuned
 and controlled — by people, at companies, with choices. Remember that next
