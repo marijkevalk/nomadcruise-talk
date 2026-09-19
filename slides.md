@@ -1710,9 +1710,9 @@ clicks: 5
 <S3Diagram :stage="2" :c="$clicks" />
 
 <div class="s3-legend">
-  <span v-click="3"><span class="chip chip-gold"></span>model provider</span>
-  <span v-click="4"><span class="chip chip-purple"></span>third party</span>
-  <span v-click="5"><span class="chip chip-blue"></span>you</span>
+  <span v-click="3"><span class="chip chip-gold"></span>Model provider</span>
+  <span v-click="4"><span class="chip chip-purple"></span>Third party</span>
+  <span v-click="5"><span class="chip chip-blue"></span>You</span>
 </div>
 
 <!--
@@ -1751,7 +1751,13 @@ clicks: 5
 
 <S3Diagram :stage="3" :c="$clicks" />
 
-<div v-click="5" class="s3-close">context is your anti-hallucination lever · give it your facts instead of letting it guess</div>
+<div v-click="5" class="s3-close">Context is your anti-hallucination lever · Give it your facts instead of letting it guess</div>
+
+<div class="s3-legend">
+  <span><span class="chip chip-gold"></span>Model provider</span>
+  <span><span class="chip chip-purple"></span>Third party</span>
+  <span><span class="chip chip-blue"></span>You</span>
+</div>
 
 <!--
 Third layer — and this one is always YOURS: context. Remember: the engine is
@@ -1765,12 +1771,15 @@ That's why a new chat is a blank slate: nothing flowed in yet.
 the harness pastes back into the window for you. And one more thing flows in
 here that you never see: the harness's own hidden SYSTEM PROMPT — text it
 places before yours, every turn. That's often the real answer to "it
-suddenly behaves differently".
+suddenly behaves differently". And notice the colours: the model provider
+injects that system prompt, and a third-party wrapper adds its own
+instructions on top — context flows in from all three owners, not just you.
 
 [click] Your documents. You've all heard the buzzword RAG? Here's the entire
 secret: a tool that SEARCHES your documents and pastes what it finds into
 the prompt. That's it. That's all RAG is. One buzzword down. Same for search
-and tool results — everything lands in the same place.
+and tool results — a web page it fetches, anything from the internet, it all
+lands in exactly the same place.
 
 [click] That place is the CONTEXT WINDOW: everything the model can see right
 now. It has a size — fill it up and the oldest turns fall out; that's the
@@ -1799,7 +1808,7 @@ clicks: 2
 
 <S3Diagram :stage="4" :c="$clicks" />
 
-<div class="s3-legend"><span><span class="chip chip-gold"></span>model provider</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-blue"></span>you</span></div>
+<div class="s3-legend"><span><span class="chip chip-gold"></span>Model provider</span><span><span class="chip chip-purple"></span>Third party</span><span><span class="chip chip-blue"></span>You</span></div>
 
 <!--
 Last layer: the rules.

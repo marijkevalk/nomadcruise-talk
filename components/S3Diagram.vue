@@ -14,8 +14,6 @@ const layerOn = computed(() => v(1, 6))
 const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
 const arrLabels = computed(() => props.stage === 3)
 const arrOp = computed(() => (props.stage === 4 ? 0.22 : 1))
-const brOn = computed(() => v(3, 4))
-const brOp = computed(() => (props.stage === 4 ? 0.4 : 1))
 const capOn = computed(() => props.stage === 3 && props.c >= 4)
 const lockOn = computed(() => v(4, 1))
 const shellOn = (i) => v(2, i + 3)
@@ -31,12 +29,17 @@ const shells = [
   { x: 435, y: 186, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU' },
 ]
 const taps = [
-  { y: 186, ye: 273, g: 1, lab: 'your prompt' },
-  { y: 232, ye: 296, g: 1, lab: 'the conversation so far' },
-  { y: 278, ye: 319, g: 2, lab: 'your standing instructions' },
-  { y: 324, ye: 342, g: 2, lab: 'saved memory' },
-  { y: 370, ye: 365, g: 3, lab: 'your documents', sub: 'pasted, or found & pasted for you (RAG)' },
-  { y: 416, ye: 388, g: 3, lab: 'search & tool results' },
+  { y: 186, ye: 273, g: 1, lab: 'Your prompt' },
+  { y: 232, ye: 296, g: 1, lab: 'The conversation so far' },
+  { y: 278, ye: 319, g: 2, lab: 'Your standing instructions' },
+  { y: 324, ye: 342, g: 2, lab: 'Saved memory' },
+  { y: 370, ye: 365, g: 3, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)' },
+  { y: 416, ye: 388, g: 3, lab: 'Search & tool results', sub: 'Anything from the internet lands here too' },
+]
+// context the other owners inject, entering from the right
+const otaps = [
+  { y: 300, ye: 316, lab: 'Hidden system prompt', col: GOLD, labCol: GOLD, mk: 'url(#s3oa)' },
+  { y: 356, ye: 352, lab: "The app's own instructions", col: PURPLE, labCol: PURPLE_B, mk: 'url(#s3pa)' },
 ]
 const ribs = [602, 629, 656, 683]
 
@@ -79,6 +82,12 @@ const carD = (s) => {
       <marker id="s3da" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
         <path d="M0,0 L6,3.5 L0,7 z" :fill="DIM" />
       </marker>
+      <marker id="s3oa" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+        <path d="M0,0 L7,4 L0,8 z" :fill="GOLD" />
+      </marker>
+      <marker id="s3pa" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+        <path d="M0,0 L7,4 L0,8 z" :fill="PURPLE_B" />
+      </marker>
     </defs>
 
     <!-- context taps (stage 3; kept faint in stage 4) -->
@@ -89,6 +98,14 @@ const carD = (s) => {
           <text v-if="arrLabels && t.sub" :x="318" :y="t.y + 19" style="font-size:10px" :fill="BLUE" text-anchor="end">{{ t.sub }}</text>
           <path :d="`M 330 ${t.y} C 390 ${t.y} 475 ${t.ye} 545 ${t.ye}`" fill="none" :stroke="BLUE" stroke-width="1.8" marker-end="url(#s3ga)" />
         </g>
+      </template>
+    </g>
+
+    <!-- context the other owners inject (from the right, owner colours) -->
+    <g v-if="arrOn(2)" :opacity="arrOp">
+      <template v-for="(t, k) in otaps" :key="'o' + k">
+        <text v-if="arrLabels" :x="945" :y="t.y - 8" style="font-size:12px" :fill="t.labCol" text-anchor="end">{{ t.lab }}</text>
+        <path :d="`M 940 ${t.y} C 880 ${t.y} 815 ${t.ye} 755 ${t.ye}`" fill="none" :stroke="t.col" stroke-width="1.8" :marker-end="t.mk" />
       </template>
     </g>
 
@@ -123,13 +140,10 @@ const carD = (s) => {
       <text x="630" y="341" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="INK">LLM</text>
     </g>
 
-    <!-- context window bracket + captions -->
-    <g v-if="brOn" :opacity="brOp">
-      <rect x="559" y="274" width="182" height="104" rx="10" fill="none" :stroke="BLUE_B" stroke-width="1.6" stroke-dasharray="5 4" />
-    </g>
+    <!-- context window captions -->
     <g v-if="capOn">
-      <text x="650" y="494" text-anchor="middle" style="font-size:11.5px" :fill="BLUE_B">the context window · everything it can see right now · it has a size</text>
-      <text x="650" y="511" text-anchor="middle" style="font-size:11.5px" :fill="DIM">the model itself remembers nothing</text>
+      <text x="48" y="470" style="font-size:11.5px;font-style:italic" :fill="DIM">The model itself remembers nothing</text>
+      <text x="650" y="494" text-anchor="middle" style="font-size:11.5px" :fill="BLUE_B">The context window · Everything it can see right now · It has a size</text>
     </g>
   </svg>
 </template>
