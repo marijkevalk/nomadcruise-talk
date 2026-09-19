@@ -1915,12 +1915,12 @@ Last round of questions — and this one is the most practical.
 <div class="qmain">
   <div class="ex-title">Examples</div>
   <div class="qlist qlist-tight">
-    <div class="ql">Which company builds which model, and how do they differ?</div>
+    <div class="ql">Which AI companies are there besides OpenAI?</div>
+    <div class="ql">Why would Meta give Llama away for free?</div>
+    <div class="ql">What runs under the hood of Perplexity / Notion AI / Cursor?</div>
     <div class="ql">Difference between ChatGPT the app and GPT the model?</div>
-    <div class="ql">Can open-source models keep up with the frontier models?</div>
-    <div class="ql">What is the difference between the Claude desktop app and Claude Code?</div>
-    <div class="ql">Which AI tool fits what I actually do?</div>
-    <div class="ql">How do I give an AI my own documents to work from?</div>
+    <div class="ql">When should I build my own tool instead of using one?</div>
+    <div class="ql">Why does the same model behave differently in different apps?</div>
   </div>
 </div>
 
