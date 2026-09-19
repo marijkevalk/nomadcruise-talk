@@ -1596,7 +1596,7 @@ clicks: 5
         <rect v-for="t in 4" :key="t" :x="col.x - row.w/2 + row.w*(0.14 + 0.22*(t-1))" :y="row.y - 6" width="10" height="8" rx="1.5" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.8"/>
         <rect :x="col.x - row.w/2" :y="row.y" :width="row.w" :height="row.h" rx="8" fill="#0d1322" stroke="#e3b04b" :stroke-width="row.sw"/>
         <circle :cx="col.x + row.w/2 - row.h*0.22" :cy="row.y + row.h - row.h*0.24" :r="row.h*0.1" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.75"/>
-        <text :class="'ename-' + ri" :x="col.x" :y="row.y + row.h/2 + 5.5" fill="#e3b04b" text-anchor="middle">{{ col.names[ri] }}</text>
+        <text :class="'ename-' + ri" :x="col.x" :y="row.y + row.h/2 + 5.5" fill="#b8af9b" text-anchor="middle">{{ col.names[ri] }}</text>
       </g>
     </g>
   </g>
@@ -1613,15 +1613,14 @@ clicks: 5
 </div>
 
 <div v-click="2" class="eng-note">
-  <div><b>Larger models</b> = more parameters</div>
+  <div><b>Larger models = more parameters</b></div>
   <div class="mt-1"><svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:middle; margin:0 0.3rem 0.15rem 0;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>More capable · Slower · More expensive</div>
 </div>
 
 <div v-click="3" class="eng-version">
-  <div class="ev-ex">Example:</div>
-  <div class="ev-title">Claude version numbers</div>
+  <div><span class="ev-ex">Example:</span> <span class="ev-title">Claude version numbers</span></div>
   <div class="mt-1">Opus 4 <span class="ev-arr">→</span> 5: new generation, new recipe</div>
-  <div>Opus 4.7 <span class="ev-arr">→</span> 4.8: new training run, fresh data</div>
+  <div>Opus 4.7 <span class="ev-arr">→</span> 4.8: new training run, same recipe</div>
 </div>
 
 </div>
@@ -1630,11 +1629,11 @@ clicks: 5
 
 <div v-click="5" class="eng-ft">
   <div class="ft-title">Fine-tuning</div>
-  <div>Extra training on <b>your own data</b></div>
-  <div class="dim" style="font-size:0.88em; margin-top:0.1rem;">A thin layer of new weights on top of the engine</div>
+  <div>Extra training with <b>your own data</b></div>
+  <div class="dim" style="font-size:0.9em; margin-top:0.1rem;">Small adjustments to the weights</div>
 </div>
 
-<div class="credit" style="position:absolute; right:3.4rem; top:27.9rem; font-size:0.85rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.18rem 0.6rem;">schematic drawing</div>
+<div v-click.hide="4" class="credit" style="position:absolute; right:3.4rem; top:28.75rem; font-size:0.85rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.18rem 0.6rem;">schematic drawing</div>
 
 <!--
 You never actually use a raw model — you use products built around one. So
@@ -1670,10 +1669,14 @@ an eye on it, it stays exactly there for the rest of this section while we
 build around it.
 
 [click] One thing you CAN do to the engine itself: fine-tune it — extra
-training on YOUR OWN data. It really changes the weights: think of it as a
-thin extra layer of learned numbers laid on top of the engine. Powerful,
-and rare — most people never open the hood. Everything else you'll ever do
-sits AROUND the engine. Next slide.
+training with YOUR OWN data. It adjusts the weights themselves: small
+nudges on top of everything training built. Powerful, and rare — most
+people never open the hood. Everything else you'll ever do sits AROUND
+the engine. Next slide.
+
+[If a techie pushes on the "layer" picture: the efficient shortcut, LoRA,
+literally learns a thin extra set of weights on top while the originals
+stay frozen — full fine-tuning adjusts the original weights.]
 -->
 
 ---

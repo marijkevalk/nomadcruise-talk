@@ -994,7 +994,7 @@
 .s3-foot { position: absolute; left: 5rem; bottom: 2.2rem; max-width: 36rem; color: var(--ink-dim); font-size: 0.8rem; }
 /* engines slide: transposed battery grid right, spec/note/version stack left
    (slide CSS overrides SVG font-size attrs -> pin all text sizes here) */
-.eng-grid { position: absolute; right: 2.6rem; top: 10.4rem; width: 27rem; }
+.eng-grid { position: absolute; right: 2.6rem; top: 11.4rem; width: 27rem; }
 .eng-grid .eng-head text { font-size: 18px; font-weight: 600; }
 .eng-grid .eng-larger { font-size: 19px; font-weight: 600; }
 .eng-grid .ename-0 { font-size: 13.5px; }
@@ -1006,14 +1006,14 @@
   border: 1.5px solid rgba(185, 169, 238, 0.65); background: rgba(114, 99, 184, 0.12);
   border-radius: 0.5rem; padding: 0.7rem 1rem; font-size: 0.98rem;
 }
-.eng-version .ev-ex { color: var(--ink-dim); font-size: 0.85em; }
+.eng-version .ev-ex { color: var(--ink-dim); }
 .eng-version .ev-title { color: #b9a9ee; font-weight: 600; }
 .eng-version .ev-arr { color: #b9a9ee; }
 /* fine-tuning block under the anchor engine (blue = 'you' per S3 owner colours) */
 .eng-ft {
-  position: absolute; left: 34.4rem; top: 24.6rem; width: 14rem; text-align: center;
+  position: absolute; left: 32.4rem; top: 24.6rem; width: 18rem; text-align: center;
   border: 1.5px solid rgba(125, 211, 252, 0.65); background: rgba(56, 189, 248, 0.1);
-  border-radius: 0.5rem; padding: 0.55rem 0.9rem; font-size: 0.95rem;
+  border-radius: 0.5rem; padding: 0.55rem 0.7rem; font-size: 0.95rem;
 }
 .eng-ft .ft-title { color: #7dd3fc; font-weight: 600; }
 .s3-specs { width: 100%; border: 1.5px solid var(--ink-dim); border-radius: 0.5rem; background: rgba(154,145,127,0.07); padding: 0.8rem 1rem; font-size: 0.85rem; }
