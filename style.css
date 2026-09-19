@@ -1021,18 +1021,23 @@
 .s3-specs .sp-row { display: flex; justify-content: space-between; align-items: center; padding: 0.18rem 0; }
 .s3-specs .sp-row .bar { display: inline-block; width: 8.5rem; height: 0.8rem; border-radius: 2px; background: #3a3f4d; }
 .s3-specs .sp-secret { color: var(--talk-accent); font-size: 0.95rem; margin-top: 0.45rem; }
-.s3-left { position: absolute; left: 3rem; top: 10.6rem; max-width: 24rem; }
-.s3-left .s3-lead { font-weight: 600; font-size: 1.2rem; margin-bottom: 0.8rem; color: var(--ink); }
+.s3-left { position: absolute; left: 3rem; top: 10.8rem; max-width: 25rem; }
+.s3-left .s3-lead { font-weight: 600; font-size: 1.2rem; margin-bottom: 0.6rem; color: #ffffff; }
+.s3-left .s3-lead2 { font-weight: 600; font-size: 1.3rem; margin-bottom: 0.4rem; color: #ffffff; white-space: nowrap; }
 /* slide 29: leads sized to fit on one line */
-.s3-left .s3-fit { font-size: 1.05rem; white-space: nowrap; margin-bottom: 0.5rem; }
-.s3-list > div { padding: 0.1rem 0; font-size: 1.05rem; }
+.s3-left .s3-fit { font-size: 0.98rem; white-space: nowrap; margin-bottom: 0.5rem; }
+.s3-list > div { padding: 0.06rem 0; font-size: 1.15rem; }
 .s3-list > div::before { content: '\25B8\00a0\00a0'; color: var(--talk-accent); }
 /* slide 29: the three builders, appearing per click in owner colour */
-.s3-owners > div { font-weight: 600; font-size: 1rem; letter-spacing: 0.06em; padding: 0.22rem 0; }
-.s3-owners .lg-gold { color: #e3b04b; }
-.s3-owners .lg-purple { color: #b9a9ee; }
-.s3-owners .lg-blue { color: #7dd3fc; }
-.s3-legend { position: absolute; left: 3rem; bottom: 1.6rem; display: flex; gap: 1.6rem; align-items: center; color: var(--ink-dim); font-size: 0.8rem; }
+.s3-owners .ow {
+  font-size: 1.15rem; color: #ffffff; padding: 0.1rem 0 0.1rem 1.35rem; position: relative;
+}
+.s3-owners .ow::before { content: '\25B8'; position: absolute; left: 0; }
+.s3-owners .ow-gold::before { color: #e3b04b; }
+.s3-owners .ow-purple::before { color: #b9a9ee; }
+.s3-owners .ow-blue::before { color: #7dd3fc; }
+.s3-owners .ow-ex { display: block; color: var(--ink-dim); font-size: 0.85rem; line-height: 1.25; margin-top: 0.05rem; }
+.s3-legend { position: absolute; right: 7rem; bottom: 1.6rem; display: flex; gap: 1.6rem; align-items: center; color: var(--ink-dim); font-size: 0.8rem; }
 .s3-legend .chip { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; margin-right: 0.45rem; }
 .chip-gold { background: #e3b04b; } .chip-purple { background: #b9a9ee; } .chip-blue { background: #7dd3fc; }
 .s3-close { position: absolute; left: 3rem; bottom: 1.2rem; font-family: 'Fraunces', serif; color: var(--talk-accent); font-size: 1rem; max-width: 24rem; }

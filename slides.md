@@ -1681,7 +1681,7 @@ stay frozen — full fine-tuning adjusts the original weights.]
 -->
 
 ---
-clicks: 3
+clicks: 4
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
@@ -1689,35 +1689,37 @@ clicks: 3
 # The harness is the car
 
 <div class="s3-left">
-  <div class="s3-lead s3-fit">The harness is everything around the engine:</div>
-  <div class="s3-list">
-    <div>Chat window</div>
-    <div>Memory</div>
-    <div>File access</div>
-    <div>Tools & search</div>
-    <div>…</div>
+  <div v-click="1">
+    <div class="s3-lead s3-fit">The harness is everything around the engine:</div>
+    <div class="s3-list">
+      <div>Chat window</div>
+      <div>Memory</div>
+      <div>File access</div>
+      <div>Tools & search</div>
+      <div>…</div>
+    </div>
   </div>
-  <div class="s3-lead s3-fit mt-7">Three types of harness builders:</div>
+  <div class="s3-lead2 mt-4">Three types of harness builders:</div>
   <div class="s3-owners">
-    <div v-click="1" class="lg-gold">MODEL PROVIDER</div>
-    <div v-click="2" class="lg-purple">THIRD-PARTY HARNESS (WRAPPER)</div>
-    <div v-click="3" class="lg-blue">OWN HARNESS</div>
+    <div v-click="2" class="ow ow-gold">Model provider <span class="ow-ex">Claude app · Claude Code</span></div>
+    <div v-click="3" class="ow ow-purple">Third-party harness (wrapper) <span class="ow-ex">Cursor · Perplexity</span></div>
+    <div v-click="4" class="ow ow-blue">Own harness <span class="ow-ex">built via the API</span></div>
   </div>
 </div>
 
 <S3Diagram :stage="2" :c="$clicks" />
 
 <div class="s3-legend">
-  <span v-click="1"><span class="chip chip-gold"></span>model provider</span>
-  <span v-click="2"><span class="chip chip-purple"></span>third party</span>
-  <span v-click="3"><span class="chip chip-blue"></span>you</span>
+  <span v-click="2"><span class="chip chip-gold"></span>model provider</span>
+  <span v-click="3"><span class="chip chip-purple"></span>third party</span>
+  <span v-click="4"><span class="chip chip-blue"></span>you</span>
 </div>
 
 <!--
-Have you ever driven an engine to the supermarket? Around the engine someone
-builds the car: the harness. The chat window, the memory that remembers your
-conversation, access to your files, the tools it can use — search, code, your
-calendar. Everything that makes the engine drivable.
+Have you ever driven an engine to the supermarket? [click] Around the engine
+someone builds the car: the harness. The chat window, the memory that
+remembers your conversation, access to your files, the tools it can use —
+search, code, your calendar. Everything that makes the engine drivable.
 
 And harnesses come in three kinds — watch the colours, they mean who
 built it.

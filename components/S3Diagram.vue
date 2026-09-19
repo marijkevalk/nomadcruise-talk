@@ -18,7 +18,7 @@ const brOn = computed(() => v(3, 4))
 const brOp = computed(() => (props.stage === 4 ? 0.4 : 1))
 const capOn = computed(() => props.stage === 3 && props.c >= 4)
 const lockOn = computed(() => v(4, 1))
-const shellOn = (i) => v(2, i + 1)
+const shellOn = (i) => v(2, i + 2)
 const arrOn = (g) => (props.stage === 3 && props.c >= g) || props.stage === 4
 
 const GOLD = '#e3b04b', BLUE = '#38bdf8', BLUE_B = '#7dd3fc'
@@ -26,9 +26,9 @@ const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
 const shells = [
-  { x: 525, y: 256, w: 250, h: 148, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER', ex: 'Claude app · Claude Code' },
-  { x: 480, y: 221, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY', ex: 'Cursor · Perplexity' },
-  { x: 435, y: 186, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU', ex: 'your own, built via the API' },
+  { x: 525, y: 256, w: 250, h: 148, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER' },
+  { x: 480, y: 221, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY' },
+  { x: 435, y: 186, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU' },
 ]
 const taps = [
   { y: 186, ye: 273, g: 1, lab: 'your prompt' },
@@ -80,7 +80,6 @@ const carD = (s, i) => {
         <circle :cx="s.x + s.w * 0.24" :cy="s.y + s.h + (9 + i * 2) * 0.3" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
         <circle :cx="s.x + s.w * 0.76" :cy="s.y + s.h + (9 + i * 2) * 0.3" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
         <text :x="s.x + 13" :y="s.y + 17" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">{{ s.owner }}</text>
-        <text :x="s.x + 13" :y="s.y + s.h - 16" style="font-size:9.5px" :fill="s.bright" opacity="0.75">{{ s.ex }}</text>
       </g>
       <g v-if="shellOn(i) && lockOn" :stroke="s.bright" fill="none" stroke-width="1.8">
         <rect :x="s.x + s.w - 27" :y="s.y + 15" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
