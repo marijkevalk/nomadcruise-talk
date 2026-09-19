@@ -1711,7 +1711,7 @@ clicks: 5
   <div class="s3-owners">
     <div v-click="3" class="ow ow-gold">Model provider <span class="ow-ex">Claude Desktop · Claude Code · ChatGPT</span></div>
     <div v-click="4" class="ow ow-purple">Third-party harness (wrapper) <span class="ow-ex">Cursor · Notion AI · Microsoft Copilot</span></div>
-    <div v-click="5" class="ow ow-blue">Own harness <span class="ow-ex">custom build</span></div>
+    <div v-click="5" class="ow ow-blue">Own harness <span class="ow-ex">Custom build</span></div>
   </div>
 </div>
 

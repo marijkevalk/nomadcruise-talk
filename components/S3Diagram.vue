@@ -12,34 +12,35 @@ const v = (s, k) => props.stage > s || (props.stage === s && props.c >= k)
 const engineOn = computed(() => v(1, 5))
 const layerOn = computed(() => v(1, 6))
 const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
-const arrLabels = computed(() => props.stage === 3)
-const arrOp = computed(() => (props.stage === 4 ? 0.22 : 1))
-const capOn = computed(() => props.stage === 3 && props.c >= 4)
+const capOn = computed(() => props.stage === 3 && props.c >= 5)
 const lockOn = computed(() => v(4, 1))
 const shellOn = (i) => v(2, i + 3)
-const arrOn = (g) => (props.stage === 3 && props.c >= g) || props.stage === 4
+// stage 3: rows appear in groups (clicks 1-3), merge into the figure (4), flow (5)
+const rowOn = (g) => props.stage === 3 && props.c >= g
+const mergeOn = computed(() => (props.stage === 3 && props.c >= 4) || props.stage === 4)
+const flowOn = computed(() => (props.stage === 3 && props.c >= 5) || props.stage === 4)
+const ctxOp = computed(() => (props.stage === 4 ? 0.22 : 1))
 
 const GOLD = '#e3b04b', BLUE = '#38bdf8', BLUE_B = '#7dd3fc'
 const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
 const shells = [
-  { x: 505, y: 229, w: 280, h: 168, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER' },
-  { x: 480, y: 214, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY' },
-  { x: 435, y: 179, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU' },
+  { x: 505, y: 229, w: 280, h: 168, col: GOLD, bright: GOLD },
+  { x: 480, y: 208, w: 340, h: 218, col: PURPLE, bright: PURPLE_B },
+  { x: 435, y: 171, w: 430, h: 288, col: BLUE, bright: BLUE_B },
 ]
-const taps = [
-  { y: 186, ye: 273, g: 1, lab: 'Your prompt' },
-  { y: 232, ye: 296, g: 1, lab: 'The conversation so far' },
-  { y: 278, ye: 319, g: 2, lab: 'Your standing instructions' },
-  { y: 324, ye: 342, g: 2, lab: 'Saved memory' },
-  { y: 370, ye: 365, g: 3, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)' },
-  { y: 416, ye: 388, g: 3, lab: 'Search & tool results', sub: 'Anything from the internet lands here too' },
-]
-// context the other owners inject, entering from the right
-const otaps = [
-  { y: 300, ye: 316, lab: 'Hidden system prompt', col: GOLD, labCol: GOLD, mk: 'url(#s3oa)' },
-  { y: 356, ye: 352, lab: "The app's own instructions", col: PURPLE, labCol: PURPLE_B, mk: 'url(#s3pa)' },
+// everything that flows in — one stacked column on the left, owner colours;
+// ye = where the stream lands on the figure's silhouette at the merge (click 4)
+const rows = [
+  { y: 178, ye: 280, g: 1, lab: 'Your prompt' },
+  { y: 212, ye: 292, g: 1, lab: 'The conversation so far' },
+  { y: 246, ye: 303, g: 2, lab: 'Your standing instructions' },
+  { y: 280, ye: 313, g: 2, lab: 'Saved memory' },
+  { y: 314, ye: 321, g: 2, lab: 'Hidden system prompt', col: GOLD, labCol: GOLD },
+  { y: 348, ye: 329, g: 2, lab: "The app's own instructions", col: PURPLE, labCol: PURPLE_B },
+  { y: 382, ye: 336, g: 3, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)' },
+  { y: 428, ye: 343, g: 3, lab: 'Search & tool results', sub: 'Anything from the internet lands here too' },
 ]
 const ribs = [602, 629, 656, 683]
 
@@ -116,7 +117,7 @@ const carD = (s) => {
     <g v-for="(s, i) in shells" :key="'sh' + i">
       <g v-if="shellOn(i)" :opacity="shellOp">
         <path :d="carD(s)" fill="none" :stroke="s.col" stroke-width="2" stroke-linejoin="round" />
-        <text :x="s.x + (i === 2 ? 0.08 : 0.34) * s.w" :y="s.y + s.h - 0.06 * s.h - 3" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">{{ s.owner }}</text>
+        <text x="630" :y="s.y + s.h - 0.06 * s.h - 4" text-anchor="middle" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">HARNESS</text>
       </g>
       <g v-if="shellOn(i) && lockOn" :stroke="s.bright" fill="none" stroke-width="1.8">
         <rect :x="s.x + 0.9 * s.w - 8" :y="s.y + s.h - 0.44 * s.h" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
