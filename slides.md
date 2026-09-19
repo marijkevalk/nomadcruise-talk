@@ -1932,7 +1932,7 @@ clicks: 5
 </div>
 
 <div class="s3-mini">
-  <S3Diagram :stage="4" :c="2" />
+  <S3Diagram :stage="4" :c="2" hide-ctx />
 </div>
 <div class="s3-mini-legend"><span><span class="chip chip-gold"></span>Model provider</span><span><span class="chip chip-purple"></span>Third party</span><span><span class="chip chip-blue"></span>You</span></div>
 

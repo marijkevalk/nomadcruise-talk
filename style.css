@@ -1060,10 +1060,9 @@
 .s3-zoo .zn { padding: 0.07rem 0; font-size: 0.95rem; line-height: 1.4; white-space: nowrap; }
 .s3-zoo .zm { color: var(--ink-dim); font-size: 0.85em; }
 .s3-zoo .z2col { display: flex; gap: 1.4rem; }
-.s3-mini { position: absolute; right: 2rem; top: 4.6rem; width: 14rem; height: 7.9rem; }
-.s3-mini-legend { position: absolute; right: 2rem; top: 12.6rem; width: 14rem; display: flex; justify-content: center; gap: 0.7rem; color: var(--ink-dim); font-size: 0.62rem; white-space: nowrap; }
+.s3-mini { position: absolute; right: 2rem; bottom: 4.6rem; width: 14rem; height: 7.9rem; }
+.s3-mini-legend { position: absolute; right: 2rem; bottom: 3.4rem; width: 14rem; display: flex; justify-content: center; gap: 0.7rem; color: var(--ink-dim); font-size: 0.62rem; white-space: nowrap; }
 .s3-mini-legend .chip { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 2px; margin-right: 0.28rem; }
-.s3-echo-cap { position: absolute; right: 2rem; top: 13.6rem; width: 14rem; text-align: center; color: var(--ink-dim); font-size: 0.72rem; }
 .s3-whose { position: absolute; left: 3rem; bottom: 4.9rem; color: #fff; font-size: 1.15rem; }
 .s3-land { position: absolute; left: 3rem; bottom: 2rem; color: #fff; font-size: 1.15rem; }
 .s3-land .ztri { color: var(--talk-accent); margin-right: 0.4rem; }

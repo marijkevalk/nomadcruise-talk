@@ -4,6 +4,7 @@ import { computed } from 'vue'
 const props = defineProps({
   stage: { type: Number, required: true },
   c: { type: Number, default: 0 },
+  hideCtx: { type: Boolean, default: false },
 })
 
 // element visible when born in an earlier stage, or in this stage at click k
@@ -17,7 +18,7 @@ const shellOn = (i) => v(2, i + 3)
 // stage 3: the context is the fuel — a tank that fills in groups
 // (1 = tank + everything you put in, 2 = the app's, 3 = the provider's),
 // then flows into the engine (4); captions (5). Faint on stage 4.
-const ctxOn = (g) => (props.stage === 3 && props.c >= g) || props.stage === 4
+const ctxOn = (g) => !props.hideCtx && ((props.stage === 3 && props.c >= g) || props.stage === 4)
 const ctxOp = computed(() => (props.stage === 4 ? 0.22 : 1))
 
 const GOLD = '#e3b04b', BLUE = '#38bdf8', BLUE_B = '#7dd3fc'
