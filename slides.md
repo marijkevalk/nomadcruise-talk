@@ -817,10 +817,10 @@ regression. Fair point, same family: fit parameters to data, predict.]
   <div class="mt-1 text-lg" style="color:var(--ink-dim);">Turn it, and the answer changes a tiny bit</div>
 </div>
 
-<div style="margin-top:0.2rem;">
+<div class="grid grid-cols-[auto_1fr] gap-10 items-center" style="margin-top:0.6rem;">
 
 <div v-click="1">
-  <svg viewBox="0 0 380 110" style="width:15rem; margin-left:2.5rem;">
+  <svg viewBox="0 0 380 110" style="width:15rem; margin-left:1rem;">
     <g stroke-linecap="round">
       <g transform="translate(60,58)">
         <circle r="40" fill="none" stroke="#f2ecdf" stroke-width="2.5"/>
@@ -856,16 +856,19 @@ regression. Fair point, same family: fit parameters to data, predict.]
   </svg>
 </div>
 
+<div>
+  <div v-click="2" class="text-xl leading-snug" style="white-space:nowrap;">All the dials <b class="accent">together</b> decide the next word</div>
+  <div v-click="3" class="mt-2">
+    <div class="text-xl" style="white-space:nowrap;"><b class="accent">GPT-3</b>: 175,000,000,000 dials</div>
+    <div class="mt-1 text-base" style="color:var(--ink-dim);">Newer models have even more · the exact numbers are secret</div>
+  </div>
 </div>
 
-<div v-click="2" class="text-2xl leading-snug mt-2">All the dials <b class="accent">together</b> decide the next word</div>
-
-<div v-click="3" class="mt-2 text-lg" style="line-height:1.45;">
-  <div style="white-space:nowrap;">Newer models have even more.</div>
-  <div style="white-space:nowrap;">The exact numbers are secret.</div>
 </div>
 
-<div v-click="4" class="text-2xl mt-2"><b class="accent">More dials</b> <span class="accent" style="font-weight:700; padding:0 0.35rem;">⟶</span> <b>better answers</b></div>
+<div v-click="4" class="text-xl mt-3"><span class="accent">▸</span> More dials: <b>more complex patterns</b> it can capture</div>
+
+<div v-click="5" class="text-xl mt-2"><span class="accent">▸</span> More dials: <b>slower</b> and <b>more expensive</b> calculations</div>
 
 <img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" style="top:5rem; right:2.2rem; bottom:auto; height:6rem;" />
 
@@ -878,16 +881,16 @@ Turn one dial, and the answer changes a tiny little bit — maybe "iceberg"
 gets slightly more likely, "London" slightly less.
 
 [click] And it's never about one dial: ALL the dials together decide which
-word comes out next. How many? GPT-3, the model ChatGPT grew out of, has
-175 BILLION dials. If you turned one dial per second, day and night, you'd
-be busy for five and a half thousand years. Today's models have even more;
-the makers keep the exact numbers secret.
+word comes out next.
 
-[click] And it doesn't stop there: newer models have even more — the
-makers keep the exact numbers secret. [click] Why keep adding dials? More
-dials means the model can learn more patterns — more dials, better
-answers. The catch (say it, it's not on the slide): every answer takes
-more calculating, so a bigger model is slower and more expensive. That
+[click] How many? GPT-3, the model ChatGPT grew out of, has 175 BILLION
+dials. If you turned one dial per second, day and night, you'd be busy for
+five and a half thousand years. Today's models have even more; the makers
+keep the exact numbers secret.
+
+[click] Why keep adding dials? More dials means the model can capture more
+complex patterns. [click] But there's a catch: every answer takes more
+calculating, so a bigger model is slower and more expensive. That
 trade-off returns in part three, on the engines slide.
 
 So this week, when you hear "a bigger model" or "so-many billion
