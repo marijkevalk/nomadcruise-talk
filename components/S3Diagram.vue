@@ -11,7 +11,6 @@ const props = defineProps({
 const v = (s, k) => props.stage > s || (props.stage === s && props.c >= k)
 
 const engineOn = computed(() => v(1, 5))
-const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
 const lockOn = computed(() => v(4, 1))
 const carOn = computed(() => v(2, 1))
 // stage 3: the context is the fuel — a tank that fills in groups
@@ -106,9 +105,9 @@ const carD = (s) => {
     </g>
 
     <!-- the car: the app around the engine -->
-    <g v-if="carOn" :opacity="shellOp">
+    <g v-if="carOn">
       <path :d="carD(car)" fill="none" :stroke="car.col" stroke-width="2" stroke-linejoin="round" />
-      <text x="630" :y="car.y + car.h - 0.06 * car.h - 6" text-anchor="middle" style="font-size:27px;font-weight:700;letter-spacing:1.6px" :fill="car.bright">THE APP</text>
+      <text x="630" :y="car.y + car.h - 0.06 * car.h - 6" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="car.bright">The app</text>
     </g>
 
     <!-- the engine (the anchor); fine-tuning = a thin blue layer ON the engine -->
