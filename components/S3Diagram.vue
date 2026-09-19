@@ -9,8 +9,8 @@ const props = defineProps({
 // element visible when born in an earlier stage, or in this stage at click k
 const v = (s, k) => props.stage > s || (props.stage === s && props.c >= k)
 
-const engineOn = computed(() => v(1, 4))
-const layerOn = computed(() => v(1, 5))
+const engineOn = computed(() => v(1, 5))
+const layerOn = computed(() => v(1, 6))
 const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
 const arrLabels = computed(() => props.stage === 3)
 const arrOp = computed(() => (props.stage === 4 ? 0.22 : 1))
@@ -81,16 +81,15 @@ const ribs = [602, 629, 656, 683]
       <rect x="575" y="290" width="150" height="80" rx="9" fill="rgba(227,176,75,0.08)" :stroke="GOLD" stroke-width="2" />
       <rect v-for="rx in ribs" :key="rx" :x="rx" y="283" width="10" height="7" rx="2" fill="none" :stroke="GOLD" stroke-width="1.6" />
       <!-- fine-tune layer: a thin blue cap on top, silhouetting the four terminals -->
-      <path v-if="layerOn" d="M 575 312 L 575 299 Q 575 290 584 290
+      <path v-if="layerOn" d="M 575 302 L 575 299 Q 575 290 584 290
         L 602 290 L 602 285 Q 602 283 604 283 L 610 283 Q 612 283 612 285 L 612 290
         L 629 290 L 629 285 Q 629 283 631 283 L 637 283 Q 639 283 639 285 L 639 290
         L 656 290 L 656 285 Q 656 283 658 283 L 664 283 Q 666 283 666 285 L 666 290
         L 683 290 L 683 285 Q 683 283 685 283 L 691 283 Q 693 283 693 285 L 693 290
-        L 716 290 Q 725 290 725 299 L 725 312 Z"
+        L 716 290 Q 725 290 725 299 L 725 302 Z"
         fill="rgba(56,189,248,0.18)" :stroke="BLUE_B" stroke-width="1.8" stroke-linejoin="round" />
       <circle cx="704" cy="344" r="9" fill="none" :stroke="GOLD" stroke-width="1.6" />
-      <text x="630" y="332" text-anchor="middle" style="font-size:15px;font-weight:700" :fill="INK">LLM</text>
-      <text x="630" y="348" text-anchor="middle" style="font-size:10px" :fill="DIM">the engine</text>
+      <text x="630" y="341" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="INK">LLM</text>
     </g>
 
     <!-- context window bracket + captions -->

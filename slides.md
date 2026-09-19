@@ -1568,14 +1568,14 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 -->
 
 ---
-clicks: 5
+clicks: 6
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # Models are the engines
 
-<svg v-click.hide="4" class="eng-grid" viewBox="-16 0 521 330" aria-hidden="true">
+<svg v-click="[2, 5]" class="eng-grid" viewBox="-16 0 521 330" aria-hidden="true">
   <defs>
     <marker id="engArr" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
   </defs>
@@ -1612,12 +1612,12 @@ clicks: 5
   <div class="sp-secret">Providers keep their info secret</div>
 </div>
 
-<div v-click="2" class="eng-note">
+<div v-click="3" class="eng-note">
   <div><b>Larger models = more parameters</b></div>
   <div class="mt-1"><svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:middle; margin:0 0.3rem 0.15rem 0;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>More capable · Slower · More expensive</div>
 </div>
 
-<div v-click="3" class="eng-version">
+<div v-click="4" class="eng-version">
   <div><span class="ev-ex">Example:</span> <span class="ev-title">Claude version numbers</span></div>
   <div class="mt-1">Opus 4 <span class="ev-arr">→</span> 5: new generation, new recipe</div>
   <div>Opus 4.7 <span class="ev-arr">→</span> 4.8: new training run, same recipe</div>
@@ -1627,31 +1627,32 @@ clicks: 5
 
 <S3Diagram :stage="1" :c="$clicks" />
 
-<div v-click="5" class="eng-ft">
+<div v-click="6" class="eng-ft">
   <div class="ft-title">Fine-tuning</div>
   <div>Extra training with <b>your own data</b></div>
   <div class="dim" style="font-size:0.9em; margin-top:0.1rem;">Small adjustments to the weights</div>
 </div>
 
-<div v-click.hide="4" class="credit" style="position:absolute; right:3.4rem; top:28.75rem; font-size:0.85rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.18rem 0.6rem;">schematic drawing</div>
+<div v-click="[2, 5]" class="credit" style="position:absolute; right:3.4rem; top:27.05rem; font-size:0.85rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.18rem 0.6rem;">schematic drawing</div>
 
 <!--
 You never actually use a raw model — you use products built around one. So
 let's meet the engines first.
 
-Each lab builds its own: Claude from Anthropic, GPT from OpenAI, Gemini from
-Google. And every engine comes in sizes — the labs even name them. Claude's
-sizes are poem lengths: Haiku, Sonnet, Opus — short to long. Gemini names
-for speed: Flash-Lite, Flash, Pro. GPT keeps it plain: nano, mini, and the
-full model with no suffix.
+[click] First honest thing about these engines: what exactly is IN them?
+They won't tell you. The parameter counts, the data mix, the training code,
+the compute bill, the post-training recipe — all secret. You get the
+horsepower, never the blueprints.
 
-[click] And what exactly is IN them? They won't tell you. The parameter
-counts, the data mix, the training code, the compute bill, the post-training
-recipe — all secret. You get the horsepower, never the blueprints. Under the
-hood there are three REAL differences: what data went in, how big it's
-built, and the post-training. Different food, different upbringing — so
-they have different personalities. Don't choose one on reviews or
-benchmarks: run YOUR OWN task on two or three of them, ten minutes, done.
+[click] Here they are. Each lab builds its own: Claude from Anthropic, GPT
+from OpenAI, Gemini from Google. Under the hood there are three REAL
+differences: what data went in, how big it's built, and the post-training.
+Different food, different upbringing — so they have different
+personalities. Don't choose one on reviews or benchmarks: run YOUR OWN task
+on two or three of them, ten minutes, done. And every engine comes in
+sizes — the labs even name them. Claude's sizes are poem lengths: Haiku,
+Sonnet, Opus — short to long. Gemini names for speed: Flash-Lite, Flash,
+Pro. GPT keeps it plain: nano, mini, and the full model with no suffix.
 
 [click] Bigger is not simply better. Larger literally means more
 parameters — remember the file of numbers — and that buys capability, but
@@ -1661,8 +1662,8 @@ trip — and route the easy bulk work to the small one. That's most of what
 
 [click] And the version numbers: the number before the dot is the
 generation — Opus 4 to 5 means a new recipe. After the dot — 4.7 to 4.8 —
-is a new training run on fresh data. Either way a newly trained engine, not
-a software patch.
+is a new training run on the same recipe. Either way a newly trained
+engine, not a software patch.
 
 [click] Now the showroom goes away, and we take ONE engine with us — keep
 an eye on it, it stays exactly there for the rest of this section while we
