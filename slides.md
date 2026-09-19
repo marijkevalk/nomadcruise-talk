@@ -1643,7 +1643,7 @@ giving it CONTEXT. You're already applying section three.
 
 <div>
 
-<div class="display" style="font-size:2.3rem;">Keep asking.</div>
+<div class="display" style="font-size:2.3rem;">Keep asking questions.</div>
 
 <div class="mt-4 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
 "Treat the model as a noisy estimator,<br>not an oracle."
