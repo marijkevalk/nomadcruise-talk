@@ -1751,8 +1751,11 @@ engines into Office Copilot too — same car, swapped engine. Which proves
 the whole point.]
 
 [click] Kind three, blue: you. Through the API you can build your own car
-around those very same engines. And harnesses NEST: my own assistant wraps
-Claude Code, which wraps the model. A car that carries smaller cars.
+around those very same engines. And this is a spectrum. At one end the KIT
+CAR: a Zapier or n8n flow — prefab parts, click together, but it's YOUR
+harness: you choose the prompt, the context, the tools. At the other end,
+fully hand-built: my own assistant is custom code. And harnesses NEST: it
+wraps Claude Code, which wraps the model. A car that carries smaller cars.
 -->
 
 ---
