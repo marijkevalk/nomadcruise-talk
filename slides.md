@@ -907,7 +907,7 @@ up.]
 
 <hr class="rule" />
 
-<div class="grid grid-cols-2 gap-10 mt-6">
+<div class="grid grid-cols-2 gap-10 mt-3">
 
 <div v-click="1">
   <div class="tp-head">Training</div>
@@ -916,7 +916,7 @@ up.]
   <div class="tp-item"><b>Calculate</b> the next word</div>
   <div class="tp-item">Learn from its mistakes by <b>adjusting the parameters</b></div>
   <div class="tp-item"><b>Repeat, billions of times</b></div>
-  <div class="mt-5" style="font-size:1.45rem;"><span style="color:var(--talk-accent); font-size:1.9rem; vertical-align:-0.18rem; margin-right:0.3rem;">&#9656;</span><b style="letter-spacing:0.03em;">MACHINE LEARNING</b></div>
+  <div class="mt-3" style="font-size:1.45rem;"><span style="color:var(--talk-accent); font-size:1.9rem; vertical-align:-0.18rem; margin-right:0.3rem;">&#9656;</span><b style="letter-spacing:0.03em;">MACHINE LEARNING</b></div>
 </div>
 
 <div v-click="2">
@@ -925,7 +925,7 @@ up.]
   <div class="tp-item"><b>Show it</b> what a good answer looks like</div>
   <div class="tp-item">Let it <b>practice</b></div>
   <div class="tp-item"><b>Grade</b> its answers</div>
-  <div v-click="3" class="pt-quote mt-6">"AI is not neutral: it's built, tuned and controlled."</div>
+  <div v-click="3" class="pt-quote mt-6">"AI is not neutral:<br>it's built, tuned and controlled."</div>
 </div>
 
 </div>
