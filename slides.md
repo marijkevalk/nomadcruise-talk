@@ -1568,12 +1568,12 @@ inference loop, but with actions. Claude Code and Cursor work like this.]
 <div class="qmain">
   <div class="ex-title">Examples</div>
   <div class="qlist qlist-tight">
-    <div class="ql">Which other AI model providers are there?</div>
-    <div class="ql">Why would Meta give Llama away for free?</div>
+    <div class="ql">Explain "context" as if I am 12 years old</div>
+    <div class="ql">Do you have any memory about me?</div>
+    <div class="ql">What is in your context window right now?</div>
+    <div class="ql">Why do you forget things from earlier chats?</div>
+    <div class="ql">Do Claude Cowork and Claude Code use the same model?</div>
     <div class="ql">What runs under the hood of Perplexity / Notion AI / Cursor?</div>
-    <div class="ql">Difference between ChatGPT the app and GPT the model?</div>
-    <div class="ql">When should I build my own tool instead of using one?</div>
-    <div class="ql">Why does the same model behave differently in different apps?</div>
   </div>
 </div>
 
