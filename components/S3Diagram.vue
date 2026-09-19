@@ -84,7 +84,7 @@ const carD = (s) => {
 
     <!-- stage 3: the context is the fuel — a tank on the left, filled in groups -->
     <g v-if="ctxOn(1)" :opacity="ctxOp">
-      <rect x="64" y="200" width="324" height="292" rx="14" fill="none" :stroke="BLUE_B" stroke-width="2" />
+      <rect x="64" y="200" width="324" height="268" rx="14" fill="none" :stroke="BLUE_B" stroke-width="2" />
       <rect x="316" y="182" width="32" height="20" rx="4" fill="none" :stroke="BLUE_B" stroke-width="2" />
       <g v-if="stage === 3">
         <text x="226" y="227" text-anchor="middle" style="font-size:14px;letter-spacing:2px" :fill="BLUE_B">THE CONTEXT</text>
@@ -108,7 +108,7 @@ const carD = (s) => {
     <!-- the car: the app around the engine -->
     <g v-if="carOn" :opacity="shellOp">
       <path :d="carD(car)" fill="none" :stroke="car.col" stroke-width="2" stroke-linejoin="round" />
-      <text x="630" :y="car.y + car.h - 0.06 * car.h - 4" text-anchor="middle" style="font-size:12px;font-weight:700;letter-spacing:1.6px" :fill="car.bright">THE APP</text>
+      <text x="630" :y="car.y + car.h - 0.06 * car.h - 6" text-anchor="middle" style="font-size:27px;font-weight:700;letter-spacing:1.6px" :fill="car.bright">THE APP</text>
     </g>
 
     <!-- the engine (the anchor); fine-tuning = a thin blue layer ON the engine -->
@@ -116,7 +116,7 @@ const carD = (s) => {
       <rect x="575" y="290" width="150" height="80" rx="9" fill="#0d1322" :stroke="GOLD" stroke-width="2" />
       <rect v-for="rx in ribs" :key="rx" :x="rx" y="283" width="10" height="7" rx="2" fill="none" :stroke="GOLD" stroke-width="1.6" />
       <circle cx="704" cy="344" r="9" fill="none" :stroke="GOLD" stroke-width="1.6" />
-      <text x="630" y="341" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="INK">LLM</text>
+      <text x="630" y="341" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="INK">Model</text>
     </g>
 
     <!-- safety locks: one in the engine, one on the car -->
