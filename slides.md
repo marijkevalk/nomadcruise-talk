@@ -1178,17 +1178,10 @@ someone says "the AI said so."
 
 <div v-click class="fon-after mt-2" style="font-size:1.4rem;"><b>After training: model is frozen</b> (= Parameters are saved)</div>
 
-<div class="grid grid-cols-2 gap-8 mt-3 items-start">
-  <div v-click>
-    <div class="fon-lab">60 of the 124,000,000 numbers inside GPT-2</div>
-    <img :src="'/ai_model_file_numbers.png'" class="rounded mx-auto" style="max-height:8.5rem; object-fit:contain;" />
-    <div class="fon-cap">A frontier model holds ~10,000× more of these</div>
-  </div>
-  <div v-click>
-    <div class="fon-lab">The same file, drawn as an image</div>
-    <img :src="'/ai_model_file_heatmap.png'" class="rounded mx-auto" style="max-height:8.5rem; object-fit:contain;" />
-    <div class="fon-cap">Every pixel is one learned number</div>
-  </div>
+<div v-click class="mt-3" style="max-width:36rem; margin-left:auto; margin-right:auto;">
+  <div class="fon-lab">60 of the 124,000,000 numbers inside GPT-2</div>
+  <img :src="'/ai_model_file_numbers.png'" class="rounded mx-auto" style="max-height:9.5rem; object-fit:contain;" />
+  <div class="fon-cap">A frontier model holds ~10,000× more of these</div>
 </div>
 
 <div v-click class="dg-note mt-2" style="max-width:47rem; font-size:1.08rem; padding:0.5rem 1.1rem; line-height:1.45;">
@@ -1208,12 +1201,8 @@ the 8th), today's frontier models sit around a trillion (10 to the 12th).
 
 [click] This is not an artist impression: these are real weights I pulled
 out of a real model, GPT-2 — here are sixty of them, as they sit in the
-file. [click] And here is the same file drawn as an image — every pixel is
-one learned number. [If asked what the two panels are: the left panel is a
-slice of the connection weights inside the network (attention, layer 5); the
-right panel is the token table — one row per token. The pale band in it =
-rare tokens the model barely saw during training. You can literally SEE
-training in the file.]
+file. [If asked what the numbers are: a slice of the connection weights
+inside the network (attention, layer 5).]
 
 One file. No database inside, no internet inside, no little person
 inside — it's all pressed into the numbers. [click] When people say a model
