@@ -453,6 +453,14 @@
 .workshop-box b { color: #8fcbab; }
 .workshop-box .dim { color: var(--ink-dim); }
 
+/* "Your most important skill" slide: big green answer + centered workshop box */
+.skill-line {
+  margin-top: 6.2rem; text-align: center;
+  font-family: 'Fraunces', serif; font-weight: 600; font-size: 4rem;
+  letter-spacing: -0.01em;
+}
+.skill-box { margin: 5.4rem auto 0; margin-left: auto !important; width: max-content; }
+
 /* slide 3 — original glue screenshot */
 .glue-shot { max-height: 20rem; border-radius: 0.5rem; box-shadow: 0 10px 34px rgba(0,0,0,0.5); }
 

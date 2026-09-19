@@ -121,9 +121,6 @@ to ask questions. Questions to AI, actually — and I'll come back to that.
       <li v-click="3"><b>Know what you're talking about</b><span>Cut through the hype, spot the confident nonsense</span></li>
       <li v-click="4"><b>Enjoy: it's fun!</b><span>Everyone has a little nerd inside</span></li>
     </ul>
-    <div v-click="5" class="workshop-box">
-      <b>Workshop:</b> have an AI assistant ready to prompt.
-    </div>
   </div>
 </div>
 
@@ -152,9 +149,34 @@ makes people take you seriously.
 
 [click] Three — and honestly, it's just FUN. Everyone's got a little nerd
 inside. Today we let it out.
+-->
 
-[click] And because this is a workshop: grab your phone or laptop and have an
-AI assistant ready to prompt — any chat app you already use is fine.
+---
+
+<div class="kicker">Today</div>
+
+# Your most important skill
+
+<hr class="rule" />
+
+<div v-click="1" class="skill-line"><span class="green-title">Asking questions!</span></div>
+
+<div v-click="2" class="workshop-box skill-box">
+  <b>Workshop:</b> have an AI assistant ready to prompt.
+</div>
+
+<img :src="'/art/tovenaar-08-wijzend-omhoog.svg'" class="mage" />
+
+<!--
+And all three of those rest on ONE skill — the most important one in this
+whole talk. Not prompting tricks, not tool names.
+
+[click] Asking questions. Noticing where your understanding stops, and
+pushing past it — that's the habit everything else hangs on. It's how I
+learned all of this, and it's what we're going to practice today.
+
+[click] Which is why this is a workshop: grab your phone or laptop and have
+an AI assistant ready to prompt — any chat app you already use is fine.
 -->
 
 ---
