@@ -812,11 +812,15 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 <hr class="rule" />
 
-<div v-click class="mt-4">
+<div v-click="1" class="mt-4">
   <div class="text-2xl leading-snug">A <b class="accent">parameter</b> is one dial of the model</div>
-  <div class="mt-1 text-lg" style="color:var(--ink-dim);">Turn a dial, and the answer changes a little</div>
+  <div class="mt-1 text-lg" style="color:var(--ink-dim);">Turn a dial, and the predicted next word shifts a little</div>
+</div>
 
-  <svg viewBox="0 0 380 110" style="width:24rem; margin:1.6rem 0 0 1rem;">
+<div class="grid grid-cols-[auto_1fr] gap-12 items-center" style="margin-top:1.1rem;">
+
+<div v-click="1">
+  <svg viewBox="0 0 380 110" style="width:22rem; margin-left:1rem;">
     <g stroke-linecap="round">
       <g transform="translate(60,58)">
         <circle r="40" fill="none" stroke="#f2ecdf" stroke-width="2.5"/>
@@ -852,9 +856,16 @@ regression. Fair point, same family: fit parameters to data, predict.]
   </svg>
 </div>
 
-<div v-click class="text-xl mt-8"><span class="accent">▸</span> More dials: <b>more complex patterns</b> it can capture</div>
+<div v-click="2">
+  <div class="text-xl" style="white-space:nowrap;"><b class="accent">GPT-3</b>: 175,000,000,000 dials</div>
+  <div class="mt-1 text-base" style="color:var(--ink-dim); max-width:16rem;">Newer models have even more · the exact numbers are secret</div>
+</div>
 
-<div v-click class="text-xl mt-3"><span class="accent">▸</span> More dials: <b>slower</b> and <b>more expensive</b> calculations</div>
+</div>
+
+<div v-click="3" class="text-xl mt-5"><span class="accent">▸</span> More dials: <b>more complex patterns</b> it can capture</div>
+
+<div v-click="4" class="text-xl mt-3"><span class="accent">▸</span> More dials: <b>slower</b> and <b>more expensive</b> calculations</div>
 
 <img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" />
 
@@ -862,8 +873,13 @@ regression. Fair point, same family: fit parameters to data, predict.]
 New word, and it's the most famous jargon word in AI: parameters.
 
 [click] Think of a parameter as one dial of the model. Turn one dial, and
-the answer changes a tiny little bit. A model is a machine with an
+the next word it predicts shifts a tiny little bit — maybe "iceberg" gets
+slightly more likely, "London" slightly less. A model is a machine with an
 enormous amount of these dials.
+
+[click] How enormous? GPT-3, the model ChatGPT grew out of, has 175
+billion dials. Written out: 175,000,000,000. Today's models have even
+more — the makers keep the exact numbers secret.
 
 [click] The more dials a model has, the more complex the patterns it can
 capture.
