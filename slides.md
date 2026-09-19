@@ -1837,9 +1837,14 @@ clicks: 2
 # Safety: rules in every shell
 
 <div class="s3-left">
-  <div class="s3-lead">guardrails</div>
-  <div v-click="1">each layer adds its own rules:<br>what it will and won't do</div>
-  <div v-click="2" class="mt-8">talking the model past its rules<br><span class="accent">= a "jailbreak"</span></div>
+  <div v-click="1">
+    <div class="s3-guard">Guardrails</div>
+    <div>Each layer adds its own rules:<br>What it will and won't do</div>
+  </div>
+  <div v-click="2" class="mt-8">
+    <div class="s3-guard">Jailbreak</div>
+    <div>Talking the model past its rules</div>
+  </div>
 </div>
 
 <S3Diagram :stage="4" :c="$clicks" />

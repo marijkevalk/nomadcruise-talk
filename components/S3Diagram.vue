@@ -24,10 +24,12 @@ const GOLD = '#e3b04b', BLUE = '#38bdf8', BLUE_B = '#7dd3fc'
 const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
+// lk = lock position [cx, ytop], hand-placed per shell to sit clear of the
+// bonnet slopes and neighbouring silhouettes
 const shells = [
-  { x: 505, y: 229, w: 280, h: 168, col: GOLD, bright: GOLD },
-  { x: 480, y: 204, w: 340, h: 218, col: PURPLE, bright: PURPLE_B },
-  { x: 435, y: 171, w: 430, h: 288, col: BLUE, bright: BLUE_B },
+  { x: 505, y: 229, w: 280, h: 168, col: GOLD, bright: GOLD, lk: [745, 325] },
+  { x: 480, y: 204, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, lk: [800, 355] },
+  { x: 435, y: 171, w: 430, h: 288, col: BLUE, bright: BLUE_B, lk: [840, 385] },
 ]
 // what's in the tank — blue first (yours), then the app's, then the provider's
 const tankRows = [
@@ -119,8 +121,8 @@ const carD = (s) => {
         <text x="630" :y="s.y + s.h - 0.06 * s.h - 4" text-anchor="middle" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">HARNESS</text>
       </g>
       <g v-if="shellOn(i) && lockOn" :stroke="s.bright" fill="none" stroke-width="1.8">
-        <rect :x="s.x + 0.9 * s.w - 8" :y="s.y + s.h - 0.44 * s.h" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
-        <path :d="`M ${s.x + 0.9 * s.w - 5} ${s.y + s.h - 0.44 * s.h} v -3 a5 5 0 0 1 10 0 v 3`" />
+        <rect :x="s.lk[0] - 8" :y="s.lk[1]" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
+        <path :d="`M ${s.lk[0] - 5} ${s.lk[1]} v -3 a5 5 0 0 1 10 0 v 3`" />
       </g>
     </g>
 
