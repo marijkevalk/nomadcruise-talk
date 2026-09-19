@@ -1091,10 +1091,14 @@
 /* using-the-model: per-word probability bar charts */
 .um-line { font-family: 'Fraunces', serif; font-size: 1.5rem; }
 .um-fill { color: #7dd3fc; font-weight: 600; }
-.um-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; margin-top: 1.1rem; }
-.um-chart { border: 1.5px solid var(--hairline); border-radius: 0.6rem; padding: 0.55rem 0.9rem 0.65rem; }
-.um-title { font-size: 0.88rem; color: var(--ink-dim); margin-bottom: 0.55rem; }
-.um-row { display: grid; grid-template-columns: 4.4rem 1fr 3rem; align-items: center; gap: 0.5rem; font-size: 0.98rem; padding: 0.13rem 0; }
+.um-lab { color: var(--ink-dim); }
+/* the three word-tables appear stacked in the same spot, each over the previous */
+.um-stack { position: relative; height: 10.6rem; margin-top: 0.6rem; max-width: 30rem; }
+.um-stack .um-chart { position: absolute; top: 0; left: 0; width: 100%; }
+.um-chart { border: 1.5px solid var(--hairline); border-radius: 0.6rem; padding: 0.5rem 0.9rem 0.55rem; background: #0b101e; }
+.um-closer { position: absolute; right: 2.4rem; bottom: 8.2rem; width: 19.5rem; }
+.um-title { font-size: 0.88rem; color: var(--ink-dim); margin-bottom: 0.35rem; }
+.um-row { display: grid; grid-template-columns: 4.4rem 1fr 3rem; align-items: center; gap: 0.5rem; font-size: 0.98rem; padding: 0.07rem 0; }
 .um-bar { height: 0.72rem; border-radius: 2px; background: var(--talk-accent); opacity: 0.85; }
 .um-row.um-win { color: #7dd3fc; font-weight: 600; }
 .um-row.um-win .um-bar { background: #7dd3fc; opacity: 1; }

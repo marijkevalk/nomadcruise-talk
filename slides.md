@@ -860,7 +860,12 @@ regression. Fair point, same family: fit parameters to data, predict.]
 
 <div v-click="2" class="text-2xl leading-snug mt-5">All the dials <b class="accent">together</b> decide the next word</div>
 
-<div v-click="3" class="text-xl mt-4"><span class="accent">▸</span> More dials: it can learn <b>more patterns</b> · but <b>slower</b> and <b>more expensive</b></div>
+<div v-click="3" class="mt-4 text-xl" style="line-height:1.6;">
+  <div style="white-space:nowrap;">Newer models have even more.</div>
+  <div style="white-space:nowrap;">The exact numbers are secret.</div>
+</div>
+
+<div v-click="4" class="text-2xl mt-5"><b class="accent">More dials</b><svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.9rem; height:auto; vertical-align:middle; margin:0 0.55rem 0.2rem;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><b>better answers</b></div>
 
 <img :src="'/art/tovenaar-02-jonglerend.svg'" class="mage" style="top:5rem; right:2.2rem; bottom:auto; height:6rem;" />
 
@@ -878,9 +883,12 @@ word comes out next. How many? GPT-3, the model ChatGPT grew out of, has
 be busy for five and a half thousand years. Today's models have even more;
 the makers keep the exact numbers secret.
 
-[click] More dials means the model can learn more patterns. But there is a
-price: every answer takes more calculating. A bigger model is slower and
-more expensive.
+[click] And it doesn't stop there: newer models have even more — the
+makers keep the exact numbers secret. [click] Why keep adding dials? More
+dials means the model can learn more patterns — more dials, better
+answers. The catch (say it, it's not on the slide): every answer takes
+more calculating, so a bigger model is slower and more expensive. That
+trade-off returns in part three, on the engines slide.
 
 So this week, when you hear "a bigger model" or "so-many billion
 parameters": it just means more dials. Where do all those dials get their
@@ -1012,11 +1020,16 @@ clicks: 7
 
 <hr class="rule" />
 
-<div v-click="1" class="mt-1 text-lg">You <b>prompt</b>, it <b>replies</b> — calculated <b class="accent">word for word</b>: for every word the model computes a <b class="accent">probability distribution</b>, and <b class="accent">draws one</b>.</div>
+<div v-click="1" class="mt-1">
+  <div class="text-2xl leading-snug">You <b class="accent">prompt</b>, it <b class="accent">replies</b>.</div>
+  <div class="text-lg" style="color:var(--ink-dim);">The reply is calculated word by word</div>
+</div>
 
-<div v-click="1" class="um-line mt-3">“The Queen Mary 2 sails from Southampton to New <span class="ans"><span v-click.hide="3">…</span><span v-click="3" class="um-fill">York</span></span><span v-click="5" class="um-fill"> City</span><span v-click="7" class="um-fill">.</span>”</div>
+<div v-click="1" class="um-line mt-2"><span class="um-lab">Prompt:</span> “The Queen Mary 2 sails from Southampton to New …”</div>
 
-<div class="um-cols">
+<div v-click="1" class="um-line"><span class="um-lab">Reply:</span> <span v-click="3" class="um-fill">York</span><span v-click="5" class="um-fill"> City</span><span v-click="7" class="um-fill">.</span></div>
+
+<div class="um-stack">
   <div v-click="2" class="um-chart">
     <div class="um-title">word 1 · “…to New …”</div>
     <div class="um-row um-win"><span>York</span><span class="um-bar" style="width:100%"></span><span class="um-pct">70.8%</span></div>
@@ -1037,24 +1050,25 @@ clicks: 7
     <div class="um-row um-win"><span>.</span><span class="um-bar" style="width:80%"></span><span class="um-pct">13.7%</span></div>
     <div class="um-row"><span>,</span><span class="um-bar" style="width:77%"></span><span class="um-pct">13.2%</span></div>
     <div class="um-row"><span>in</span><span class="um-bar" style="width:49%"></span><span class="um-pct">8.4%</span></div>
-    <div v-click="7" class="um-note">the draw picked #2 — it happens</div>
+    <div v-click="7" class="um-note">the draw picked #2 · it happens</div>
   </div>
 </div>
 
-<div v-click="7" class="mt-4 text-lg">One word at a time, each one <b class="accent">a draw</b> — run it again and the reply can differ.</div>
+<div v-click="7" class="um-closer text-lg">One word at a time, each one <b class="accent">a draw</b> · run it again and the reply can differ.</div>
 
-<div class="src-ref">data from GPT-2</div>
+<div class="src-ref" style="left:auto; right:2.2rem; bottom:2.6rem;">data from GPT-2</div>
 
 <img :src="'/art/tovenaar-05-zittend.svg'" class="mage" style="top:3.2rem; right:0.6rem; bottom:auto; height:7rem;" />
 
 <!--
 So what happens when you actually USE the thing — type a question, press
-Enter? [click] The jargon word is inference, but it's simply this: the reply
-is calculated word for word. For every word the model computes a probability
-distribution over all the words it knows — exactly the list you saw at the
-start of this section — and DRAWS one. Then the chosen word is glued on,
-everything goes back in, and it calculates the next list. Let's watch it for
-real — these are real numbers from a real model.
+Enter? [click] You prompt, it replies. And the reply is calculated word by
+word: for every word the model computes a list of options with percentages —
+exactly the list you saw at the start of this section — and DRAWS one. Then
+the chosen word is glued on, everything goes back in, and it calculates the
+next list. (Jargon word, for who wants it: this is called inference.) Here's
+our prompt — let's watch the reply get built, with real numbers from a real
+model.
 
 [click] Word one. The list: York, seventy percent — the exact list from the
 start of this section; now you know where it comes from. [click] York wins
