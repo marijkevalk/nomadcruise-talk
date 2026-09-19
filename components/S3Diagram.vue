@@ -27,7 +27,7 @@ const INK = '#f2ecdf', DIM = '#9a917f'
 
 const shells = [
   { x: 525, y: 256, w: 250, h: 148, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER', ex: 'Claude app · Claude Code' },
-  { x: 480, y: 221, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY · “a wrapper”', ex: 'Cursor · Perplexity' },
+  { x: 480, y: 221, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY', ex: 'Cursor · Perplexity' },
   { x: 435, y: 186, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU', ex: 'your own, built via the API' },
 ]
 const taps = [
@@ -39,6 +39,15 @@ const taps = [
   { y: 416, ye: 388, g: 3, lab: 'search & tool results' },
 ]
 const ribs = [602, 629, 656, 683]
+
+// car-icon outline per shell: body with rounded corners + cabin hump (slanted
+// windscreens) on top; wheels are drawn separately below the ground line
+const carD = (s, i) => {
+  const rr = 14, h = [22, 28, 34][i], sl = 26
+  const c1 = s.x + (i === 0 ? 0.34 : 0.30) * s.w, c2 = s.x + (i === 0 ? 0.66 : 0.62) * s.w
+  const yg = s.y + s.h
+  return `M ${s.x + rr} ${s.y} L ${c1 - sl} ${s.y} L ${c1} ${s.y - h} L ${c2} ${s.y - h} L ${c2 + sl} ${s.y} L ${s.x + s.w - rr} ${s.y} Q ${s.x + s.w} ${s.y} ${s.x + s.w} ${s.y + rr} L ${s.x + s.w} ${yg - rr} Q ${s.x + s.w} ${yg} ${s.x + s.w - rr} ${yg} L ${s.x + rr} ${yg} Q ${s.x} ${yg} ${s.x} ${yg - rr} L ${s.x} ${s.y + rr} Q ${s.x} ${s.y} ${s.x + rr} ${s.y} Z`
+}
 </script>
 
 <template>
@@ -66,10 +75,10 @@ const ribs = [602, 629, 656, 683]
     <!-- harness shells -->
     <g v-for="(s, i) in shells" :key="'sh' + i">
       <g v-if="shellOn(i)" :opacity="shellOp">
-        <rect :x="s.x" :y="s.y" :width="s.w" :height="s.h" rx="14" fill="none" :stroke="s.col" stroke-width="2" />
+        <path :d="carD(s, i)" fill="none" :stroke="s.col" stroke-width="2" stroke-linejoin="round" />
         <!-- wheels: each harness shell is a car -->
-        <circle :cx="s.x + s.w * 0.24" :cy="s.y + s.h" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
-        <circle :cx="s.x + s.w * 0.76" :cy="s.y + s.h" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
+        <circle :cx="s.x + s.w * 0.24" :cy="s.y + s.h + (9 + i * 2) * 0.3" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
+        <circle :cx="s.x + s.w * 0.76" :cy="s.y + s.h + (9 + i * 2) * 0.3" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
         <text :x="s.x + 13" :y="s.y + 17" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">{{ s.owner }}</text>
         <text :x="s.x + 13" :y="s.y + s.h - 16" style="font-size:9.5px" :fill="s.bright" opacity="0.75">{{ s.ex }}</text>
       </g>
