@@ -12,7 +12,6 @@ const v = (s, k) => props.stage > s || (props.stage === s && props.c >= k)
 const engineOn = computed(() => v(1, 5))
 const layerOn = computed(() => v(1, 6))
 const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
-const capOn = computed(() => props.stage === 3 && props.c >= 5)
 const lockOn = computed(() => v(4, 1))
 const shellOn = (i) => v(2, i + 3)
 // stage 3: the context is the fuel — a tank that fills in groups
@@ -32,14 +31,14 @@ const shells = [
 ]
 // what's in the tank — blue first (yours), then the app's, then the provider's
 const tankRows = [
-  { y: 259, g: 1, lab: 'Your prompt' },
-  { y: 282, g: 1, lab: 'The conversation so far' },
-  { y: 305, g: 1, lab: 'Your standing instructions' },
-  { y: 328, g: 1, lab: 'Saved memory' },
-  { y: 351, g: 1, lab: 'Your documents', sub: 'Pasted, or found & pasted for you (RAG)', suby: 367 },
-  { y: 388, g: 1, lab: 'Search & tool results', sub: 'Anything from the internet lands here too', suby: 404 },
-  { y: 426, g: 2, lab: "The app's own instructions", col: PURPLE_B },
-  { y: 447, g: 3, lab: 'Hidden system prompt', col: GOLD },
+  { y: 270, g: 1, lab: 'Your prompt' },
+  { y: 297, g: 1, lab: 'Your conversation so far', sub: 'Including its own answers', suby: 315 },
+  { y: 342, g: 1, lab: 'Your custom instructions' },
+  { y: 369, g: 1, lab: 'Your saved memory' },
+  { y: 396, g: 1, lab: 'Your documents' },
+  { y: 423, g: 1, lab: 'Search & tool results (internet)' },
+  { y: 452, g: 2, lab: "The app's hidden instructions", col: PURPLE_B },
+  { y: 479, g: 3, lab: "The provider's hidden instructions", col: GOLD },
 ]
 const ribs = [602, 629, 656, 683]
 
@@ -82,6 +81,9 @@ const carD = (s) => {
       <marker id="s3ga" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
         <path d="M0,0 L7,4 L0,8 z" :fill="BLUE_B" />
       </marker>
+      <marker id="s3fuel" markerUnits="userSpaceOnUse" markerWidth="26" markerHeight="26" refX="20" refY="13" orient="auto">
+        <path d="M0,0 L24,13 L0,26 z" :fill="BLUE_B" />
+      </marker>
       <marker id="s3da" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
         <path d="M0,0 L6,3.5 L0,7 z" :fill="DIM" />
       </marker>
@@ -89,16 +91,16 @@ const carD = (s) => {
 
     <!-- stage 3: the context is the fuel — a tank on the left, filled in groups -->
     <g v-if="ctxOn(1)" :opacity="ctxOp">
-      <rect x="74" y="196" width="296" height="260" rx="14" fill="none" :stroke="BLUE_B" stroke-width="2" />
-      <rect x="310" y="178" width="30" height="20" rx="4" fill="none" :stroke="BLUE_B" stroke-width="2" />
+      <rect x="64" y="200" width="324" height="292" rx="14" fill="none" :stroke="BLUE_B" stroke-width="2" />
+      <rect x="316" y="182" width="32" height="20" rx="4" fill="none" :stroke="BLUE_B" stroke-width="2" />
       <g v-if="stage === 3">
-        <text x="222" y="219" text-anchor="middle" style="font-size:10.5px;letter-spacing:1.6px" :fill="BLUE_B">THE CONTEXT</text>
-        <path d="M 90 233 H 354" fill="none" :stroke="BLUE_B" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.55" />
-        <text x="354" y="229" text-anchor="end" style="font-size:9.5px;letter-spacing:1px" :fill="BLUE_B">MAX</text>
+        <text x="226" y="227" text-anchor="middle" style="font-size:14px;letter-spacing:2px" :fill="BLUE_B">THE CONTEXT</text>
+        <path d="M 80 242 H 372" fill="none" :stroke="BLUE_B" stroke-width="1.4" stroke-dasharray="5 4" opacity="0.55" />
+        <text x="372" y="237" text-anchor="end" style="font-size:13px;letter-spacing:1.2px" :fill="BLUE_B">MAX</text>
         <template v-for="(t, k) in tankRows" :key="'tr' + k">
           <g v-if="ctxOn(t.g)">
-            <text x="96" :y="t.y" style="font-size:13.5px" :fill="t.col || BLUE_B">{{ t.lab }}</text>
-            <text v-if="t.sub" x="96" :y="t.suby" style="font-size:10.5px" :fill="BLUE">{{ t.sub }}</text>
+            <text x="88" :y="t.y" style="font-size:16px" :fill="t.col || BLUE_B">{{ t.lab }}</text>
+            <text v-if="t.sub" x="88" :y="t.suby" style="font-size:12px" :fill="BLUE">{{ t.sub }}</text>
           </g>
         </template>
       </g>
@@ -106,8 +108,8 @@ const carD = (s) => {
 
     <!-- click 4: the fuel line — the whole tank flows into the engine, fresh every turn -->
     <g v-if="ctxOn(4)" :opacity="ctxOp">
-      <path d="M 374 324 C 434 324 500 328 558 329" fill="none" :stroke="BLUE_B" stroke-width="3" marker-end="url(#s3ga)" />
-      <text v-if="stage === 3" x="468" y="308" text-anchor="middle" style="font-size:11.5px;font-style:italic" :fill="DIM">Every turn, a fresh tank</text>
+      <path d="M 392 330 C 448 330 504 331 552 331" fill="none" :stroke="BLUE_B" stroke-width="5.5" marker-end="url(#s3fuel)" />
+      <text v-if="stage === 3" x="470" y="306" text-anchor="middle" style="font-size:14.5px;font-weight:600;font-style:italic" :fill="BLUE_B">Every turn, a fresh tank</text>
     </g>
 
     <!-- harness shells -->
@@ -138,10 +140,5 @@ const carD = (s) => {
       <text x="630" y="341" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="INK">LLM</text>
     </g>
 
-    <!-- context window captions -->
-    <g v-if="capOn">
-      <text x="222" y="478" text-anchor="middle" style="font-size:11.5px" :fill="BLUE_B">The tank = the context window · It has a max size</text>
-      <text x="222" y="496" text-anchor="middle" style="font-size:11.5px;font-style:italic" :fill="DIM">The model itself remembers nothing</text>
-    </g>
   </svg>
 </template>
