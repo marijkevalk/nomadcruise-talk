@@ -1568,56 +1568,100 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 -->
 
 ---
-clicks: 4
+clicks: 3
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
 # Models are the engines
 
-<img :src="'/art/s3-engine-matrix.svg'" class="s3-matrix" />
+<svg class="eng-grid" viewBox="0 0 505 330" aria-hidden="true">
+  <defs>
+    <marker id="engArr" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
+  </defs>
+  <g class="eng-head" fill="#f2ecdf" text-anchor="middle">
+    <text x="110" y="20">Claude</text><text x="265" y="20">GPT</text><text x="420" y="20">Gemini</text>
+  </g>
+  <line x1="30" y1="48" x2="30" y2="300" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" marker-end="url(#engArr)"/>
+  <text class="eng-larger" transform="rotate(-90 11 174)" x="11" y="174" fill="#e3b04b" text-anchor="middle">Larger</text>
+  <g>
+    <g v-for="(col, ci) in [
+        {x: 110, names: ['Haiku', 'Sonnet', 'Opus']},
+        {x: 265, names: ['GPT-5 nano', 'GPT-5 mini', 'GPT-5']},
+        {x: 420, names: ['Flash-Lite', 'Flash', 'Pro']}]" :key="ci">
+      <g v-for="(row, ri) in [
+          {y: 46, w: 98, h: 40, sw: 2.2},
+          {y: 114, w: 120, h: 58, sw: 2.6},
+          {y: 200, w: 140, h: 80, sw: 3}]" :key="ri">
+        <rect v-for="t in 4" :key="t" :x="col.x - row.w/2 + row.w*(0.14 + 0.22*(t-1))" :y="row.y - 6" width="10" height="8" rx="1.5" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.8"/>
+        <rect :x="col.x - row.w/2" :y="row.y" :width="row.w" :height="row.h" rx="8" fill="#0d1322" stroke="#e3b04b" :stroke-width="row.sw"/>
+        <circle :cx="col.x + row.w/2 - row.h*0.22" :cy="row.y + row.h - row.h*0.24" :r="row.h*0.1" fill="none" stroke="#e3b04b" :stroke-width="row.sw*0.75"/>
+        <text :class="'ename-' + ri" :x="col.x" :y="row.y + row.h/2 + 5.5" fill="#f2ecdf" text-anchor="middle">{{ col.names[ri] }}</text>
+      </g>
+    </g>
+  </g>
+</svg>
 
-<div v-click="1" class="s3-foot">a higher version number = a new training run (new data): Opus 4.7 → 4.8</div>
+<div class="eng-left">
 
-<div v-click="2" class="s3-specs">
+<div v-click="1" class="s3-specs">
   <div class="sp-title">ENGINE SPECS</div>
-  <div class="sp-row"><span>parameters</span><span class="bar"></span></div>
-  <div class="sp-row"><span>training data</span><span class="bar"></span></div>
-  <div class="sp-row"><span>recipe</span><span class="bar"></span></div>
-  <div class="sp-secret">companies keep their info secret</div>
+  <div class="sp-row"><span>Parameters</span><span class="bar"></span></div>
+  <div class="sp-row"><span>Training data</span><span class="bar"></span></div>
+  <div class="sp-row"><span>Recipe</span><span class="bar"></span></div>
+  <div class="sp-secret">Providers keep their info secret</div>
 </div>
 
-<S3Diagram :stage="1" :c="$clicks" />
+<div v-click="2" class="eng-note">
+  <div><b>Larger models</b> <span class="dim" style="font-size:0.92em;">(= more parameters)</span></div>
+  <div class="mt-1"><svg viewBox="0 0 44 24" aria-hidden="true" style="display:inline-block; width:1.5rem; height:auto; vertical-align:middle; margin:0 0.3rem 0.15rem 0;"><path d="M2 12h36M30 4l10 8-10 8" fill="none" stroke="#e3b04b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>More capable · Slower · More expensive</div>
+</div>
+
+<div v-click="3" class="eng-version">
+  <div class="ev-title">Version numbers</div>
+  <div class="mt-1">Opus 4 <span class="ev-arr">→</span> 5: new generation, new recipe</div>
+  <div>Opus 4.7 <span class="ev-arr">→</span> 4.8: new training run, fresh data</div>
+</div>
+
+</div>
+
+<div class="credit" style="position:absolute; right:2.6rem; bottom:2.6rem; border:1px solid var(--hairline); border-radius:0.4rem; padding:0.15rem 0.55rem;">schematic drawing</div>
 
 <!--
 You never actually use a raw model — you use products built around one. So
 let's meet the engines first.
 
 Each lab builds its own: Claude from Anthropic, GPT from OpenAI, Gemini from
-Google. Under the hood there are three REAL differences: what data went in,
-how big it's built, and the post-training. Different food, different
-upbringing — so they have different personalities. Don't choose one on
-reviews or benchmarks: run YOUR OWN task on two or three of them, ten
-minutes, done.
-
-And every engine comes in sizes. Big: smarter, but slower and pricier per
-answer. Small: fast and cheap. Pick by the trip — and route the easy bulk
-work to the small one. That's most of what "AI cost optimization" means.
-
-[click] Versions: a higher number is a NEW TRAINING RUN — new data, sometimes
-a new architecture. A newly trained engine, not a software patch.
+Google. And every engine comes in sizes — the labs even name them. Claude's
+sizes are poem lengths: Haiku, Sonnet, Opus — short to long. Gemini names
+for speed: Flash-Lite, Flash, Pro. GPT keeps it plain: nano, mini, and the
+full model with no suffix.
 
 [click] And what exactly is IN them? They won't tell you. The parameter
 counts, the data mix, the training code, the compute bill, the post-training
-recipe — all secret. You get the horsepower, never the blueprints.
+recipe — all secret. You get the horsepower, never the blueprints. Under the
+hood there are three REAL differences: what data went in, how big it's
+built, and the post-training. Different food, different upbringing — so
+they have different personalities. Don't choose one on reviews or
+benchmarks: run YOUR OWN task on two or three of them, ten minutes, done.
 
-[click] We take one engine with us — keep an eye on it, it stays exactly
-there for the rest of this section while we build around it.
+[click] Bigger is not simply better. Larger literally means more
+parameters — remember the file of numbers — and that buys capability, but
+every answer gets slower and pricier. Small: fast and cheap. Pick by the
+trip — and route the easy bulk work to the small one. That's most of what
+"AI cost optimization" means.
 
-[click] One thing you CAN do to the engine itself: fine-tune it — train it
-further on YOUR OWN data, which really changes the weights. Powerful, rare —
-most people never open the hood. Everything else you'll ever do sits AROUND
-the engine. Next slide.
+[click] And the version numbers: the number before the dot is the
+generation — Opus 4 to 5 means a new recipe. After the dot — 4.7 to 4.8 —
+is a new training run on fresh data. Either way a newly trained engine, not
+a software patch.
+
+[if fine-tuning comes up: you CAN train an engine further on your own
+data — fine-tuning. It really changes the weights; powerful, and rare.
+Everything else you'll ever do sits AROUND the engine — next slide.]
+
+Now we take one engine with us — keep an eye on it, it stays exactly there
+for the rest of this section while we build around it.
 -->
 
 ---

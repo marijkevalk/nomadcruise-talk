@@ -992,7 +992,23 @@
 .s3d { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; font-family: 'Inter', sans-serif; }
 .s3-matrix { position: absolute; left: 5rem; top: 9.3rem; width: 22rem; }
 .s3-foot { position: absolute; left: 5rem; bottom: 2.2rem; max-width: 36rem; color: var(--ink-dim); font-size: 0.8rem; }
-.s3-specs { position: absolute; right: 3rem; top: 7.6rem; width: 19rem; border: 1.5px solid var(--ink-dim); border-radius: 0.5rem; background: rgba(154,145,127,0.07); padding: 0.8rem 1rem; font-size: 0.85rem; }
+/* engines slide: transposed battery grid right, spec/note/version stack left
+   (slide CSS overrides SVG font-size attrs -> pin all text sizes here) */
+.eng-grid { position: absolute; right: 2.6rem; top: 9.6rem; width: 27rem; }
+.eng-grid .eng-head text { font-size: 18px; font-weight: 600; }
+.eng-grid .eng-larger { font-size: 17px; font-weight: 600; font-style: italic; }
+.eng-grid .ename-0 { font-size: 13.5px; }
+.eng-grid .ename-1 { font-size: 15.5px; }
+.eng-grid .ename-2 { font-size: 18px; font-weight: 600; }
+.eng-left { position: absolute; left: 3.8rem; top: 9.6rem; width: 24.5rem; display: flex; flex-direction: column; gap: 0.85rem; }
+.eng-note { border: 1.5px solid rgba(242, 236, 223, 0.45); border-radius: 0.5rem; padding: 0.7rem 1rem; font-size: 1.02rem; }
+.eng-version {
+  border: 1.5px solid rgba(185, 169, 238, 0.65); background: rgba(114, 99, 184, 0.12);
+  border-radius: 0.5rem; padding: 0.7rem 1rem; font-size: 0.98rem;
+}
+.eng-version .ev-title { color: #b9a9ee; font-weight: 600; }
+.eng-version .ev-arr { color: #b9a9ee; }
+.s3-specs { width: 100%; border: 1.5px solid var(--ink-dim); border-radius: 0.5rem; background: rgba(154,145,127,0.07); padding: 0.8rem 1rem; font-size: 0.85rem; }
 .s3-specs .sp-title { color: var(--ink-dim); letter-spacing: 0.22em; font-size: 0.72rem; margin-bottom: 0.5rem; }
 .s3-specs .sp-row { display: flex; justify-content: space-between; align-items: center; padding: 0.18rem 0; }
 .s3-specs .sp-row .bar { display: inline-block; width: 8.5rem; height: 0.8rem; border-radius: 2px; background: #3a3f4d; }
