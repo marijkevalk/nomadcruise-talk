@@ -1083,11 +1083,17 @@
 .s3d text { font-family: 'Inter', sans-serif; line-height: 1; }
 
 /* combined training + post-training slide */
-.tp-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 2.1rem; color: var(--talk-accent); }
-.tp-sub { font-style: italic; color: var(--ink-dim); margin: 0.15rem 0 1rem; font-size: 1.15rem; }
-.tp-item { font-size: 1.3rem; padding: 0.34rem 0 0.34rem 1.4rem; position: relative; line-height: 1.4; }
-.tp-item::before { content: '\25B8'; position: absolute; left: 0; color: var(--talk-accent); }
-.tp-item.tp-n::before { content: attr(data-n); font-weight: 600; }
+.tp-box {
+  border: 1.5px solid var(--hairline); border-radius: 0.7rem;
+  background: rgba(154, 145, 127, 0.06); padding: 0.75rem 1.2rem 0.85rem;
+  display: flex; flex-direction: column;
+}
+.tp-head { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.7rem; color: var(--talk-accent); }
+.tp-sub { font-style: italic; color: var(--ink-dim); margin: 0.05rem 0 0.6rem; font-size: 1.05rem; }
+.tp-item { font-size: 1.2rem; padding: 0.26rem 0 0.26rem 1.7rem; position: relative; line-height: 1.38; }
+.tp-item::before { content: '\25B8'; position: absolute; left: 0.15rem; color: var(--talk-accent); }
+.tp-item.tp-n::before { content: attr(data-n); font-weight: 600; font-variant-numeric: tabular-nums; }
+.tp-ml { margin-top: auto; padding-top: 0.6rem; font-size: 1.2rem; }
 
 /* using-the-model: per-word probability bar charts */
 .um-line { font-family: 'Fraunces', serif; font-size: 1.5rem; }

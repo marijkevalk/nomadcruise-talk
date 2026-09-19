@@ -928,11 +928,10 @@ up.]
   <div class="tp-item tp-n" data-n="1"><b>Show it</b> what a good answer looks like</div>
   <div class="tp-item tp-n" data-n="2">Let it <b>practice</b></div>
   <div class="tp-item tp-n" data-n="3"><b>Grade</b> its answers</div>
+  <div v-click="3" class="pt-quote" style="margin-top:auto; padding-top:0.6rem; font-size:1.2rem;">"AI is not neutral:<br>it's built, tuned and controlled."</div>
 </div>
 
 </div>
-
-<div v-click="3" class="pt-quote mt-4" style="text-align:center; font-size:1.25rem;">"AI is not neutral: it's built, tuned and controlled."</div>
 
 <!--
 So who turns those billions of dials to the right positions? Nobody does.
@@ -1601,7 +1600,7 @@ inference loop, but with actions. Claude Code and Cursor work like this.]
 <div class="qmain">
   <div class="ex-title">Examples</div>
   <div class="qlist qlist-tight">
-    <div class="ql">Explain "context" as if I am 12 years old</div>
+    <div class="ql">Explain "context window" in AI as if I am 12 years old</div>
     <div class="ql">Do you have any memory about me?</div>
     <div class="ql">What is in your context window right now?</div>
     <div class="ql">Why do you forget things from earlier chats?</div>
