@@ -14,7 +14,7 @@ const engineOn = computed(() => v(1, 5))
 const layerOn = computed(() => v(1, 6))
 const shellOp = computed(() => (props.stage === 3 ? 0.35 : 1))
 const lockOn = computed(() => v(4, 1))
-const shellOn = (i) => v(2, i + 3)
+const carOn = computed(() => v(2, 1))
 // stage 3: the context is the fuel — a tank that fills in groups
 // (1 = tank + everything you put in, 2 = the app's, 3 = the provider's),
 // then flows into the engine (4); captions (5). Faint on stage 4.
@@ -25,13 +25,8 @@ const GOLD = '#e3b04b', BLUE = '#38bdf8', BLUE_B = '#7dd3fc'
 const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
-// lk = lock position [cx, ytop], hand-placed per shell to sit clear of the
-// bonnet slopes and neighbouring silhouettes
-const shells = [
-  { x: 505, y: 229, w: 280, h: 168, col: GOLD, bright: GOLD, lk: [745, 325] },
-  { x: 480, y: 204, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, lk: [800, 355] },
-  { x: 435, y: 171, w: 430, h: 288, col: BLUE, bright: BLUE_B, lk: [840, 385] },
-]
+// one car around the engine: the app (purple, matching the app-rows in the tank)
+const car = { x: 435, y: 171, w: 430, h: 288, col: PURPLE, bright: PURPLE_B }
 // what's in the tank — blue first (yours), then the app's, then the provider's
 const tankRows = [
   { y: 270, g: 1, lab: 'Your prompt' },
@@ -115,16 +110,10 @@ const carD = (s) => {
       <text v-if="stage === 3" x="470" y="306" text-anchor="middle" style="font-size:14.5px;font-weight:600;font-style:italic" :fill="BLUE_B">Every turn, a fresh tank</text>
     </g>
 
-    <!-- harness shells -->
-    <g v-for="(s, i) in shells" :key="'sh' + i">
-      <g v-if="shellOn(i)" :opacity="shellOp">
-        <path :d="carD(s)" fill="none" :stroke="s.col" stroke-width="2" stroke-linejoin="round" />
-        <text x="630" :y="s.y + s.h - 0.06 * s.h - 4" text-anchor="middle" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">HARNESS</text>
-      </g>
-      <g v-if="shellOn(i) && lockOn" :stroke="s.bright" fill="none" stroke-width="1.8">
-        <rect :x="s.lk[0] - 8" :y="s.lk[1]" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
-        <path :d="`M ${s.lk[0] - 5} ${s.lk[1]} v -3 a5 5 0 0 1 10 0 v 3`" />
-      </g>
+    <!-- the car: the app around the engine -->
+    <g v-if="carOn" :opacity="shellOp">
+      <path :d="carD(car)" fill="none" :stroke="car.col" stroke-width="2" stroke-linejoin="round" />
+      <text x="630" :y="car.y + car.h - 0.06 * car.h - 4" text-anchor="middle" style="font-size:11px;letter-spacing:1.6px" :fill="car.bright">THE APP</text>
     </g>
 
     <!-- the engine (the anchor); fine-tuning = a thin blue layer ON the engine -->
@@ -141,6 +130,18 @@ const carD = (s) => {
         fill="rgba(56,189,248,0.18)" :stroke="BLUE_B" stroke-width="1.8" stroke-linejoin="round" />
       <circle cx="704" cy="344" r="9" fill="none" :stroke="GOLD" stroke-width="1.6" />
       <text x="630" y="341" text-anchor="middle" style="font-size:27px;font-weight:700" :fill="INK">LLM</text>
+    </g>
+
+    <!-- safety locks: one in the engine, one on the car -->
+    <g v-if="carOn && lockOn" fill="none" stroke-width="1.8">
+      <g :stroke="GOLD">
+        <rect x="584" y="298" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
+        <path d="M 587 298 v -3 a5 5 0 0 1 10 0 v 3" />
+      </g>
+      <g :stroke="PURPLE_B">
+        <rect x="832" y="385" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />
+        <path d="M 835 385 v -3 a5 5 0 0 1 10 0 v 3" />
+      </g>
     </g>
 
   </svg>

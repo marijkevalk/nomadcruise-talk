@@ -1075,6 +1075,11 @@
 .s3-land { position: absolute; left: 3rem; bottom: 2rem; color: #fff; font-size: 1.15rem; }
 .s3-land .ztri { color: var(--talk-accent); margin-right: 0.4rem; }
 .gold-t { color: #e3b04b; } .purple-t { color: #b9a9ee; } .blue-t2 { color: #7dd3fc; }
+/* app-is-the-car slide: engines/cars rows + landing line */
+.ec-row { font-size: 1.12rem; padding: 0.12rem 0; color: #ffffff; }
+.ec-row .ec-lab { display: inline-block; width: 5.2rem; font-weight: 600; }
+.s3-start { position: absolute; left: 3.8rem; bottom: 2rem; font-size: 1.15rem; font-weight: 600; color: var(--talk-accent); white-space: nowrap; }
+.s3-start .ztri { margin-right: 0.4rem; }
 .s3d text { font-family: 'Inter', sans-serif; line-height: 1; }
 
 /* combined training + post-training slide */

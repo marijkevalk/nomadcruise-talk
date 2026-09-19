@@ -1489,18 +1489,18 @@ stay frozen — full fine-tuning adjusts the original weights.]
 -->
 
 ---
-clicks: 5
+clicks: 3
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
-# The harness is the car
+# The app is the car
 
 <hr class="rule" />
 
 <div class="s3-left">
   <div v-click="1">
-    <div class="s3-lead s3-fit">The harness is everything around the engine:</div>
+    <div class="s3-lead s3-fit">The app is everything around the engine:</div>
     <div class="s3-list">
       <div>Chat window</div>
       <div>Memory</div>
@@ -1508,56 +1508,46 @@ clicks: 5
       <div>Tools & search&ensp;…</div>
     </div>
   </div>
-  <div v-click="2" class="s3-lead2 mt-4">Three types of harness builders:</div>
-  <div class="s3-owners">
-    <div v-click="3" class="ow ow-gold">Model provider <span class="ow-ex">Claude Desktop · Claude Code · ChatGPT</span></div>
-    <div v-click="4" class="ow ow-purple">Third-party harness (wrapper) <span class="ow-ex">Cursor · Notion AI · Microsoft Copilot</span></div>
-    <div v-click="5" class="ow ow-blue">Own harness <span class="ow-ex">Custom build</span></div>
+  <div v-click="2" class="mt-4">
+    <div class="s3-lead2">Specific engines, specific cars:</div>
+    <div class="ec-row"><span class="ec-lab gold-t">Engines</span>Claude · GPT · Gemini …</div>
+    <div class="ec-row"><span class="ec-lab purple-t">Cars</span>Claude app · ChatGPT · Cursor …</div>
   </div>
 </div>
 
+<div v-click="3" class="s3-start"><span class="ztri">▸</span>To start: it doesn't matter which car with which engine → they all drive!</div>
+
 <S3Diagram :stage="2" :c="$clicks" />
 
-<div class="s3-legend">
-  <span v-click="3"><span class="chip chip-gold"></span>Model provider</span>
-  <span v-click="4"><span class="chip chip-purple"></span>Third party</span>
-  <span v-click="5"><span class="chip chip-blue"></span>You</span>
-</div>
-
 <!--
-Have you ever driven an engine to the supermarket? [click] Around the engine
-someone builds the car: the harness. The chat window, the memory that
+Have you ever driven an engine to the supermarket? [click] Around the
+engine someone builds the car: the app. The chat window, the memory that
 remembers your conversation, access to your files, the tools it can use —
 search, code, your calendar. Everything that makes the engine drivable.
+The model is just the engine; the app is the car you actually sit in.
+And note: the engine changes rarely, with a version number — the car
+changes weekly. When your app "gets an update", it's usually the car, not
+the engine. The app is not the model.
 
-[click] And harnesses come in three kinds — watch the colours, they mean
-who built it.
+[click] And it's mix and match. You've met the engines: Claude, GPT,
+Gemini. The cars: the Claude app and Claude Code are two very different
+cars around the same Claude engine. ChatGPT is OpenAI's car around GPT.
+And plenty of cars are built by one company around ANOTHER company's
+engine — Cursor, Notion AI, and my favourite: Microsoft Copilot drives
+OpenAI's engine. Even the biggest software company in the world didn't
+build its own engine.
 
-[click] Kind one, gold: the car from the model provider itself. Claude the
-chat app and Claude Code — the programming tool — feel completely different.
-Same engine behind. ChatGPT the app and GPT: same trick. And note: the
-engine changes rarely, with a version number — the car changes weekly. When
-your app "gets an update", it's usually the car, not the engine. The app is
-not the model.
+[Armor, if pushed on Copilot: Microsoft invests in OpenAI but doesn't
+build the frontier engine; and in 2025 Microsoft started slotting
+Anthropic engines into Office Copilot too — same car, swapped engine.
+Which proves the whole point. Industry word for such a car: a "wrapper".]
 
-[click] Kind two, purple: a third party builds a car around someone else's
-engine. Cursor, Notion AI — and most AI startups you'll see pitched,
-including on this boat. The industry word is a WRAPPER. Not an insult — good
-cars are genuinely hard to build. And my favourite example: Microsoft
-Copilot. Even the biggest software company in the world drives someone
-else's engine — OpenAI's. But now you know what you're looking at.
+[Armor, "can I build my own car?": yes — through the API, from a Zapier
+or n8n kit car to fully hand-built code. Your car, your rules.]
 
-[Armor, if pushed on Copilot: Microsoft invests in OpenAI but doesn't build
-the frontier engine; and in 2025 Microsoft started slotting Anthropic
-engines into Office Copilot too — same car, swapped engine. Which proves
-the whole point.]
-
-[click] Kind three, blue: you. Through the API you can build your own car
-around those very same engines. And this is a spectrum. At one end the KIT
-CAR: a Zapier or n8n flow — prefab parts, click together, but it's YOUR
-harness: you choose the prompt, the context, the tools. At the other end,
-fully hand-built: my own assistant is custom code. And harnesses NEST: it
-wraps Claude Code, which wraps the model. A car that carries smaller cars.
+[click] But here's the relief: to start, none of this matters. Any car
+with any engine — they all drive. Pick whatever is in front of you and
+drive.
 -->
 
 ---
@@ -1573,9 +1563,9 @@ clicks: 5
 <div v-click="5" class="accent" style="position:absolute; left:3.8rem; bottom:1.55rem; font-size:1.05rem; font-weight:600;">The quality of your input determines the quality of your output</div>
 
 <div class="s3-legend">
-  <span><span class="chip chip-gold"></span>Model provider</span>
-  <span><span class="chip chip-purple"></span>Third party</span>
   <span><span class="chip chip-blue"></span>You</span>
+  <span><span class="chip chip-purple"></span>The app</span>
+  <span><span class="chip chip-gold"></span>The model provider</span>
 </div>
 
 <!--
@@ -1590,7 +1580,7 @@ new chat is a blank slate. Your custom instructions — the settings field in
 ChatGPT or Claude, and for the coders here: a CLAUDE.md or .cursorrules
 file. All the same trick: a note poured into the tank every turn — that's
 the entire reason those files work. Same for saved memory: notes the
-harness keeps for you and pours back in. Your documents — you've all heard
+app keeps for you and pours back in. Your documents — you've all heard
 the buzzword RAG? Here's the entire secret: a tool that SEARCHES your
 documents and pastes what it finds into the tank. That's it. That's all
 RAG is. One buzzword down. And search & tool results — a web page it
@@ -1628,7 +1618,7 @@ into the tank, for you, the app and the provider alike. That's exactly why
 hidden system prompts are powerful and why prompt injection exists.]
 
 [Q&A armor — "where do agents fit?": an agent is the self-driving mode. You
-give the destination; the harness lets the model act (search, click, run
+give the destination; the app lets the model act (search, click, run
 code), each result lands back in the tank, and it goes again — the
 inference loop, but with actions. Claude Code and Cursor work like this.]
 -->
@@ -1639,12 +1629,12 @@ clicks: 2
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
 
-# Safety: rules in every shell
+<h1 style="font-size:2.6rem;">Safety: rules in the engine and the car</h1>
 
 <div class="s3-left">
   <div v-click="1">
     <div class="s3-guard">Guardrails</div>
-    <div>Each layer adds its own rules:<br>What it will and won't do</div>
+    <div>The engine has rules built in,<br>and the app adds its own:<br>What it will and won't do</div>
   </div>
   <div v-click="2" class="mt-8">
     <div class="s3-guard">Jailbreak</div>
@@ -1654,23 +1644,21 @@ clicks: 2
 
 <S3Diagram :stage="4" :c="$clicks" />
 
-<div class="s3-legend"><span><span class="chip chip-gold"></span>Model provider</span><span><span class="chip chip-purple"></span>Third party</span><span><span class="chip chip-blue"></span>You</span></div>
-
 <!--
 Last layer: the rules.
 
-[click] Every shell adds its own guardrails — what it will and won't do. The
-lab bakes safety rules into its own harness. The wrapper adds its own on
-top. And in your own harness the blue lock is YOURS: your checks, your
-rules, in plain predictable code.
+[click] They live in two places. The engine has rules baked in — that's the
+post-training you saw: what it will and won't do. And the app adds its own
+guardrails around it: filters and checks in plain, predictable code. [If
+you build your own app, those outer checks are yours to write.]
 
 [click] People constantly try to talk models past those rules — that's
-called a JAILBREAK. It's an ongoing arms race, and it's exactly why these
-layers exist.
+called a JAILBREAK. It's an ongoing arms race, and it's exactly why the
+rules live in more than one place.
 
-And look at the picture now — it's complete. The engine. The cars around it.
-Your context steering in from outside. Rules in every shell. That is the
-anatomy of every AI tool you have ever opened — no exceptions.
+And look at the picture now — it's complete. The engine. The car around it.
+The fuel flowing in. Rules in both. That is the anatomy of every AI tool
+you have ever opened — no exceptions.
 -->
 
 ---
@@ -1694,7 +1682,7 @@ clicks: 5
     <div class="zn gold-t">Alibaba <span class="zm">(Qwen)</span></div>
   </div>
   <div v-click="2">
-    <div class="zh">CARS YOU DRIVE<div class="zs">Harnesses</div></div>
+    <div class="zh">CARS YOU DRIVE<div class="zs">Apps</div></div>
     <div class="z2col">
       <div>
         <div class="zn gold-t">ChatGPT <span class="zm">(OpenAI)</span></div>
@@ -1716,7 +1704,7 @@ clicks: 5
     </div>
   </div>
   <div v-click="3">
-    <div class="zh zh-fit blue-t2">BUILD / UPGRADE YOUR OWN CAR<div class="zs">Harnesses</div></div>
+    <div class="zh zh-fit blue-t2">BUILD / UPGRADE YOUR OWN CAR<div class="zs">Apps</div></div>
     <div class="z2col">
       <div>
         <div class="zn blue-t2">Zapier</div>
