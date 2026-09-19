@@ -44,16 +44,15 @@ const otaps = [
 const ribs = [602, 629, 656, 683]
 
 // true car-icon silhouette per shell (side view, facing right): trunk, rear
-// window, roof, windscreen, bonnet, front bumper, wheel arches. Parametric in
-// the shell's box; s.y+s.h is the ground line, roof sits at 95% of the height.
-const wheelR = (s) => 0.06 * s.w
-const wheelCY = (s) => s.y + s.h - 0.06 * s.h + 0.45 * wheelR(s)
-const wheelCX = (s, f) => s.x + f * s.w
+// window, roof, windscreen, bonnet, front bumper — ONE continuous line; the
+// wheels are half-circle dips in the bottom edge. s.y+s.h is the ground line.
 const carD = (s) => {
   const X = (f) => (s.x + f * s.w).toFixed(1)
   const H = s.h, yg = s.y + s.h
   const Y = (f) => (yg - f * H).toFixed(1)
   const yb = (yg - 0.06 * H).toFixed(1)
+  const r = (0.055 * s.w).toFixed(1)
+  const cxR = s.x + 0.24 * s.w, cxF = s.x + 0.76 * s.w
   return [
     `M ${X(0.03)} ${Y(0.3)}`,
     `C ${X(0.02)} ${Y(0.46)} ${X(0.05)} ${Y(0.52)} ${X(0.12)} ${Y(0.55)}`,
@@ -66,6 +65,10 @@ const carD = (s) => {
     `C ${X(0.92)} ${Y(0.53)} ${X(0.97)} ${Y(0.45)} ${X(0.985)} ${Y(0.32)}`,
     `L ${X(0.985)} ${Y(0.14)}`,
     `Q ${X(0.985)} ${yb} ${X(0.93)} ${yb}`,
+    `L ${(cxF + +r).toFixed(1)} ${yb}`,
+    `A ${r} ${r} 0 0 1 ${(cxF - +r).toFixed(1)} ${yb}`,
+    `L ${(cxR + +r).toFixed(1)} ${yb}`,
+    `A ${r} ${r} 0 0 1 ${(cxR - +r).toFixed(1)} ${yb}`,
     `L ${X(0.06)} ${yb}`,
     `Q ${X(0.015)} ${yb} ${X(0.03)} ${Y(0.3)}`,
     'Z',
@@ -113,9 +116,6 @@ const carD = (s) => {
     <g v-for="(s, i) in shells" :key="'sh' + i">
       <g v-if="shellOn(i)" :opacity="shellOp">
         <path :d="carD(s)" fill="none" :stroke="s.col" stroke-width="2" stroke-linejoin="round" />
-        <!-- wheels: each harness shell is a car -->
-        <circle :cx="wheelCX(s, 0.24)" :cy="wheelCY(s)" :r="wheelR(s)" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
-        <circle :cx="wheelCX(s, 0.76)" :cy="wheelCY(s)" :r="wheelR(s)" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
         <text :x="s.x + (i === 2 ? 0.08 : 0.34) * s.w" :y="s.y + s.h - 0.06 * s.h - 3" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">{{ s.owner }}</text>
       </g>
       <g v-if="shellOn(i) && lockOn" :stroke="s.bright" fill="none" stroke-width="1.8">
