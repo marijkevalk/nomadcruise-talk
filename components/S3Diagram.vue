@@ -26,7 +26,7 @@ const PURPLE = '#7263b8', PURPLE_B = '#b9a9ee'
 const INK = '#f2ecdf', DIM = '#9a917f'
 
 const shells = [
-  { x: 525, y: 256, w: 250, h: 148, col: GOLD, bright: GOLD, owner: 'MODEL SUPPLIER', ex: 'Claude app · Claude Code' },
+  { x: 525, y: 256, w: 250, h: 148, col: GOLD, bright: GOLD, owner: 'MODEL PROVIDER', ex: 'Claude app · Claude Code' },
   { x: 480, y: 221, w: 340, h: 218, col: PURPLE, bright: PURPLE_B, owner: 'THIRD PARTY · “a wrapper”', ex: 'Cursor · Perplexity' },
   { x: 435, y: 186, w: 430, h: 288, col: BLUE, bright: BLUE_B, owner: 'YOU', ex: 'your own, built via the API' },
 ]
@@ -67,8 +67,11 @@ const ribs = [602, 629, 656, 683]
     <g v-for="(s, i) in shells" :key="'sh' + i">
       <g v-if="shellOn(i)" :opacity="shellOp">
         <rect :x="s.x" :y="s.y" :width="s.w" :height="s.h" rx="14" fill="none" :stroke="s.col" stroke-width="2" />
+        <!-- wheels: each harness shell is a car -->
+        <circle :cx="s.x + s.w * 0.24" :cy="s.y + s.h" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
+        <circle :cx="s.x + s.w * 0.76" :cy="s.y + s.h" :r="9 + i * 2" fill="#0a0e1a" :stroke="s.col" stroke-width="2" />
         <text :x="s.x + 13" :y="s.y + 17" style="font-size:9.5px;letter-spacing:1.4px" :fill="s.bright">{{ s.owner }}</text>
-        <text :x="s.x + 13" :y="s.y + s.h - 10" style="font-size:9.5px" :fill="s.bright" opacity="0.75">{{ s.ex }}</text>
+        <text :x="s.x + 13" :y="s.y + s.h - 16" style="font-size:9.5px" :fill="s.bright" opacity="0.75">{{ s.ex }}</text>
       </g>
       <g v-if="shellOn(i) && lockOn" :stroke="s.bright" fill="none" stroke-width="1.8">
         <rect :x="s.x + s.w - 27" :y="s.y + 15" width="16" height="12" rx="2" fill="rgba(0,0,0,0.4)" />

@@ -477,19 +477,19 @@ So no, this did not start with ChatGPT. This dream is older than most of us.
 <hr class="rule" />
 
 <div style="text-align:center;">
-<svg viewBox="-8 12 668 308" class="winters" style="height:20.4rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="-16 12 676 308" class="winters" style="height:20.4rem; width:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet">
   <defs>
     <marker id="arrHead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#e3b04b"/></marker>
-    <marker id="axHeadSm" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#cfc9bb"/></marker>
+    <marker id="axHeadSm" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M1,1 L11,6 L1,11 Z" fill="#cfc9bb"/></marker>
     <g id="sun"><circle r="9" fill="none" stroke="#e3b04b" stroke-width="2.4"/><g stroke="#e3b04b" stroke-width="2.4" stroke-linecap="round"><line y1="-13" y2="-16.5"/><line y1="13" y2="16.5"/><line x1="-13" x2="-16.5"/><line x1="13" x2="16.5"/><line x1="-9.2" y1="-9.2" x2="-11.7" y2="-11.7"/><line x1="9.2" y1="9.2" x2="11.7" y2="11.7"/><line x1="9.2" y1="-9.2" x2="11.7" y2="-11.7"/><line x1="-9.2" y1="9.2" x2="-11.7" y2="11.7"/></g></g>
     <g id="snow"><path d="M-13,2 a7,7 0 0,1 3,-13.6 a9,9 0 0,1 17.5,1.6 a7,7 0 0,1 0.5,12 z" fill="none" stroke="#8cbedc" stroke-width="2.2"/><g fill="#8cbedc"><circle cx="-7" cy="11.5" r="1.7"/><circle cx="0" cy="14" r="1.7"/><circle cx="7" cy="11.5" r="1.7"/></g></g>
   </defs>
-  <g stroke="#cfc9bb" stroke-width="1.3" stroke-linecap="round">
-    <line x1="12" y1="240" x2="85" y2="240" marker-end="url(#axHeadSm)"/>
-    <line x1="12" y1="240" x2="12" y2="185" marker-end="url(#axHeadSm)"/>
+  <g stroke="#cfc9bb" stroke-width="0.9" stroke-linecap="round">
+    <line x1="0" y1="178" x2="52" y2="178" marker-end="url(#axHeadSm)"/>
+    <line x1="0" y1="178" x2="0" y2="140" marker-end="url(#axHeadSm)"/>
   </g>
-  <text x="48" y="252" fill="#cfc9bb" font-size="10" font-style="italic" text-anchor="middle">Time</text>
-  <text transform="rotate(-90 4 212)" x="4" y="212" fill="#cfc9bb" font-size="10" font-style="italic" text-anchor="middle">AI Popularity</text>
+  <text x="26" y="188" fill="#cfc9bb" text-anchor="middle" style="font-size:7px; font-style:normal;">Time</text>
+  <text transform="rotate(-90 -6 159)" x="-6" y="159" fill="#cfc9bb" text-anchor="middle" style="font-size:7px; font-style:normal;">AI Popularity</text>
   <path d="M20,150 L70,150 Q110,150 130,120 Q150,90 175,90 Q200,90 220,120 Q245,155 285,155 Q320,155 345,120 Q372,85 400,85 Q428,85 452,120 Q485,158 520,150"
         fill="none" stroke="#e3b04b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   <use href="#sun" transform="translate(175,56) scale(1.35)"/>
@@ -1689,21 +1689,28 @@ clicks: 3
 # The harness is the car
 
 <div class="s3-left">
-  <div class="s3-lead">The harness is everything around the engine:</div>
+  <div class="s3-lead s3-fit">The harness is everything around the engine:</div>
   <div class="s3-list">
     <div>Chat window</div>
     <div>Memory</div>
     <div>File access</div>
     <div>Tools & search</div>
+    <div>…</div>
+  </div>
+  <div class="s3-lead s3-fit mt-7">Three types of harness builders:</div>
+  <div class="s3-owners">
+    <div v-click="1" class="lg-gold">MODEL PROVIDER</div>
+    <div v-click="2" class="lg-purple">THIRD-PARTY HARNESS (WRAPPER)</div>
+    <div v-click="3" class="lg-blue">OWN HARNESS</div>
   </div>
 </div>
 
 <S3Diagram :stage="2" :c="$clicks" />
 
-<div class="s3-legend-r">
-  <div v-click="1" class="lg-gold">MODEL SUPPLIER</div>
-  <div v-click="2" class="lg-purple">THIRD-PARTY HARNESS (WRAPPER)</div>
-  <div v-click="3" class="lg-blue">OWN HARNESS</div>
+<div class="s3-legend">
+  <span v-click="1"><span class="chip chip-gold"></span>model provider</span>
+  <span v-click="2"><span class="chip chip-purple"></span>third party</span>
+  <span v-click="3"><span class="chip chip-blue"></span>you</span>
 </div>
 
 <!--
@@ -1715,7 +1722,7 @@ calendar. Everything that makes the engine drivable.
 And harnesses come in three kinds — watch the colours, they mean who
 built it.
 
-[click] Kind one, gold: the car from the model supplier itself. Claude the
+[click] Kind one, gold: the car from the model provider itself. Claude the
 chat app and Claude Code — the programming tool — feel completely different.
 Same engine behind. ChatGPT the app and GPT: same trick. And note: the
 engine changes rarely, with a version number — the car changes weekly. When
@@ -1790,7 +1797,7 @@ clicks: 2
 
 <S3Diagram :stage="4" :c="$clicks" />
 
-<div class="s3-legend"><span><span class="chip chip-gold"></span>model supplier</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-blue"></span>you</span></div>
+<div class="s3-legend"><span><span class="chip chip-gold"></span>model provider</span><span><span class="chip chip-purple"></span>third party</span><span><span class="chip chip-blue"></span>you</span></div>
 
 <!--
 Last layer: the rules.
