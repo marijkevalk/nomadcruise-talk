@@ -1029,7 +1029,7 @@ it — but all the knowledge is in the file.]
 -->
 
 ---
-clicks: 11
+clicks: 12
 ---
 
 <div class="kicker">Part two <span class="dim kfit">· an LLM is statistics built on our written world</span></div>
@@ -1089,6 +1089,8 @@ clicks: 11
 
 <div v-click="11" class="um-closer text-lg">One word at a time, each one <b class="accent">a draw</b> · run it again and the reply can differ.</div>
 
+<div v-click="12" class="um-greedy">Always picking <b>#1</b> instead? <span class="ug-q">“The QM2 is a very small vessel, but it is very capable of…”</span> <span class="dim">· identical, every single time</span></div>
+
 <div class="src-ref" style="left:auto; right:2.2rem; bottom:2.6rem;">data from GPT-2</div>
 
 <img :src="'/art/tovenaar-05-zittend.svg'" class="mage" style="top:3.2rem; right:0.6rem; bottom:auto; height:7rem;" />
@@ -1120,6 +1122,15 @@ For a ship, quite the detour.
 And THAT is why you never get exactly the same answer twice: run it again
 and somewhere a different word wins the draw. How adventurous the draws
 are — there's a knob for that, coming up.
+
+[click] And what if we removed the dice — always pick number one? Real
+GPT-2 output, same prompt: "The QM2 is a very small vessel, but it is very
+capable of carrying a large number of passengers." Fluent, confident — and
+notice it never actually answers the question. But the real point: run it
+a thousand times and you get this EXACT sentence, word for word, a
+thousand times. The dice are what keep replies alive. [Armor: always-#1 is
+called "greedy" decoding, temperature zero; bigger models answer fine that
+way, but the determinism is universal — no dice, no variety.]
 
 Percentages, all the way down. Sound familiar? That's… statistics.
 
@@ -1436,6 +1447,7 @@ clicks: 3
 
 <div class="s3-left">
   <div v-click="1">
+    <div class="s3-lead2">The app is everything around the model:</div>
     <div class="s3-list">
       <div>Chat window</div>
       <div>File access</div>
