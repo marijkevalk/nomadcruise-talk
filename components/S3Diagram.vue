@@ -18,7 +18,7 @@ const brOn = computed(() => v(3, 4))
 const brOp = computed(() => (props.stage === 4 ? 0.4 : 1))
 const capOn = computed(() => props.stage === 3 && props.c >= 4)
 const lockOn = computed(() => v(4, 1))
-const shellOn = (i) => v(2, i + 2)
+const shellOn = (i) => v(2, i + 3)
 const arrOn = (g) => (props.stage === 3 && props.c >= g) || props.stage === 4
 
 const GOLD = '#e3b04b', BLUE = '#38bdf8', BLUE_B = '#7dd3fc'

@@ -1021,16 +1021,16 @@
 .s3-specs .sp-row { display: flex; justify-content: space-between; align-items: center; padding: 0.18rem 0; }
 .s3-specs .sp-row .bar { display: inline-block; width: 8.5rem; height: 0.8rem; border-radius: 2px; background: #3a3f4d; }
 .s3-specs .sp-secret { color: var(--talk-accent); font-size: 0.95rem; margin-top: 0.45rem; }
-.s3-left { position: absolute; left: 3rem; top: 10.8rem; max-width: 25rem; }
+.s3-left { position: absolute; left: 3rem; top: 9.6rem; max-width: 25rem; }
 .s3-left .s3-lead { font-weight: 600; font-size: 1.2rem; margin-bottom: 0.6rem; color: #ffffff; }
 .s3-left .s3-lead2 { font-weight: 600; font-size: 1.3rem; margin-bottom: 0.4rem; color: #ffffff; white-space: nowrap; }
 /* slide 29: leads sized to fit on one line */
-.s3-left .s3-fit { font-size: 0.98rem; white-space: nowrap; margin-bottom: 0.5rem; }
-.s3-list > div { padding: 0.06rem 0; font-size: 1.15rem; }
+.s3-left .s3-fit { font-size: 1.3rem; white-space: nowrap; margin-bottom: 0.5rem; }
+.s3-list > div { padding: 0.06rem 0; font-size: 1rem; }
 .s3-list > div::before { content: '\25B8\00a0\00a0'; color: var(--talk-accent); }
 /* slide 29: the three builders, appearing per click in owner colour */
 .s3-owners .ow {
-  font-size: 1.15rem; color: #ffffff; padding: 0.1rem 0 0.1rem 1.35rem; position: relative;
+  font-size: 1rem; color: #ffffff; padding: 0.1rem 0 0.1rem 1.35rem; position: relative;
 }
 .s3-owners .ow::before { content: '\25B8'; position: absolute; left: 0; }
 .s3-owners .ow-gold::before { color: #e3b04b; }
