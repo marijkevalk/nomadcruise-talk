@@ -613,10 +613,10 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
   <div class="qlist">
     <div class="ql">Is a thermostat intelligent?</div>
     <div class="ql">What is the difference between a computer and AI?</div>
-    <div class="ql">Are Siri and Alexa "real" AI?</div>
-    <div class="ql">Is AI smarter than a human?</div>
-    <div class="ql">Why is everyone talking about AI right now?</div>
     <div class="ql">Was there AI before ChatGPT?</div>
+    <div class="ql">Is my navigation app AI?</div>
+    <div class="ql">Where do I use AI every day without noticing?</div>
+    <div class="ql">What is AGI?</div>
   </div>
 </div>
 
