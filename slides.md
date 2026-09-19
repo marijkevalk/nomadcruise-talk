@@ -1306,7 +1306,7 @@ Section two done — and I'd be amazed if you have no questions now.
     <div class="ql">Explain "temperature" as if I am 12 years old</div>
     <div class="ql">Is it better to ask a chatbot in English or in my own language?</div>
     <div class="ql">What does "GPT" stand for?</div>
-    <div class="ql">Does the AI actually understand what it is saying?</div>
+    <div class="ql">Am I training the AI when I chat with it?</div>
   </div>
 </div>
 
