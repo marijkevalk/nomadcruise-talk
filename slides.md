@@ -992,7 +992,7 @@ time someone says "the AI said so."
     </div>
     <div class="mt-2">
       <div class="text-lg"><b>Closed</b></div>
-      <div class="mt-0.5 text-sm leading-snug">The file is secret · it runs on the provider's servers</div>
+      <div class="mt-0.5 text-sm leading-snug">The file is secret, it runs on the provider's servers</div>
     </div>
   </div>
 </div>
