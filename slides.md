@@ -262,7 +262,7 @@ chat-style AI is what everyone here uses, so that's our focus today.
 
 # This is a workshop
 
-<Countdown :minutes="5" :run="false" class="clock-lg" />
+<Countdown :minutes="3" :run="false" class="clock-lg" />
 
 <hr class="rule" />
 
@@ -270,7 +270,7 @@ chat-style AI is what everyone here uses, so that's our focus today.
 
 <div class="wf-block" v-click="1">
   <div class="wf-head">During each part</div>
-  <div class="wf-sub">while you are listening</div>
+  <div class="wf-sub">While you are listening</div>
   <div class="wf-lead">Write down at least one question:</div>
   <ul class="wf-list">
     <li>Something you don't understand</li>
@@ -282,14 +282,10 @@ chat-style AI is what everyone here uses, so that's our focus today.
 
 <div class="wf-block" v-click="2">
   <div class="wf-head">After each part</div>
-  <div class="wf-sub">get into groups of two or three with your neighbours</div>
-  <div class="wf-lead"><b>Individually:</b> choose one of your questions and ask it to your AI assistant.</div>
-  <div class="wf-lead mt-2">Share with your neighbours:</div>
-  <ul class="wf-list">
-    <li>Something new that you learned</li>
-    <li>Something you don't understand</li>
-    <li>A follow-up question it sparked</li>
-  </ul>
+  <div class="wf-sub">You will get three minutes</div>
+  <div class="wf-lead">Ask AI a question</div>
+  <div class="wf-step">Choose one of your questions, ask it to an AI assistant and learn from its answers.</div>
+  <div class="wf-step mt-2"><b>If time permits:</b> share with your neighbours.</div>
 </div>
 
 </div>
@@ -303,7 +299,7 @@ do some prompting here, so you don't need anything fancy set up.
 [click] Here's the deal. The talk has three sections. During each one, I
 challenge you to write down at least one question. Something you don't
 understand, something that makes you wonder, something you want to know more
-about — it can be anything. [click] And after each section, you get five
+about — it can be anything. [click] And after each section, you get three
 minutes to ask that question… to AI. And to learn from the answer.
 
 Any chat app you already have on your phone works — ChatGPT, Claude, Gemini,
@@ -571,7 +567,7 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 
 # <span class="green-title">Ask AI a question</span>
 
-<Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
+<Countdown :minutes="3" :run="$clicks >= 1" class="clock-lg" />
 <span v-click></span>
 
 <hr class="rule" />
@@ -580,9 +576,9 @@ Claim one done: AI is not new — the boom is. Time for YOUR questions.
 
 <div class="recap-inset">
   <div class="ri-title">After each part</div>
-  <div class="ri-line">groups of two or three</div>
-  <div class="ri-line"><b class="ri-em">Individually:</b> ask AI a question</div>
-  <div class="ri-line"><b class="ri-em">Share</b> what stood out</div>
+  <div class="ri-line">Ask AI a question</div>
+  <div class="ri-line">Learn from its answers</div>
+  <div class="ri-line"><b class="ri-em">If time permits:</b> share</div>
 </div>
 
 <div class="qmain">
@@ -1499,7 +1495,7 @@ Section two done — and I'd be amazed if you have no questions now.
 
 # <span class="green-title">Ask AI a question</span>
 
-<Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
+<Countdown :minutes="3" :run="$clicks >= 1" class="clock-lg" />
 <span v-click></span>
 
 <hr class="rule" />
@@ -1508,9 +1504,9 @@ Section two done — and I'd be amazed if you have no questions now.
 
 <div class="recap-inset">
   <div class="ri-title">After each part</div>
-  <div class="ri-line">groups of two or three</div>
-  <div class="ri-line"><b class="ri-em">Individually:</b> ask AI a question</div>
-  <div class="ri-line"><b class="ri-em">Share</b> what stood out</div>
+  <div class="ri-line">Ask AI a question</div>
+  <div class="ri-line">Learn from its answers</div>
+  <div class="ri-line"><b class="ri-em">If time permits:</b> share</div>
 </div>
 
 <div class="qmain">
@@ -1914,7 +1910,7 @@ Last round of questions — and this one is the most practical.
 
 # <span class="green-title">Ask AI a question</span>
 
-<Countdown :minutes="5" :run="$clicks >= 1" class="clock-lg" />
+<Countdown :minutes="3" :run="$clicks >= 1" class="clock-lg" />
 <span v-click></span>
 
 <hr class="rule" />
@@ -1923,9 +1919,9 @@ Last round of questions — and this one is the most practical.
 
 <div class="recap-inset">
   <div class="ri-title">After each part</div>
-  <div class="ri-line">groups of two or three</div>
-  <div class="ri-line"><b class="ri-em">Individually:</b> ask AI a question</div>
-  <div class="ri-line"><b class="ri-em">Share</b> what stood out</div>
+  <div class="ri-line">Ask AI a question</div>
+  <div class="ri-line">Learn from its answers</div>
+  <div class="ri-line"><b class="ri-em">If time permits:</b> share</div>
 </div>
 
 <div class="qmain">
