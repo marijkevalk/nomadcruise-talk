@@ -981,17 +981,17 @@ time someone says "the AI said so."
 <div>
   <div v-click="1">
     <div class="text-xl leading-snug" style="white-space:nowrap;"><b>After training: the model is <span class="accent">frozen</span></b></div>
-    <div class="mt-1 text-base" style="color:var(--ink-dim);">All the dials are saved — into one file</div>
+    <div class="mt-1 text-base" style="color:var(--ink-dim);">All the dials are saved · into one file</div>
   </div>
 
-  <div v-click="3" class="mt-7">
+  <div v-click="3" class="dg-purple mt-6">
     <div>
-      <div class="text-xl"><b class="accent">Open source</b></div>
+      <div class="text-xl"><b>Open source</b></div>
       <div class="mt-0.5 text-base leading-snug">Download the file, run it on your own computer</div>
     </div>
-    <div class="mt-4">
-      <div class="text-xl"><b class="accent">Closed</b></div>
-      <div class="mt-0.5 text-base leading-snug">The file is secret — it runs on the provider's servers</div>
+    <div class="mt-3">
+      <div class="text-xl"><b>Closed</b></div>
+      <div class="mt-0.5 text-base leading-snug">The file is secret · it runs on the provider's servers</div>
     </div>
   </div>
 </div>
