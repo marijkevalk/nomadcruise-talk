@@ -1249,10 +1249,10 @@ exist without being designed in — that part is not disputed.]
 
 <div v-click="2">
 <img :src="'/art/top5-city-24.png'" class="rounded w-full my-1" style="height:8.5rem; object-fit:contain;" />
-<div class="mt-1" style="min-height:3.4rem;">Next token is <b><u>a draw</u></b> from the <b>options</b></div>
+<div class="mt-1" style="min-height:3.4rem;">Next word is <b><u>a draw</u></b> from the <b>options</b></div>
 </div>
 
-<div v-click="3" class="mt-1"><b class="accent">Temperature</b>: determines how often a less likely token wins</div>
+<div v-click="3" class="mt-1"><b class="accent">Temperature</b>: determines how often a less likely word wins</div>
 
 </div>
 <div>
@@ -1264,7 +1264,7 @@ exist without being designed in — that part is not disputed.]
 
 <div v-click="5">
 <img :src="'/art/top5-flat.png'" class="rounded w-full my-1" style="height:8.5rem; object-fit:contain;" />
-<div class="mt-1" style="min-height:3.4rem;">A next token is <b><u>always drawn</u></b>, even when there is no clear answer</div>
+<div class="mt-1" style="min-height:3.4rem;">A next word is <b><u>always drawn</u></b>, even when there is no clear answer</div>
 </div>
 
 <div v-click="6" class="mt-1">Plausible doesn't mean true</div>
@@ -1281,7 +1281,7 @@ exist without being designed in — that part is not disputed.]
 file — same file, same question. So you'd expect the same answer, every
 single time. And you know from experience: that's not what happens. Why not?
 
-[click] Because of the dice. The next token is a DRAW from the options —
+[click] Because of the dice. The next word is a DRAW from the options —
 that list of percentages the model hands over. Usually the
 most likely word wins, but with a certain chance a less likely one gets
 picked instead. Remember the favourite-city list: London, Tokyo, New York,
@@ -1309,7 +1309,7 @@ hallucination.
 [click] One real chart. I asked GPT-2: "We are sailing on the Queen Mary 2.
 The ship's captain is Captain…" — look at that list. John, five percent.
 James, four. Nothing above five. The model has NO idea who the captain is —
-there is no clear answer in there. But a token is always drawn, so out comes
+there is no clear answer in there. But a word is always drawn, so out comes
 a name anyway: "Captain John", said with full confidence. Compare that with
 the iceberg's seventy-nine percent earlier — THIS is what not-knowing looks
 like, and the model bluffs right through it. Bluffing sounds exactly as
