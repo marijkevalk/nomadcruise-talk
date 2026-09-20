@@ -1676,7 +1676,7 @@ giving it CONTEXT. You're already applying section three.
 <div class="display" style="font-size:2.3rem;">Keep asking questions.</div>
 
 <div class="mt-4 text-2xl accent leading-snug" style="font-family:'Fraunces',serif;">
-"Treat the model as a noisy estimator,<br>not an oracle."
+"Treat the model as a brilliant<br>guesser, not an oracle."
 </div>
 
 <div class="mt-6 text-base leading-relaxed">
