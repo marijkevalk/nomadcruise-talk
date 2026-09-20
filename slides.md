@@ -1244,7 +1244,7 @@ exist without being designed in — that part is not disputed.]
 
 <div v-click="1">
 <div class="ch-head">Creativity</div>
-<div class="ch-q">As the weights are frozen, why don't you get the same answer every time?</div>
+<div class="ch-q">As the parameters are frozen, why don't you get the same answer every time?</div>
 </div>
 
 <div v-click="2">
