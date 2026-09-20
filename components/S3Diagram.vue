@@ -10,9 +10,11 @@ const props = defineProps({
 // element visible when born in an earlier stage, or in this stage at click k
 const v = (s, k) => props.stage > s || (props.stage === s && props.c >= k)
 
-const engineOn = computed(() => v(1, 5))
+// stage 2 (apps are the cars): engine at click 1, car wraps at click 2.
+// stage 3+ (context): both are the backdrop, always on.
+const engineOn = computed(() => (props.stage === 2 && props.c >= 1) || props.stage >= 3)
 const lockOn = computed(() => v(4, 1))
-const carOn = computed(() => v(2, 1))
+const carOn = computed(() => (props.stage === 2 && props.c >= 2) || props.stage >= 3)
 // stage 3: the context is the fuel — a tank that fills in groups
 // (1 = tank + everything you put in, 2 = the app's, 3 = the provider's),
 // then flows into the engine (4); captions (5). Faint on stage 4.

@@ -1199,7 +1199,7 @@ post-training you'll see on the next slide teaches them to just answer.]
 Now — here's where I have to be honest with you, because something strange
 happens at this scale.
 
-[click] We train it to do ONE thing: predict the next token. And abilities
+[click] We train it to do ONE thing: predict the next word. And abilities
 appear that nobody put in. It translates. It reasons through problems. It
 writes working code. Nobody designed those features — they emerged from the
 statistics, at scale. Even the makers were surprised.
@@ -1207,7 +1207,7 @@ statistics, at scale. Even the makers were surprised.
 [click] The field calls it emergence: it can do things it wasn't designed
 for. It codes. My favourite example: GPT-4 passed the bar exam — the American
 law exam. Nobody taught it law, there is no law module in there. It got very
-good at predicting the next token, and somewhere along the way, passing the
+good at predicting the next word, and somewhere along the way, passing the
 bar exam… emerged. And the same family of ideas, pointed at the language of
 proteins instead of English, now predicts protein structures — that one won
 the Nobel Prize in Chemistry in 2024.
@@ -1346,7 +1346,7 @@ class: dg-slide
   </div>
 </div>
 <div v-click="2" class="dg-purple">
-  <b>Llama 4 read over 30 trillion (3·10¹³) tokens</b>
+  <b>Llama 4 read over 30 trillion (3·10¹³) words</b>
   <div class="mt-1" style="width:0; min-width:100%;">100,000+ years of full-time reading for a human</div>
   <div class="dg-ref">Meta 2025</div>
 </div>
@@ -1369,7 +1369,7 @@ words come from? This is the ingredient everything else stood on: data.
 web, books, code.
 
 [click — the purple block] How much? Llama 4, one open model, read more than
-thirty TRILLION tokens. If you read around the clock, no sleep, that's well
+thirty TRILLION words. If you read around the clock, no sleep, that's well
 over a hundred thousand YEARS of reading. And by the way — that includes
 things you wrote. All of us are in there.
 
@@ -1472,7 +1472,7 @@ one. Let me show you the anatomy of every AI tool you've ever opened.
 -->
 
 ---
-clicks: 3
+clicks: 4
 ---
 
 <div class="kicker">Part three <span class="dim">· cars wrapped around the same engines</span></div>
@@ -1482,7 +1482,7 @@ clicks: 3
 <hr class="rule" />
 
 <div class="s3-left">
-  <div v-click="1">
+  <div v-click="2">
     <div class="s3-lead2">The app is everything around the model:</div>
     <div class="s3-list">
       <div>Chat window</div>
@@ -1490,26 +1490,26 @@ clicks: 3
       <div>Tools & search&ensp;…</div>
     </div>
   </div>
-  <div v-click="2" class="mt-4">
+  <div v-click="3" class="mt-4">
     <div class="s3-lead2">Specific engines, specific cars:</div>
     <div class="ec-row"><span class="ec-lab gold-t">Engines</span><span>Claude · GPT · Gemini …</span></div>
     <div class="ec-row"><span class="ec-lab purple-t">Cars</span><span>Claude app · Claude Code · Claude Cowork · ChatGPT · Cursor …</span></div>
   </div>
 </div>
 
-<div v-click="3" class="s3-start"><span class="ztri">▸</span>To start: it doesn't matter which car with which engine → they all drive!</div>
+<div v-click="4" class="s3-start"><span class="ztri">▸</span>To start: it doesn't matter which car with which engine → they all drive!</div>
 
 <S3Diagram :stage="2" :c="$clicks" />
 
 <!--
-Have you ever driven an engine to the supermarket? [click] Around the
-engine someone builds the car: the app. The chat window, the memory that
-remembers your conversation, access to your files, the tools it can use —
-search, code, your calendar. Everything that makes the engine drivable.
-The model is just the engine; the app is the car you actually sit in.
-And note: the engine changes rarely, with a version number — the car
-changes weekly. When your app "gets an update", it's usually the car, not
-the engine. The app is not the model.
+Have you ever driven an engine to the supermarket? [click] Here's the
+model — just the engine. [click] Around it someone builds the car: the app.
+The chat window, the memory that remembers your conversation, access to
+your files, the tools it can use — search, code, your calendar. Everything
+that makes the engine drivable. The model is just the engine; the app is
+the car you actually sit in. And note: the engine changes rarely, with a
+version number — the car changes weekly. When your app "gets an update",
+it's usually the car, not the engine. The app is not the model.
 
 [click] And it's mix and match. You've met the engines: Claude, GPT,
 Gemini. The cars: the Claude app and Claude Code are two very different
