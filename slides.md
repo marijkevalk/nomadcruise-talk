@@ -1492,7 +1492,7 @@ clicks: 4
   </div>
   <div v-click="3" class="mt-4">
     <div class="s3-lead2">Specific engines, specific cars:</div>
-    <div class="ec-row"><span class="ec-lab gold-t">Engines</span><span>Claude · GPT · Gemini …</span></div>
+    <div class="ec-row"><span class="ec-lab gold-t">Engines</span><span>GPT <span class="dim">(OpenAI)</span> · Claude <span class="dim">(Anthropic)</span> · Gemini <span class="dim">(Google)</span> …</span></div>
     <div class="ec-row"><span class="ec-lab purple-t">Cars</span><span>Claude app · Claude Code · Claude Cowork · ChatGPT · Cursor …</span></div>
   </div>
 </div>
